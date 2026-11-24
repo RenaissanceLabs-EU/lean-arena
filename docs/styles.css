@@ -420,3 +420,18 @@ tr.no td:nth-child(2) { color: var(--ink-soft); }
 .scale .vzmark { margin-left: 10px; }
 .area-main .vizsec > p.eyebrow { font: 600 12px var(--sans); color: var(--gold); letter-spacing: .16em; margin-bottom: 6px; }
 .area-main .vizsec .vz-lede { font-size: 16px; color: var(--ink-soft); }
+
+/* ---- phones: nothing may be wider than the screen ---- */
+.scale { flex-wrap: wrap; row-gap: 6px; white-space: normal; }
+.scale span { white-space: nowrap; }
+.thms { grid-template-columns: minmax(0, 1fr); }
+.thms li { min-width: 0; overflow-x: auto; overflow-y: hidden; }
+.codebox.mini pre { overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+  table.t.fam, table.t.fam tbody, table.t.fam tr, table.t.fam td { display: block; width: auto; min-width: 0; }
+  table.t.fam tr { padding: 10px 0; border-bottom: 1px solid var(--rule); }
+  table.t.fam td { padding: 3px 0; border-bottom: 0; }
+  .sec p .katex, .sec li .katex { font-size: .94em; }
+}
+.vz figcaption { right: 14px; }
+.vz-hint { display: inline-block; max-width: 100%; line-height: 1.35; border-radius: 12px; }
