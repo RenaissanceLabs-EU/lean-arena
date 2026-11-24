@@ -1,0 +1,98 @@
+{
+  "code": "22",
+  "short": "Lie groups",
+  "hook": "How do you do algebra and calculus at once on symmetries that vary smoothly, like rotations of a sphere?",
+  "about": [
+    "A topological group is a group that is also a space, with continuous multiplication and inversion. A Lie group is one that is a smooth manifold with smooth operations, such as the rotations of space or the invertible \\(n\\times n\\) real matrices. These groups describe continuous symmetry: symmetries that can be varied gradually, unlike the finitely many symmetries of a square.",
+    "A Lie group is studied through its Lie algebra, the tangent space at the identity, which turns many questions into linear algebra. Integration against Haar measure allows averaging over a group. Representation theory decomposes functions on the group, or on spaces on which it acts, in a way that generalizes Fourier series. The area connects to differential geometry, harmonic analysis, number theory through automorphic forms, and quantum physics."
+  ],
+  "example": {
+    "title": "Rotations of the plane",
+    "text": "Rotations of the plane about the origin form a group: rotating by \\(\\theta\\) and then by \\(\\varphi\\) is rotating by \\(\\theta+\\varphi\\). Each is given by the matrix \\(R(\\theta)=\\begin{pmatrix}\\cos\\theta&-\\sin\\theta\\\\ \\sin\\theta&\\cos\\theta\\end{pmatrix}\\), which depends smoothly on \\(\\theta\\), so the group is a Lie group shaped like a circle. Its velocity at \\(\\theta=0\\) is \\(J=\\begin{pmatrix}0&-1\\\\1&0\\end{pmatrix}\\), and every rotation is recovered as a matrix exponential, \\(R(\\theta)=\\exp(\\theta J)\\)."
+  },
+  "objects": [
+    {
+      "term": "Topological group",
+      "gloss": "A group with a topology for which multiplication and inversion are continuous."
+    },
+    {
+      "term": "Lie group",
+      "gloss": "A group that is a smooth manifold, with smooth multiplication and inversion."
+    },
+    {
+      "term": "Lie algebra of a group",
+      "gloss": "The tangent space at the identity with the bracket induced by the group law."
+    },
+    {
+      "term": "Exponential map",
+      "gloss": "The map from the Lie algebra to the group that follows one-parameter subgroups for unit time."
+    },
+    {
+      "term": "Haar measure",
+      "gloss": "A measure on a locally compact group that is unchanged by left translation."
+    },
+    {
+      "term": "Unitary representation",
+      "gloss": "A continuous action of the group on a Hilbert space by unitary operators."
+    },
+    {
+      "term": "Homogeneous space",
+      "gloss": "A space on which the group acts transitively, such as a sphere under rotations."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Lie's third theorem",
+      "year": null,
+      "statement": "Every finite-dimensional real Lie algebra is isomorphic to the Lie algebra of a simply connected Lie group, and that group is unique up to isomorphism. The global form stated here is due to Cartan."
+    },
+    {
+      "name": "Peter-Weyl theorem",
+      "year": 1927,
+      "statement": "Let \\(G\\) be a compact Hausdorff group. The matrix coefficients of its finite-dimensional irreducible unitary representations span a dense subspace of the continuous functions on \\(G\\) with the uniform norm, and every irreducible unitary representation of \\(G\\) is finite-dimensional."
+    },
+    {
+      "name": "Closed subgroup theorem",
+      "year": null,
+      "statement": "Every closed subgroup of a Lie group is an embedded submanifold, and hence is itself a Lie group."
+    },
+    {
+      "name": "Existence of Haar measure",
+      "year": 1933,
+      "statement": "Every locally compact Hausdorff group carries a nonzero Radon measure invariant under left translation, and it is unique up to a positive constant factor. Haar proved existence in 1933 for second countable groups; the general case and uniqueness followed within a few years."
+    },
+    {
+      "name": "Pontryagin duality",
+      "year": null,
+      "statement": "Let \\(G\\) be a locally compact abelian Hausdorff group and \\(\\hat G\\) the group of continuous homomorphisms from \\(G\\) to the circle group, with the compact-open topology. Then the evaluation map from \\(G\\) to the dual of \\(\\hat G\\) is an isomorphism of topological groups."
+    },
+    {
+      "name": "Solution of Hilbert's fifth problem",
+      "year": 1952,
+      "statement": "If a topological group is locally Euclidean, meaning that it is a topological manifold, then it has a smooth structure making it a Lie group. This follows from work of Gleason and of Montgomery and Zippin."
+    }
+  ],
+  "open": [
+    {
+      "name": "Hilbert-Smith conjecture",
+      "gloss": "A locally compact group that acts faithfully on a connected manifold is a Lie group; known for manifolds of dimension at most 3."
+    },
+    {
+      "name": "Unitary dual problem",
+      "gloss": "Describe all irreducible unitary representations of a real reductive Lie group; an algorithm is known, but an explicit description is not."
+    }
+  ],
+  "uses": [
+    "Quantum mechanics and particle physics",
+    "Robotics and computer vision",
+    "Control theory"
+  ],
+  "links": [
+    "17",
+    "20",
+    "43",
+    "53",
+    "57",
+    "11"
+  ]
+}

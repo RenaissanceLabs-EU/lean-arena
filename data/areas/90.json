@@ -1,0 +1,103 @@
+{
+  "code": "90",
+  "short": "Operations research",
+  "hook": "What is the cheapest way to route a thousand deliveries, or the best mix of products to make?",
+  "about": [
+    "Operations research uses mathematical models to make decisions about complex systems: how to schedule crews, route vehicles, manage inventories, or locate warehouses. Mathematical programming is its core. One seeks the values of decision variables that make an objective, such as cost or profit, as good as possible while satisfying a set of constraints.",
+    "Problems are sorted by structure. Linear programs can be solved at very large scale. Convex programs keep most of that tractability. Problems with integer variables or nonconvex functions are usually hard in the worst case and are attacked by branch-and-bound, cutting planes, relaxations and heuristics. Duality, which pairs each problem with a second one that bounds it, runs through the whole area. Uncertainty leads to stochastic and dynamic programming."
+  ],
+  "example": {
+    "title": "A small linear program",
+    "text": "Maximize \\(x + 2y\\) subject to \\(x + y \\le 4\\), \\(x + 3y \\le 6\\), \\(x \\ge 0\\), \\(y \\ge 0\\). The feasible region is a quadrilateral with corners \\((0,0)\\), \\((4,0)\\), \\((3,1)\\) and \\((0,2)\\). The objective takes the values \\(0\\), \\(4\\), \\(5\\) and \\(4\\) there, so the maximum is \\(5\\) at \\((3,1)\\). A linear objective over such a region always attains its best value at a corner."
+  },
+  "objects": [
+    {
+      "term": "Objective function",
+      "gloss": "The quantity to be minimized or maximized."
+    },
+    {
+      "term": "Feasible set",
+      "gloss": "The set of all choices of the variables that satisfy the constraints."
+    },
+    {
+      "term": "Linear program",
+      "gloss": "An optimization problem with a linear objective and linear equality and inequality constraints."
+    },
+    {
+      "term": "Convex function",
+      "gloss": "A function whose graph lies below its chords, so that every local minimum is global."
+    },
+    {
+      "term": "Dual problem",
+      "gloss": "A companion optimization problem whose value bounds that of the original."
+    },
+    {
+      "term": "Integer program",
+      "gloss": "An optimization problem in which some variables must take integer values."
+    },
+    {
+      "term": "Network flow",
+      "gloss": "An assignment of amounts to the edges of a graph that respects capacities and conserves flow at nodes."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Fundamental theorem of linear programming",
+      "year": null,
+      "statement": "If the linear program of minimizing \\(c^{T}x\\) subject to \\(Ax = b\\), \\(x \\ge 0\\) has an optimal solution, then it has an optimal solution that is a vertex of the feasible polyhedron."
+    },
+    {
+      "name": "Strong duality for linear programming",
+      "year": null,
+      "statement": "If a linear program has an optimal solution, then so does its dual, and the two optimal values are equal."
+    },
+    {
+      "name": "Karush-Kuhn-Tucker conditions",
+      "year": 1951,
+      "statement": "Let \\(x^*\\) be a local minimizer of a smooth \\(f\\) subject to \\(g_i(x) \\le 0\\) and \\(h_j(x) = 0\\), with smooth constraints satisfying a constraint qualification at \\(x^*\\). Then there are multipliers \\(\\lambda_i \\ge 0\\) and \\(\\mu_j\\) with \\(\\nabla f + \\sum_i\\lambda_i\\nabla g_i + \\sum_j\\mu_j\\nabla h_j = 0\\) at \\(x^*\\) and \\(\\lambda_i g_i(x^*) = 0\\) for all \\(i\\)."
+    },
+    {
+      "name": "Max-flow min-cut theorem",
+      "year": 1956,
+      "statement": "In a network with nonnegative edge capacities, the maximum value of a flow from the source to the sink equals the minimum total capacity of a set of edges whose removal separates the source from the sink."
+    },
+    {
+      "name": "Bellman equation",
+      "year": null,
+      "statement": "In a Markov decision process with finitely many states and actions and discount factor \\(0 \\le \\gamma < 1\\), the optimal value function is the unique solution of \\(V(s) = \\max_a\\left[r(s,a) + \\gamma\\sum_{s'}P(s'\\mid s,a)V(s')\\right]\\), and choosing a maximizing action in each state is optimal."
+    },
+    {
+      "name": "Polynomial solvability of linear programming",
+      "year": 1979,
+      "statement": "A linear program with rational data can be solved in time polynomial in the number of bits needed to write it down. The first proof used the ellipsoid method."
+    }
+  ],
+  "open": [
+    {
+      "name": "Strongly polynomial linear programming",
+      "gloss": "Is there an algorithm for linear programming whose number of arithmetic operations is polynomial in the number of variables and constraints alone?"
+    },
+    {
+      "name": "Polynomial Hirsch conjecture",
+      "gloss": "Is the diameter of the graph of every polytope bounded by a polynomial in its dimension and number of facets?"
+    },
+    {
+      "name": "Four-thirds conjecture",
+      "gloss": "Is the optimal traveling salesman tour in a metric space always at most 4/3 times the value of the subtour linear programming relaxation?"
+    }
+  ],
+  "uses": [
+    "Logistics and supply chains",
+    "Airline and workforce scheduling",
+    "Energy grid operation",
+    "Portfolio selection"
+  ],
+  "links": [
+    "49",
+    "65",
+    "68",
+    "91",
+    "05",
+    "52"
+  ]
+}

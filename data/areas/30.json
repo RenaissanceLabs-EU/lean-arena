@@ -1,0 +1,99 @@
+{
+  "code": "30",
+  "short": "Complex analysis",
+  "hook": "Why is a function with a complex derivative fixed everywhere by its values on one small circle?",
+  "about": [
+    "Complex analysis studies functions of one complex variable that have a derivative in the complex sense. Such functions are called holomorphic. The condition looks mild but is very strong: a holomorphic function is infinitely differentiable, equals its Taylor series near every point, and is fixed everywhere on a connected domain by its values on any small disk. The area also covers meromorphic functions, conformal maps and Riemann surfaces.",
+    "The main tools are contour integrals, power series and the geometry of conformal maps, which preserve angles. Results often trade analysis for geometry or topology: integrals are computed by locating poles, and zeros are counted by winding numbers. The subject feeds number theory through zeta and modular functions, and supplies methods to potential theory, fluid flow, differential equations and the theory of algebraic curves."
+  ],
+  "example": {
+    "title": "A real integral by residues",
+    "text": "The function \\(1/(1+z^2)\\) has poles at \\(i\\) and \\(-i\\). Integrate it along the real segment from \\(-R\\) to \\(R\\) and back over the upper half circle of radius \\(R>1\\). The loop surrounds only the pole at \\(i\\), where the residue is \\(1/(2i)\\), so the loop integral is \\(2\\pi i\\cdot\\frac{1}{2i}=\\pi\\). As \\(R\\) grows the half circle contributes less and less, so \\(\\int_{-\\infty}^{\\infty}\\frac{dx}{1+x^2}=\\pi\\)."
+  },
+  "objects": [
+    {
+      "term": "Holomorphic function",
+      "gloss": "A complex-valued function on an open set of the plane that is complex differentiable at every point."
+    },
+    {
+      "term": "Meromorphic function",
+      "gloss": "A function that is holomorphic except at isolated poles."
+    },
+    {
+      "term": "Residue",
+      "gloss": "The coefficient of \\(1/(z-a)\\) in the Laurent expansion of a function around an isolated singularity \\(a\\)."
+    },
+    {
+      "term": "Conformal map",
+      "gloss": "A holomorphic map with nowhere vanishing derivative; it preserves angles and orientation."
+    },
+    {
+      "term": "Analytic continuation",
+      "gloss": "Extending a holomorphic function to a larger domain; the extension is unique when it exists."
+    },
+    {
+      "term": "Riemann surface",
+      "gloss": "A connected one-dimensional complex manifold, the natural home of multivalued functions such as the square root."
+    },
+    {
+      "term": "Entire function",
+      "gloss": "A function holomorphic on the whole complex plane."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Cauchy's integral theorem",
+      "year": 1825,
+      "statement": "If \\(f\\) is holomorphic on a simply connected domain \\(D\\), then \\(\\oint_\\gamma f(z)\\,dz=0\\) for every closed rectifiable curve \\(\\gamma\\) in \\(D\\)."
+    },
+    {
+      "name": "Residue theorem",
+      "year": null,
+      "statement": "Let \\(f\\) be holomorphic on a simply connected domain \\(D\\) except at finitely many points \\(a_1,\\dots,a_m\\), and let \\(\\gamma\\) be a closed rectifiable curve in \\(D\\) avoiding them. Then \\(\\oint_\\gamma f\\,dz=2\\pi i\\sum_k n(\\gamma,a_k)\\,\\mathrm{Res}(f,a_k)\\), where \\(n(\\gamma,a_k)\\) is the winding number of \\(\\gamma\\) around \\(a_k\\)."
+    },
+    {
+      "name": "Liouville's theorem",
+      "year": null,
+      "statement": "Every bounded entire function is constant."
+    },
+    {
+      "name": "Riemann mapping theorem",
+      "year": 1851,
+      "statement": "Every nonempty simply connected open subset of \\(\\mathbb{C}\\) other than \\(\\mathbb{C}\\) itself is biholomorphic to the open unit disk. Riemann stated the theorem in 1851; complete proofs came later."
+    },
+    {
+      "name": "Picard's little theorem",
+      "year": 1879,
+      "statement": "A nonconstant entire function takes every complex value with at most one exception."
+    },
+    {
+      "name": "Uniformization theorem",
+      "year": 1907,
+      "statement": "Every simply connected Riemann surface is biholomorphic to exactly one of the Riemann sphere, the complex plane and the open unit disk."
+    }
+  ],
+  "open": [
+    {
+      "name": "Bloch's constant",
+      "gloss": "Every holomorphic \\(f\\) on the unit disk with \\(f'(0)=1\\) maps some subdomain bijectively onto a disk of a universal radius \\(B\\); the best value of \\(B\\) is unknown."
+    },
+    {
+      "name": "Sendov's conjecture",
+      "gloss": "If all zeros of a polynomial of degree at least 2 lie in the closed unit disk, is every zero within distance 1 of a critical point? This is known for all sufficiently high degrees."
+    }
+  ],
+  "uses": [
+    "Analytic number theory",
+    "Plane fluid flow and electrostatics",
+    "Signal processing and control theory",
+    "Conformal field theory"
+  ],
+  "links": [
+    "31",
+    "32",
+    "11",
+    "14",
+    "33",
+    "37"
+  ]
+}

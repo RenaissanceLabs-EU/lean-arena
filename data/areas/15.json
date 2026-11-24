@@ -1,0 +1,102 @@
+{
+  "code": "15",
+  "short": "Linear algebra",
+  "hook": "How do you solve a thousand linear equations at once, and what does a matrix do to space?",
+  "about": [
+    "Linear algebra studies vector spaces and the linear maps between them, together with the matrices that represent those maps. Its starting point is the solution of systems of linear equations. From there it moves to determinants, eigenvalues, canonical forms of matrices, inner products, and bilinear and multilinear forms, including tensors.",
+    "Nearly every part of mathematics reduces some of its problems to linear ones, so the area serves as a common language. The basic theory over a field is classical. Current work concerns special classes of matrices, matrix inequalities, tensors and matrices over rings. Computation with large matrices is central to science, engineering, statistics and machine learning."
+  ],
+  "example": {
+    "title": "Fibonacci numbers from a matrix",
+    "text": "Let \\(A=\\begin{pmatrix}1&1\\\\1&0\\end{pmatrix}\\). Then \\(A^2=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix}\\) and \\(A^3=\\begin{pmatrix}3&2\\\\2&1\\end{pmatrix}\\): the entries of \\(A^n\\) are consecutive Fibonacci numbers \\(1,1,2,3,5,8,\\dots\\) The eigenvalues of \\(A\\) are the roots \\(\\varphi=\\frac{1+\\sqrt5}{2}\\) and \\(\\psi=\\frac{1-\\sqrt5}{2}\\) of \\(\\lambda^2=\\lambda+1\\). Diagonalizing \\(A\\) gives the formula \\(F_n=(\\varphi^n-\\psi^n)/\\sqrt5\\) for the \\(n\\)th Fibonacci number, with \\(F_1=F_2=1\\)."
+  },
+  "objects": [
+    {
+      "term": "Vector space",
+      "gloss": "A set of vectors that can be added together and multiplied by scalars from a field."
+    },
+    {
+      "term": "Linear map",
+      "gloss": "A map between vector spaces that respects addition and scalar multiplication."
+    },
+    {
+      "term": "Matrix",
+      "gloss": "A rectangular array of numbers that represents a linear map in chosen bases."
+    },
+    {
+      "term": "Determinant",
+      "gloss": "A number attached to a square matrix; it is nonzero exactly when the matrix is invertible."
+    },
+    {
+      "term": "Eigenvalue and eigenvector",
+      "gloss": "A scalar \\(\\lambda\\) and nonzero vector \\(v\\) with \\(Av=\\lambda v\\)."
+    },
+    {
+      "term": "Bilinear form",
+      "gloss": "A scalar-valued function of two vectors that is linear in each; inner products are examples."
+    },
+    {
+      "term": "Tensor product",
+      "gloss": "The vector space through which every bilinear map on a pair of spaces factors uniquely."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Rank-nullity theorem",
+      "year": null,
+      "statement": "If \\(T\\colon V\\to W\\) is a linear map and \\(V\\) is finite-dimensional, then \\(\\dim\\ker T+\\dim\\operatorname{im}T=\\dim V\\)."
+    },
+    {
+      "name": "Cayley-Hamilton theorem",
+      "year": 1858,
+      "statement": "Let \\(A\\) be a square matrix over a commutative ring and \\(p(t)=\\det(tI-A)\\) its characteristic polynomial. Then \\(p(A)=0\\). Cayley stated the theorem in 1858 and verified small cases; Frobenius gave a general proof in 1878."
+    },
+    {
+      "name": "Spectral theorem",
+      "year": null,
+      "statement": "Every real symmetric matrix \\(A\\) can be written \\(A=Q\\Lambda Q^{T}\\) with \\(Q\\) orthogonal and \\(\\Lambda\\) real diagonal. Likewise every complex Hermitian matrix is diagonalized by a unitary matrix and has real eigenvalues."
+    },
+    {
+      "name": "Jordan normal form",
+      "year": 1870,
+      "statement": "Every square matrix over an algebraically closed field is similar to a block diagonal matrix of Jordan blocks, and the blocks are unique up to their order."
+    },
+    {
+      "name": "Singular value decomposition",
+      "year": null,
+      "statement": "Every real \\(m\\times n\\) matrix \\(A\\) can be written \\(A=U\\Sigma V^{T}\\), with \\(U\\) and \\(V\\) orthogonal and \\(\\Sigma\\) an \\(m\\times n\\) matrix that is zero off the diagonal and has nonnegative diagonal entries. Those entries are determined by \\(A\\) up to order."
+    },
+    {
+      "name": "Perron's theorem",
+      "year": 1907,
+      "statement": "A square real matrix with all entries positive has a positive eigenvalue \\(r\\) that is a simple root of the characteristic polynomial and exceeds the absolute value of every other eigenvalue. It has an eigenvector for \\(r\\) with all entries positive."
+    }
+  ],
+  "open": [
+    {
+      "name": "Exponent of matrix multiplication",
+      "gloss": "Can two \\(n\\times n\\) matrices be multiplied using about \\(n^2\\) arithmetic operations, up to a factor \\(n^{\\varepsilon}\\)? The best known exponent is below 2.38."
+    },
+    {
+      "name": "Hadamard conjecture",
+      "gloss": "For every multiple \\(n\\) of 4 there is an \\(n\\times n\\) matrix with entries \\(\\pm1\\) whose rows are pairwise orthogonal."
+    },
+    {
+      "name": "Crouzeix's conjecture",
+      "gloss": "For every complex square matrix \\(A\\) and polynomial \\(p\\), the spectral norm of \\(p(A)\\) is at most twice the maximum of \\(|p|\\) on the numerical range of \\(A\\)."
+    }
+  ],
+  "uses": [
+    "Scientific computing",
+    "Statistics and data analysis",
+    "Quantum mechanics",
+    "Machine learning"
+  ],
+  "links": [
+    "65",
+    "47",
+    "16",
+    "05",
+    "13"
+  ]
+}

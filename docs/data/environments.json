@@ -1,0 +1,195 @@
+[
+ {
+  "name": "combinatorial-identities",
+  "title": "Combinatorial identities and counting",
+  "msc": "05",
+  "kind": "prove",
+  "summary": "Prove binomial sums, Fibonacci identities, closed forms of linear recurrences, and counting arguments with injections and pigeonholes.",
+  "skill": "Induction, binomial identities, pigeonhole",
+  "good_for": [
+   "induction on sequences",
+   "Nat.choose lemmas",
+   "Nat.fib",
+   "Finset.card injections and pigeonhole"
+  ],
+  "families": [
+   "binomial_sums",
+   "counting",
+   "fibonacci",
+   "linear_recurrence"
+  ],
+  "folder": "combinatorial_identities",
+  "slug": "combinatorial-identities"
+ },
+ {
+  "name": "definitions",
+  "title": "Definitions from words",
+  "msc": "11",
+  "kind": "define",
+  "summary": "Turn a number-theoretic definition written in words into a computable Lean function that agrees with it on hidden inputs.",
+  "skill": "Autoformalization of definitions",
+  "good_for": [
+   "autoformalization",
+   "reading a specification exactly",
+   "boundary cases"
+  ],
+  "families": [
+   "count",
+   "divisors",
+   "extremum",
+   "pairs",
+   "sequence",
+   "sum"
+  ],
+  "folder": "definitions",
+  "slug": "definitions"
+ },
+ {
+  "name": "finite-sums",
+  "title": "Closed forms for finite sums",
+  "msc": "40",
+  "kind": "prove",
+  "summary": "Prove a closed form for a finite sum: polynomial, geometric or telescoping, by induction on the number of terms.",
+  "skill": "Induction over Finset sums",
+  "good_for": [
+   "induction",
+   "Finset.sum lemmas",
+   "casts and field arithmetic"
+  ],
+  "families": [
+   "geometric",
+   "polynomial",
+   "telescoping"
+  ],
+  "folder": "finite_sums",
+  "slug": "finite-sums"
+ },
+ {
+  "name": "group-theory",
+  "title": "Proofs about groups and subgroups",
+  "msc": "20",
+  "kind": "prove",
+  "summary": "Prove facts about abstract groups: commutativity from exponent laws, inverses, subgroup membership and Lagrange, homomorphism kernels.",
+  "skill": "Group identities and the Subgroup API",
+  "good_for": [
+   "calc chains in groups",
+   "Subgroup and MonoidHom.ker API",
+   "Nat.card and orderOf"
+  ],
+  "families": [
+   "hom",
+   "inverse",
+   "involution",
+   "subgroup"
+  ],
+  "folder": "group_theory",
+  "slug": "group-theory"
+ },
+ {
+  "name": "inequalities",
+  "title": "Inequalities over the reals",
+  "msc": "26",
+  "kind": "prove",
+  "summary": "Prove real inequalities: AM-GM, Cauchy-Schwarz, absolute values and monotone functions, with hints, case splits and lemma reuse.",
+  "skill": "Real inequalities with nlinarith hints",
+  "good_for": [
+   "nlinarith with hints",
+   "abs_le and case splits",
+   "field_simp then positivity",
+   "monotonicity lemmas"
+  ],
+  "families": [
+   "abs_ineq",
+   "amgm",
+   "cauchy",
+   "monotone"
+  ],
+  "folder": "inequalities",
+  "slug": "inequalities"
+ },
+ {
+  "name": "linear-algebra",
+  "title": "Proofs about matrices and vector spaces",
+  "msc": "15",
+  "kind": "prove",
+  "summary": "Prove facts about 2x2 matrices, matrix powers, linear independence of explicit vectors, and kernels, ranges and projections of linear maps.",
+  "skill": "Matrix computation and linear map API",
+  "good_for": [
+   "Matrix.det_fin_two and trace identities",
+   "induction on matrix powers",
+   "LinearMap.ker and range"
+  ],
+  "families": [
+   "det_trace",
+   "independence",
+   "linear_map",
+   "matrix_pow"
+  ],
+  "folder": "linear_algebra",
+  "slug": "linear-algebra"
+ },
+ {
+  "name": "logic-and-sets",
+  "title": "Logic and set algebra",
+  "msc": "03",
+  "kind": "prove",
+  "summary": "Prove set identities and image statements, Finset cardinality facts and equivalence relations.",
+  "skill": "Set algebra, cardinality, relations",
+  "good_for": [
+   "ext and tauto",
+   "Finset.card lemmas",
+   "equivalence relations"
+  ],
+  "families": [
+   "finset_card",
+   "relations",
+   "set_identities"
+  ],
+  "folder": "logic_and_sets",
+  "slug": "logic-and-sets"
+ },
+ {
+  "name": "modular-arithmetic",
+  "title": "Divisibility, congruences and parity",
+  "msc": "11",
+  "kind": "prove",
+  "summary": "Prove facts about residues, divisibility, congruences and coprimality for natural numbers and integers, by case analysis on residues.",
+  "skill": "Residue arithmetic and divisibility",
+  "good_for": [
+   "case analysis on residues",
+   "Int.ModEq and Nat.ModEq",
+   "ZMod and decide",
+   "coprimality and gcd"
+  ],
+  "families": [
+   "congruence_chain",
+   "divisibility",
+   "gcd_coprime",
+   "power_residues"
+  ],
+  "folder": "modular_arithmetic",
+  "slug": "modular-arithmetic"
+ },
+ {
+  "name": "real-analysis",
+  "title": "Real analysis with epsilon and delta",
+  "msc": "26",
+  "kind": "prove",
+  "summary": "Prove limits of explicit sequences, epsilon-delta continuity, bounds on recursive sequences and uniform bounds, from the definitions.",
+  "skill": "Epsilon-delta arguments and induction on real sequences",
+  "good_for": [
+   "choosing N and delta",
+   "abs and inequality estimates",
+   "induction on recursive sequences",
+   "geometric sums"
+  ],
+  "families": [
+   "continuity",
+   "limit_sequence",
+   "sequence_bounds",
+   "uniform_bounds"
+  ],
+  "folder": "real_analysis",
+  "slug": "real-analysis"
+ }
+]

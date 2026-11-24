@@ -1,0 +1,94 @@
+{
+  "code": "34",
+  "short": "Ordinary diff. equations",
+  "hook": "If you know the rule for how a quantity changes at each instant, can you predict its whole future?",
+  "about": [
+    "An ordinary differential equation relates an unknown function of one variable, usually time, to its derivatives. Newton's laws, population models and electrical circuits all take this form. The area asks when solutions exist and are unique, how they depend on initial data and parameters, how they behave as time goes to infinity, and what happens when conditions are imposed at the two ends of an interval.",
+    "Few equations can be solved in closed form, so the emphasis is on qualitative and asymptotic methods: phase portraits, stability analysis by linearization and Lyapunov functions, bifurcation theory, perturbation expansions and spectral theory of boundary value problems. Linear equations in the complex domain bring in monodromy and special functions. The field merges into dynamical systems, control theory and numerical analysis."
+  ],
+  "example": {
+    "title": "One solution or many",
+    "text": "The equation \\(y'=y\\) with \\(y(0)=1\\) has the single solution \\(y=e^t\\). By contrast, \\(y'=2\\sqrt{|y|}\\) with \\(y(0)=0\\) has many solutions for \\(t\\ge0\\): the constant \\(y=0\\), or \\(y=t^2\\), or zero until any chosen time \\(c\\) and then \\((t-c)^2\\). The right side \\(2\\sqrt{|y|}\\) is continuous but not Lipschitz at \\(y=0\\), and a Lipschitz condition is what the uniqueness theorem asks for."
+  },
+  "objects": [
+    {
+      "term": "Initial value problem",
+      "gloss": "A differential equation together with the value of the solution at one starting time."
+    },
+    {
+      "term": "Phase portrait",
+      "gloss": "The picture of all solution curves of a system in the space of states."
+    },
+    {
+      "term": "Equilibrium",
+      "gloss": "A state at which the vector field vanishes, so the constant function is a solution."
+    },
+    {
+      "term": "Lyapunov function",
+      "gloss": "A function that does not increase along solutions, used to prove stability without solving the equation."
+    },
+    {
+      "term": "Limit cycle",
+      "gloss": "A periodic orbit that is isolated among periodic orbits."
+    },
+    {
+      "term": "Boundary value problem",
+      "gloss": "A differential equation with conditions imposed at both ends of an interval."
+    },
+    {
+      "term": "Fundamental matrix",
+      "gloss": "A matrix whose columns form a basis of the solutions of a linear system."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Picard-Lindelöf theorem",
+      "year": null,
+      "statement": "If \\(f(t,y)\\) is continuous near \\((t_0,y_0)\\) and Lipschitz in \\(y\\), then the problem \\(y'=f(t,y)\\), \\(y(t_0)=y_0\\) has exactly one solution on some interval around \\(t_0\\)."
+    },
+    {
+      "name": "Peano existence theorem",
+      "year": null,
+      "statement": "If \\(f(t,y)\\) is continuous near \\((t_0,y_0)\\), then \\(y'=f(t,y)\\), \\(y(t_0)=y_0\\) has at least one solution on some interval around \\(t_0\\)."
+    },
+    {
+      "name": "Lyapunov's linearization theorem",
+      "year": 1892,
+      "statement": "Let \\(x'=f(x)\\) with \\(f\\) continuously differentiable and \\(f(x_0)=0\\). If all eigenvalues of the Jacobian \\(Df(x_0)\\) have negative real part, then \\(x_0\\) is asymptotically stable. If some eigenvalue has positive real part, then \\(x_0\\) is unstable."
+    },
+    {
+      "name": "Floquet's theorem",
+      "year": 1883,
+      "statement": "Let \\(x'=A(t)x\\) with \\(A\\) continuous and periodic of period \\(T\\). Then every fundamental matrix has the form \\(\\Phi(t)=P(t)e^{tB}\\), where \\(P(t)\\) is invertible and \\(T\\)-periodic and \\(B\\) is a constant complex matrix."
+    },
+    {
+      "name": "Poincaré-Bendixson theorem",
+      "year": 1901,
+      "statement": "Consider a continuously differentiable vector field on an open subset of the plane. If the \\(\\omega\\)-limit set of an orbit is nonempty, compact and contains no equilibrium, then it is a periodic orbit."
+    },
+    {
+      "name": "Sturm-Liouville theorem",
+      "year": null,
+      "statement": "Consider \\(-(py')'+qy=\\lambda wy\\) on \\([a,b]\\) with \\(p,p',q,w\\) continuous, \\(p>0\\), \\(w>0\\), and separated boundary conditions. The eigenvalues are real and simple and form a sequence \\(\\lambda_1<\\lambda_2<\\cdots\\to\\infty\\). The \\(n\\)-th eigenfunction has exactly \\(n-1\\) zeros in \\((a,b)\\), and the eigenfunctions form an orthogonal basis of \\(L^2([a,b],w\\,dx)\\)."
+    }
+  ],
+  "open": [
+    {
+      "name": "Hilbert's 16th problem, second part",
+      "gloss": "Is there a bound, depending only on \\(n\\), for the number of limit cycles of a planar polynomial vector field of degree \\(n\\)? This is open even for \\(n=2\\)."
+    }
+  ],
+  "uses": [
+    "Mechanics and celestial motion",
+    "Electrical circuits and control",
+    "Population and epidemic models",
+    "Chemical kinetics"
+  ],
+  "links": [
+    "37",
+    "35",
+    "65",
+    "93",
+    "33"
+  ]
+}

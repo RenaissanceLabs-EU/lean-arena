@@ -1,0 +1,103 @@
+{
+  "code": "60",
+  "short": "Probability theory",
+  "hook": "Why do averages of many random outcomes settle down, and how large are the fluctuations that remain?",
+  "about": [
+    "Probability theory is the mathematics of chance. It assigns numbers between 0 and 1 to events and works out the consequences, from coin tossing to the motion of a pollen grain in water. Stochastic processes, which are random quantities that evolve in time, form a large part of the area. Examples are random walks, Markov chains and Brownian motion.",
+    "Since the 1930s the subject has been built on measure theory, with probabilities treated as measures and random variables as measurable functions. A recurring theme is that large random systems show regular behavior: averages converge and fluctuations follow universal laws. Probability supplies the language for statistics, statistical physics and mathematical finance, and probabilistic arguments are used in analysis, combinatorics and number theory."
+  ],
+  "example": {
+    "title": "Shared birthdays",
+    "text": "Put 23 people in a room and assume birthdays are independent and uniform over 365 days. The chance that all 23 birthdays differ is \\(\\frac{365}{365}\\cdot\\frac{364}{365}\\cdots\\frac{343}{365} \\approx 0.493\\). So the chance that at least two people share a birthday is about \\(0.507\\), a little more than one half. With 50 people it rises to about \\(0.97\\)."
+  },
+  "objects": [
+    {
+      "term": "Probability space",
+      "gloss": "A set of outcomes, a collection of events and a measure assigning each event a probability."
+    },
+    {
+      "term": "Random variable",
+      "gloss": "A measurable function that assigns a number to each outcome."
+    },
+    {
+      "term": "Expectation",
+      "gloss": "The probability-weighted average of a random variable."
+    },
+    {
+      "term": "Independence",
+      "gloss": "Events or variables are independent when the probability of joint occurrences is the product of individual probabilities."
+    },
+    {
+      "term": "Markov chain",
+      "gloss": "A random process whose next step depends only on its current state."
+    },
+    {
+      "term": "Brownian motion",
+      "gloss": "A continuous random path with independent, normally distributed increments."
+    },
+    {
+      "term": "Martingale",
+      "gloss": "A process whose expected future value, given the past, equals its present value."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Strong law of large numbers",
+      "year": null,
+      "statement": "If \\(X_1, X_2, \\dots\\) are independent and identically distributed with \\(E|X_1| < \\infty\\) and mean \\(\\mu\\), then \\((X_1 + \\cdots + X_n)/n \\to \\mu\\) almost surely."
+    },
+    {
+      "name": "Central limit theorem",
+      "year": null,
+      "statement": "If \\(X_1, X_2, \\dots\\) are independent and identically distributed with mean \\(\\mu\\) and variance \\(0 < \\sigma^2 < \\infty\\), then \\((X_1 + \\cdots + X_n - n\\mu)/(\\sigma\\sqrt{n})\\) converges in distribution to the standard normal law."
+    },
+    {
+      "name": "Convergence theorem for Markov chains",
+      "year": null,
+      "statement": "An irreducible aperiodic Markov chain on a finite state space has a unique stationary distribution \\(\\pi\\), and from every starting state the distribution of the chain at time \\(n\\) converges to \\(\\pi\\) as \\(n \\to \\infty\\)."
+    },
+    {
+      "name": "Martingale convergence theorem",
+      "year": null,
+      "statement": "A martingale \\((M_n)\\) with \\(\\sup_n E|M_n| < \\infty\\) converges almost surely to a limit with finite expectation."
+    },
+    {
+      "name": "Itô's formula",
+      "year": null,
+      "statement": "If \\(B\\) is a standard Brownian motion and \\(f\\) is twice continuously differentiable, then almost surely \\(f(B_t) = f(B_0) + \\int_0^t f'(B_s)\\,dB_s + \\frac12\\int_0^t f''(B_s)\\,ds\\) for all \\(t \\ge 0\\)."
+    },
+    {
+      "name": "Donsker's invariance principle",
+      "year": 1951,
+      "statement": "Let \\(S_n\\) be a random walk whose steps are independent and identically distributed with mean 0 and variance 1. The rescaled, linearly interpolated paths \\(t \\mapsto S_{nt}/\\sqrt{n}\\) on \\([0,1]\\) converge in distribution, as random continuous functions, to Brownian motion."
+    }
+  ],
+  "open": [
+    {
+      "name": "Self-avoiding walk in the plane",
+      "gloss": "Show that a uniformly random \\(n\\)-step self-avoiding walk on a planar lattice typically travels a distance of order \\(n^{3/4}\\)."
+    },
+    {
+      "name": "Critical percolation in three dimensions",
+      "gloss": "Prove that there is no infinite open cluster at the critical probability on the cubic lattice."
+    },
+    {
+      "name": "KPZ universality",
+      "gloss": "Show that a wide class of random growth models share the fluctuation exponents and limit laws found in a few exactly solvable cases."
+    }
+  ],
+  "uses": [
+    "Statistics and data science",
+    "Statistical physics",
+    "Finance and insurance",
+    "Randomized algorithms"
+  ],
+  "links": [
+    "28",
+    "62",
+    "82",
+    "35",
+    "91",
+    "05"
+  ]
+}

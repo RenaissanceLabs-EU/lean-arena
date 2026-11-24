@@ -1,0 +1,103 @@
+{
+  "code": "20",
+  "short": "Group theory",
+  "hook": "What do the symmetries of a square, a shuffled deck of cards and a Rubik's cube have in common?",
+  "about": [
+    "Group theory is the mathematics of symmetry. A group is a set with one operation that is associative, has an identity element and has inverses. The rotations and reflections of a square, the permutations of a list, and the integers under addition are examples. The area also covers looser structures such as semigroups, where inverses need not exist.",
+    "Finite groups are studied through their subgroups, their actions on sets and their representations by matrices, and the finite simple groups, the building blocks, have been classified. Infinite groups are often studied geometrically, by viewing a group as a space through its Cayley graph, or through presentations by generators and relations. Groups appear throughout mathematics and science, from Galois theory and topology to crystallography and particle physics."
+  ],
+  "example": {
+    "title": "Symmetries of a square",
+    "text": "A square has eight symmetries: rotations by 0, 90, 180 and 270 degrees, and four reflections. Performing one after another gives a symmetry again, so they form a group. Order matters: rotating by 90 degrees and then reflecting in the vertical axis gives a different result from reflecting first and then rotating. The four rotations form a subgroup, and 4 divides 8, as Lagrange's theorem requires."
+  },
+  "objects": [
+    {
+      "term": "Group",
+      "gloss": "A set with an associative operation, an identity element and an inverse for every element."
+    },
+    {
+      "term": "Subgroup",
+      "gloss": "A subset of a group that is itself a group under the same operation."
+    },
+    {
+      "term": "Homomorphism",
+      "gloss": "A map between groups that respects the operation."
+    },
+    {
+      "term": "Normal subgroup",
+      "gloss": "A subgroup stable under conjugation, so that its cosets form a quotient group."
+    },
+    {
+      "term": "Group action",
+      "gloss": "A rule by which each group element permutes a set, compatibly with the operation."
+    },
+    {
+      "term": "Simple group",
+      "gloss": "A group with more than one element whose only normal subgroups are itself and the trivial subgroup."
+    },
+    {
+      "term": "Presentation",
+      "gloss": "A description of a group by generators and the relations they satisfy."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Lagrange's theorem",
+      "year": null,
+      "statement": "If \\(H\\) is a subgroup of a finite group \\(G\\), then the order of \\(H\\) divides the order of \\(G\\)."
+    },
+    {
+      "name": "Sylow theorems",
+      "year": 1872,
+      "statement": "Let \\(G\\) be a finite group and \\(p^k\\) the largest power of a prime \\(p\\) dividing \\(|G|\\). Then \\(G\\) has a subgroup of order \\(p^k\\), all such subgroups are conjugate, and their number is congruent to 1 modulo \\(p\\) and divides \\(|G|/p^k\\)."
+    },
+    {
+      "name": "Structure of finitely generated abelian groups",
+      "year": null,
+      "statement": "Every finitely generated abelian group is isomorphic to \\(\\mathbb{Z}^r\\oplus\\mathbb{Z}/n_1\\oplus\\dots\\oplus\\mathbb{Z}/n_s\\) with \\(r\\ge 0\\), each \\(n_i>1\\), and \\(n_i\\) dividing \\(n_{i+1}\\). The numbers \\(r,n_1,\\dots,n_s\\) are uniquely determined."
+    },
+    {
+      "name": "Nielsen-Schreier theorem",
+      "year": null,
+      "statement": "Every subgroup of a free group is free."
+    },
+    {
+      "name": "Feit-Thompson theorem",
+      "year": 1963,
+      "statement": "Every finite group of odd order is solvable."
+    },
+    {
+      "name": "Classification of finite simple groups",
+      "year": 2004,
+      "statement": "Every finite simple group is isomorphic to a cyclic group of prime order, an alternating group \\(A_n\\) with \\(n\\ge 5\\), a simple group of Lie type, or one of 26 sporadic groups, where the Tits group is counted with the groups of Lie type. The proof fills thousands of pages by many authors; its last major part was published in 2004."
+    }
+  ],
+  "open": [
+    {
+      "name": "Amenability of Thompson's group F",
+      "gloss": "It is not known whether Thompson's group \\(F\\) of piecewise linear maps of the interval is amenable."
+    },
+    {
+      "name": "Residual finiteness of hyperbolic groups",
+      "gloss": "Is every hyperbolic group residually finite, that is, can each nontrivial element be detected in some finite quotient?"
+    },
+    {
+      "name": "Finitely presented torsion groups",
+      "gloss": "Is there an infinite group with finitely many generators and relations in which every element has finite order?"
+    }
+  ],
+  "uses": [
+    "Crystallography",
+    "Particle physics",
+    "Cryptography",
+    "Molecular symmetry in chemistry"
+  ],
+  "links": [
+    "22",
+    "16",
+    "12",
+    "57",
+    "05",
+    "17"
+  ]
+}

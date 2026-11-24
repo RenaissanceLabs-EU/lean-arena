@@ -1,0 +1,102 @@
+{
+  "code": "03",
+  "short": "Logic and foundations",
+  "hook": "Can every true statement about whole numbers be proved, and what can no computer ever decide?",
+  "about": [
+    "Mathematical logic studies mathematical reasoning itself. It asks what a proof is, which statements follow from which axioms, what it means for a statement to be true in a structure, and what can be computed by a mechanical procedure. Its main branches are model theory, computability theory, set theory and proof theory.",
+    "The method is to treat statements and proofs as precise finite objects and then prove theorems about them. Set theory supplies a common foundation for the rest of mathematics, and model theory has produced results in algebra and number theory. Computability theory is the starting point of theoretical computer science, and proof theory compares the strength of axiom systems."
+  ],
+  "example": {
+    "title": "A number beyond all numbers",
+    "text": "Take all true first-order statements about the natural numbers and add a new symbol \\(c\\) with the axioms \\(c>0\\), \\(c>1\\), \\(c>2\\), and so on. Any finite set of these axioms holds in the ordinary natural numbers if \\(c\\) is read as a large enough number. By the compactness theorem, all of them hold together in some structure. It obeys every first-order truth of arithmetic, yet it contains an element above every ordinary number."
+  },
+  "objects": [
+    {
+      "term": "First-order formula",
+      "gloss": "A statement built from variables, relations and functions using and, or, not, for all and there exists."
+    },
+    {
+      "term": "Structure",
+      "gloss": "A set with chosen relations and functions, in which formulas are true or false."
+    },
+    {
+      "term": "Formal proof",
+      "gloss": "A finite sequence of formulas, each an axiom or obtained from earlier ones by a fixed rule."
+    },
+    {
+      "term": "Computable function",
+      "gloss": "A function on natural numbers whose values a Turing machine can calculate."
+    },
+    {
+      "term": "ZFC",
+      "gloss": "The Zermelo-Fraenkel axioms for sets with the axiom of choice, the usual foundation of mathematics."
+    },
+    {
+      "term": "Ordinals and cardinals",
+      "gloss": "Numbers that extend counting to the order type and the size of infinite sets."
+    },
+    {
+      "term": "Forcing",
+      "gloss": "A technique for building new models of set theory, used to prove independence results."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Gödel's completeness theorem",
+      "year": 1929,
+      "statement": "Let \\(T\\) be a set of first-order sentences and \\(\\varphi\\) a sentence. Then \\(\\varphi\\) is true in every model of \\(T\\) if and only if there is a formal proof of \\(\\varphi\\) from \\(T\\)."
+    },
+    {
+      "name": "Compactness theorem",
+      "year": null,
+      "statement": "A set of first-order sentences has a model if every finite subset of it has a model."
+    },
+    {
+      "name": "Löwenheim-Skolem theorem",
+      "year": null,
+      "statement": "If a first-order theory in a countable language has an infinite model, then it has a model of every infinite cardinality."
+    },
+    {
+      "name": "Gödel's first incompleteness theorem",
+      "year": 1931,
+      "statement": "Let \\(T\\) be a consistent theory whose axioms can be listed by an algorithm and which contains Robinson arithmetic. Then there is a sentence of arithmetic that \\(T\\) neither proves nor refutes. Gödel assumed slightly more than consistency; Rosser removed the extra assumption in 1936."
+    },
+    {
+      "name": "Undecidability of the halting problem",
+      "year": 1936,
+      "statement": "There is no algorithm that decides, for every Turing machine \\(M\\) and input \\(w\\), whether \\(M\\) eventually halts on \\(w\\)."
+    },
+    {
+      "name": "Independence of the continuum hypothesis",
+      "year": 1963,
+      "statement": "The continuum hypothesis says that every infinite set of real numbers is either countable or of the same cardinality as \\(\\mathbb{R}\\). If ZFC is consistent, it neither proves nor refutes this. Gödel showed in 1938 that it cannot be refuted, and Cohen showed in 1963 that it cannot be proved."
+    }
+  ],
+  "open": [
+    {
+      "name": "Vaught's conjecture",
+      "gloss": "A complete first-order theory in a countable language has, up to isomorphism, either countably many countable models or as many as there are real numbers."
+    },
+    {
+      "name": "Inner models for large cardinals",
+      "gloss": "Whether there is a canonical model of set theory, similar to Gödel's constructible universe, that contains a supercompact cardinal."
+    },
+    {
+      "name": "P versus NP",
+      "gloss": "Whether every problem whose solutions can be checked in polynomial time can also be solved in polynomial time."
+    }
+  ],
+  "uses": [
+    "Theoretical computer science",
+    "Verification of software and hardware",
+    "Database query languages",
+    "Philosophy of mathematics"
+  ],
+  "links": [
+    "68",
+    "06",
+    "08",
+    "18",
+    "12"
+  ]
+}

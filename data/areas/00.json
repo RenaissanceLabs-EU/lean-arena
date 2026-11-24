@@ -1,0 +1,81 @@
+{
+  "code": "00",
+  "short": "General topics",
+  "hook": "What is a proof, and how does mathematics organize, explain and share what it knows?",
+  "about": [
+    "This class collects writing about mathematics as a whole instead of one branch. It covers general surveys, books for nonspecialists, problem books, recreational mathematics, popular exposition, dictionaries and formula collections, the philosophy and methodology of mathematics, and conference proceedings. It also covers general questions of mathematical modeling, such as dimensional analysis, and the links between mathematics and music, art, architecture and literature.",
+    "There is no single method here. What unites the material is a view from above: how proofs work, how definitions are chosen, how a model is matched to the world, and how results are explained to wider audiences. Many ideas that every mathematician uses, such as induction, proof by contradiction and counting arguments, are met first in books that belong to this class."
+  ],
+  "example": {
+    "title": "Units decide the answer",
+    "text": "How does the period \\(T\\) of a pendulum depend on its length \\(\\ell\\), its mass \\(m\\) and gravity \\(g\\)? Length is in meters, \\(g\\) in meters per second squared, mass in kilograms. The only combination with units of seconds is \\(\\sqrt{\\ell/g}\\). So \\(T=C\\sqrt{\\ell/g}\\), where the pure number \\(C\\) may depend on the swing angle. Mass cannot matter, and at the same angle a pendulum four times as long takes twice as long."
+  },
+  "objects": [
+    {
+      "term": "Proof",
+      "gloss": "A finite chain of logical steps that establishes a statement from accepted assumptions."
+    },
+    {
+      "term": "Axiom",
+      "gloss": "A statement taken as a starting point without proof."
+    },
+    {
+      "term": "Definition",
+      "gloss": "A precise agreement on what a term means, on which all later reasoning depends."
+    },
+    {
+      "term": "Conjecture",
+      "gloss": "A statement believed to be true for which no proof is known."
+    },
+    {
+      "term": "Mathematical model",
+      "gloss": "A mathematical description of a real system, used to explain or predict its behavior."
+    },
+    {
+      "term": "Dimensional analysis",
+      "gloss": "Reasoning about physical formulas from the units of the quantities involved."
+    },
+    {
+      "term": "Exposition",
+      "gloss": "Writing that explains known mathematics to students, other specialists or the public."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Principle of mathematical induction",
+      "year": null,
+      "statement": "Let \\(P(n)\\) be a statement about natural numbers. If \\(P(0)\\) holds and \\(P(n)\\) implies \\(P(n+1)\\) for every \\(n\\), then \\(P(n)\\) holds for every natural number \\(n\\)."
+    },
+    {
+      "name": "Pigeonhole principle",
+      "year": null,
+      "statement": "If \\(n+1\\) objects are placed in \\(n\\) boxes, then some box contains at least two objects."
+    },
+    {
+      "name": "Irrationality of the square root of 2",
+      "year": null,
+      "statement": "There are no positive integers \\(p\\) and \\(q\\) with \\(p^2=2q^2\\). Hence \\(\\sqrt2\\) is not a ratio of whole numbers."
+    },
+    {
+      "name": "Euler's theorem on the Königsberg bridges",
+      "year": 1736,
+      "statement": "A connected finite graph, possibly with several edges between two vertices, has a closed walk that uses every edge exactly once if and only if every vertex has even degree. Euler showed that the condition is necessary, which settles the Königsberg bridge puzzle; sufficiency was proved later."
+    },
+    {
+      "name": "Buckingham pi theorem",
+      "year": 1914,
+      "statement": "Suppose a physical law relates \\(n\\) quantities, and the matrix of exponents expressing their units in terms of base units has rank \\(k\\). If the law holds in every system of units, it can be rewritten as a relation among \\(n-k\\) dimensionless products of the quantities."
+    }
+  ],
+  "open": [],
+  "uses": [
+    "Modeling in science and engineering",
+    "Popular science and exposition",
+    "Art, music and architecture"
+  ],
+  "links": [
+    "01",
+    "97",
+    "03"
+  ]
+}

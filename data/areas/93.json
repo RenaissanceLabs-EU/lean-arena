@@ -1,0 +1,98 @@
+{
+  "code": "93",
+  "short": "Systems and control",
+  "hook": "How does cruise control hold a car at a steady speed on hills it cannot see coming?",
+  "about": [
+    "Control theory studies systems that evolve in time and can be influenced through inputs. The goal is to choose the inputs so that the system behaves as desired: an aircraft holds its course, a chemical reactor keeps its temperature, a robot arm follows a path. The key idea is feedback, in which measurements of the current behavior are used continually to correct the input.",
+    "A system is described by differential or difference equations with input and output variables. For linear systems there is a complete theory based on linear algebra and complex analysis. Nonlinear, infinite-dimensional and stochastic systems require differential geometry, partial differential equations and probability. Typical questions are whether a state can be reached, whether it can be reconstructed from measurements, and whether a design remains stable under disturbances and modeling errors."
+  ],
+  "example": {
+    "title": "Stabilizing by feedback",
+    "text": "Consider \\(\\dot x = x + u\\), where \\(u\\) is an input we choose. With \\(u = 0\\) the state grows like \\(e^{t}\\): starting from \\(x(0) = 1\\), it reaches \\(2.72\\) after one second. Now measure \\(x\\) and set \\(u = -3x\\). The equation becomes \\(\\dot x = -2x\\), with solution \\(e^{-2t}\\), which is \\(0.135\\) after one second and tends to zero. Feedback has turned an unstable system into a stable one."
+  },
+  "objects": [
+    {
+      "term": "State",
+      "gloss": "The set of variables that, with future inputs, determines the future behavior of the system."
+    },
+    {
+      "term": "Input",
+      "gloss": "A signal chosen by the controller, or imposed from outside, that drives the system."
+    },
+    {
+      "term": "Feedback",
+      "gloss": "Choosing the input as a function of measured outputs or states."
+    },
+    {
+      "term": "Transfer function",
+      "gloss": "For a linear time-invariant system, the ratio of the Laplace transforms of output and input."
+    },
+    {
+      "term": "Controllability",
+      "gloss": "The property that inputs can steer the state from any point to any other in finite time."
+    },
+    {
+      "term": "Observability",
+      "gloss": "The property that the state can be determined from the inputs and outputs over a time interval."
+    },
+    {
+      "term": "Lyapunov function",
+      "gloss": "An energy-like function that decreases along trajectories and certifies stability."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Lyapunov's stability theorem",
+      "year": 1892,
+      "statement": "If near an equilibrium of \\(\\dot x = f(x)\\) there is a continuously differentiable positive definite function \\(V\\) whose derivative along solutions is nonpositive, the equilibrium is stable. If that derivative is negative definite, the equilibrium is asymptotically stable."
+    },
+    {
+      "name": "Nyquist stability criterion",
+      "year": 1932,
+      "statement": "Let \\(L(s)\\) be a proper rational transfer function with \\(P\\) poles in the open right half-plane and none on the imaginary axis. The closed loop with unity negative feedback is stable if and only if the image of the imaginary axis under \\(L\\) does not pass through \\(-1\\) and encircles it exactly \\(P\\) times counterclockwise."
+    },
+    {
+      "name": "Kalman rank condition",
+      "year": 1960,
+      "statement": "The system \\(\\dot x = Ax + Bu\\) with state in \\(\\mathbb{R}^n\\) is controllable if and only if the matrix \\([B, AB, \\dots, A^{n-1}B]\\) has rank \\(n\\)."
+    },
+    {
+      "name": "Kalman filter",
+      "year": 1960,
+      "statement": "For a linear system driven by Gaussian white noise and observed through linear measurements with Gaussian white noise, the conditional mean of the state given the measurements so far obeys a recursive linear update. It is the estimate with the smallest mean square error."
+    },
+    {
+      "name": "Pole placement theorem",
+      "year": null,
+      "statement": "The pair \\((A,B)\\) is controllable if and only if for every monic real polynomial \\(p\\) of degree \\(n\\) there is a real matrix \\(K\\) such that \\(A - BK\\) has characteristic polynomial \\(p\\)."
+    },
+    {
+      "name": "Linear-quadratic regulator",
+      "year": null,
+      "statement": "For \\(\\dot x = Ax + Bu\\) with cost \\(\\int_0^\\infty (x^{T}Qx + u^{T}Ru)\\,dt\\), \\(Q \\succeq 0\\), \\(R \\succ 0\\), \\((A,B)\\) stabilizable and \\((A,Q^{1/2})\\) detectable, the optimal input is the feedback \\(u = -R^{-1}B^{T}Px\\), where \\(P\\) is the unique positive semidefinite solution of \\(A^{T}P + PA - PBR^{-1}B^{T}P + Q = 0\\)."
+    }
+  ],
+  "open": [
+    {
+      "name": "Static output feedback",
+      "gloss": "Given matrices \\(A\\), \\(B\\), \\(C\\), is there an efficient algorithm to decide whether some \\(K\\) makes \\(A + BKC\\) stable? The complexity of this problem is unknown."
+    },
+    {
+      "name": "Guarantees for learning-based control",
+      "gloss": "Establish stability and safety guarantees for controllers that are learned from data."
+    }
+  ],
+  "uses": [
+    "Aircraft and spacecraft guidance",
+    "Robotics",
+    "Chemical process control",
+    "Power grids"
+  ],
+  "links": [
+    "49",
+    "34",
+    "37",
+    "90",
+    "60"
+  ]
+}

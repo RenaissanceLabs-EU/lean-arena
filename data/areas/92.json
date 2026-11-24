@@ -1,0 +1,102 @@
+{
+  "code": "92",
+  "short": "Mathematical biology",
+  "hook": "How fast will an epidemic spread, and what share of people must be immune to stop it?",
+  "about": [
+    "This area gathers the mathematics used in the life sciences and chemistry. It includes models of how populations grow and compete, how diseases spread, how genes change in frequency over generations, how nerve cells fire, how tissues take shape, and how molecules react. It also covers methods for biological data, such as comparing DNA sequences and reconstructing evolutionary trees.",
+    "Most models are dynamical systems. Ordinary differential equations describe well-mixed populations and chemical concentrations, partial differential equations add space, and stochastic processes handle small numbers and chance events. Graphs and combinatorics enter through networks and sequences. A model is judged by whether it explains data and predicts the result of an intervention, so parameter estimation and statistics are part of the work."
+  ],
+  "example": {
+    "title": "The herd immunity threshold",
+    "text": "Suppose each infected person would infect \\(R_0 = 3\\) others in a fully susceptible population. If a fraction \\(s\\) of people is still susceptible, each case causes \\(3s\\) new ones on average. The outbreak shrinks once \\(3s < 1\\), which means more than \\(1 - 1/3 \\approx 67\\%\\) are immune. For measles, with \\(R_0\\) around 15, the threshold is \\(1 - 1/15 \\approx 93\\%\\)."
+  },
+  "objects": [
+    {
+      "term": "Population model",
+      "gloss": "An equation describing how the size of one or more populations changes in time."
+    },
+    {
+      "term": "Compartmental model",
+      "gloss": "A model that divides a population into groups, such as susceptible, infected and recovered."
+    },
+    {
+      "term": "Basic reproduction number",
+      "gloss": "The average number of new infections caused by one case in a fully susceptible population."
+    },
+    {
+      "term": "Reaction network",
+      "gloss": "A set of chemical species and the reactions that convert them into one another."
+    },
+    {
+      "term": "Reaction-diffusion system",
+      "gloss": "Equations for substances that react locally and spread through space."
+    },
+    {
+      "term": "Allele frequency",
+      "gloss": "The proportion of copies of a gene in a population that are of a given variant."
+    },
+    {
+      "term": "Phylogenetic tree",
+      "gloss": "A branching diagram representing the evolutionary relationships among species or genes."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Logistic growth",
+      "year": 1838,
+      "statement": "A population limited by a carrying capacity \\(K\\) is modeled by \\(\\dot N = rN(1 - N/K)\\) with \\(r > 0\\). The solution with \\(N(0) = N_0 > 0\\) is \\(N(t) = K/\\left(1 + \\frac{K - N_0}{N_0}e^{-rt}\\right)\\), which tends to \\(K\\)."
+    },
+    {
+      "name": "Hardy-Weinberg law",
+      "year": 1908,
+      "statement": "In a large randomly mating population with no selection, mutation or migration, the allele frequencies \\(p\\) and \\(q = 1 - p\\) at a gene with two alleles stay constant, and after one generation the genotype frequencies are \\(p^2\\), \\(2pq\\) and \\(q^2\\)."
+    },
+    {
+      "name": "Lotka-Volterra equations",
+      "year": null,
+      "statement": "The predator-prey model \\(\\dot x = x(\\alpha - \\beta y)\\), \\(\\dot y = y(\\delta x - \\gamma)\\) with positive constants has the equilibrium \\((\\gamma/\\delta, \\alpha/\\beta)\\), and every other solution with \\(x, y > 0\\) is a periodic orbit around it."
+    },
+    {
+      "name": "Kermack-McKendrick model",
+      "year": 1927,
+      "statement": "With \\(S\\), \\(I\\), \\(R\\) the fractions susceptible, infected and recovered, \\(\\dot S = -\\beta SI\\), \\(\\dot I = \\beta SI - \\gamma I\\), \\(\\dot R = \\gamma I\\). The number of infected initially grows if and only if \\(R_0S(0) > 1\\), where \\(R_0 = \\beta/\\gamma\\)."
+    },
+    {
+      "name": "Hodgkin-Huxley model",
+      "year": 1952,
+      "statement": "The membrane voltage \\(V\\) of a nerve axon satisfies \\(C\\dot V = I - g_{Na}m^3h(V - E_{Na}) - g_Kn^4(V - E_K) - g_L(V - E_L)\\), where the gating variables \\(m\\), \\(h\\), \\(n\\) obey first-order kinetics with voltage-dependent rates. The model reproduces the action potential."
+    },
+    {
+      "name": "Turing instability",
+      "year": 1952,
+      "statement": "A uniform steady state of two reacting chemicals that is stable without diffusion can become unstable when the two diffuse at sufficiently different rates. The instability produces a spatial pattern with a characteristic wavelength."
+    }
+  ],
+  "open": [
+    {
+      "name": "Global attractor conjecture",
+      "gloss": "Does every complex-balanced mass-action reaction system converge to its positive equilibrium from every positive starting point with the same conserved quantities? A proof has been announced but is not yet generally accepted."
+    },
+    {
+      "name": "From genotype to phenotype",
+      "gloss": "Predict the traits of an organism from its genome and environment."
+    },
+    {
+      "name": "Multiscale models of living systems",
+      "gloss": "Link models of molecules, cells, tissues and whole organisms in a mathematically controlled way."
+    }
+  ],
+  "uses": [
+    "Epidemic forecasting and public health",
+    "Drug dosing and pharmacology",
+    "Ecology and conservation",
+    "Genomics"
+  ],
+  "links": [
+    "34",
+    "35",
+    "37",
+    "60",
+    "62"
+  ]
+}

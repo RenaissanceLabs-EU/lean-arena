@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://math.renaissancelabs.eu/sitemap.xml

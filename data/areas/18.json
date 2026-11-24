@@ -1,0 +1,98 @@
+{
+  "code": "18",
+  "short": "Category theory",
+  "hook": "What can you learn about a mathematical object from the maps going in and out of it alone?",
+  "about": [
+    "Category theory studies mathematical structures through the maps between them. A category consists of objects, such as sets, groups or spaces, and morphisms, such as functions, homomorphisms or continuous maps, which can be composed. Functors carry one category to another, and natural transformations compare functors. Homological algebra, classified in the same area, studies chain complexes and the invariants derived from them.",
+    "The characteristic move is to define an object by a universal property, that is, by how it maps to or from everything else, and not by its internal makeup. Products, quotients, free objects and completions all arise this way, as limits, colimits or adjoint functors. The language organizes algebraic topology and algebraic geometry, and it is used in logic, computer science and mathematical physics."
+  ],
+  "example": {
+    "title": "One definition, many products",
+    "text": "A product of objects \\(A\\) and \\(B\\) is an object \\(P\\) with maps to \\(A\\) and to \\(B\\) such that any object with maps to both factors through \\(P\\) in exactly one way. For sets this gives the set of pairs \\((a,b)\\). Now view the positive integers as a category with one arrow from \\(m\\) to \\(n\\) when \\(m\\) divides \\(n\\). The product of 4 and 6 is then 2, their greatest common divisor."
+  },
+  "objects": [
+    {
+      "term": "Category",
+      "gloss": "A collection of objects and composable morphisms between them, with identities and associativity."
+    },
+    {
+      "term": "Functor",
+      "gloss": "A map between categories that sends objects to objects and morphisms to morphisms, respecting composition."
+    },
+    {
+      "term": "Natural transformation",
+      "gloss": "A family of morphisms that compares two functors compatibly with every morphism."
+    },
+    {
+      "term": "Limit and colimit",
+      "gloss": "Universal objects built from a diagram, such as products, pullbacks, sums and quotients."
+    },
+    {
+      "term": "Adjunction",
+      "gloss": "A pair of functors \\(F,G\\) with a natural bijection between maps \\(F(a)\\to b\\) and maps \\(a\\to G(b)\\)."
+    },
+    {
+      "term": "Abelian category",
+      "gloss": "A category with kernels, cokernels and exact sequences, modeled on modules over a ring."
+    },
+    {
+      "term": "Derived functor",
+      "gloss": "Functors, such as Ext and Tor, that measure how far a given functor is from being exact."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Yoneda lemma",
+      "year": null,
+      "statement": "Let \\(C\\) be a locally small category, \\(F\\) a functor from \\(C^{\\mathrm{op}}\\) to sets, and \\(A\\) an object of \\(C\\). Natural transformations from \\(\\operatorname{Hom}(-,A)\\) to \\(F\\) correspond bijectively to elements of \\(F(A)\\), by sending \\(\\alpha\\) to \\(\\alpha_A(\\mathrm{id}_A)\\)."
+    },
+    {
+      "name": "Right adjoints preserve limits",
+      "year": null,
+      "statement": "If a functor \\(G\\colon D\\to C\\) has a left adjoint, then \\(G\\) preserves every limit that exists in \\(D\\). Dually, a functor with a right adjoint preserves colimits."
+    },
+    {
+      "name": "General adjoint functor theorem",
+      "year": null,
+      "statement": "Let \\(D\\) be a complete, locally small category. A functor \\(G\\colon D\\to C\\) has a left adjoint if and only if it preserves all small limits and satisfies the solution set condition: for each object \\(c\\) of \\(C\\) there is a set of morphisms \\(f_i\\colon c\\to G(d_i)\\) such that every morphism \\(c\\to G(d)\\) equals \\(G(h)\\circ f_i\\) for some \\(i\\) and some \\(h\\colon d_i\\to d\\)."
+    },
+    {
+      "name": "Long exact sequence in homology",
+      "year": null,
+      "statement": "A short exact sequence \\(0\\to A\\to B\\to C\\to 0\\) of chain complexes in an abelian category induces a long exact sequence \\(\\cdots\\to H_n(A)\\to H_n(B)\\to H_n(C)\\to H_{n-1}(A)\\to\\cdots\\) of homology objects."
+    },
+    {
+      "name": "Mac Lane's coherence theorem",
+      "year": 1963,
+      "statement": "Every monoidal category is monoidally equivalent to a strict monoidal category, one in which the associativity and unit isomorphisms are identities."
+    },
+    {
+      "name": "Freyd-Mitchell embedding theorem",
+      "year": 1964,
+      "statement": "For every small abelian category \\(\\mathcal A\\) there are a ring \\(R\\) and a full, faithful, exact functor from \\(\\mathcal A\\) to the category of left \\(R\\)-modules."
+    }
+  ],
+  "open": [
+    {
+      "name": "Finitistic dimension conjecture",
+      "gloss": "For a finite-dimensional algebra over a field, is there a finite bound on the projective dimensions of those finitely generated modules whose projective dimension is finite?"
+    },
+    {
+      "name": "Comparing definitions of higher categories",
+      "gloss": "Several definitions of weak \\(n\\)-category are in use, and it is not known in general that they are all equivalent."
+    }
+  ],
+  "uses": [
+    "Functional programming languages",
+    "Type theory",
+    "Topological quantum field theory"
+  ],
+  "links": [
+    "55",
+    "14",
+    "16",
+    "03",
+    "19",
+    "68"
+  ]
+}

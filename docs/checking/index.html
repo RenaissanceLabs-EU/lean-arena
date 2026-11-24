@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How a proof is checked · Renaissance Labs Mathematics</title>
+<meta name="description" content="What counts as proved in the Lean environments: kernel re-check, term comparison, axiom check, and the cheating attempts tested.">
+<link rel="canonical" href="https://math.renaissancelabs.eu/checking/">
+<meta property="og:title" content="How a proof is checked · Renaissance Labs Mathematics"><meta property="og:description" content="What counts as proved in the Lean environments: kernel re-check, term comparison, axiom check, and the cheating attempts tested."><meta property="og:url" content="https://math.renaissancelabs.eu/checking/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary"><meta name="theme-color" content="#fdfaf3">
+<link rel="icon" href="/assets/favicon.png">
+<link rel="stylesheet" href="/styles.css?v=a4f0f3bc">
+
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/"><img src="/assets/mark.png" alt=""><span>Renaissance Labs &middot; Mathematics</span></a>
+  <nav><a href="/">Map</a><a href="/environments/">Environments</a><a href="/frontier/">Frontier</a><a href="/checking/" aria-current="page">How checking works</a><a href="/about/">About</a><a class="ext" href="https://practice.renaissancelabs.eu">Practice</a><a class="ext" href="https://renaissancelabs.eu">Renaissance Labs</a></nav>
+  <button class="theme" id="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<main id="main">
+
+<div class="wrap">
+  <header class="page-head"><p class="eyebrow">Trust</p><h1>How a proof is checked</h1>
+  <p class="lede">An environment is only as good as its reward. Here is exactly what counts as proved, and what the checker was tested against.</p></header>
+  <div class="prose">
+    <h2>Why Lean makes a good reward</h2>
+    <p>Lean has a small kernel that checks every proof step by step. If a theorem compiles with no gaps, it is true in the system, whoever or whatever wrote the proof. That gives a reward signal nobody has to judge by hand. What the kernel does not check is whether a statement means what a human intended. That is why each task shows the statement in words, and why statements are generated from fixed templates and not written by the model being trained.</p>
+    <h2>The pipeline</h2>
+    <ol class="flow">
+      <li><b>Compile.</b> The submitted <span class="mono">Solution.lean</span> must compile against Mathlib. If it does not, the reward is 0.</li>
+      <li><b>Re-check.</b> A second program, <span class="mono">leanchecker</span>, replays every declaration in the kernel from scratch. This catches proofs added to the environment by tricks that skip the kernel.</li>
+      <li><b>Compare to the reference.</b> A small Lean program loads the hidden reference and the submission into two separate environments and compares kernel terms, not text. Nothing the submission defines can change how that comparison is read.</li>
+      <li><b>Check axioms.</b> Each proof may rest on exactly three axioms that Mathlib itself uses: <span class="mono">propext</span>, <span class="mono">Classical.choice</span> and <span class="mono">Quot.sound</span>. Anything else, including <span class="mono">sorry</span>, fails.</li>
+      <li><b>Score.</b> The reward is the weighted share of theorems that pass all of the above.</li>
+    </ol>
+    <h2>What the checker compares</h2>
+    <ul>
+      <li>Every definition the task provides must be unchanged: same kind, type and value.</li>
+      <li>Every target theorem must have exactly the statement of the reference, as a kernel term.</li>
+      <li>For tasks that ask the agent to write a definition, the type must match and the value is the agent's own; it is then tested by running it on hidden inputs.</li>
+    </ul>
+    <h2>Cheating attempts the checker was tested against</h2>
+    <p>Each of these was written as a real submission and run through the grader. All were rejected.</p>
+    <table class="t"><thead><tr><th>Attempt</th><th>Result</th></tr></thead><tbody>
+      <tr><td>Leave a <span class="mono">sorry</span> in a proof</td><td>Rejected: depends on <span class="mono">sorryAx</span></td></tr>
+      <tr><td>Prove by <span class="mono">native_decide</span></td><td>Rejected: adds a compiler axiom</td></tr>
+      <tr><td>Change a provided definition and prove the new statement</td><td>Rejected: definition differs from the task's</td></tr>
+      <tr><td>Prove a weaker statement under the same name</td><td>Rejected: statement differs from the one asked for</td></tr>
+      <tr><td>Skip the kernel and add a false theorem straight into the environment</td><td>Rejected by the second kernel run</td></tr>
+      <tr><td>Declare a new <span class="mono">axiom</span> and use it</td><td>Rejected: depends on an axiom that is not allowed</td></tr>
+    </tbody></table>
+    <h2>What this does not do</h2>
+    <ul>
+      <li>It does not judge whether a statement is interesting, only whether it is proved. Task statements come from reviewed generators, and every generator ships a reference proof that is compiled in its self-test.</li>
+      <li>It does not measure difficulty for a given model. That needs baselines, which are published as they are run. What we have measured is a floor: on a sample of proving tasks, one automation call (<span class="mono">grind</span>, <span class="mono">aesop</span>, <span class="mono">simp</span> and similar) closes 15 of 192, and each environment page shows its own figures.</li>
+      <li>A proof that is correct but very slow can time out. Tasks have a time limit, stated in the task file.</li>
+    </ul>
+  </div>
+</div>
+</main>
+<footer class="wrap foot">
+  <a class="brand" href="https://renaissancelabs.eu"><img src="/assets/mark.png" alt="">Renaissance Labs</a>
+  <div class="foot-links"><a href="/about/">About</a><a href="/data/areas.json">Data</a><a href="/llms.txt">llms.txt</a><a href="https://practice.renaissancelabs.eu">Practice</a><a href="https://labs.renaissancelabs.eu">Atlas</a><a href="https://huggingface.co/RenaissanceLabsEU">Hugging Face</a></div>
+</footer>
+<script src="/app.js?v=a4f0f3bc" defer></script>
+</body>
+</html>

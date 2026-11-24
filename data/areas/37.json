@@ -1,0 +1,103 @@
+{
+  "code": "37",
+  "short": "Dynamical systems",
+  "hook": "If you apply the same rule over and over, when is the long-run behavior predictable and when chaotic?",
+  "about": [
+    "A dynamical system is a space of states together with a rule for how states evolve, either in discrete steps by iterating a map or continuously along a flow. The area studies long-term behavior: fixed and periodic points, attractors, stability, and sensitive dependence on initial conditions, popularly called chaos. Ergodic theory studies the same systems statistically, through invariant measures and time averages.",
+    "The subject classifies systems up to conjugacy, a change of coordinates that matches orbits, and looks for invariants such as entropy, rotation numbers and Lyapunov exponents. It draws on topology, measure theory, differential geometry and complex analysis, and it grew out of celestial mechanics. Ergodic methods have in turn solved problems in number theory and combinatorics, for example on arithmetic progressions and Diophantine approximation."
+  ],
+  "example": {
+    "title": "The doubling map",
+    "text": "The doubling map sends a number \\(x\\) in \\([0,1)\\) to \\(2x\\) minus its integer part. In binary it deletes the first digit: \\(0.1011\\ldots\\) goes to \\(0.011\\ldots\\). The point \\(\\tfrac13=0.0101\\ldots\\) has period 2, since \\(\\tfrac13\\to\\tfrac23\\to\\tfrac13\\). Two points that agree in their first 20 binary digits stay close for about 20 steps and then separate. Rational points are eventually periodic, while almost every point has a dense orbit."
+  },
+  "objects": [
+    {
+      "term": "Orbit",
+      "gloss": "The sequence or curve of states visited from a given starting state."
+    },
+    {
+      "term": "Invariant measure",
+      "gloss": "A measure on the state space that is unchanged by the dynamics."
+    },
+    {
+      "term": "Ergodicity",
+      "gloss": "The property that every invariant set has measure zero or full measure."
+    },
+    {
+      "term": "Entropy",
+      "gloss": "A number measuring the exponential growth rate of distinguishable orbit segments."
+    },
+    {
+      "term": "Lyapunov exponent",
+      "gloss": "The exponential rate at which nearby orbits separate or approach."
+    },
+    {
+      "term": "Attractor",
+      "gloss": "A closed invariant set that nearby orbits approach as time goes to infinity."
+    },
+    {
+      "term": "Conjugacy",
+      "gloss": "An invertible change of coordinates carrying one system to another."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Poincaré recurrence theorem",
+      "year": 1890,
+      "statement": "Let \\(T\\) be a measure-preserving map of a finite measure space and \\(A\\) a measurable set. Then almost every point of \\(A\\) returns to \\(A\\) infinitely often under iteration of \\(T\\)."
+    },
+    {
+      "name": "Birkhoff ergodic theorem",
+      "year": 1931,
+      "statement": "Let \\(T\\) preserve a probability measure \\(\\mu\\) and let \\(f\\) be integrable. Then the averages \\(\\frac1n\\sum_{k=0}^{n-1}f(T^kx)\\) converge for almost every \\(x\\). If \\(T\\) is ergodic, the limit is \\(\\int f\\,d\\mu\\)."
+    },
+    {
+      "name": "Denjoy's theorem",
+      "year": 1932,
+      "statement": "An orientation-preserving \\(C^2\\) diffeomorphism of the circle with irrational rotation number \\(\\alpha\\) is topologically conjugate to the rotation by \\(\\alpha\\)."
+    },
+    {
+      "name": "Kolmogorov-Arnold-Moser theorem",
+      "year": null,
+      "statement": "Take an analytic integrable Hamiltonian system satisfying a nondegeneracy condition and perturb it by a sufficiently small smooth Hamiltonian term. Then the invariant tori whose frequencies satisfy a Diophantine condition survive, slightly deformed. They fill a set of positive measure whose complement has measure tending to zero with the size of the perturbation."
+    },
+    {
+      "name": "Hartman-Grobman theorem",
+      "year": null,
+      "statement": "Let \\(p\\) be a fixed point of a \\(C^1\\) diffeomorphism \\(f\\) of \\(\\mathbb{R}^n\\) such that no eigenvalue of \\(Df(p)\\) has modulus 1. Then near \\(p\\) the map \\(f\\) is topologically conjugate to the linear map \\(Df(p)\\) near \\(0\\)."
+    },
+    {
+      "name": "Sharkovskii's theorem",
+      "year": 1964,
+      "statement": "Order the positive integers as \\(3\\triangleright5\\triangleright7\\triangleright\\cdots\\triangleright2\\cdot3\\triangleright2\\cdot5\\triangleright\\cdots\\triangleright4\\cdot3\\triangleright4\\cdot5\\triangleright\\cdots\\triangleright8\\triangleright4\\triangleright2\\triangleright1\\). If a continuous map of the real line to itself has a periodic point of least period \\(m\\) and \\(m\\triangleright n\\), then it has a periodic point of least period \\(n\\). In particular, period 3 implies all periods."
+    }
+  ],
+  "open": [
+    {
+      "name": "Local connectivity of the Mandelbrot set",
+      "gloss": "Is the Mandelbrot set locally connected? A positive answer would imply that hyperbolic maps are dense among complex quadratic polynomials."
+    },
+    {
+      "name": "Entropy of the standard map",
+      "gloss": "Does the Chirikov standard map of the torus have positive metric entropy with respect to area for some parameter value?"
+    },
+    {
+      "name": "Furstenberg's times 2, times 3 conjecture",
+      "gloss": "Is Lebesgue measure the only non-atomic ergodic Borel probability measure on the circle invariant under both \\(x\\mapsto2x\\) and \\(x\\mapsto3x\\) modulo 1?"
+    }
+  ],
+  "uses": [
+    "Celestial mechanics",
+    "Weather and climate modeling",
+    "Population biology",
+    "Statistical mechanics"
+  ],
+  "links": [
+    "34",
+    "28",
+    "58",
+    "70",
+    "60",
+    "30"
+  ]
+}

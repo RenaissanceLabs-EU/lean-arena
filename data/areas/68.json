@@ -1,0 +1,102 @@
+{
+  "code": "68",
+  "short": "Computer science",
+  "hook": "Are there problems whose answers are quick to check but hopelessly slow to find?",
+  "about": [
+    "The mathematical side of computer science studies what can be computed and at what cost. It defines precise models of computation, designs algorithms and data structures, and proves limits on what any algorithm can achieve. It also covers the theory of programming languages and software, formal languages, databases, artificial intelligence and the use of computers in mathematical research.",
+    "Results come in two kinds. Upper bounds exhibit an algorithm and analyze its running time or memory use. Lower bounds and impossibility results show that no algorithm can do better, often by reducing one problem to another. The area borrows heavily from logic, combinatorics, probability and algebra, and it returns questions to them, such as the P versus NP problem."
+  ],
+  "example": {
+    "title": "How many comparisons to sort?",
+    "text": "Eight distinct numbers can be arranged in \\(8 \\cdot 7 \\cdots 2 \\cdot 1 = 40320\\) orders. A sorting method that only compares pairs learns one yes or no answer per comparison, so \\(k\\) comparisons can tell apart at most \\(2^k\\) orders. Since \\(2^{15} = 32768 < 40320\\), every such method needs at least 16 comparisons on some input. Merge sort needs at most 17 on eight numbers."
+  },
+  "objects": [
+    {
+      "term": "Algorithm",
+      "gloss": "A finite, precise procedure that transforms an input into an output."
+    },
+    {
+      "term": "Turing machine",
+      "gloss": "A simple abstract computer with a tape and a finite set of rules, used to define computability."
+    },
+    {
+      "term": "Complexity class",
+      "gloss": "A set of problems solvable within a given resource bound, such as P or NP."
+    },
+    {
+      "term": "Reduction",
+      "gloss": "A way of transforming one problem into another, showing the second is at least as hard."
+    },
+    {
+      "term": "Data structure",
+      "gloss": "A way of organizing data so that chosen operations are fast."
+    },
+    {
+      "term": "Formal language",
+      "gloss": "A set of strings over a finite alphabet, often described by a grammar or an automaton."
+    },
+    {
+      "term": "Boolean circuit",
+      "gloss": "A network of AND, OR and NOT gates computing a function of input bits."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Undecidability of the halting problem",
+      "year": 1936,
+      "statement": "There is no algorithm that takes as input a Turing machine and an input string and correctly decides, in every case, whether the machine eventually halts on that input."
+    },
+    {
+      "name": "Kleene's theorem",
+      "year": null,
+      "statement": "A language is accepted by some finite automaton if and only if it is described by some regular expression."
+    },
+    {
+      "name": "Time hierarchy theorem",
+      "year": null,
+      "statement": "If \\(f\\) and \\(g\\) are time-constructible functions with \\(f(n)\\log f(n) = o(g(n))\\), then some language is decidable by a deterministic Turing machine in time \\(O(g(n))\\) but not in time \\(O(f(n))\\). In particular, P is strictly contained in EXP."
+    },
+    {
+      "name": "Cook-Levin theorem",
+      "year": 1971,
+      "statement": "Boolean satisfiability is NP-complete: it lies in NP, and every problem in NP reduces to it in polynomial time."
+    },
+    {
+      "name": "PCP theorem",
+      "year": 1992,
+      "statement": "Every language in NP has a verifier that uses \\(O(\\log n)\\) random bits, reads only a constant number of bits of a proposed proof, always accepts a correct proof of a true statement, and rejects every proposed proof of a false statement with probability at least \\(1/2\\)."
+    },
+    {
+      "name": "AKS primality theorem",
+      "year": 2002,
+      "statement": "There is a deterministic algorithm that decides whether a given integer is prime in time polynomial in the number of its digits."
+    }
+  ],
+  "open": [
+    {
+      "name": "P versus NP",
+      "gloss": "Can every problem whose solutions can be verified in polynomial time also be solved in polynomial time?"
+    },
+    {
+      "name": "Exponent of matrix multiplication",
+      "gloss": "Can two \\(n \\times n\\) matrices be multiplied using \\(O(n^{2+\\varepsilon})\\) arithmetic operations for every \\(\\varepsilon > 0\\)?"
+    },
+    {
+      "name": "Complexity of integer factoring",
+      "gloss": "Is there a polynomial-time algorithm on a classical computer that factors integers?"
+    }
+  ],
+  "uses": [
+    "Software and hardware design",
+    "Cryptography and security",
+    "Machine learning",
+    "Verification of programs and chips"
+  ],
+  "links": [
+    "03",
+    "05",
+    "94",
+    "90",
+    "65"
+  ]
+}

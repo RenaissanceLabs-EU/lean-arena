@@ -1,0 +1,98 @@
+{
+  "code": "06",
+  "short": "Order and lattices",
+  "hook": "What can be said when things are only partly ranked, like tasks where some must come before others?",
+  "about": [
+    "Order theory studies sets with a relation of comparison, such as the divisors of a number ordered by divisibility or the subsets of a set ordered by inclusion. A lattice is an ordered set in which any two elements have a least upper bound and a greatest lower bound. The area also treats Boolean algebras and groups, rings and other algebraic structures that carry a compatible order.",
+    "Arguments combine algebra with pictures. Finite ordered sets are drawn as Hasse diagrams, and a lattice can be described either by its order or by its operations of join and meet. Representation theorems realize abstract lattices as families of sets or of open sets in a space. The area supplies basic tools to logic, universal algebra, combinatorics, topology and computer science."
+  ],
+  "example": {
+    "title": "The divisors of 12",
+    "text": "Order the divisors of 12, namely 1, 2, 3, 4, 6 and 12, by divisibility. The numbers 4 and 6 are incomparable, since neither divides the other. Their greatest lower bound is their greatest common divisor 2, and their least upper bound is their least common multiple 12. Every pair has both bounds, so this is a lattice. No three divisors are pairwise incomparable, and two chains cover all six: \\(1,2,4,12\\) and \\(3,6\\)."
+  },
+  "objects": [
+    {
+      "term": "Partially ordered set",
+      "gloss": "A set with a relation that is reflexive, antisymmetric and transitive."
+    },
+    {
+      "term": "Chain and antichain",
+      "gloss": "A subset in which every two elements are comparable, or in which no two are."
+    },
+    {
+      "term": "Lattice",
+      "gloss": "An ordered set in which every two elements have a join and a meet."
+    },
+    {
+      "term": "Distributive lattice",
+      "gloss": "A lattice in which join and meet distribute over each other, as union and intersection do."
+    },
+    {
+      "term": "Boolean algebra",
+      "gloss": "A distributive lattice with least and greatest elements in which every element has a complement."
+    },
+    {
+      "term": "Complete lattice",
+      "gloss": "An ordered set in which every subset has a least upper bound and a greatest lower bound."
+    },
+    {
+      "term": "Galois connection",
+      "gloss": "Maps \\(f\\) and \\(g\\) between ordered sets with \\(f(x)\\le y\\) exactly when \\(x\\le g(y)\\)."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Zorn's lemma",
+      "year": 1935,
+      "statement": "If every chain in a nonempty partially ordered set \\(P\\) has an upper bound in \\(P\\), then \\(P\\) has a maximal element. Over the Zermelo-Fraenkel axioms this statement is equivalent to the axiom of choice."
+    },
+    {
+      "name": "Stone's representation theorem",
+      "year": 1936,
+      "statement": "Every Boolean algebra is isomorphic to the algebra of all sets that are both open and closed in some compact, Hausdorff, totally disconnected space."
+    },
+    {
+      "name": "Birkhoff's representation theorem",
+      "year": 1937,
+      "statement": "Every finite distributive lattice is isomorphic to the lattice of down-sets of the ordered set of its join-irreducible elements, with union and intersection as join and meet."
+    },
+    {
+      "name": "Dilworth's theorem",
+      "year": 1950,
+      "statement": "In a finite partially ordered set, the largest size of an antichain equals the smallest number of chains whose union is the whole set."
+    },
+    {
+      "name": "Knaster-Tarski fixed point theorem",
+      "year": 1955,
+      "statement": "Every order-preserving map from a complete lattice to itself has a fixed point. Moreover, its fixed points form a complete lattice, so there is a least and a greatest fixed point."
+    },
+    {
+      "name": "Forbidden sublattice theorems",
+      "year": null,
+      "statement": "A lattice is modular if and only if it has no sublattice isomorphic to the five-element pentagon \\(N_5\\) (Dedekind). It is distributive if and only if it has no sublattice isomorphic to \\(N_5\\) or to the five-element diamond \\(M_3\\) (Birkhoff)."
+    }
+  ],
+  "open": [
+    {
+      "name": "1/3-2/3 conjecture",
+      "gloss": "In every finite partially ordered set that is not a chain there are elements \\(x,y\\) such that \\(x\\) precedes \\(y\\) in between one third and two thirds of all linear extensions."
+    },
+    {
+      "name": "Dedekind numbers",
+      "gloss": "The number of antichains in the lattice of subsets of an \\(n\\)-element set is known exactly only for \\(n\\le 9\\), and no closed formula is known."
+    }
+  ],
+  "uses": [
+    "Semantics of programming languages",
+    "Digital circuit design",
+    "Scheduling with precedence constraints",
+    "Formal concept analysis of data"
+  ],
+  "links": [
+    "03",
+    "08",
+    "05",
+    "54",
+    "18"
+  ]
+}

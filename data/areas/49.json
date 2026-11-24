@@ -1,0 +1,99 @@
+{
+  "code": "49",
+  "short": "Calculus of variations",
+  "hook": "Among all curves joining two points, which one lets a bead slide down in the least time?",
+  "about": [
+    "The calculus of variations seeks functions, curves or surfaces that make a given quantity, such as length, area, energy or travel time, as small or as large as possible. The unknown is a whole function rather than a number. Optimal control is the version in which a system evolving in time is steered by chosen inputs so as to minimize a cost. The area also covers the general theory of optimality conditions.",
+    "A minimizer satisfies a differential equation, the Euler-Lagrange equation, much as an ordinary function has zero derivative at a minimum. The direct method instead proves existence by compactness and lower semicontinuity in suitable function spaces, after which regularity must be shown. Convexity, duality and geometric measure theory are standard tools. Many laws of physics are variational principles, which ties the area to mechanics, partial differential equations and geometry."
+  ],
+  "example": {
+    "title": "Why the straight line is shortest",
+    "text": "Consider graphs \\(y(x)\\) from \\((0,0)\\) to \\((1,1)\\). The length is \\(\\int_0^1\\sqrt{1+y'^2}\\,dx\\). The Euler-Lagrange equation for this integrand says that \\(y'/\\sqrt{1+y'^2}\\) is constant, so \\(y'\\) is constant and \\(y=x\\), of length \\(\\sqrt2\\approx1.414\\). For comparison, the parabola \\(y=x^2\\) between the same points has length about \\(1.479\\)."
+  },
+  "objects": [
+    {
+      "term": "Functional",
+      "gloss": "A rule assigning a number to each function, such as the length of its graph."
+    },
+    {
+      "term": "Euler-Lagrange equation",
+      "gloss": "The differential equation that a smooth minimizer of an integral functional must satisfy."
+    },
+    {
+      "term": "Direct method",
+      "gloss": "Proving that a minimizer exists by taking a minimizing sequence and using compactness with lower semicontinuity."
+    },
+    {
+      "term": "Lagrange multiplier",
+      "gloss": "An auxiliary variable that turns a constrained extremum problem into an unconstrained one."
+    },
+    {
+      "term": "Value function",
+      "gloss": "The optimal cost as a function of the starting state; it satisfies the Hamilton-Jacobi-Bellman equation."
+    },
+    {
+      "term": "Minimal surface",
+      "gloss": "A surface with zero mean curvature, a critical point of the area functional."
+    },
+    {
+      "term": "Gamma-convergence",
+      "gloss": "A notion of convergence of functionals under which minimizers converge to minimizers."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Euler-Lagrange equation",
+      "year": null,
+      "statement": "Let \\(L(x,y,p)\\) be twice continuously differentiable. If a twice continuously differentiable \\(y\\) minimizes \\(\\int_a^bL(x,y,y')\\,dx\\) among such functions with the same endpoint values, then \\(\\frac{d}{dx}L_p(x,y,y')=L_y(x,y,y')\\) on \\([a,b]\\)."
+    },
+    {
+      "name": "Noether's theorem",
+      "year": 1918,
+      "statement": "If the action integral of a Lagrangian system is invariant under a one-parameter group of smooth transformations, then there is an explicitly given quantity that is constant along every solution of the Euler-Lagrange equations."
+    },
+    {
+      "name": "Tonelli's existence theorem",
+      "year": null,
+      "statement": "Let \\(L(x,y,p)\\) be continuous, convex in \\(p\\), and satisfy \\(L\\ge c|p|^q-C\\) for some \\(c>0\\) and \\(q>1\\). Then \\(\\int_a^bL(x,y,y')\\,dx\\) attains its minimum over all absolutely continuous functions \\(y\\) on \\([a,b]\\) with prescribed values at \\(a\\) and \\(b\\)."
+    },
+    {
+      "name": "Karush-Kuhn-Tucker conditions",
+      "year": null,
+      "statement": "Let \\(x^*\\) be a local minimum of a smooth \\(f\\) subject to smooth constraints \\(g_i\\le0\\) and \\(h_j=0\\), and suppose a constraint qualification holds at \\(x^*\\). Then there are multipliers \\(\\mu_i\\ge0\\) and \\(\\lambda_j\\) with \\(\\nabla f+\\sum_i\\mu_i\\nabla g_i+\\sum_j\\lambda_j\\nabla h_j=0\\) at \\(x^*\\) and \\(\\mu_i\\,g_i(x^*)=0\\) for all \\(i\\)."
+    },
+    {
+      "name": "Pontryagin maximum principle",
+      "year": 1956,
+      "statement": "Let \\(u^*\\) be an optimal control for minimizing \\(\\int\\ell(x,u)\\,dt\\) subject to \\(x'=f(x,u)\\). Then there are a constant \\(p_0\\ge0\\) and a costate \\(p(t)\\), not both zero, with \\(p'=-\\partial H/\\partial x\\) for \\(H=p\\cdot f(x,u)-p_0\\,\\ell(x,u)\\), such that at almost every time \\(u^*(t)\\) maximizes \\(H\\) over the admissible control values."
+    },
+    {
+      "name": "Douglas-Radó theorem",
+      "year": null,
+      "statement": "Every rectifiable Jordan curve in \\(\\mathbb{R}^3\\) bounds a surface of the type of the disk that has least area among all such surfaces. This solved Plateau's problem around 1930."
+    }
+  ],
+  "open": [
+    {
+      "name": "Morrey's conjecture in dimension two",
+      "gloss": "For functions of \\(2\\times2\\) matrices, does rank-one convexity imply quasiconvexity? In higher dimensions the answer is no."
+    },
+    {
+      "name": "Mumford-Shah conjecture",
+      "gloss": "Is the edge set of every minimizer of the Mumford-Shah functional in the plane a finite union of smooth arcs?"
+    }
+  ],
+  "uses": [
+    "Classical mechanics and physics",
+    "Trajectory planning and engineering design",
+    "Economics",
+    "Image segmentation"
+  ],
+  "links": [
+    "35",
+    "90",
+    "93",
+    "53",
+    "58",
+    "46"
+  ]
+}

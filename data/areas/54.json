@@ -1,0 +1,98 @@
+{
+  "code": "54",
+  "short": "General topology",
+  "hook": "What is left of the idea of nearness when you throw away distances and keep only open sets?",
+  "about": [
+    "General topology, also called point-set topology, sets out the basic language of continuity. A topological space is a set with a chosen family of open sets, which is enough to define limits, continuous maps, connectedness and compactness without any notion of distance. The area studies these concepts and their relations, the separation and countability axioms, when a space can be given a metric, dimension, and constructions such as products and quotients.",
+    "Arguments are set-theoretic in character, and counterexamples play as large a role as theorems, since they mark the boundaries of each concept. Some questions turn out to be independent of the usual axioms of set theory. Nearly every part of analysis and geometry uses this framework, and specialized branches such as continuum theory, dimension theory and the study of function spaces remain active areas of research."
+  ],
+  "example": {
+    "title": "Compact or not",
+    "text": "Take the real line with its usual open sets. The interval \\([0,1]\\) is compact: every cover by open sets has a finite subcover. The interval \\((0,1)\\) is not: the sets \\((\\tfrac1n,1)\\) for \\(n=2,3,\\dots\\) cover it, but any finitely many of them miss the points below the smallest \\(\\tfrac1n\\) used. Yet \\((0,1)\\) is homeomorphic to the whole line, through \\(x\\mapsto\\tan(\\pi x-\\tfrac{\\pi}{2})\\). So boundedness is not a topological property."
+  },
+  "objects": [
+    {
+      "term": "Topological space",
+      "gloss": "A set with a family of open subsets closed under arbitrary unions and finite intersections."
+    },
+    {
+      "term": "Continuous map",
+      "gloss": "A map for which the preimage of every open set is open."
+    },
+    {
+      "term": "Homeomorphism",
+      "gloss": "A continuous bijection whose inverse is continuous; the notion of sameness for spaces."
+    },
+    {
+      "term": "Compactness",
+      "gloss": "The property that every cover by open sets has a finite subcover."
+    },
+    {
+      "term": "Connectedness",
+      "gloss": "The property that the space is not a union of two disjoint nonempty open sets."
+    },
+    {
+      "term": "Hausdorff space",
+      "gloss": "A space in which any two distinct points have disjoint open neighborhoods."
+    },
+    {
+      "term": "Metrizable space",
+      "gloss": "A space whose topology comes from some distance function."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Urysohn's lemma",
+      "year": 1925,
+      "statement": "Let \\(A\\) and \\(B\\) be disjoint closed subsets of a normal space \\(X\\). Then there is a continuous function \\(f:X\\to[0,1]\\) with \\(f=0\\) on \\(A\\) and \\(f=1\\) on \\(B\\)."
+    },
+    {
+      "name": "Tietze extension theorem",
+      "year": null,
+      "statement": "Every continuous real-valued function on a closed subset of a normal space extends to a continuous real-valued function on the whole space."
+    },
+    {
+      "name": "Tychonoff's theorem",
+      "year": null,
+      "statement": "The product of any family of compact spaces is compact in the product topology. Over the other axioms of set theory, this statement is equivalent to the axiom of choice."
+    },
+    {
+      "name": "Urysohn metrization theorem",
+      "year": null,
+      "statement": "Every regular Hausdorff space with a countable base for its topology is metrizable."
+    },
+    {
+      "name": "Baire category theorem",
+      "year": null,
+      "statement": "In a complete metric space, and in a locally compact Hausdorff space, the intersection of countably many dense open sets is dense."
+    },
+    {
+      "name": "Nagata-Smirnov metrization theorem",
+      "year": null,
+      "statement": "A topological space is metrizable if and only if it is regular and Hausdorff and has a base that is a countable union of locally finite families of open sets."
+    }
+  ],
+  "open": [
+    {
+      "name": "Plane fixed point problem",
+      "gloss": "Does every continuous map of a compact connected plane set that does not separate the plane to itself have a fixed point?"
+    },
+    {
+      "name": "Efimov's problem",
+      "gloss": "Can it be proved from the usual axioms that every infinite compact Hausdorff space contains a nontrivial convergent sequence or a copy of the Stone-Čech compactification of the natural numbers?"
+    }
+  ],
+  "uses": [
+    "Foundations of analysis and geometry",
+    "Semantics of programming languages",
+    "Equilibrium arguments in economics"
+  ],
+  "links": [
+    "03",
+    "55",
+    "46",
+    "22",
+    "57",
+    "06"
+  ]
+}

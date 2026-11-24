@@ -1,0 +1,98 @@
+{
+  "code": "70",
+  "short": "Classical mechanics",
+  "hook": "Given where the planets are tonight, where will they be a thousand years from now?",
+  "about": [
+    "This area is classical mechanics: the motion of point masses, rigid bodies and systems built from them, under forces such as gravity, springs and constraints. It includes the motion of planets and satellites, spinning tops, pendulums, vibrating systems and machines with linked parts. Bodies that deform, such as elastic solids and fluids, are treated in neighboring areas.",
+    "Newton's laws turn a mechanical problem into ordinary differential equations. The Lagrangian and Hamiltonian formulations rewrite these equations in terms of a single function, the energy or a close relative, and make symmetries and conserved quantities visible. Hamiltonian mechanics is the origin of symplectic geometry, and questions about long-term behavior of orbits led to the modern theory of dynamical systems."
+  ],
+  "example": {
+    "title": "The period of a pendulum",
+    "text": "A small weight hangs on a string of length \\(L\\). For small swings, the angle \\(\\theta\\) satisfies \\(\\ddot\\theta = -(g/L)\\theta\\), so the motion is a sine wave with period \\(T = 2\\pi\\sqrt{L/g}\\). With \\(L = 1\\) m and \\(g = 9.81\\ \\mathrm{m/s^2}\\) this gives \\(T \\approx 2.01\\) seconds. The mass does not appear, and for small swings neither does the amplitude. Quadrupling the length doubles the period."
+  },
+  "objects": [
+    {
+      "term": "Configuration space",
+      "gloss": "The set of all positions a system can take; its dimension is the number of degrees of freedom."
+    },
+    {
+      "term": "Phase space",
+      "gloss": "The space of all positions together with momenta; a point determines the future motion."
+    },
+    {
+      "term": "Lagrangian",
+      "gloss": "Kinetic minus potential energy, as a function of positions and velocities."
+    },
+    {
+      "term": "Hamiltonian",
+      "gloss": "The total energy expressed as a function of positions and momenta."
+    },
+    {
+      "term": "Conserved quantity",
+      "gloss": "A function of the state, such as energy or angular momentum, that stays constant along every motion."
+    },
+    {
+      "term": "Rigid body",
+      "gloss": "An idealized body whose points keep fixed distances from each other."
+    },
+    {
+      "term": "Constraint",
+      "gloss": "A restriction on the possible positions or velocities, such as a bead forced to stay on a wire."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Newton's second law",
+      "year": 1687,
+      "statement": "In an inertial frame, a particle of constant mass \\(m\\) at position \\(x(t)\\) acted on by a force \\(F\\) moves according to \\(m\\ddot{x} = F\\)."
+    },
+    {
+      "name": "Euler-Lagrange equations",
+      "year": null,
+      "statement": "The motions of a system with Lagrangian \\(L(q, \\dot q, t)\\) are the paths that make the action \\(\\int L\\,dt\\) stationary among paths with fixed endpoints. Equivalently, \\(\\frac{d}{dt}\\frac{\\partial L}{\\partial \\dot q_i} = \\frac{\\partial L}{\\partial q_i}\\) for each coordinate \\(q_i\\)."
+    },
+    {
+      "name": "Hamilton's equations",
+      "year": null,
+      "statement": "With momenta \\(p_i = \\partial L/\\partial \\dot q_i\\) and Hamiltonian \\(H(q,p,t)\\), the motion satisfies \\(\\dot q_i = \\partial H/\\partial p_i\\) and \\(\\dot p_i = -\\partial H/\\partial q_i\\)."
+    },
+    {
+      "name": "Liouville's theorem",
+      "year": null,
+      "statement": "The flow of a Hamiltonian system preserves volume in phase space."
+    },
+    {
+      "name": "Noether's theorem",
+      "year": 1918,
+      "statement": "If the Lagrangian \\(L(q,\\dot q)\\) is unchanged by a smooth one-parameter family of transformations \\(q \\mapsto \\phi_s(q)\\) with \\(\\phi_0\\) the identity, then \\(\\sum_i \\frac{\\partial L}{\\partial \\dot q_i}\\,\\frac{d\\phi_s^i}{ds}\\Big|_{s=0}\\) is constant along every solution of the Euler-Lagrange equations."
+    },
+    {
+      "name": "Kolmogorov-Arnold-Moser theorem",
+      "year": 1954,
+      "statement": "Under a sufficiently small and sufficiently smooth perturbation of a nondegenerate integrable Hamiltonian system, the invariant tori whose frequencies satisfy a Diophantine condition survive in slightly deformed form. They fill a set of positive measure, and the measure of its complement tends to zero with the size of the perturbation."
+    }
+  ],
+  "open": [
+    {
+      "name": "Finiteness of central configurations",
+      "gloss": "For \\(n\\) point masses under Newtonian gravity, is the number of relative equilibria finite up to symmetry? This is known for \\(n \\le 4\\) and, for generic masses, \\(n = 5\\)."
+    },
+    {
+      "name": "Long-term stability of planetary systems",
+      "gloss": "In the \\(n\\)-body problem with one large mass and several small ones, how common are orbits that eventually leave the neighborhood of the stable quasi-periodic motions?"
+    }
+  ],
+  "uses": [
+    "Spacecraft trajectory design",
+    "Robotics and machine design",
+    "Molecular dynamics simulation",
+    "Vehicle and structural dynamics"
+  ],
+  "links": [
+    "37",
+    "34",
+    "53",
+    "49",
+    "83"
+  ]
+}

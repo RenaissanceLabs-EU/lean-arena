@@ -1,0 +1,94 @@
+{
+  "code": "40",
+  "short": "Sequences and series",
+  "hook": "What does it mean to add infinitely many numbers, and can a divergent sum still be given a sensible value?",
+  "about": [
+    "This area studies infinite sequences and series of numbers and functions: when they converge, how fast, and what can be done when they do not. Besides convergence tests it covers infinite products, continued fractions seen as limits, and multiple series. A large part is summability theory, which assigns generalized sums to divergent series through averaging procedures such as those of Cesàro and Abel.",
+    "Summability methods are usually given by infinite matrices or integral means, and the main questions are which methods are consistent with ordinary convergence and how they compare. Tauberian theorems run the other way, recovering convergence from summability under a side condition. These ideas began with Fourier series and with power series on the boundary of convergence, and they are used in number theory, approximation theory and functional analysis."
+  ],
+  "example": {
+    "title": "Averaging a divergent series",
+    "text": "The series \\(1-1+1-1+\\cdots\\) has partial sums \\(1,0,1,0,\\dots\\) and does not converge. The averages of the first \\(n\\) partial sums are \\(1,\\tfrac12,\\tfrac23,\\tfrac12,\\tfrac35,\\dots\\), which tend to \\(\\tfrac12\\). So the series is Cesàro summable to \\(\\tfrac12\\). Abel's method agrees: \\(1-x+x^2-\\cdots=\\frac{1}{1+x}\\) for \\(|x|<1\\), and this tends to \\(\\tfrac12\\) as \\(x\\) increases to 1."
+  },
+  "objects": [
+    {
+      "term": "Convergent series",
+      "gloss": "A series whose partial sums approach a finite limit."
+    },
+    {
+      "term": "Absolute convergence",
+      "gloss": "Convergence of the series of absolute values; it allows free rearrangement of terms."
+    },
+    {
+      "term": "Conditional convergence",
+      "gloss": "Convergence that is not absolute, so the sum depends on the order of terms."
+    },
+    {
+      "term": "Cesàro mean",
+      "gloss": "The average of the first n partial sums of a series."
+    },
+    {
+      "term": "Abel summation",
+      "gloss": "Assigning to \\(\\sum a_n\\) the limit of \\(\\sum a_nx^n\\) as \\(x\\) increases to 1."
+    },
+    {
+      "term": "Regular summability method",
+      "gloss": "A method that gives every convergent series its ordinary sum."
+    },
+    {
+      "term": "Tauberian condition",
+      "gloss": "A side condition on the terms under which summability implies convergence."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Riemann rearrangement theorem",
+      "year": null,
+      "statement": "If a series of real numbers converges but not absolutely, then its terms can be rearranged so that the new series converges to any prescribed real number, or diverges to \\(+\\infty\\) or to \\(-\\infty\\)."
+    },
+    {
+      "name": "Abel's theorem",
+      "year": 1826,
+      "statement": "If \\(\\sum_{n\\ge0}a_n\\) converges with sum \\(s\\), then \\(\\sum_{n\\ge0}a_nx^n\\to s\\) as \\(x\\) tends to 1 from below along the real axis."
+    },
+    {
+      "name": "Tauber's theorem",
+      "year": 1897,
+      "statement": "If \\(\\sum_{n\\ge0}a_nx^n\\to s\\) as \\(x\\to1^-\\) and \\(n\\,a_n\\to0\\), then \\(\\sum a_n\\) converges to \\(s\\)."
+    },
+    {
+      "name": "Littlewood's Tauberian theorem",
+      "year": 1911,
+      "statement": "If \\(\\sum_{n\\ge0}a_nx^n\\to s\\) as \\(x\\to1^-\\) and the sequence \\(n\\,a_n\\) is bounded, then \\(\\sum a_n\\) converges to \\(s\\)."
+    },
+    {
+      "name": "Silverman-Toeplitz theorem",
+      "year": null,
+      "statement": "An infinite matrix \\((a_{nk})\\) transforms every convergent sequence \\((s_k)\\) into a sequence \\(t_n=\\sum_k a_{nk}s_k\\) with the same limit if and only if \\(\\sup_n\\sum_k|a_{nk}|<\\infty\\), \\(\\lim_n a_{nk}=0\\) for each \\(k\\), and \\(\\lim_n\\sum_k a_{nk}=1\\)."
+    },
+    {
+      "name": "Wiener's Tauberian theorem",
+      "year": 1932,
+      "statement": "If \\(f\\in L^1(\\mathbb{R})\\) has a Fourier transform with no real zero, then the translates of \\(f\\) span a dense subspace of \\(L^1(\\mathbb{R})\\). As a consequence, if \\(g\\) is bounded and \\((f*g)(x)\\to A\\int f\\) as \\(x\\to\\infty\\), then \\((h*g)(x)\\to A\\int h\\) for every \\(h\\in L^1(\\mathbb{R})\\)."
+    }
+  ],
+  "open": [
+    {
+      "name": "Flint Hills series",
+      "gloss": "It is unknown whether \\(\\sum_{n\\ge1}\\frac{1}{n^3\\sin^2n}\\) converges. The answer depends on how well \\(\\pi\\) can be approximated by rational numbers."
+    }
+  ],
+  "uses": [
+    "Fourier analysis",
+    "Analytic number theory",
+    "Convergence acceleration in numerical computation"
+  ],
+  "links": [
+    "26",
+    "42",
+    "41",
+    "46",
+    "11",
+    "30"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "code": "43",
+  "short": "Analysis on groups",
+  "hook": "What becomes of Fourier analysis when the circle is replaced by an arbitrary group of symmetries?",
+  "about": [
+    "Abstract harmonic analysis extends Fourier analysis from the circle and the line to general topological groups, chiefly the locally compact ones. Such a group carries a Haar measure, a notion of volume unchanged by translation, so functions can be integrated and convolved. The area studies the resulting function spaces and algebras, and how functions on the group, or on spaces it acts on, decompose into pieces governed by symmetry.",
+    "On abelian groups the building blocks are characters, and the theory centers on the dual group and Pontryagin duality. On nonabelian groups characters are replaced by irreducible unitary representations, which may be infinite dimensional. Methods come from functional analysis, Banach and operator algebras and measure theory. The area links representation theory, number theory through adelic groups, ergodic theory, and the study of group properties such as amenability."
+  ],
+  "example": {
+    "title": "Fourier analysis on four points",
+    "text": "On the cyclic group \\(\\mathbb{Z}/4\\) the characters are \\(\\chi_k(n)=i^{kn}\\) for \\(k=0,1,2,3\\). Every function \\(f\\) on the group is a combination \\(f=\\sum_k\\hat f(k)\\chi_k\\) with \\(\\hat f(k)=\\frac14\\sum_n f(n)\\,i^{-kn}\\). For \\(f=(1,0,0,0)\\) every coefficient is \\(\\tfrac14\\). For \\(f=(1,1,1,1)\\) only \\(\\hat f(0)=1\\) is nonzero. A function concentrated at one point is spread evenly over all frequencies, and conversely."
+  },
+  "objects": [
+    {
+      "term": "Locally compact group",
+      "gloss": "A topological group, assumed Hausdorff, in which every point has a compact neighborhood."
+    },
+    {
+      "term": "Haar measure",
+      "gloss": "A measure on a locally compact group that is invariant under left translation."
+    },
+    {
+      "term": "Character",
+      "gloss": "A continuous homomorphism from a group to the circle group of complex numbers of modulus 1."
+    },
+    {
+      "term": "Dual group",
+      "gloss": "The group of all characters of a locally compact abelian group, itself locally compact abelian."
+    },
+    {
+      "term": "Unitary representation",
+      "gloss": "A continuous action of a group on a Hilbert space by unitary operators."
+    },
+    {
+      "term": "Group algebra",
+      "gloss": "The space \\(L^1(G)\\) with convolution as multiplication."
+    },
+    {
+      "term": "Amenable group",
+      "gloss": "A group admitting a finitely additive, translation-invariant mean on its bounded functions."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Existence and uniqueness of Haar measure",
+      "year": null,
+      "statement": "Every locally compact Hausdorff group has a nonzero left-invariant Radon measure, and any two such measures differ by a positive constant factor."
+    },
+    {
+      "name": "Peter-Weyl theorem",
+      "year": 1927,
+      "statement": "Let \\(G\\) be a compact group. The matrix coefficients of its finite-dimensional irreducible unitary representations span a dense subspace of the continuous functions on \\(G\\) in the uniform norm, and \\(L^2(G)\\) is the Hilbert space direct sum of the spaces of matrix coefficients of the distinct irreducible representations."
+    },
+    {
+      "name": "Pontryagin duality",
+      "year": null,
+      "statement": "For a locally compact abelian group \\(G\\), the natural map from \\(G\\) to the dual group of its dual group is an isomorphism of topological groups."
+    },
+    {
+      "name": "Plancherel theorem for abelian groups",
+      "year": null,
+      "statement": "Let \\(G\\) be a locally compact abelian group with dual \\(\\hat G\\). For a suitable normalization of Haar measure on \\(\\hat G\\), the Fourier transform on \\(L^1(G)\\cap L^2(G)\\) extends to a unitary operator from \\(L^2(G)\\) onto \\(L^2(\\hat G)\\)."
+    },
+    {
+      "name": "Bochner's theorem",
+      "year": null,
+      "statement": "A continuous function on a locally compact abelian group \\(G\\) is positive definite if and only if it is the Fourier transform of a finite positive Radon measure on the dual group. Bochner proved the case \\(G=\\mathbb{R}\\) in 1932."
+    },
+    {
+      "name": "Gelfand-Raikov theorem",
+      "year": 1943,
+      "statement": "The irreducible unitary representations of a locally compact group separate its points: for every element other than the identity, some irreducible unitary representation sends it to an operator other than the identity."
+    }
+  ],
+  "open": [
+    {
+      "name": "Dixmier's unitarizability problem",
+      "gloss": "A group is unitarizable if each of its uniformly bounded representations on Hilbert space is similar to a unitary one. Is every unitarizable group amenable?"
+    }
+  ],
+  "uses": [
+    "Number theory and automorphic forms",
+    "Symmetry in quantum mechanics",
+    "Fast Fourier transforms and signal processing"
+  ],
+  "links": [
+    "22",
+    "42",
+    "46",
+    "20",
+    "28",
+    "11"
+  ]
+}

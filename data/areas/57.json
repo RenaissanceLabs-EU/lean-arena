@@ -1,0 +1,102 @@
+{
+  "code": "57",
+  "short": "Topology of manifolds",
+  "hook": "Can you tell a knotted loop from an unknotted one, or a sphere from a doughnut, without cutting anything?",
+  "about": [
+    "A manifold is a space that looks, near each of its points, like ordinary Euclidean space of some dimension. Curves and surfaces are the first examples, and there are analogs in every higher dimension. This area classifies manifolds and studies how they are assembled from simple pieces such as cells, simplices and handles. It includes knot theory and the topology of dimensions three and four.",
+    "The main tools are invariants such as the fundamental group, homology, intersection forms and knot polynomials, together with cut-and-paste techniques such as surgery and handle decompositions. In dimensions five and above, classification questions reduce largely to algebra. Dimensions three and four behave differently and draw on hyperbolic geometry, geometric flows and gauge theory from physics."
+  ],
+  "example": {
+    "title": "Counting on a surface",
+    "text": "Divide a surface into polygons and compute \\(V - E + F\\), vertices minus edges plus faces. A cube gives \\(8 - 12 + 6 = 2\\), and so does every other division of a sphere. A torus cut into a 3 by 3 grid of squares has 9 vertices, 18 edges and 9 faces, giving \\(9 - 18 + 9 = 0\\). The number depends only on the surface, so a sphere cannot be deformed into a torus."
+  },
+  "objects": [
+    {
+      "term": "Manifold",
+      "gloss": "A space that near every point looks like Euclidean space of a fixed dimension."
+    },
+    {
+      "term": "Knot",
+      "gloss": "A closed loop in three-dimensional space, studied up to deformation that never passes the loop through itself."
+    },
+    {
+      "term": "CW complex",
+      "gloss": "A space built by attaching cells of increasing dimension along their boundaries."
+    },
+    {
+      "term": "Handle decomposition",
+      "gloss": "A way of building a manifold by attaching thickened cells called handles, one at a time."
+    },
+    {
+      "term": "Cobordism",
+      "gloss": "A manifold whose boundary consists of two given manifolds, relating one to the other."
+    },
+    {
+      "term": "Smooth structure",
+      "gloss": "A choice of coordinate charts on a manifold that makes differentiation meaningful."
+    },
+    {
+      "term": "Intersection form",
+      "gloss": "The integer bilinear form on the middle homology of a 4-manifold that counts intersections of surfaces."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Classification of closed surfaces",
+      "year": null,
+      "statement": "Every closed connected surface is homeomorphic to exactly one of the following: the sphere, a connected sum of \\(g \\ge 1\\) tori, or a connected sum of \\(k \\ge 1\\) real projective planes."
+    },
+    {
+      "name": "Milnor's exotic spheres",
+      "year": 1956,
+      "statement": "There exist smooth manifolds that are homeomorphic to the 7-sphere \\(S^7\\) but not diffeomorphic to it."
+    },
+    {
+      "name": "h-cobordism theorem",
+      "year": 1962,
+      "statement": "Let \\(W\\) be a compact smooth manifold of dimension at least 6 whose boundary is the disjoint union of \\(M\\) and \\(N\\), with \\(W\\), \\(M\\), \\(N\\) simply connected and both inclusions \\(M \\to W\\), \\(N \\to W\\) homotopy equivalences. Then \\(W\\) is diffeomorphic to \\(M \\times [0,1]\\)."
+    },
+    {
+      "name": "Freedman's classification theorem",
+      "year": 1982,
+      "statement": "Two closed simply connected topological 4-manifolds are homeomorphic if and only if they have isomorphic intersection forms and equal Kirby-Siebenmann invariants. In particular, a closed 4-manifold homotopy equivalent to the 4-sphere is homeomorphic to it."
+    },
+    {
+      "name": "Donaldson's diagonalization theorem",
+      "year": 1983,
+      "statement": "If the intersection form of a closed, simply connected, smooth 4-manifold is positive or negative definite, then it is diagonalizable over the integers."
+    },
+    {
+      "name": "Poincaré conjecture",
+      "year": 2003,
+      "statement": "Every closed simply connected 3-manifold is homeomorphic to the 3-sphere."
+    }
+  ],
+  "open": [
+    {
+      "name": "Smooth 4-dimensional Poincaré conjecture",
+      "gloss": "Is every smooth 4-manifold that is homeomorphic to the 4-sphere also diffeomorphic to it?"
+    },
+    {
+      "name": "Slice-ribbon conjecture",
+      "gloss": "Is every knot that bounds a smooth disk in the 4-ball a ribbon knot?"
+    },
+    {
+      "name": "Jones polynomial and the unknot",
+      "gloss": "Is the unknot the only knot whose Jones polynomial equals 1?"
+    }
+  ],
+  "uses": [
+    "Knotting of DNA and polymers",
+    "Configuration spaces in robotics",
+    "Topological data analysis",
+    "Topological phases in physics"
+  ],
+  "links": [
+    "55",
+    "54",
+    "53",
+    "58",
+    "20"
+  ]
+}

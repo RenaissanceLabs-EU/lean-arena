@@ -1,0 +1,85 @@
+{
+  "code": "45",
+  "short": "Integral equations",
+  "hook": "What if the unknown in an equation is a function hidden inside an integral?",
+  "about": [
+    "In an integral equation the unknown function appears under an integral sign. A Fredholm equation such as \\(u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)\\) integrates over a fixed interval. A Volterra equation integrates only up to the current point \\(x\\), which suits processes with memory. The area studies existence and uniqueness of solutions, their dependence on the parameter \\(\\lambda\\), and eigenvalue problems for the integral operator.",
+    "Many boundary value problems for differential equations can be recast as integral equations by means of Green functions or boundary layer potentials, often with better analytic and numerical behavior. Fredholm's study of these equations around 1900 led to Hilbert spaces, compact operators and spectral theory, so the subject is a parent of functional analysis. Singular kernels, as in the Cauchy and Wiener-Hopf equations, need methods from complex analysis."
+  ],
+  "example": {
+    "title": "A kernel that separates",
+    "text": "Solve \\(u(x)=x+\\int_0^1x\\,t\\,u(t)\\,dt\\). The integral equals \\(c\\,x\\) with the unknown number \\(c=\\int_0^1t\\,u(t)\\,dt\\), so \\(u(x)=(1+c)x\\). Substituting back, \\(c=\\int_0^1(1+c)t^2\\,dt=\\frac{1+c}{3}\\), hence \\(c=\\tfrac12\\) and \\(u(x)=\\tfrac32x\\). Because the kernel \\(xt\\) is a product of a function of \\(x\\) and a function of \\(t\\), the problem reduced to one linear equation for one number."
+  },
+  "objects": [
+    {
+      "term": "Kernel",
+      "gloss": "The function \\(K(x,t)\\) that weights the unknown inside the integral."
+    },
+    {
+      "term": "Fredholm equation",
+      "gloss": "An integral equation over a fixed domain; second kind means the unknown also appears outside the integral."
+    },
+    {
+      "term": "Volterra equation",
+      "gloss": "An integral equation whose upper limit of integration is the variable itself."
+    },
+    {
+      "term": "Neumann series",
+      "gloss": "The series solution obtained by iterating the integral operator, analogous to a geometric series."
+    },
+    {
+      "term": "Resolvent kernel",
+      "gloss": "The kernel of the integral operator that expresses the solution in terms of the right-hand side."
+    },
+    {
+      "term": "Compact integral operator",
+      "gloss": "An integral operator mapping bounded sets to sets with compact closure, as continuous kernels do."
+    },
+    {
+      "term": "Singular integral equation",
+      "gloss": "An equation whose kernel is not integrable, so the integral is taken as a principal value."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Abel's integral equation",
+      "year": 1823,
+      "statement": "If \\(f\\) is continuously differentiable on \\([0,a]\\) with \\(f(0)=0\\), then \\(\\int_0^x\\frac{u(t)}{\\sqrt{x-t}}\\,dt=f(x)\\) has the unique continuous solution \\(u(x)=\\frac1\\pi\\int_0^x\\frac{f'(t)}{\\sqrt{x-t}}\\,dt\\) on \\((0,a]\\)."
+    },
+    {
+      "name": "Volterra's theorem",
+      "year": null,
+      "statement": "Let \\(K(x,t)\\) be continuous for \\(a\\le t\\le x\\le b\\). Then for every continuous \\(f\\) on \\([a,b]\\) and every complex \\(\\lambda\\), the equation \\(u(x)-\\lambda\\int_a^xK(x,t)u(t)\\,dt=f(x)\\) has exactly one continuous solution, given by the Neumann series."
+    },
+    {
+      "name": "Fredholm alternative",
+      "year": 1903,
+      "statement": "Let \\(K\\) be continuous on \\([a,b]^2\\). Either \\(u(x)-\\lambda\\int_a^bK(x,t)u(t)\\,dt=f(x)\\) has a unique continuous solution for every continuous \\(f\\), or the homogeneous equation has a nonzero solution. In the second case the solution space of the homogeneous equation is finite dimensional, and the equation is solvable exactly for those \\(f\\) with \\(\\int_a^bf\\,v\\,dx=0\\) for every solution \\(v\\) of the transposed homogeneous equation."
+    },
+    {
+      "name": "Hilbert-Schmidt theorem",
+      "year": null,
+      "statement": "Let \\(K\\) be a real square-integrable kernel on \\([a,b]^2\\) with \\(K(x,t)=K(t,x)\\). Then \\(L^2[a,b]\\) has an orthonormal basis of eigenfunctions of the operator \\(u\\mapsto\\int_a^bK(\\cdot,t)u(t)\\,dt\\). The eigenvalues are real, and the nonzero ones have finite multiplicity and can accumulate only at 0."
+    },
+    {
+      "name": "Mercer's theorem",
+      "year": 1909,
+      "statement": "Let \\(K\\) be a continuous symmetric kernel on \\([a,b]^2\\) whose integral operator is positive semidefinite, with orthonormal eigenfunctions \\(\\varphi_n\\) and eigenvalues \\(\\mu_n>0\\). Then \\(K(x,t)=\\sum_n\\mu_n\\varphi_n(x)\\varphi_n(t)\\), with absolute and uniform convergence."
+    }
+  ],
+  "open": [],
+  "uses": [
+    "Boundary element methods in engineering",
+    "Scattering theory",
+    "Inverse problems and imaging",
+    "Materials with memory"
+  ],
+  "links": [
+    "47",
+    "46",
+    "44",
+    "35",
+    "34",
+    "65"
+  ]
+}

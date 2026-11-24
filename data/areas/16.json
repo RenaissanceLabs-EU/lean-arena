@@ -1,0 +1,103 @@
+{
+  "code": "16",
+  "short": "Associative rings",
+  "hook": "What changes in algebra when \\(ab\\) and \\(ba\\) are allowed to differ, as they do for matrices?",
+  "about": [
+    "This area studies rings in which multiplication is associative but need not be commutative. The basic examples are rings of square matrices, the quaternions, group algebras, and rings of differential operators. A ring is understood largely through its modules, the objects on which it acts, in the way a group is understood through its representations.",
+    "Structure theory splits a ring into a radical and a semisimple part and classifies the simple pieces. Homological methods and Morita theory compare rings through their categories of modules. The area includes representations of finite-dimensional algebras by quivers, division algebras and the Brauer group, Hopf algebras and quantum groups, and it connects to group theory, algebraic geometry, operator algebras and mathematical physics."
+  ],
+  "example": {
+    "title": "The quaternions",
+    "text": "Hamilton's quaternions are the expressions \\(a+bi+cj+dk\\) with real \\(a,b,c,d\\), multiplied using \\(i^2=j^2=k^2=-1\\) and \\(ij=k\\), \\(ji=-k\\). So the order of the factors matters. Still, every nonzero quaternion \\(q\\) has an inverse: with \\(\\bar q=a-bi-cj-dk\\) one finds \\(q\\bar q=a^2+b^2+c^2+d^2\\), so \\(q^{-1}=\\bar q/(a^2+b^2+c^2+d^2)\\). The quaternions form a division ring that is not a field."
+  },
+  "objects": [
+    {
+      "term": "Ring",
+      "gloss": "A set with addition and an associative multiplication that distributes over addition."
+    },
+    {
+      "term": "Module",
+      "gloss": "An abelian group on which a ring acts linearly, generalizing a vector space."
+    },
+    {
+      "term": "Left, right and two-sided ideals",
+      "gloss": "Additive subgroups closed under multiplication by ring elements on one side or on both."
+    },
+    {
+      "term": "Division ring",
+      "gloss": "A ring in which every nonzero element has a multiplicative inverse."
+    },
+    {
+      "term": "Jacobson radical",
+      "gloss": "The set of elements that act as zero on every simple module."
+    },
+    {
+      "term": "Semisimple ring",
+      "gloss": "A ring all of whose modules are direct sums of simple modules."
+    },
+    {
+      "term": "Morita equivalence",
+      "gloss": "Two rings are Morita equivalent when their categories of modules are equivalent."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Frobenius's theorem on real division algebras",
+      "year": 1877,
+      "statement": "Every finite-dimensional associative division algebra over the real numbers is isomorphic to \\(\\mathbb{R}\\), \\(\\mathbb{C}\\) or the quaternions \\(\\mathbb{H}\\)."
+    },
+    {
+      "name": "Maschke's theorem",
+      "year": null,
+      "statement": "If \\(G\\) is a finite group and \\(k\\) is a field whose characteristic does not divide the order of \\(G\\), then the group algebra \\(k[G]\\) is semisimple."
+    },
+    {
+      "name": "Wedderburn's little theorem",
+      "year": 1905,
+      "statement": "Every finite division ring is commutative, hence a field."
+    },
+    {
+      "name": "Wedderburn-Artin theorem",
+      "year": 1927,
+      "statement": "A ring \\(R\\) is semisimple, meaning that every left \\(R\\)-module is a direct sum of simple modules, if and only if \\(R\\) is isomorphic to a finite product of matrix rings \\(M_{n_i}(D_i)\\) over division rings \\(D_i\\). The numbers \\(n_i\\) and the rings \\(D_i\\) are determined up to order and isomorphism."
+    },
+    {
+      "name": "Skolem-Noether theorem",
+      "year": null,
+      "statement": "Let \\(A\\) be a finite-dimensional central simple algebra over a field \\(k\\). Every \\(k\\)-algebra automorphism of \\(A\\) has the form \\(x\\mapsto uxu^{-1}\\) for some invertible \\(u\\) in \\(A\\)."
+    },
+    {
+      "name": "Jacobson density theorem",
+      "year": 1945,
+      "statement": "Let \\(M\\) be a simple left module over a ring \\(R\\), and \\(D\\) the division ring of \\(R\\)-linear maps from \\(M\\) to itself. If \\(x_1,\\dots,x_n\\in M\\) are linearly independent over \\(D\\) and \\(y_1,\\dots,y_n\\in M\\) are arbitrary, then some \\(r\\in R\\) satisfies \\(rx_i=y_i\\) for all \\(i\\)."
+    }
+  ],
+  "open": [
+    {
+      "name": "Köthe conjecture",
+      "gloss": "If a ring has no nonzero two-sided ideal consisting of nilpotent elements, then it has no nonzero one-sided ideal of that kind."
+    },
+    {
+      "name": "Kaplansky's zero divisor conjecture",
+      "gloss": "The group algebra of a torsion-free group over a field has no zero divisors."
+    },
+    {
+      "name": "Dixmier conjecture",
+      "gloss": "Every algebra endomorphism of a Weyl algebra over a field of characteristic 0 is an automorphism."
+    }
+  ],
+  "uses": [
+    "Quantum mechanics",
+    "Symmetry in chemistry and physics",
+    "Rotations in computer graphics",
+    "Coding theory"
+  ],
+  "links": [
+    "13",
+    "17",
+    "18",
+    "20",
+    "15",
+    "19"
+  ]
+}

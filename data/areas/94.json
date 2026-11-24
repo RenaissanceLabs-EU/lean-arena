@@ -1,0 +1,102 @@
+{
+  "code": "94",
+  "short": "Information and coding",
+  "hook": "How can a scratched disc or a noisy phone line still deliver a message without a single error?",
+  "about": [
+    "Information theory measures information and determines the limits of storing and transmitting it. It asks how far data can be compressed and how fast it can be sent reliably over a channel that introduces errors. Coding theory constructs the error-correcting codes that approach these limits. The area also includes cryptography, signal processing, and the theory of switching circuits and networks.",
+    "Shannon's theory is probabilistic: sources and channels are random, and the limits are expressed through entropy and mutual information. Constructing good codes, by contrast, uses algebra and combinatorics, including finite fields, polynomials, algebraic curves and sparse graphs. Cryptography adds number theory and computational complexity. Limits are usually proved by a counting or probabilistic argument, and the hard part is to reach them with efficient explicit schemes."
+  ],
+  "example": {
+    "title": "The information in a biased coin",
+    "text": "A coin that lands heads with probability \\(p\\) has entropy \\(H = -p\\log_2p - (1-p)\\log_2(1-p)\\) bits per toss. A fair coin has \\(H = 1\\). A coin with \\(p = 0.9\\) has \\(H \\approx 0.9 \\cdot 0.152 + 0.1 \\cdot 3.322 \\approx 0.469\\). So a record of 1000 tosses of this coin can be compressed to about 469 bits on average, and no method can do better in the long run."
+  },
+  "objects": [
+    {
+      "term": "Entropy",
+      "gloss": "The average number of bits needed per symbol to describe the output of a random source."
+    },
+    {
+      "term": "Channel",
+      "gloss": "A model of a transmission medium, giving the probability of each output for each input."
+    },
+    {
+      "term": "Mutual information",
+      "gloss": "The amount by which knowing one random variable reduces uncertainty about another."
+    },
+    {
+      "term": "Channel capacity",
+      "gloss": "The highest rate at which information can be sent over a channel with vanishing error probability."
+    },
+    {
+      "term": "Error-correcting code",
+      "gloss": "A set of codewords chosen so that the original can be recovered after some symbols are corrupted."
+    },
+    {
+      "term": "Hamming distance",
+      "gloss": "The number of positions in which two words of equal length differ."
+    },
+    {
+      "term": "Cipher",
+      "gloss": "A method of scrambling a message with a key so that only key holders can read it."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Source coding theorem",
+      "year": 1948,
+      "statement": "A source emitting independent identically distributed symbols with entropy \\(H\\) bits can be encoded at any rate above \\(H\\) bits per symbol with error probability tending to zero as the block length grows. At any rate below \\(H\\) this is impossible."
+    },
+    {
+      "name": "Noisy-channel coding theorem",
+      "year": 1948,
+      "statement": "A discrete memoryless channel has a capacity \\(C = \\max_{p(x)} I(X;Y)\\). For every rate \\(R < C\\) there are codes of rate \\(R\\) whose error probability tends to zero with the block length. For \\(R > C\\) the error probability stays bounded away from zero."
+    },
+    {
+      "name": "Sampling theorem",
+      "year": null,
+      "statement": "If \\(f\\) is square-integrable and its Fourier transform vanishes outside the frequency band \\([-W, W]\\), then \\(f\\) is determined by its samples at spacing \\(1/(2W)\\): \\(f(t) = \\sum_{n} f\\left(\\frac{n}{2W}\\right)\\operatorname{sinc}(2Wt - n)\\), where \\(\\operatorname{sinc}(x) = \\sin(\\pi x)/(\\pi x)\\)."
+    },
+    {
+      "name": "Perfect secrecy",
+      "year": 1949,
+      "statement": "A cipher is perfectly secret if the ciphertext is statistically independent of the message. This requires the entropy of the key to be at least the entropy of the message. The one-time pad, with a uniformly random key as long as the message and used once, achieves it."
+    },
+    {
+      "name": "Hamming bound",
+      "year": 1950,
+      "statement": "A binary code of length \\(n\\) that corrects every pattern of up to \\(t\\) errors has at most \\(2^n/\\sum_{i=0}^{t}\\binom{n}{i}\\) codewords."
+    },
+    {
+      "name": "Singleton bound",
+      "year": 1964,
+      "statement": "A code of length \\(n\\) and minimum distance \\(d\\) over an alphabet of \\(q\\) symbols has at most \\(q^{n-d+1}\\) codewords. Reed-Solomon codes attain the bound."
+    }
+  ],
+  "open": [
+    {
+      "name": "Capacity of networks",
+      "gloss": "Determine the capacity of basic multi-user channels, such as the relay channel and the interference channel."
+    },
+    {
+      "name": "Best binary codes",
+      "gloss": "What is the largest possible rate of binary codes with a given relative minimum distance as the length grows? It is unknown whether the Gilbert-Varshamov bound is optimal."
+    },
+    {
+      "name": "Shannon capacity of the 7-cycle",
+      "gloss": "Determine the zero-error capacity of the channel whose confusion graph is a cycle of length 7."
+    }
+  ],
+  "uses": [
+    "Mobile, satellite and internet communication",
+    "Data storage on disks and flash memory",
+    "Compression of audio, images and video",
+    "Cryptography"
+  ],
+  "links": [
+    "68",
+    "60",
+    "11",
+    "05",
+    "14"
+  ]
+}

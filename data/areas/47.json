@@ -1,0 +1,95 @@
+{
+  "code": "47",
+  "short": "Operator theory",
+  "hook": "Can an infinite matrix be diagonalized, and what plays the role of its eigenvalues?",
+  "about": [
+    "Operator theory studies linear maps, called operators, on Banach and Hilbert spaces, along with some nonlinear ones. Differentiation, integration against a kernel and multiplication by a function are typical examples. The central concept is the spectrum, which generalizes the set of eigenvalues of a matrix. The area classifies operators by their spectral behavior and studies special classes: compact, self-adjoint, normal, Fredholm, and unbounded operators such as differential operators.",
+    "The aim is a structure theory comparable to diagonalization and Jordan form for matrices. Tools include the spectral theorem, functional calculus, resolvents, semigroups of operators that describe time evolution, and index theory. Fixed point theorems and monotone operators handle nonlinear problems. Quantum mechanics is built on self-adjoint operators, and the subject works closely with functional analysis, differential equations, complex function theory and operator algebras."
+  ],
+  "example": {
+    "title": "Two shifts",
+    "text": "On the space \\(\\ell^2\\) of square-summable sequences, the right shift \\(S\\) sends \\((x_1,x_2,\\dots)\\) to \\((0,x_1,x_2,\\dots)\\). It preserves length but has no eigenvalue: \\(Sx=\\lambda x\\) forces \\(x=0\\). The left shift \\(L(x_1,x_2,\\dots)=(x_2,x_3,\\dots)\\) has the eigenvector \\((1,\\lambda,\\lambda^2,\\dots)\\) for every \\(|\\lambda|<1\\). Both operators have the closed unit disk as spectrum. A square matrix and its transpose share their eigenvalues; these two adjoint operators do not."
+  },
+  "objects": [
+    {
+      "term": "Bounded operator",
+      "gloss": "A continuous linear map from a normed space to itself or to another normed space."
+    },
+    {
+      "term": "Spectrum",
+      "gloss": "The set of scalars \\(\\lambda\\) for which \\(T-\\lambda I\\) has no bounded inverse."
+    },
+    {
+      "term": "Resolvent",
+      "gloss": "The operator-valued function \\(\\lambda\\mapsto(T-\\lambda I)^{-1}\\), defined off the spectrum."
+    },
+    {
+      "term": "Compact operator",
+      "gloss": "An operator sending bounded sets to sets with compact closure; the closest relative of a matrix."
+    },
+    {
+      "term": "Self-adjoint operator",
+      "gloss": "An operator on a Hilbert space equal to its own adjoint, the analog of a Hermitian matrix."
+    },
+    {
+      "term": "Fredholm index",
+      "gloss": "The dimension of the kernel minus the codimension of the range, when both are finite."
+    },
+    {
+      "term": "Operator semigroup",
+      "gloss": "A family \\(T(t)\\), \\(t\\ge0\\), with \\(T(s+t)=T(s)T(t)\\), describing evolution in time."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Riesz theory of compact operators",
+      "year": 1918,
+      "statement": "Let \\(K\\) be a compact operator on a Banach space and \\(\\lambda\\ne0\\). Then \\(K-\\lambda I\\) is injective if and only if it is surjective. Every nonzero point of the spectrum of \\(K\\) is an eigenvalue of finite multiplicity, and the nonzero eigenvalues can accumulate only at 0."
+    },
+    {
+      "name": "Banach fixed-point theorem",
+      "year": 1922,
+      "statement": "Let \\(f\\) be a map of a nonempty complete metric space to itself with \\(d(f(x),f(y))\\le q\\,d(x,y)\\) for some \\(q<1\\). Then \\(f\\) has exactly one fixed point, and the iterates \\(f^n(x)\\) converge to it from every starting point \\(x\\)."
+    },
+    {
+      "name": "Spectral theorem",
+      "year": null,
+      "statement": "Every bounded self-adjoint operator on a Hilbert space is unitarily equivalent to the operator of multiplication by a bounded real measurable function on \\(L^2(\\mu)\\) for some measure space. The same holds for unbounded self-adjoint operators, with a real measurable function that need not be bounded."
+    },
+    {
+      "name": "Stone's theorem",
+      "year": 1932,
+      "statement": "The strongly continuous one-parameter groups of unitary operators on a Hilbert space are exactly the groups \\(U(t)=e^{itA}\\) with \\(A\\) a self-adjoint operator, possibly unbounded. The operator \\(A\\) is determined by the group."
+    },
+    {
+      "name": "Hille-Yosida theorem",
+      "year": 1948,
+      "statement": "A linear operator \\(A\\) on a Banach space generates a strongly continuous semigroup of contractions if and only if \\(A\\) is closed and densely defined and, for every \\(\\lambda>0\\), the operator \\(\\lambda I-A\\) has a bounded inverse of norm at most \\(1/\\lambda\\)."
+    },
+    {
+      "name": "Atkinson's theorem",
+      "year": 1951,
+      "statement": "A bounded operator on a Hilbert space is Fredholm if and only if it is invertible modulo the compact operators."
+    }
+  ],
+  "open": [
+    {
+      "name": "Invariant subspace problem",
+      "gloss": "Does every bounded operator on an infinite-dimensional separable complex Hilbert space have a closed invariant subspace other than zero and the whole space? Counterexamples exist on some Banach spaces."
+    }
+  ],
+  "uses": [
+    "Quantum mechanics",
+    "Evolution equations",
+    "Control and systems theory",
+    "Numerical linear algebra"
+  ],
+  "links": [
+    "46",
+    "35",
+    "15",
+    "81",
+    "30",
+    "45"
+  ]
+}

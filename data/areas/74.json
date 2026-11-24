@@ -1,0 +1,102 @@
+{
+  "code": "74",
+  "short": "Solid mechanics",
+  "hook": "How much load can a slender column carry before it suddenly bows sideways?",
+  "about": [
+    "Solid mechanics describes how solid bodies deform, vibrate and break under loads. The body is modeled as a continuum, and the unknowns are the displacement of each point and the internal forces, called stresses. The area covers elastic materials that spring back, plastic materials that deform permanently, materials with memory, thin structures such as beams, plates and shells, and the growth of cracks.",
+    "The governing equations combine a balance law for momentum with a constitutive law that describes the material. They are systems of partial differential equations, linear for small elastic deformations and nonlinear otherwise. Equilibrium states are often found as minimizers of an energy, which links the area to the calculus of variations. Practical computation relies mostly on the finite element method."
+  ],
+  "example": {
+    "title": "Buckling of a steel rod",
+    "text": "A straight rod of length \\(L\\), hinged at both ends and compressed along its axis, buckles at the Euler load \\(P = \\pi^2 EI/L^2\\). For a steel rod with \\(E = 200\\) GPa, diameter 1 cm and length 1 m, the second moment of area is \\(I = \\pi d^4/64 \\approx 4.9 \\times 10^{-10}\\ \\mathrm{m^4}\\), so \\(P \\approx 970\\) N, about the weight of 99 kg. Doubling the length divides the load by four."
+  },
+  "objects": [
+    {
+      "term": "Displacement field",
+      "gloss": "The vector by which each point of the body has moved from its reference position."
+    },
+    {
+      "term": "Strain tensor",
+      "gloss": "A symmetric tensor measuring local stretching and shearing."
+    },
+    {
+      "term": "Stress tensor",
+      "gloss": "A tensor giving the force per unit area across any small surface inside the body."
+    },
+    {
+      "term": "Constitutive law",
+      "gloss": "The relation between stress and strain that characterizes a particular material."
+    },
+    {
+      "term": "Elastic modulus",
+      "gloss": "A material constant, such as Young's modulus, relating stress to strain in the elastic range."
+    },
+    {
+      "term": "Stored energy function",
+      "gloss": "The elastic energy per unit volume as a function of the deformation gradient."
+    },
+    {
+      "term": "Crack",
+      "gloss": "A surface inside the body across which the displacement may jump."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Cauchy's stress theorem",
+      "year": null,
+      "statement": "The traction \\(t\\) acting on a surface element with unit normal \\(n\\) depends linearly on \\(n\\): there is a tensor field \\(\\sigma\\) with \\(t = \\sigma n\\)."
+    },
+    {
+      "name": "Cauchy's equations of motion",
+      "year": null,
+      "statement": "Balance of linear momentum gives \\(\\rho\\,\\ddot u = \\operatorname{div}\\sigma + f\\), where \\(\\rho\\) is the density, \\(u\\) the displacement and \\(f\\) the body force per unit volume. In the absence of body couples, balance of angular momentum makes \\(\\sigma\\) symmetric."
+    },
+    {
+      "name": "Hooke's law for isotropic materials",
+      "year": null,
+      "statement": "In linear elasticity of an isotropic material, \\(\\sigma = \\lambda\\,(\\operatorname{tr}\\varepsilon)\\,I + 2\\mu\\,\\varepsilon\\), where \\(\\varepsilon = \\frac12(\\nabla u + \\nabla u^{T})\\) is the strain and \\(\\lambda\\), \\(\\mu\\) are the Lamé constants."
+    },
+    {
+      "name": "Korn's inequality",
+      "year": null,
+      "statement": "Let \\(\\Omega\\) be a bounded open subset of \\(\\mathbb{R}^n\\). For every \\(u\\) in \\(H^1_0(\\Omega;\\mathbb{R}^n)\\), \\(\\int_\\Omega |\\nabla u|^2\\,dx \\le 2\\int_\\Omega |\\varepsilon(u)|^2\\,dx\\). Together with the Lax-Milgram lemma this yields existence and uniqueness of solutions in linear elasticity with fixed boundary."
+    },
+    {
+      "name": "Griffith's criterion",
+      "year": 1921,
+      "statement": "A crack in a brittle material advances when the elastic energy released per unit of new crack area reaches a critical value characteristic of the material. For a crack of length \\(2a\\) in a large thin plate under tension, this gives the failure stress \\(\\sqrt{2E\\gamma/(\\pi a)}\\), with \\(\\gamma\\) the surface energy."
+    },
+    {
+      "name": "Ball's existence theorem",
+      "year": 1977,
+      "statement": "If the stored energy function is polyconvex and satisfies suitable growth conditions, then the total elastic energy attains its minimum among admissible deformations with prescribed boundary values."
+    }
+  ],
+  "open": [
+    {
+      "name": "Regularity of energy minimizers",
+      "gloss": "Are the energy minimizers of nonlinear elasticity smooth, and do they satisfy the equilibrium equations in the weak sense?"
+    },
+    {
+      "name": "Dynamics in nonlinear elasticity",
+      "gloss": "Do the equations of motion of nonlinear elasticity in three dimensions have global weak solutions for general initial data?"
+    },
+    {
+      "name": "Prediction of crack paths",
+      "gloss": "Finding mathematically justified models that predict when cracks start, where they go and how they branch."
+    }
+  ],
+  "uses": [
+    "Design of buildings, bridges and aircraft",
+    "Materials engineering",
+    "Seismology",
+    "Biomechanics of bone and tissue"
+  ],
+  "links": [
+    "35",
+    "49",
+    "65",
+    "76",
+    "80"
+  ]
+}

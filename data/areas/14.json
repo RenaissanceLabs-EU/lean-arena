@@ -1,0 +1,102 @@
+{
+  "code": "14",
+  "short": "Algebraic geometry",
+  "hook": "What shapes do the solutions of polynomial equations trace out, and how do two such shapes meet?",
+  "about": [
+    "Algebraic geometry studies the sets of solutions of systems of polynomial equations, such as lines, conics, cubic curves and surfaces, and their higher-dimensional analogs, called varieties. It asks what shapes these sets have, how they intersect, how they vary in families, and when two of them are essentially the same.",
+    "The subject translates geometry into commutative algebra and back: a variety corresponds to a ring of functions on it. Schemes, sheaves and cohomology extend this dictionary so that it works over any field or ring, including the integers, which joins the subject to number theory. Over the complex numbers it meets complex analysis, topology and differential geometry, and it has close ties to theoretical physics."
+  ],
+  "example": {
+    "title": "Rational points on the circle",
+    "text": "Draw the line through \\((-1,0)\\) with slope \\(t\\). It meets the circle \\(x^2+y^2=1\\) in one further point, \\(\\left(\\frac{1-t^2}{1+t^2},\\frac{2t}{1+t^2}\\right)\\). For \\(t=\\tfrac12\\) this is \\(\\left(\\tfrac35,\\tfrac45\\right)\\), which gives the triple \\(3^2+4^2=5^2\\). Every rational slope gives a point with rational coordinates, and every such point except \\((-1,0)\\) arises this way. So the circle is parametrized by a line, and every Pythagorean triple arises, up to scaling, from such a point."
+  },
+  "objects": [
+    {
+      "term": "Affine variety",
+      "gloss": "The set of common zeros of a collection of polynomials in several variables."
+    },
+    {
+      "term": "Projective space",
+      "gloss": "Ordinary space completed by points at infinity, so that parallel lines meet."
+    },
+    {
+      "term": "Scheme",
+      "gloss": "A space built by gluing spectra of commutative rings; the general object of the subject."
+    },
+    {
+      "term": "Morphism",
+      "gloss": "A map between varieties given locally by polynomials or quotients of polynomials."
+    },
+    {
+      "term": "Sheaf",
+      "gloss": "A rule assigning data, such as functions, to open sets in a way compatible with restriction and gluing."
+    },
+    {
+      "term": "Divisor",
+      "gloss": "A formal integer combination of subvarieties of codimension one, such as zeros and poles of a function."
+    },
+    {
+      "term": "Moduli space",
+      "gloss": "A variety or scheme whose points classify geometric objects of a given kind."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Bézout's theorem",
+      "year": null,
+      "statement": "Two projective plane curves of degrees \\(d\\) and \\(e\\) over an algebraically closed field, with no common component, meet in exactly \\(de\\) points when points are counted with intersection multiplicity."
+    },
+    {
+      "name": "Cayley-Salmon theorem",
+      "year": 1849,
+      "statement": "Every smooth cubic surface in projective 3-space over an algebraically closed field contains exactly 27 lines."
+    },
+    {
+      "name": "Riemann-Roch theorem for curves",
+      "year": 1865,
+      "statement": "Let \\(D\\) be a divisor on a smooth projective curve of genus \\(g\\) over an algebraically closed field, and \\(K\\) a canonical divisor. Then \\(\\ell(D)-\\ell(K-D)=\\deg D+1-g\\), where \\(\\ell(D)\\) is the dimension of the space of rational functions \\(f\\) with \\(\\operatorname{div}(f)+D\\ge 0\\), together with zero."
+    },
+    {
+      "name": "Hironaka's resolution of singularities",
+      "year": 1964,
+      "statement": "For every variety \\(X\\) over a field of characteristic 0 there are a smooth variety \\(Y\\) and a proper birational morphism \\(Y\\to X\\)."
+    },
+    {
+      "name": "Weil conjectures",
+      "year": 1974,
+      "statement": "Let \\(X\\) be a smooth projective variety over a field with \\(q\\) elements. Its zeta function, which counts the points of \\(X\\) over all finite extensions, is a rational function of \\(q^{-s}\\), satisfies a functional equation, and has all zeros and poles of absolute value \\(q^{-i/2}\\) for integers \\(i\\) with \\(0\\le i\\le 2\\dim X\\). The last statement was proved in 1974."
+    },
+    {
+      "name": "Faltings's theorem",
+      "year": 1983,
+      "statement": "A smooth projective curve of genus at least 2 defined over a number field has only finitely many points with coordinates in that field."
+    }
+  ],
+  "open": [
+    {
+      "name": "Hodge conjecture",
+      "gloss": "On a smooth complex projective variety, every rational cohomology class of type \\((p,p)\\) is a rational combination of classes of algebraic subvarieties."
+    },
+    {
+      "name": "Resolution of singularities in characteristic p",
+      "gloss": "Whether every variety over a field of positive characteristic has a resolution of singularities; open in dimension 4 and above."
+    },
+    {
+      "name": "Jacobian conjecture",
+      "gloss": "A polynomial map from \\(\\mathbb{C}^n\\) to itself whose Jacobian determinant is a nonzero constant has a polynomial inverse; open for every \\(n\\ge 2\\)."
+    }
+  ],
+  "uses": [
+    "Elliptic curve cryptography",
+    "Error-correcting codes",
+    "String theory",
+    "Robot kinematics and computer vision"
+  ],
+  "links": [
+    "13",
+    "11",
+    "32",
+    "18",
+    "53"
+  ]
+}

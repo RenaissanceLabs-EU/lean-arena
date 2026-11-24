@@ -1,0 +1,99 @@
+{
+  "code": "65",
+  "short": "Numerical analysis",
+  "hook": "How do you solve an equation on a machine that keeps only about sixteen digits of each number?",
+  "about": [
+    "Numerical analysis designs and studies algorithms that compute approximate answers to mathematical problems: solving equations, evaluating integrals, and following the solutions of differential equations. Most problems from science and engineering have no closed-form solution, so they are replaced by finite computations. The area asks how accurate the result is, how much work it takes and how errors grow along the way.",
+    "Typical arguments bound the error of a method in terms of a step size or the number of iterations, and check that rounding errors are not amplified. Linear algebra is at the center, since most methods end in large systems of linear equations or eigenvalue problems. The area draws on approximation theory and functional analysis, and it supplies the algorithms used in scientific computing."
+  ],
+  "example": {
+    "title": "Square root of 2 by Newton's method",
+    "text": "To solve \\(x^2 = 2\\), start from \\(x_0 = 1\\) and repeat \\(x_{n+1} = \\frac12\\left(x_n + \\frac{2}{x_n}\\right)\\). The iterates are \\(1.5\\), \\(1.41667\\), \\(1.4142157\\), \\(1.41421356237\\). The true value is \\(1.41421356237\\ldots\\), so the number of correct digits roughly doubles with each step. Four steps with only division, addition and halving already give eleven correct decimals."
+  },
+  "objects": [
+    {
+      "term": "Floating-point arithmetic",
+      "gloss": "Computer arithmetic with a fixed number of significant digits, so each operation is rounded."
+    },
+    {
+      "term": "Condition number",
+      "gloss": "A measure of how much the answer to a problem changes when its data change slightly."
+    },
+    {
+      "term": "Numerical stability",
+      "gloss": "The property that an algorithm does not amplify rounding and approximation errors unduly."
+    },
+    {
+      "term": "Discretization",
+      "gloss": "Replacing a continuous problem by a finite one, for example on a grid or a mesh."
+    },
+    {
+      "term": "Order of convergence",
+      "gloss": "The rate at which the error shrinks as the step size decreases or iterations proceed."
+    },
+    {
+      "term": "Iterative method",
+      "gloss": "A procedure that improves an approximate solution step by step."
+    },
+    {
+      "term": "Quadrature rule",
+      "gloss": "A formula that approximates an integral by a weighted sum of function values."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Convergence of Newton's method",
+      "year": null,
+      "statement": "If \\(f\\) is twice continuously differentiable near a root \\(x^*\\) with \\(f'(x^*) \\ne 0\\), then for every starting point close enough to \\(x^*\\) the iteration \\(x_{n+1} = x_n - f(x_n)/f'(x_n)\\) converges to \\(x^*\\), and \\(|x_{n+1} - x^*| \\le C|x_n - x^*|^2\\) for some constant \\(C\\)."
+    },
+    {
+      "name": "Gaussian quadrature",
+      "year": null,
+      "statement": "The \\(n\\)-point rule whose nodes are the zeros of the Legendre polynomial of degree \\(n\\) integrates every polynomial of degree at most \\(2n-1\\) exactly over \\([-1,1]\\). No rule with \\(n\\) nodes is exact for all polynomials of degree \\(2n\\)."
+    },
+    {
+      "name": "Conjugate gradient method",
+      "year": 1952,
+      "statement": "For a symmetric positive definite \\(n \\times n\\) system \\(Ax = b\\), the method reaches the exact solution in at most \\(n\\) steps in exact arithmetic. After \\(k\\) steps the error in the \\(A\\)-norm is at most \\(2\\left(\\frac{\\sqrt\\kappa - 1}{\\sqrt\\kappa + 1}\\right)^k\\) times the initial error, where \\(\\kappa\\) is the ratio of the largest to the smallest eigenvalue of \\(A\\)."
+    },
+    {
+      "name": "Lax equivalence theorem",
+      "year": 1956,
+      "statement": "For a consistent finite difference scheme applied to a well-posed linear initial value problem, stability is necessary and sufficient for convergence."
+    },
+    {
+      "name": "Dahlquist equivalence theorem",
+      "year": 1956,
+      "statement": "A linear multistep method for ordinary differential equations is convergent if and only if it is consistent and zero-stable."
+    },
+    {
+      "name": "Céa's lemma",
+      "year": 1964,
+      "statement": "Let \\(a\\) be a bilinear form on a Hilbert space \\(V\\) with \\(|a(u,v)| \\le M\\|u\\|\\|v\\|\\) and \\(a(v,v) \\ge \\alpha\\|v\\|^2\\), \\(\\alpha > 0\\). If \\(u\\) solves \\(a(u,v) = \\ell(v)\\) for all \\(v \\in V\\) and \\(u_h\\) is the Galerkin solution in a closed subspace \\(V_h\\), then \\(\\|u - u_h\\| \\le \\frac{M}{\\alpha}\\inf_{v \\in V_h}\\|u - v\\|\\)."
+    }
+  ],
+  "open": [
+    {
+      "name": "Growth factor for complete pivoting",
+      "gloss": "How large can the entries become during Gaussian elimination with complete pivoting on an \\(n \\times n\\) real matrix? The true growth rate is unknown."
+    },
+    {
+      "name": "High-dimensional problems",
+      "gloss": "Finding methods for differential equations in many variables whose cost does not grow exponentially with the dimension."
+    }
+  ],
+  "uses": [
+    "Weather and climate simulation",
+    "Engineering design and simulation",
+    "Computer graphics",
+    "Training of machine learning models"
+  ],
+  "links": [
+    "15",
+    "35",
+    "34",
+    "41",
+    "68",
+    "49"
+  ]
+}

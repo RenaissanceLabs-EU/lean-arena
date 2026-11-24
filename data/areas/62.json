@@ -1,0 +1,103 @@
+{
+  "code": "62",
+  "short": "Statistics",
+  "hook": "How much can a sample of a thousand people tell you about a population of millions?",
+  "about": [
+    "Statistics is the study of how to learn from data in the presence of variation and uncertainty. Given observations, it asks which explanations are plausible, how to estimate unknown quantities and how sure one can be of the answers. It also covers how to collect data well, through the design of experiments and of sample surveys.",
+    "The mathematical side rests on probability: data are modeled as random draws from a distribution that is only partly known. Estimators and tests are then judged by their error rates, either for a fixed sample size or as the sample grows. Frequentist and Bayesian approaches differ in how they treat unknown parameters. Statistics draws on optimization, linear algebra and computation, and underlies much of machine learning."
+  ],
+  "example": {
+    "title": "Reading a poll",
+    "text": "A poll asks 1000 randomly chosen voters and 520 favor a proposal, so the estimate is \\(52\\%\\). The standard error is \\(\\sqrt{0.52 \\cdot 0.48/1000} \\approx 0.016\\). An approximate 95 percent confidence interval is \\(0.52 \\pm 1.96 \\cdot 0.016\\), which runs from about \\(48.9\\%\\) to \\(55.1\\%\\). Since the interval contains \\(50\\%\\), this poll alone does not settle whether a majority is in favor."
+  },
+  "objects": [
+    {
+      "term": "Statistical model",
+      "gloss": "A family of probability distributions, one of which is assumed to have produced the data."
+    },
+    {
+      "term": "Estimator",
+      "gloss": "A rule that turns data into a guess for an unknown quantity."
+    },
+    {
+      "term": "Likelihood",
+      "gloss": "The probability or density of the observed data, viewed as a function of the unknown parameter."
+    },
+    {
+      "term": "Hypothesis test",
+      "gloss": "A rule for deciding whether data are compatible with a stated hypothesis, with controlled error rates."
+    },
+    {
+      "term": "Confidence interval",
+      "gloss": "A data-dependent interval that covers the true parameter with a stated probability."
+    },
+    {
+      "term": "Sufficient statistic",
+      "gloss": "A summary of the data that retains all information about the parameter."
+    },
+    {
+      "term": "Posterior distribution",
+      "gloss": "In Bayesian inference, the distribution of the parameter after combining a prior with the data."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Gauss-Markov theorem",
+      "year": null,
+      "statement": "In the linear model \\(y = X\\beta + \\varepsilon\\), where \\(X\\) has full column rank and the errors have mean zero, equal finite variance and are uncorrelated, the least squares estimator has the smallest variance among all linear unbiased estimators of \\(\\beta\\)."
+    },
+    {
+      "name": "Neyman-Pearson lemma",
+      "year": 1933,
+      "statement": "For testing one fully specified distribution against another, a test that rejects when the likelihood ratio exceeds a threshold and accepts when it is below has the greatest probability of correctly rejecting among all tests whose level does not exceed its own."
+    },
+    {
+      "name": "Cramér-Rao bound",
+      "year": null,
+      "statement": "Under regularity conditions, any unbiased estimator of a real parameter \\(\\theta\\) has variance at least \\(1/I(\\theta)\\), where \\(I(\\theta)\\) is the Fisher information of the sample."
+    },
+    {
+      "name": "Rao-Blackwell theorem",
+      "year": null,
+      "statement": "If an unbiased estimator with finite variance is replaced by its conditional expectation given a sufficient statistic, the result is an unbiased estimator whose variance is no larger."
+    },
+    {
+      "name": "Glivenko-Cantelli theorem",
+      "year": 1933,
+      "statement": "For independent observations from a common distribution, the empirical distribution function converges uniformly to the true distribution function, almost surely."
+    },
+    {
+      "name": "Asymptotic normality of maximum likelihood",
+      "year": null,
+      "statement": "For independent observations from a parametric family satisfying regularity conditions, with true parameter \\(\\theta_0\\), a consistent maximum likelihood estimator \\(\\hat\\theta_n\\) satisfies that \\(\\sqrt{n}(\\hat\\theta_n - \\theta_0)\\) converges in distribution to a normal law with mean 0 and covariance \\(I(\\theta_0)^{-1}\\), the inverse Fisher information of one observation."
+    }
+  ],
+  "open": [
+    {
+      "name": "High-dimensional inference",
+      "gloss": "Finding reliable estimates and error statements when the number of unknown parameters is comparable to or exceeds the number of observations."
+    },
+    {
+      "name": "Statistical-computational gaps",
+      "gloss": "For problems such as detecting a small planted structure in noise, can efficient algorithms reach the accuracy that is statistically possible?"
+    },
+    {
+      "name": "Inference after model selection",
+      "gloss": "Producing valid tests and intervals when the same data were used to choose the model."
+    }
+  ],
+  "uses": [
+    "Clinical trials",
+    "Surveys and official statistics",
+    "Machine learning",
+    "Industrial quality control"
+  ],
+  "links": [
+    "60",
+    "65",
+    "68",
+    "90",
+    "91",
+    "92"
+  ]
+}

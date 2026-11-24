@@ -1,0 +1,99 @@
+{
+  "code": "33",
+  "short": "Special functions",
+  "hook": "Which functions beyond sine and logarithm turn up so often that they earned names of their own?",
+  "about": [
+    "Special functions are the particular functions that arise again and again in mathematics and physics: the gamma function, Bessel functions, Legendre and other orthogonal polynomials, hypergeometric functions, elliptic functions and many more. Most appear as solutions of specific differential or difference equations, or as integrals that cannot be expressed through elementary functions. The area catalogs their properties and the relations among them.",
+    "Typical results are identities, integral representations, recurrence relations, asymptotic expansions and addition formulas. Much of the structure is explained by symmetry: many special functions are matrix entries of group representations or solutions singled out by separation of variables. The subject serves number theory, combinatorics, probability and mathematical physics, and its \\(q\\)-analogs link it to partitions and quantum groups."
+  ],
+  "example": {
+    "title": "The factorial between the integers",
+    "text": "The gamma function is defined for \\(x>0\\) by the integral \\(\\Gamma(x)=\\int_0^\\infty t^{x-1}e^{-t}\\,dt\\). Integration by parts gives the rule \\(\\Gamma(x+1)=x\\,\\Gamma(x)\\), and \\(\\Gamma(1)=1\\), so \\(\\Gamma(5)=4\\cdot3\\cdot2\\cdot1=24\\). In this way the gamma function extends the factorial to numbers that are not integers. Substituting \\(t=s^2\\) turns the integral for \\(x=\\tfrac12\\) into the Gaussian integral, which gives \\(\\Gamma(\\tfrac12)=\\sqrt{\\pi}\\). The rule then yields \\(\\Gamma(\\tfrac32)=\\tfrac12\\sqrt{\\pi}\\approx0.886\\)."
+  },
+  "objects": [
+    {
+      "term": "Gamma function",
+      "gloss": "The function \\(\\Gamma(x)=\\int_0^\\infty t^{x-1}e^{-t}\\,dt\\), which interpolates the factorial."
+    },
+    {
+      "term": "Hypergeometric series",
+      "gloss": "A power series in which the ratio of consecutive coefficients is a rational function of the index."
+    },
+    {
+      "term": "Bessel function",
+      "gloss": "A solution of \\(x^2y''+xy'+(x^2-\\nu^2)y=0\\), which arises from the Laplacian in cylindrical coordinates."
+    },
+    {
+      "term": "Orthogonal polynomials",
+      "gloss": "A sequence of polynomials, one of each degree, mutually orthogonal for a given weight or measure."
+    },
+    {
+      "term": "Elliptic function",
+      "gloss": "A meromorphic function on the complex plane with two independent periods."
+    },
+    {
+      "term": "Theta function",
+      "gloss": "A rapidly converging series in exponentials of quadratic terms, from which elliptic functions can be built."
+    },
+    {
+      "term": "Basic hypergeometric series",
+      "gloss": "A \\(q\\)-analog of a hypergeometric series: the coefficient ratio is rational in \\(q^n\\)."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Euler's reflection formula",
+      "year": null,
+      "statement": "For every complex \\(z\\) that is not an integer, \\(\\Gamma(z)\\,\\Gamma(1-z)=\\dfrac{\\pi}{\\sin \\pi z}\\)."
+    },
+    {
+      "name": "Stirling's formula",
+      "year": null,
+      "statement": "As \\(x\\to+\\infty\\), \\(\\Gamma(x+1)\\sim\\sqrt{2\\pi x}\\,(x/e)^x\\), meaning that the ratio of the two sides tends to 1."
+    },
+    {
+      "name": "Euler's beta integral",
+      "year": null,
+      "statement": "For complex \\(a,b\\) with positive real parts, \\(\\int_0^1 t^{a-1}(1-t)^{b-1}\\,dt=\\dfrac{\\Gamma(a)\\Gamma(b)}{\\Gamma(a+b)}\\)."
+    },
+    {
+      "name": "Gauss's summation theorem",
+      "year": 1812,
+      "statement": "If \\(\\mathrm{Re}(c-a-b)>0\\) and \\(c\\) is not a nonpositive integer, then \\({}_2F_1(a,b;c;1)=\\dfrac{\\Gamma(c)\\,\\Gamma(c-a-b)}{\\Gamma(c-a)\\,\\Gamma(c-b)}\\)."
+    },
+    {
+      "name": "Jacobi triple product identity",
+      "year": 1829,
+      "statement": "For complex \\(q,z\\) with \\(|q|<1\\) and \\(z\\ne0\\), \\(\\sum_{n=-\\infty}^{\\infty}q^{n^2}z^n=\\prod_{m=1}^{\\infty}(1-q^{2m})(1+q^{2m-1}z)(1+q^{2m-1}z^{-1})\\)."
+    },
+    {
+      "name": "Favard's theorem",
+      "year": 1935,
+      "statement": "Let \\(p_{-1}=0\\), \\(p_0=1\\) and \\(p_{n+1}(x)=(x-b_n)p_n(x)-c_n\\,p_{n-1}(x)\\) with real \\(b_n\\) and \\(c_n>0\\). Then there is a positive measure on the real line with respect to which the polynomials \\(p_n\\) are mutually orthogonal."
+    }
+  ],
+  "open": [
+    {
+      "name": "Irrationality of Euler's constant",
+      "gloss": "It is not known whether \\(\\gamma=-\\Gamma'(1)\\approx0.5772\\) is irrational."
+    },
+    {
+      "name": "Painlevé transcendents",
+      "gloss": "The six Painlevé equations define nonlinear special functions; their asymptotics and connection formulas are still being worked out in full."
+    }
+  ],
+  "uses": [
+    "Quantum mechanics",
+    "Wave propagation and optics",
+    "Probability distributions in statistics",
+    "Numerical software libraries"
+  ],
+  "links": [
+    "30",
+    "34",
+    "11",
+    "05",
+    "42",
+    "22"
+  ]
+}

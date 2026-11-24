@@ -1,0 +1,99 @@
+{
+  "code": "53",
+  "short": "Differential geometry",
+  "hook": "How can an ant living on a surface tell, without ever leaving it, whether the surface is curved?",
+  "about": [
+    "Differential geometry applies calculus to curved spaces: curves, surfaces and their higher-dimensional versions, smooth manifolds. Its basic question is how to define and measure curvature, and what curvature implies about shape. A Riemannian metric gives lengths and angles on a manifold, and from it come geodesics, volume and curvature. The area also studies other structures on manifolds, such as symplectic, complex, contact and Lorentzian ones.",
+    "Methods combine tensor calculus, connections and differential forms with differential equations and topology. A recurring theme is the passage from local to global: bounds on curvature at each point constrain the topology and size of the whole space. Geometric flows deform a shape in order to improve it. General relativity models gravity as curvature of spacetime, and gauge theories in physics use connections on bundles, so exchange with physics is constant."
+  ],
+  "example": {
+    "title": "A triangle with three right angles",
+    "text": "On a sphere of radius 1, draw a triangle with one corner at the north pole and two on the equator, a quarter turn apart. Its sides are arcs of great circles and all three angles are right angles, so they sum to \\(270^\\circ\\), not \\(180^\\circ\\). The excess, \\(\\pi/2\\) in radians, equals the area of the triangle, which is one eighth of \\(4\\pi\\). The excess measures the curvature enclosed: here the Gaussian curvature is 1."
+  },
+  "objects": [
+    {
+      "term": "Smooth manifold",
+      "gloss": "A space that near every point looks like Euclidean space, with smooth changes of coordinates."
+    },
+    {
+      "term": "Riemannian metric",
+      "gloss": "A smoothly varying inner product on the tangent spaces, giving lengths and angles."
+    },
+    {
+      "term": "Geodesic",
+      "gloss": "A curve with zero acceleration; short pieces of it are shortest paths."
+    },
+    {
+      "term": "Connection",
+      "gloss": "A rule for differentiating vector fields, which defines parallel transport along curves."
+    },
+    {
+      "term": "Curvature tensor",
+      "gloss": "The tensor recording how parallel transport around small loops fails to return vectors unchanged."
+    },
+    {
+      "term": "Gaussian curvature",
+      "gloss": "The product of the two principal curvatures of a surface at a point."
+    },
+    {
+      "term": "Symplectic form",
+      "gloss": "A closed nondegenerate differential 2-form, the geometric structure of classical mechanics."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Theorema Egregium",
+      "year": 1827,
+      "statement": "The Gaussian curvature of a surface in \\(\\mathbb{R}^3\\) is determined by the first fundamental form alone. Hence it is preserved by local isometries."
+    },
+    {
+      "name": "Gauss-Bonnet theorem",
+      "year": null,
+      "statement": "For a compact oriented Riemannian surface \\(M\\) without boundary, with Gaussian curvature \\(K\\) and Euler characteristic \\(\\chi(M)\\), \\(\\int_MK\\,dA=2\\pi\\chi(M)\\)."
+    },
+    {
+      "name": "Fundamental theorem of Riemannian geometry",
+      "year": null,
+      "statement": "On every Riemannian manifold there is exactly one connection that is torsion-free and compatible with the metric, the Levi-Civita connection."
+    },
+    {
+      "name": "Hopf-Rinow theorem",
+      "year": 1931,
+      "statement": "For a connected Riemannian manifold the following are equivalent: it is complete as a metric space; every geodesic extends to all values of its parameter; closed bounded subsets are compact. When they hold, any two points are joined by a geodesic of least length."
+    },
+    {
+      "name": "Bonnet-Myers theorem",
+      "year": 1941,
+      "statement": "Let \\(M\\) be a complete Riemannian manifold of dimension \\(n\\) whose Ricci curvature satisfies \\(\\mathrm{Ric}\\ge(n-1)k\\) for a constant \\(k>0\\). Then \\(M\\) is compact with diameter at most \\(\\pi/\\sqrt{k}\\), and its fundamental group is finite."
+    },
+    {
+      "name": "Nash embedding theorem",
+      "year": 1956,
+      "statement": "Every smooth Riemannian manifold admits a smooth isometric embedding into a Euclidean space of sufficiently high dimension."
+    }
+  ],
+  "open": [
+    {
+      "name": "Hopf's product question",
+      "gloss": "Does \\(S^2\\times S^2\\) carry a Riemannian metric of positive sectional curvature?"
+    },
+    {
+      "name": "Complex structure on the six-sphere",
+      "gloss": "Is there an integrable complex structure on \\(S^6\\), making it a complex manifold?"
+    }
+  ],
+  "uses": [
+    "General relativity",
+    "Gauge theories in particle physics",
+    "Computer graphics and geometry processing",
+    "Robotics and mechanics"
+  ],
+  "links": [
+    "58",
+    "57",
+    "35",
+    "83",
+    "32",
+    "49"
+  ]
+}

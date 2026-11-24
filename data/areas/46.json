@@ -1,0 +1,99 @@
+{
+  "code": "46",
+  "short": "Functional analysis",
+  "hook": "What happens to linear algebra when the vectors are functions and the space has infinitely many dimensions?",
+  "about": [
+    "Functional analysis studies vector spaces of infinite dimension that carry a notion of distance or convergence, and the linear maps between them. Typical examples are spaces of functions: continuous functions, square-integrable functions, or distributions. The main classes are Hilbert spaces, Banach spaces and more general topological vector spaces, together with algebras of operators and of functions built on them.",
+    "The subject takes geometric intuition from finite dimensions and tests where it survives. Completeness, convexity, duality and compactness in weak topologies replace finite-dimensional arguments. Its general theorems turn concrete problems about differential or integral equations into statements about linear operators. It is the common language of partial differential equations, quantum mechanics, probability and optimization, and it includes operator algebras with their links to topology and group theory."
+  ],
+  "example": {
+    "title": "A bounded sequence that will not settle",
+    "text": "The space \\(\\ell^2\\) consists of the real sequences \\(x=(x_1,x_2,\\dots)\\) with \\(\\sum x_n^2<\\infty\\), and the length of \\(x\\) is \\(\\|x\\|=\\sqrt{\\sum x_n^2}\\). The unit vectors \\(e_1=(1,0,0,\\dots)\\), \\(e_2=(0,1,0,\\dots)\\) and so on all have length 1, and any two of them are at distance \\(\\sqrt2\\). So this bounded sequence has no convergent subsequence, which cannot happen in finite dimensions. The closed unit ball of \\(\\ell^2\\) is not compact."
+  },
+  "objects": [
+    {
+      "term": "Banach space",
+      "gloss": "A normed vector space in which every Cauchy sequence converges."
+    },
+    {
+      "term": "Hilbert space",
+      "gloss": "A Banach space whose norm comes from an inner product, so angles and orthogonality make sense."
+    },
+    {
+      "term": "Bounded linear operator",
+      "gloss": "A linear map between normed spaces that is continuous."
+    },
+    {
+      "term": "Dual space",
+      "gloss": "The space of all continuous linear functionals on a given space."
+    },
+    {
+      "term": "Weak topology",
+      "gloss": "The coarsest topology making all continuous linear functionals continuous; it has more compact sets than the norm topology."
+    },
+    {
+      "term": "Distribution",
+      "gloss": "A continuous linear functional on smooth compactly supported functions; a generalized function that can always be differentiated."
+    },
+    {
+      "term": "C*-algebra",
+      "gloss": "A norm-closed algebra of bounded operators on a Hilbert space that is closed under taking adjoints."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Riesz representation theorem",
+      "year": 1907,
+      "statement": "Every bounded linear functional on a Hilbert space \\(H\\) has the form \\(x\\mapsto\\langle x,y\\rangle\\) for a unique \\(y\\in H\\), and its norm equals \\(\\|y\\|\\)."
+    },
+    {
+      "name": "Hahn-Banach theorem",
+      "year": null,
+      "statement": "Let \\(p\\) be a sublinear functional on a real vector space \\(X\\) and \\(f\\) a linear functional on a subspace with \\(f\\le p\\) there. Then \\(f\\) extends to a linear functional on \\(X\\) with \\(f\\le p\\) everywhere. In particular, a bounded linear functional on a subspace of a normed space extends to the whole space with the same norm."
+    },
+    {
+      "name": "Uniform boundedness principle",
+      "year": 1927,
+      "statement": "Let \\(\\mathcal{F}\\) be a family of bounded linear operators from a Banach space \\(X\\) to a normed space \\(Y\\). If \\(\\sup_{T\\in\\mathcal{F}}\\|Tx\\|<\\infty\\) for every \\(x\\in X\\), then \\(\\sup_{T\\in\\mathcal{F}}\\|T\\|<\\infty\\)."
+    },
+    {
+      "name": "Open mapping theorem",
+      "year": null,
+      "statement": "A bounded linear map from a Banach space onto a Banach space sends open sets to open sets. In particular, a bounded linear bijection between Banach spaces has a bounded inverse."
+    },
+    {
+      "name": "Banach-Alaoglu theorem",
+      "year": 1940,
+      "statement": "The closed unit ball of the dual of a normed space is compact in the weak-star topology."
+    },
+    {
+      "name": "Gelfand-Naimark theorem",
+      "year": 1943,
+      "statement": "Every commutative unital C*-algebra is isometrically \\(*\\)-isomorphic to the algebra of continuous complex functions on a compact Hausdorff space. Every C*-algebra, defined abstractly, is isometrically \\(*\\)-isomorphic to a norm-closed \\(*\\)-subalgebra of the bounded operators on some Hilbert space."
+    }
+  ],
+  "open": [
+    {
+      "name": "Free group factor problem",
+      "gloss": "Are the von Neumann algebras of the free groups on two and on three generators isomorphic?"
+    },
+    {
+      "name": "Separable quotient problem",
+      "gloss": "Does every infinite-dimensional Banach space have an infinite-dimensional separable quotient space?"
+    }
+  ],
+  "uses": [
+    "Quantum mechanics",
+    "Partial differential equations",
+    "Optimization and economics",
+    "Kernel methods in machine learning"
+  ],
+  "links": [
+    "47",
+    "35",
+    "28",
+    "42",
+    "54",
+    "81"
+  ]
+}

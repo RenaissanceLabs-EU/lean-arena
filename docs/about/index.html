@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About · Renaissance Labs Mathematics</title>
+<meta name="description" content="How the mathematics map and the Lean environments are made, and where the numbers come from.">
+<link rel="canonical" href="https://math.renaissancelabs.eu/about/">
+<meta property="og:title" content="About · Renaissance Labs Mathematics"><meta property="og:description" content="How the mathematics map and the Lean environments are made, and where the numbers come from."><meta property="og:url" content="https://math.renaissancelabs.eu/about/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary"><meta name="theme-color" content="#fdfaf3">
+<link rel="icon" href="/assets/favicon.png">
+<link rel="stylesheet" href="/styles.css?v=a4f0f3bc">
+
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/"><img src="/assets/mark.png" alt=""><span>Renaissance Labs &middot; Mathematics</span></a>
+  <nav><a href="/">Map</a><a href="/environments/">Environments</a><a href="/frontier/">Frontier</a><a href="/checking/">How checking works</a><a href="/about/" aria-current="page">About</a><a class="ext" href="https://practice.renaissancelabs.eu">Practice</a><a class="ext" href="https://renaissancelabs.eu">Renaissance Labs</a></nav>
+  <button class="theme" id="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<main id="main">
+
+<div class="wrap">
+  <header class="page-head"><p class="eyebrow">About</p><h1>A map, and a place to practice</h1></header>
+  <div class="prose">
+    <p>Renaissance Labs is the lab for frontier labs. We build the environments, evaluations and data that bring intelligence to every field of human work, and we give them away. This site is the mathematics part of that work.</p>
+    <h2>The idea</h2>
+    <p>Mathematics is the one field where an answer can be checked by machine with no judgment involved. That makes it the best place to learn how intelligence improves itself. This site has two halves that feed each other: a map of all of mathematics with its formalization status, and Lean environments that turn the gaps on the map into problems a model can practice on. As models get better at proving, they can formalize more of the map.</p>
+    <h2>How the map is made</h2>
+    <ul>
+      <li><b>Structure.</b> The 63 areas and 534 subareas are the top two levels of the <a href="https://msc2020.org/">Mathematics Subject Classification 2020</a>, the scheme used by zbMATH Open and Mathematical Reviews. We use it unchanged, and group the areas into eight families for the map.</li>
+      <li><b>Area pages.</b> Written for this site and checked for form by a script. Mathematical statements were written from memory by a language model and have not all been reviewed by specialists; years follow one convention noted on each page where it is ambiguous. Spot an error and tell us.</li>
+      <li><b>Coverage.</b> Counted from the source of Mathlib at commit <span class="mono">5e932f97dd</span>: every <span class="mono">theorem</span> and <span class="mono">lemma</span> declaration, filed under MSC areas by a hand-written mapping of Mathlib directories (<span class="mono">tools/mathlib_coverage.py</span>). A directory that covers several areas is split evenly. This is a measure of size, not of depth, and the mapping is ours: a few areas show almost nothing because Mathlib has no directory for them, even though a result or two may exist elsewhere.</li>
+      <li><b>Frontier lists.</b> Read directly from Mathlib's own tracking files.</li>
+    </ul>
+    <h2 id="contribute">Add an environment</h2>
+    <p>An environment is a Python generator that returns a Lean task: a statement with <span class="mono">sorry</span>, plus a reference proof. The contract is in <span class="mono">AUTHORING.md</span> in the repository. Good environments are true, varied, need a real idea at higher difficulty, and are not closed by a single automation call. Open a pull request.</p>
+    <h2>Related</h2>
+    <ul><li><a href="https://practice.renaissancelabs.eu">Practice</a>, the index of reinforcement learning environments for every field, and our own environments across 22 fields.</li><li><a href="https://labs.renaissancelabs.eu">The Atlas</a>, a map of open labs.</li><li><a href="https://learn.renaissancelabs.eu">Learn</a>, films and courses.</li></ul>
+    <h2>Data</h2>
+    <p><a href="/data/areas.json">areas.json</a> has all area pages, <a href="/data/coverage.json">coverage.json</a> the Mathlib measurements, <a href="/data/environments.json">environments.json</a> the environments. Released under CC BY 4.0; code under the MIT license.</p>
+  </div>
+</div>
+</main>
+<footer class="wrap foot">
+  <a class="brand" href="https://renaissancelabs.eu"><img src="/assets/mark.png" alt="">Renaissance Labs</a>
+  <div class="foot-links"><a href="/about/">About</a><a href="/data/areas.json">Data</a><a href="/llms.txt">llms.txt</a><a href="https://practice.renaissancelabs.eu">Practice</a><a href="https://labs.renaissancelabs.eu">Atlas</a><a href="https://huggingface.co/RenaissanceLabsEU">Hugging Face</a></div>
+</footer>
+<script src="/app.js?v=a4f0f3bc" defer></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+{
+  "code": "81",
+  "short": "Quantum theory",
+  "hook": "Why can the position and the momentum of an electron never both be known exactly?",
+  "about": [
+    "Quantum theory describes matter and light at the scale of atoms and below. A system is described by a state that assigns probabilities to the outcomes of measurements, and quantities such as energy often take only discrete values. The area covers quantum mechanics of particles, scattering, quantum field theory, which combines quantum mechanics with special relativity, and quantum information and computation.",
+    "States are vectors in a complex Hilbert space, observables are self-adjoint operators and time evolution is unitary. The mathematics therefore draws on functional analysis, spectral theory, representation theory of groups and partial differential equations. Quantum field theory has in turn produced ideas used in topology and geometry, although a large part of it still lacks rigorous mathematical foundations."
+  ],
+  "example": {
+    "title": "An electron in a box",
+    "text": "An electron confined to a segment of length \\(L\\) has wave functions \\(\\sin(n\\pi x/L)\\) and energies \\(E_n = n^2h^2/(8mL^2)\\) for \\(n = 1, 2, 3, \\dots\\). With \\(L = 1\\) nm this gives \\(E_1 \\approx 0.38\\) eV, \\(E_2 \\approx 1.50\\) eV and \\(E_3 \\approx 3.38\\) eV. No energy in between is allowed. Dropping from level 2 to level 1 releases a photon of about \\(1.13\\) eV, in the near infrared."
+  },
+  "objects": [
+    {
+      "term": "State vector",
+      "gloss": "A unit vector in a complex Hilbert space, encoding all measurement probabilities of a system."
+    },
+    {
+      "term": "Observable",
+      "gloss": "A self-adjoint operator; its spectrum is the set of possible measurement results."
+    },
+    {
+      "term": "Hamiltonian",
+      "gloss": "The energy operator, which generates the time evolution of the state."
+    },
+    {
+      "term": "Wave function",
+      "gloss": "The state of a particle written as a complex function whose squared modulus is a probability density."
+    },
+    {
+      "term": "Commutator",
+      "gloss": "The operator \\(AB - BA\\), which measures the failure of two observables to be compatible."
+    },
+    {
+      "term": "Entanglement",
+      "gloss": "A joint state of several systems that cannot be written as a product of states of the parts."
+    },
+    {
+      "term": "Quantum field",
+      "gloss": "An operator-valued field on spacetime whose excitations are interpreted as particles."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Schrödinger equation",
+      "year": 1926,
+      "statement": "The state \\(\\psi(t)\\) of an isolated quantum system with Hamiltonian \\(H\\) evolves by \\(i\\hbar\\,\\partial_t\\psi = H\\psi\\)."
+    },
+    {
+      "name": "Uncertainty relation",
+      "year": 1927,
+      "statement": "In every state, the standard deviations of position and momentum satisfy \\(\\sigma_x\\sigma_p \\ge \\hbar/2\\). More generally, for observables \\(A\\) and \\(B\\), \\(\\sigma_A\\sigma_B \\ge \\frac12|\\langle [A,B]\\rangle|\\)."
+    },
+    {
+      "name": "Stone-von Neumann theorem",
+      "year": 1931,
+      "statement": "For a system with finitely many degrees of freedom, any two irreducible strongly continuous unitary representations of the canonical commutation relations in Weyl form are unitarily equivalent. So the Schrödinger representation is essentially the only one."
+    },
+    {
+      "name": "Wigner's theorem",
+      "year": 1931,
+      "statement": "Every bijection of the set of pure states of a Hilbert space onto itself that preserves transition probabilities is induced by a unitary or an antiunitary operator, unique up to a phase factor."
+    },
+    {
+      "name": "Bell's theorem",
+      "year": 1964,
+      "statement": "No theory of local hidden variables can reproduce all predictions of quantum mechanics. In the later CHSH form, local hidden variables force a certain combination \\(S\\) of four correlations to satisfy \\(|S| \\le 2\\), while quantum mechanics allows values up to \\(2\\sqrt2\\)."
+    },
+    {
+      "name": "No-cloning theorem",
+      "year": 1982,
+      "statement": "There is no unitary operation that maps \\(\\lvert\\psi\\rangle\\otimes\\lvert 0\\rangle\\) to \\(\\lvert\\psi\\rangle\\otimes\\lvert\\psi\\rangle\\) for every state \\(\\lvert\\psi\\rangle\\)."
+    }
+  ],
+  "open": [
+    {
+      "name": "Yang-Mills existence and mass gap",
+      "gloss": "Construct quantum Yang-Mills theory on four-dimensional spacetime rigorously and show that its lightest particle has positive mass."
+    },
+    {
+      "name": "Quantum gravity",
+      "gloss": "Find a consistent theory that combines quantum theory with general relativity."
+    },
+    {
+      "name": "Measurement problem",
+      "gloss": "Explain how the definite outcomes seen in measurements arise from the linear, deterministic evolution of the quantum state."
+    }
+  ],
+  "uses": [
+    "Semiconductors and lasers",
+    "Chemistry and materials science",
+    "Quantum computing and cryptography",
+    "Magnetic resonance imaging"
+  ],
+  "links": [
+    "46",
+    "47",
+    "82",
+    "83",
+    "22",
+    "35"
+  ]
+}

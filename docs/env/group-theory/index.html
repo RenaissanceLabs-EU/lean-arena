@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proofs about groups and subgroups · Lean environment · Renaissance Labs Mathematics</title>
+<meta name="description" content="Prove facts about abstract groups: commutativity from exponent laws, inverses, subgroup membership and Lagrange, homomorphism kernels.">
+<link rel="canonical" href="https://math.renaissancelabs.eu/env/group-theory/">
+<meta property="og:title" content="Proofs about groups and subgroups · Lean environment · Renaissance Labs Mathematics"><meta property="og:description" content="Prove facts about abstract groups: commutativity from exponent laws, inverses, subgroup membership and Lagrange, homomorphism kernels."><meta property="og:url" content="https://math.renaissancelabs.eu/env/group-theory/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary"><meta name="theme-color" content="#fdfaf3">
+<link rel="icon" href="/assets/favicon.png">
+<link rel="stylesheet" href="/styles.css?v=a4f0f3bc">
+<link rel="stylesheet" href="/assets/katex.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/"><img src="/assets/mark.png" alt=""><span>Renaissance Labs &middot; Mathematics</span></a>
+  <nav><a href="/">Map</a><a href="/environments/" aria-current="page">Environments</a><a href="/frontier/">Frontier</a><a href="/checking/">How checking works</a><a href="/about/">About</a><a class="ext" href="https://practice.renaissancelabs.eu">Practice</a><a class="ext" href="https://renaissancelabs.eu">Renaissance Labs</a></nav>
+  <button class="theme" id="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<main id="main">
+
+<div class="wrap b02" style="--hue: var(--f02)">
+  <nav class="crumbs"><a href="/environments/">Environments</a><span>/</span><a href="/area/20/">MSC 20 Group theory</a></nav>
+  <header class="env-head"><a class="fldchip" href="/area/20/"><i>20</i><span>Group theory and generalizations</span></a>
+  <h1>Proofs about groups and subgroups</h1><p class="id">group-theory</p><p class="lede">Prove facts about abstract groups: commutativity from exponent laws, inverses, subgroup membership and Lagrange, homomorphism kernels.</p>
+  <div class="actions"><a class="btn" href="#run">How to run it</a><a class="btn ghost" href="/checking/">How checking works</a></div></header>
+  <div class="env">
+    <div>
+      <div class="sec"><h2>What the agent does</h2><p>The agent gets a working directory with a Lean file, <code>Solution.lean</code>, and a problem in words. It edits the file until it compiles and is correct. Tasks are generated from a seed and a difficulty from 1 to 3, so the supply is unlimited and every task is new.</p></div>
+      <div class="sec"><h2>An example task</h2><div class="task"><div class="task-h">Instruction, as the agent sees it</div><div class="task-b prose2"><h4>Inverses and cancellation</h4><p>Prove the following statement.</p><p>Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span> be a monoid and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo separator="true">,</mo><mi>z</mi><mo>∈</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">x, y, z \in M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span> with <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>y</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x y = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">x</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">z x = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span>. Then <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">y = z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.04398em;">z</span></span></span></span>.</p><h5>What to do</h5><p><code>Solution.lean</code> in the working directory states the theorem in Lean 4 with Mathlib, with <code>sorry</code> in place of the proof. Replace every <code>sorry</code> with a proof.</p><ul><li>Do not change the statement of any theorem or any definition the file gives you. You may add your own lemmas and definitions.</li><li>Check your work with <code>lake env lean Solution.lean</code> (run it inside <code>/opt/arena/lean</code>, giving the full path to the file). It must compile without errors.</li><li>A theorem counts only if its proof is complete: no <code>sorry</code>, no new axioms, no <code>native_decide</code>.</li><li>The reward is 1 if the theorem is proved and 0 otherwise.</li></ul></div></div>
+      <div class="step"><div class="step-h"><b>Solution.lean</b><span>the file the agent starts from</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre><span class="kw">import</span> Mathlib
+
+<span class="cm">/-- A left inverse and a right inverse of the same element are equal. -/</span>
+<span class="kw">theorem</span> inverses_agree {N : Type*} [Monoid N] (x y z : N)
+    (h1 : x * y = 1) (h2 : z * x = 1) : y = z := <span class="kw">by</span>
+  <span class="kw">sorry</span>
+</pre></div></div>
+      <details class="ref"><summary>Show a reference solution</summary><div class="codebox"><button class="copy" type="button">Copy</button><pre><span class="kw">import</span> Mathlib
+
+<span class="cm">/-- A left inverse and a right inverse of the same element are equal. -/</span>
+<span class="kw">theorem</span> inverses_agree {N : Type*} [Monoid N] (x y z : N)
+    (h1 : x * y = 1) (h2 : z * x = 1) : y = z := <span class="kw">by</span>
+  <span class="kw">calc</span> y = (z * x) * y := <span class="kw">by</span> <span class="kw">rw</span> [h2, one_mul]
+    _ = z * (x * y) := mul_assoc _ _ _
+    _ = z := <span class="kw">by</span> <span class="kw">rw</span> [h1, mul_one]
+</pre></div><p class="note">Reference solutions are never shown to the agent. They are compiled in the environment's self-test, so every task has at least one proof that passes.</p></details></div>
+      <div class="sec"><h2>The families</h2><p>Each task belongs to one family: a different piece of the area's work.</p><table class="t fam"><tr><td><b>hom</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> ker_le_ker_comp {G H Z : Type*} [Group G] [Group H] [Group Z] (f : G →* H) (g : H →* Z) :
+    f.ker ≤ (g.comp f).ker</pre></div></td></tr><tr><td><b>inverse</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> conjugate_fact {G : Type*} [Group G] (p q : G) :
+    orderOf (p * q * p⁻¹) = orderOf q</pre></div></td></tr><tr><td><b>involution</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> group_commutes {G : Type*} [Group G] (h : ∀ g : G, g ^ 2 = 1) :
+    ∀ g k : G, g * k = k * g</pre></div></td></tr><tr><td><b>subgroup</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> normal_conj {A : Type*} [Group A] (H : Subgroup A) (hN : H.Normal) {x : A} (hx : x ∈ H) (y : A) :
+    y * x ^ 2 * y⁻¹ ∈ H</pre></div></td></tr></table></div>
+      <div class="sec"><h2>Reward</h2><dl class="reward"><div><dt>Range</dt><dd>0 to 1</dd></div><div><dt>Checked by</dt><dd>Lean kernel</dd></div><div><dt>Deterministic</dt><dd>yes</dd></div></dl><p>Every theorem must be stated exactly as given and proved: no <code>sorry</code>, no new axioms, no <code>native_decide</code>. The reward is the share of theorems that pass. A file that does not compile scores 0. The submission is also re-checked by a second kernel run. Read <a href="/checking/">how checking works</a>.</p></div>
+      <div class="sec" id="run"><h2>How to run it</h2>
+        <div class="step"><div class="step-h"><b>1. Set up the Lean project</b><span>Lean 4.29.1 with Mathlib 5e932f97dd</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre>git clone https://github.com/RenaissanceLabs-EU/lean-arena &amp;&amp; cd lean-arena
+cd lean &amp;&amp; lake exe cache get</pre></div></div>
+        <div class="step"><div class="step-h"><b>2. Generate a task</b><span>seed and difficulty pick the task</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre>python3 tools/make_task.py group_theory --seed 7 --difficulty 2 --out /tmp/task</pre></div></div>
+        <div class="step"><div class="step-h"><b>3. Grade a solution</b><span>prints the reward</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre>python3 arena/grade.py --spec /tmp/task/spec.json --solution /tmp/task/Solution.lean</pre></div></div>
+        <p class="note">Tasks are also exported as Harbor task folders (<code>instruction.md</code>, <code>task.toml</code>, <code>tests/</code>), the format used by several RL frameworks, with the image built from the Lean project.</p></div>
+      <div class="sec"><h2>How hard is it?</h2><p>A floor, not a ceiling: how many sampled tasks a single automation call can close with no thought at all. Each theorem was given the tactic <code>first | grind | aesop | simp | omega | norm_num | nlinarith | decide</code>. A task counts as closed only if every theorem in it is. Overall 3 of 24. The rest need a real proof.</p><dl class="reward"><div><dt>Difficulty 1</dt><dd>2 of 8</dd></div><div><dt>Difficulty 2</dt><dd>1 of 8</dd></div><div><dt>Difficulty 3</dt><dd>0 of 8</dd></div></dl><p class="note">Sample: 8 seeds at each difficulty. No model has been run on these tasks yet, so how hard they are for a model is not yet measured.</p></div>
+      <div class="sec"><h2>Good for</h2><ul class="goodfor"><li>calc chains in groups</li><li>Subgroup and MonoidHom.ker API</li><li>Nat.card and orderOf</li></ul></div>
+    </div>
+    <aside class="side"><dl>
+      <div><dt>Area</dt><dd><a href="/area/20/">MSC 20 &middot; Group theory and generalizations</a></dd></div>
+      <div><dt>Skill</dt><dd>Group identities and the Subgroup API</dd></div>
+      <div><dt>Kind</dt><dd>Prove theorems</dd></div>
+      <div><dt>Tasks</dt><dd>84 train, 24 held-out eval, per export</dd></div>
+      <div><dt>Families</dt><dd>4</dd></div>
+      <div><dt>Difficulty</dt><dd>1 to 3, set by the generator</dd></div>
+      <div><dt>Toolchain</dt><dd class="mono">Lean 4.29.1<br>Mathlib 5e932f97dd</dd></div>
+    </dl></aside>
+  </div>
+</div>
+</main>
+<footer class="wrap foot">
+  <a class="brand" href="https://renaissancelabs.eu"><img src="/assets/mark.png" alt="">Renaissance Labs</a>
+  <div class="foot-links"><a href="/about/">About</a><a href="/data/areas.json">Data</a><a href="/llms.txt">llms.txt</a><a href="https://practice.renaissancelabs.eu">Practice</a><a href="https://labs.renaissancelabs.eu">Atlas</a><a href="https://huggingface.co/RenaissanceLabsEU">Hugging Face</a></div>
+</footer>
+<script src="/app.js?v=a4f0f3bc" defer></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+{
+  "code": "12",
+  "short": "Fields and polynomials",
+  "hook": "Why is there a formula for the roots of a quadratic equation but none for the general equation of degree five?",
+  "about": [
+    "Field theory studies number systems in which one can add, subtract, multiply and divide, such as the rational, real and complex numbers and the finite fields used in coding. It asks how a field can be enlarged by adjoining roots of polynomials, and what the symmetries of such an enlargement reveal about the polynomial.",
+    "Galois theory is the core method. It translates questions about the roots of a polynomial into questions about a finite group of permutations of those roots. This explains why equations of degree five have no general solution by radicals and which constructions are possible with ruler and compass. The area also covers ordered and real closed fields, valued fields, differential fields, and the location of roots of polynomials."
+  ],
+  "example": {
+    "title": "Adjoining a square root",
+    "text": "The numbers \\(a+b\\sqrt2\\) with \\(a,b\\) rational form a field \\(\\mathbb{Q}(\\sqrt2)\\). Sums and products stay of this form, and so do inverses: \\(1/(a+b\\sqrt2)=(a-b\\sqrt2)/(a^2-2b^2)\\), where the denominator is not zero because \\(\\sqrt2\\) is irrational. The map sending \\(a+b\\sqrt2\\) to \\(a-b\\sqrt2\\) respects addition and multiplication. Together with the identity map it forms the Galois group of this field over \\(\\mathbb{Q}\\), a group with two elements."
+  },
+  "objects": [
+    {
+      "term": "Field",
+      "gloss": "A set with addition and multiplication obeying the usual rules, in which nonzero elements have inverses."
+    },
+    {
+      "term": "Field extension",
+      "gloss": "A field containing a given smaller field; its degree is its dimension over the smaller field."
+    },
+    {
+      "term": "Minimal polynomial",
+      "gloss": "The monic polynomial of least degree over a field that has a given element as a root."
+    },
+    {
+      "term": "Splitting field",
+      "gloss": "The smallest extension over which a given polynomial factors into linear factors."
+    },
+    {
+      "term": "Galois group",
+      "gloss": "The group of automorphisms of an extension field that fix every element of the base field."
+    },
+    {
+      "term": "Algebraic closure",
+      "gloss": "An algebraic extension in which every nonconstant polynomial has a root."
+    },
+    {
+      "term": "Finite field",
+      "gloss": "A field with finitely many elements, such as the integers modulo a prime \\(p\\)."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Fundamental theorem of algebra",
+      "year": null,
+      "statement": "Every nonconstant polynomial with complex coefficients has a complex root."
+    },
+    {
+      "name": "Fundamental theorem of Galois theory",
+      "year": null,
+      "statement": "Let \\(L/K\\) be a finite Galois extension with group \\(G\\). Sending a subgroup \\(H\\) to its fixed field \\(L^H\\) is an inclusion-reversing bijection between the subgroups of \\(G\\) and the fields between \\(K\\) and \\(L\\). The field \\(L^H\\) is Galois over \\(K\\) exactly when \\(H\\) is normal in \\(G\\)."
+    },
+    {
+      "name": "Abel-Ruffini theorem",
+      "year": 1824,
+      "statement": "For each \\(n\\ge 5\\) there is no formula that expresses the roots of the general polynomial of degree \\(n\\) in terms of its coefficients using only field operations and extraction of roots. For example, the roots of \\(x^5-x-1\\) cannot be expressed in this way starting from rational numbers."
+    },
+    {
+      "name": "Galois's solvability criterion",
+      "year": null,
+      "statement": "A polynomial over a field \\(K\\) of characteristic 0 is solvable by radicals if and only if the Galois group of its splitting field over \\(K\\) is a solvable group."
+    },
+    {
+      "name": "Classification of finite fields",
+      "year": null,
+      "statement": "The number of elements of a finite field is \\(p^n\\) for some prime \\(p\\) and integer \\(n\\ge 1\\). For each such prime power there is, up to isomorphism, exactly one field with that many elements, and its nonzero elements form a cyclic group under multiplication."
+    },
+    {
+      "name": "Artin's solution of Hilbert's seventeenth problem",
+      "year": 1927,
+      "statement": "A polynomial in \\(n\\) variables with real coefficients that takes no negative value on \\(\\mathbb{R}^n\\) is a sum of squares of rational functions with real coefficients."
+    }
+  ],
+  "open": [
+    {
+      "name": "Inverse Galois problem",
+      "gloss": "Is every finite group the Galois group of some Galois extension of \\(\\mathbb{Q}\\)?"
+    },
+    {
+      "name": "Shafarevich's conjecture",
+      "gloss": "The absolute Galois group of the maximal abelian extension of \\(\\mathbb{Q}\\) is a free profinite group of countable rank."
+    }
+  ],
+  "uses": [
+    "Error-correcting codes",
+    "Cryptography over finite fields",
+    "Computer algebra systems"
+  ],
+  "links": [
+    "11",
+    "13",
+    "14",
+    "20",
+    "16"
+  ]
+}

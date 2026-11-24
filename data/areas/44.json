@@ -1,0 +1,90 @@
+{
+  "code": "44",
+  "short": "Integral transforms",
+  "hook": "How can a transform turn a differential equation into a problem of plain algebra?",
+  "about": [
+    "An integral transform turns a function \\(f\\) into a new function by integrating it against a fixed kernel: \\((Tf)(s)=\\int K(s,t)f(t)\\,dt\\). The Laplace, Fourier, Mellin, Hankel, Hilbert and Radon transforms are the best known. The area studies which functions each transform accepts, how to invert it, and how it converts operations such as differentiation and convolution into simpler ones.",
+    "The guiding idea is to move a hard problem to a setting where it becomes easy, solve it there, and transform back. Differential equations become algebraic equations, and convolutions become products. Operational calculus makes this systematic by treating differentiation as an algebraic symbol. The subject also includes moment problems, which ask when a measure is determined by its moments. It supports differential equations, probability, signal processing and tomography."
+  ],
+  "example": {
+    "title": "Solving an equation with the Laplace transform",
+    "text": "The Laplace transform \\(F(s)=\\int_0^\\infty e^{-st}f(t)\\,dt\\) sends \\(f'\\) to \\(sF(s)-f(0)\\). Apply it to \\(y'+2y=0\\) with \\(y(0)=3\\). The equation becomes \\(sY-3+2Y=0\\), so \\(Y=\\frac{3}{s+2}\\). Since \\(e^{-2t}\\) has transform \\(\\frac{1}{s+2}\\), the solution is \\(y=3e^{-2t}\\). The calculus has been replaced by solving one linear equation for \\(Y\\) and looking up a table of transforms."
+  },
+  "objects": [
+    {
+      "term": "Kernel",
+      "gloss": "The fixed function of two variables against which the input is integrated."
+    },
+    {
+      "term": "Laplace transform",
+      "gloss": "The transform \\(F(s)=\\int_0^\\infty e^{-st}f(t)\\,dt\\), suited to initial value problems."
+    },
+    {
+      "term": "Mellin transform",
+      "gloss": "The transform \\(\\int_0^\\infty x^{s-1}f(x)\\,dx\\), the Fourier transform on the multiplicative group of positive reals."
+    },
+    {
+      "term": "Radon transform",
+      "gloss": "The collection of integrals of a function over all lines or hyperplanes."
+    },
+    {
+      "term": "Convolution",
+      "gloss": "A product of two functions that most classical transforms turn into ordinary multiplication."
+    },
+    {
+      "term": "Inversion formula",
+      "gloss": "A formula recovering a function from its transform."
+    },
+    {
+      "term": "Moment sequence",
+      "gloss": "The numbers \\(\\int x^n\\,d\\mu(x)\\) attached to a measure \\(\\mu\\)."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Fourier inversion theorem",
+      "year": null,
+      "statement": "Let \\(\\hat f(\\xi)=\\int f(x)e^{-2\\pi ix\\cdot\\xi}\\,dx\\). If \\(f\\) and \\(\\hat f\\) both belong to \\(L^1(\\mathbb{R}^n)\\), then \\(f(x)=\\int\\hat f(\\xi)e^{2\\pi ix\\cdot\\xi}\\,d\\xi\\) for almost every \\(x\\)."
+    },
+    {
+      "name": "Convolution theorem",
+      "year": null,
+      "statement": "If \\(f,g\\in L^1(\\mathbb{R}^n)\\), then \\(f*g\\in L^1(\\mathbb{R}^n)\\) and the Fourier transform of \\(f*g\\) is the product \\(\\hat f\\,\\hat g\\). The analogous statement holds for the Laplace transform and convolution on \\([0,\\infty)\\)."
+    },
+    {
+      "name": "Lerch's uniqueness theorem",
+      "year": null,
+      "statement": "If two continuous functions on \\([0,\\infty)\\) of at most exponential growth have Laplace transforms that agree for all sufficiently large real \\(s\\), then the functions are equal."
+    },
+    {
+      "name": "Radon inversion",
+      "year": 1917,
+      "statement": "A smooth rapidly decreasing function on \\(\\mathbb{R}^n\\), \\(n\\ge2\\), is determined by its integrals over all hyperplanes, and it can be recovered from them by an explicit formula. Radon treated the plane and three-space."
+    },
+    {
+      "name": "Hausdorff moment theorem",
+      "year": 1921,
+      "statement": "A real sequence \\((m_n)_{n\\ge0}\\) has the form \\(m_n=\\int_0^1x^n\\,d\\mu(x)\\) for a positive Borel measure \\(\\mu\\) on \\([0,1]\\) if and only if \\((-1)^k\\Delta^km_n\\ge0\\) for all \\(n,k\\ge0\\), where \\(\\Delta m_n=m_{n+1}-m_n\\). The measure is then unique."
+    },
+    {
+      "name": "Paley-Wiener theorem",
+      "year": 1934,
+      "statement": "Let \\(A>0\\). An entire function \\(F\\) has the form \\(F(z)=\\int_{-A}^{A}f(t)e^{itz}\\,dt\\) with \\(f\\in L^2(-A,A)\\) if and only if \\(F\\) is square integrable on the real axis and \\(|F(z)|\\le Ce^{A|z|}\\) for all complex \\(z\\)."
+    }
+  ],
+  "open": [],
+  "uses": [
+    "Control engineering and circuit analysis",
+    "Computed tomography",
+    "Characteristic functions in probability",
+    "Signal processing"
+  ],
+  "links": [
+    "42",
+    "34",
+    "35",
+    "45",
+    "46",
+    "33"
+  ]
+}

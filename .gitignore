@@ -1,0 +1,7 @@
+lean/.lake/
+lean/scratch/
+tools/node/node_modules/
+__pycache__/
+tasks/
+.pytest_cache/
+*.olean

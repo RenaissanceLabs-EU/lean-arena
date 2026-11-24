@@ -1,0 +1,97 @@
+{
+  "code": "51",
+  "short": "Geometry",
+  "hook": "What can be said about points and lines if the parallel axiom is dropped or changed?",
+  "about": [
+    "This area covers geometry in the classical and axiomatic sense: Euclidean, affine, projective, hyperbolic and elliptic geometry, and the abstract study of points, lines and incidence. It includes finite geometries with only finitely many points, geometries coordinatized by fields or rings, and metric geometry based on distance alone. Questions concern what follows from which axioms, which configurations exist, and which transformations preserve the structure.",
+    "Two methods run side by side. The synthetic one argues from axioms and figures. The analytic one introduces coordinates and uses algebra; a central insight is that geometric axioms correspond to algebraic laws of the coordinate system. Following Klein, a geometry is also studied through its group of symmetries. The area connects to group theory, to combinatorics through finite planes and designs, to algebraic geometry, and to differential geometry."
+  ],
+  "example": {
+    "title": "A plane with seven points",
+    "text": "The smallest projective plane has 7 points and 7 lines. Label the points \\(1\\) to \\(7\\) and take as lines the triples \\(124, 235, 346, 457, 561, 672, 713\\). Every line holds 3 points, every point lies on 3 lines, any two points lie on exactly one line, and any two lines meet in exactly one point. No two lines are parallel. This is the Fano plane, coordinatized by the field with two elements."
+  },
+  "objects": [
+    {
+      "term": "Incidence structure",
+      "gloss": "Sets of points and lines with a relation saying which points lie on which lines."
+    },
+    {
+      "term": "Projective plane",
+      "gloss": "An incidence structure in which two points lie on one line and two lines meet in one point."
+    },
+    {
+      "term": "Affine plane",
+      "gloss": "An incidence structure in which two points span one line and parallels exist and are unique."
+    },
+    {
+      "term": "Hyperbolic plane",
+      "gloss": "The plane geometry in which through a point off a line there pass many lines missing it."
+    },
+    {
+      "term": "Isometry",
+      "gloss": "A map that preserves all distances."
+    },
+    {
+      "term": "Collineation",
+      "gloss": "A bijection of the points of a geometry that maps lines onto lines."
+    },
+    {
+      "term": "Cross-ratio",
+      "gloss": "The quantity \\(\\frac{(a-c)(b-d)}{(a-d)(b-c)}\\) of four points on a line, invariant under projective maps."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Pythagorean theorem",
+      "year": null,
+      "statement": "In a right triangle of the Euclidean plane with legs \\(a,b\\) and hypotenuse \\(c\\), \\(a^2+b^2=c^2\\). Conversely, a triangle whose sides satisfy this relation has a right angle opposite \\(c\\)."
+    },
+    {
+      "name": "Desargues's theorem",
+      "year": null,
+      "statement": "In a projective space of dimension at least 3, and in any projective plane over a division ring, two triangles that are in perspective from a point are in perspective from a line. Some projective planes do not satisfy it."
+    },
+    {
+      "name": "Pappus's theorem",
+      "year": null,
+      "statement": "In a projective plane over a field, let \\(A,B,C\\) lie on one line and \\(A',B',C'\\) on another. Then the points \\(AB'\\cap A'B\\), \\(AC'\\cap A'C\\) and \\(BC'\\cap B'C\\) are collinear. A plane over a division ring has this property if and only if the ring is commutative."
+    },
+    {
+      "name": "Fundamental theorem of projective geometry",
+      "year": null,
+      "statement": "Let \\(K\\) be a division ring and \\(n\\ge2\\). Every collineation of the projective space of dimension \\(n\\) over \\(K\\) is induced by a semilinear bijection of \\(K^{n+1}\\)."
+    },
+    {
+      "name": "Gauss-Wantzel theorem",
+      "year": 1837,
+      "statement": "A regular polygon with \\(n\\) sides can be constructed with straightedge and compass if and only if \\(n\\) is a power of 2 times a product of distinct Fermat primes. Gauss proved sufficiency in 1796 and Wantzel proved necessity in 1837."
+    },
+    {
+      "name": "Consistency of hyperbolic geometry",
+      "year": 1868,
+      "statement": "Beltrami constructed models of the hyperbolic plane within Euclidean geometry. Hence, if Euclidean geometry is consistent, the parallel postulate cannot be derived from the remaining axioms of Euclidean geometry."
+    }
+  ],
+  "open": [
+    {
+      "name": "Prime power conjecture",
+      "gloss": "Is the order of every finite projective plane a power of a prime? Order 10 has been excluded by computer search; order 12 is undecided."
+    },
+    {
+      "name": "Planes of prime order",
+      "gloss": "Is every projective plane of prime order isomorphic to the plane over the field with that many elements?"
+    }
+  ],
+  "uses": [
+    "Computer graphics and computer vision",
+    "Coding theory and design of experiments",
+    "Architecture and surveying"
+  ],
+  "links": [
+    "05",
+    "20",
+    "14",
+    "52",
+    "53"
+  ]
+}

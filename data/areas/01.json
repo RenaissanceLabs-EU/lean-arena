@@ -1,0 +1,97 @@
+{
+  "code": "01",
+  "short": "History and biography",
+  "hook": "Who first found the theorems we learn in school, and how did they think about them?",
+  "about": [
+    "The history of mathematics studies how mathematical ideas arose, changed and spread, from the clay tablets of Mesopotamia and the papyri of Egypt through Greek, Chinese, Indian and Islamic mathematics to the present. It also covers the lives of mathematicians, the schools and institutions they worked in, and the editing of their collected works and correspondence.",
+    "Its methods are those of the historian: close reading of primary sources in their original language and notation, dating and comparing manuscripts, and placing the work in its culture. A recurring caution is not to read modern concepts into old texts. The field touches every branch of mathematics, since each has a past, and it connects to the history of science and to mathematics education."
+  ],
+  "example": {
+    "title": "A Babylonian square root",
+    "text": "The clay tablet YBC 7289, written in Mesopotamia between about 1800 and 1600 BCE, shows a square with its diagonals and the number 1;24,51,10 in base 60. That is \\(1+\\frac{24}{60}+\\frac{51}{60^2}+\\frac{10}{60^3}\\approx 1.4142130\\), while \\(\\sqrt2\\approx 1.4142136\\). The scribe had the ratio of diagonal to side correct to better than one part in a million, more than a thousand years before Euclid."
+  },
+  "objects": [
+    {
+      "term": "Primary source",
+      "gloss": "An original document, such as a tablet, manuscript, letter or first printed edition."
+    },
+    {
+      "term": "Euclid's Elements",
+      "gloss": "Greek treatise from about 300 BCE that set the pattern of definitions, postulates and proofs."
+    },
+    {
+      "term": "Cuneiform tablet",
+      "gloss": "Clay tablet with wedge-shaped writing; the main source for Mesopotamian mathematics."
+    },
+    {
+      "term": "Sexagesimal system",
+      "gloss": "Base 60 place-value notation of Mesopotamia, still used for minutes and seconds."
+    },
+    {
+      "term": "Notation",
+      "gloss": "The symbols used to write mathematics, which changed greatly over time and shaped what was easy to do."
+    },
+    {
+      "term": "Historiography",
+      "gloss": "The study of how the history of mathematics itself has been written and interpreted."
+    },
+    {
+      "term": "Biography",
+      "gloss": "An account of a mathematician's life, work and surroundings."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Pythagorean theorem",
+      "year": null,
+      "statement": "In a right triangle with legs \\(a\\), \\(b\\) and hypotenuse \\(c\\), \\(a^2+b^2=c^2\\). The relation was used in Old Babylonian mathematics, and a proof appears as Proposition I.47 of Euclid's Elements."
+    },
+    {
+      "name": "Euclid's theorem on primes",
+      "year": null,
+      "statement": "There are infinitely many prime numbers. Proposition IX.20 of Euclid's Elements shows that any finite list of primes omits at least one prime."
+    },
+    {
+      "name": "Archimedes' quadrature of the parabola",
+      "year": null,
+      "statement": "The area of a segment of a parabola cut off by a chord is \\(\\tfrac43\\) of the area of the triangle with the chord as base and third vertex at the point of the arc where the tangent is parallel to the chord."
+    },
+    {
+      "name": "Cardano's formula for the cubic",
+      "year": 1545,
+      "statement": "For real numbers \\(p>0\\) and \\(q\\), the equation \\(x^3+px=q\\) has the real root \\(x=\\sqrt[3]{\\tfrac q2+\\sqrt{D}}+\\sqrt[3]{\\tfrac q2-\\sqrt{D}}\\) with \\(D=\\tfrac{q^2}{4}+\\tfrac{p^3}{27}\\). The rule was published in Cardano's Ars Magna, which credits del Ferro and Tartaglia."
+    },
+    {
+      "name": "Fundamental theorem of calculus",
+      "year": null,
+      "statement": "If \\(f\\) is continuous on \\([a,b]\\) and \\(F'=f\\) there, then \\(\\int_a^b f(x)\\,dx=F(b)-F(a)\\). Newton and Leibniz, working independently in the late seventeenth century, made this link between tangents and areas the basis of a general calculus."
+    },
+    {
+      "name": "Independence of the parallel postulate",
+      "year": null,
+      "statement": "Hyperbolic geometry satisfies Euclid's postulates except the parallel postulate, so that postulate cannot be proved from the others. Lobachevsky and Bolyai published such geometries around 1830, and in 1868 Beltrami gave a model of hyperbolic geometry inside Euclidean geometry."
+    }
+  ],
+  "open": [
+    {
+      "name": "Purpose of Plimpton 322",
+      "gloss": "How this Old Babylonian table of numbers related to right triangles was computed, and what it was used for, is still debated."
+    },
+    {
+      "name": "Transmission between ancient traditions",
+      "gloss": "How far Mesopotamian, Greek, Indian and Chinese mathematics influenced one another is only partly documented."
+    }
+  ],
+  "uses": [
+    "Mathematics education",
+    "History of science",
+    "Study of ancient texts"
+  ],
+  "links": [
+    "00",
+    "97",
+    "03",
+    "51",
+    "11"
+  ]
+}

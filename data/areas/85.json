@@ -1,0 +1,101 @@
+{
+  "code": "85",
+  "short": "Astronomy, astrophysics",
+  "hook": "How can we weigh a star or a galaxy that we can never visit?",
+  "about": [
+    "This area contains the mathematics used to describe the universe beyond the Earth: the orbits of planets, moons and spacecraft, the structure and evolution of stars, the dynamics of galaxies and clusters, and the expansion of the universe as a whole. It also covers the passage of light through stellar matter and the methods used to turn observations into measurements.",
+    "The models combine gravity with fluid dynamics, thermodynamics, nuclear and atomic physics and radiation. They lead to ordinary differential equations for orbits and stellar interiors, partial differential equations for gas and radiation, and large particle simulations for galaxies. Because experiments are impossible, statistical inference from observations carries much weight. General relativity is required for compact objects and for cosmology."
+  ],
+  "example": {
+    "title": "Weighing the Sun",
+    "text": "For a small body in a circular orbit of radius \\(a\\) and period \\(T\\) around a mass \\(M\\), Newton's laws give \\(M = 4\\pi^2a^3/(GT^2)\\). The Earth has \\(a = 1.496\\times10^{11}\\) m and \\(T = 3.156\\times10^7\\) s, and \\(G = 6.674\\times10^{-11}\\) in SI units. This gives \\(M \\approx 1.99\\times10^{30}\\) kg for the Sun. The same formula, applied to stars orbiting a galaxy, weighs the galaxy."
+  },
+  "objects": [
+    {
+      "term": "Orbit",
+      "gloss": "The path of a body moving under the gravitational pull of others."
+    },
+    {
+      "term": "Gravitational potential",
+      "gloss": "A function whose gradient gives the gravitational force per unit mass."
+    },
+    {
+      "term": "Hydrostatic equilibrium",
+      "gloss": "The balance in a star between the inward pull of gravity and the outward pressure gradient."
+    },
+    {
+      "term": "Radiative transfer",
+      "gloss": "The description of how light is emitted, absorbed and scattered on its way through matter."
+    },
+    {
+      "term": "Redshift",
+      "gloss": "The stretching of the wavelength of light from a receding or distant source."
+    },
+    {
+      "term": "N-body system",
+      "gloss": "A collection of masses, such as a star cluster, each moving under the gravity of all the others."
+    },
+    {
+      "term": "Cosmological model",
+      "gloss": "A solution of the equations of gravity describing the universe on the largest scales."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Kepler's laws",
+      "year": null,
+      "statement": "A planet moves on an ellipse with the Sun at one focus. The line from the Sun to the planet sweeps out equal areas in equal times. The square of the orbital period is proportional to the cube of the semi-major axis."
+    },
+    {
+      "name": "Newton's law of gravitation",
+      "year": 1687,
+      "statement": "Two point masses \\(m_1\\) and \\(m_2\\) at distance \\(r\\) attract each other with a force of magnitude \\(Gm_1m_2/r^2\\) directed along the line joining them."
+    },
+    {
+      "name": "Virial theorem",
+      "year": null,
+      "statement": "For a system of point masses interacting by Newtonian gravity whose positions and velocities stay bounded, the long-time averages of the kinetic energy \\(K\\) and potential energy \\(U\\) satisfy \\(2\\langle K\\rangle + \\langle U\\rangle = 0\\)."
+    },
+    {
+      "name": "Lane-Emden equation",
+      "year": null,
+      "statement": "A spherical star in hydrostatic equilibrium with pressure \\(P = K\\rho^{1+1/n}\\) has density \\(\\rho = \\rho_c\\theta^n\\), where \\(\\theta(\\xi)\\) solves \\(\\frac{1}{\\xi^2}\\frac{d}{d\\xi}\\left(\\xi^2\\frac{d\\theta}{d\\xi}\\right) = -\\theta^n\\) with \\(\\theta(0) = 1\\), \\(\\theta'(0) = 0\\), and \\(\\xi\\) is a rescaled radius."
+    },
+    {
+      "name": "Friedmann equation",
+      "year": 1922,
+      "statement": "In a homogeneous and isotropic universe with scale factor \\(a(t)\\), mass density \\(\\rho\\) and spatial curvature \\(k\\), general relativity gives \\(\\left(\\frac{\\dot a}{a}\\right)^2 = \\frac{8\\pi G}{3}\\rho - \\frac{kc^2}{a^2} + \\frac{\\Lambda c^2}{3}\\)."
+    },
+    {
+      "name": "Chandrasekhar limit",
+      "year": 1931,
+      "statement": "A non-rotating white dwarf supported by the pressure of degenerate electrons cannot exceed a maximum mass, about 1.4 solar masses for typical compositions."
+    }
+  ],
+  "open": [
+    {
+      "name": "Dark matter",
+      "gloss": "What is the unseen matter whose gravity is inferred from the motion of galaxies and clusters?"
+    },
+    {
+      "name": "Dark energy",
+      "gloss": "What causes the observed acceleration of the expansion of the universe?"
+    },
+    {
+      "name": "Hubble tension",
+      "gloss": "Why do measurements of the present expansion rate from the nearby universe and from the early universe disagree?"
+    }
+  ],
+  "uses": [
+    "Navigation of spacecraft and satellites",
+    "Timekeeping and calendars",
+    "Tests of fundamental physics"
+  ],
+  "links": [
+    "83",
+    "70",
+    "76",
+    "82",
+    "86"
+  ]
+}

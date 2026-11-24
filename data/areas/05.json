@@ -1,0 +1,103 @@
+{
+  "code": "05",
+  "short": "Combinatorics",
+  "hook": "How many ways can it be done, and must some pattern appear once a structure is large enough?",
+  "about": [
+    "Combinatorics studies finite and discrete structures: arrangements, selections, graphs, families of sets, designs and partitions. It asks whether a structure with prescribed properties exists, how many such structures there are, how large or small one can be, and how to build one. Graph theory, the study of networks of points joined by edges, is its largest branch.",
+    "Its tools include bijections, recurrences and generating functions for counting, and extremal and probabilistic arguments for existence. Linear algebra, group representations and topology are used as well. The area supplies the mathematics of algorithms and networks in computer science, and it exchanges problems and methods with number theory, probability, algebra, geometry and statistical physics."
+  ],
+  "example": {
+    "title": "Six people at a party",
+    "text": "Among any six people there are three who all know each other or three who are mutual strangers. Pick one person. Of the other five, at least three are her acquaintances or at least three are strangers to her; say three are acquaintances. If two of those know each other, they form a trio with her. Otherwise those three are mutual strangers. Five people are not enough: seat them in a circle where each knows only the two neighbors."
+  },
+  "objects": [
+    {
+      "term": "Graph",
+      "gloss": "A set of vertices with a set of edges, each joining two vertices."
+    },
+    {
+      "term": "Permutation",
+      "gloss": "An arrangement of the elements of a finite set in some order."
+    },
+    {
+      "term": "Integer partition",
+      "gloss": "A way of writing a positive integer as a sum of positive integers, ignoring order."
+    },
+    {
+      "term": "Generating function",
+      "gloss": "A power series whose coefficients are the terms of a counting sequence."
+    },
+    {
+      "term": "Block design",
+      "gloss": "A family of subsets of a finite set in which elements meet in a balanced, prescribed way."
+    },
+    {
+      "term": "Matroid",
+      "gloss": "An abstraction of linear independence that applies to vectors, graphs and more."
+    },
+    {
+      "term": "Young tableau",
+      "gloss": "A filling of a staircase-like array of boxes by numbers that increase along rows and columns."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Cayley's formula",
+      "year": 1889,
+      "statement": "The number of trees on \\(n\\) labeled vertices is \\(n^{n-2}\\)."
+    },
+    {
+      "name": "Ramsey's theorem",
+      "year": 1930,
+      "statement": "For all positive integers \\(r\\) and \\(s\\) there is an \\(N\\) such that, whenever each edge of the complete graph on \\(N\\) vertices is colored red or blue, there are \\(r\\) vertices with all edges among them red or \\(s\\) vertices with all edges among them blue."
+    },
+    {
+      "name": "Hall's marriage theorem",
+      "year": 1935,
+      "statement": "Let \\(G\\) be a finite bipartite graph with parts \\(X\\) and \\(Y\\). There is a matching that covers every vertex of \\(X\\) if and only if every subset \\(S\\) of \\(X\\) has at least \\(|S|\\) neighbors in \\(Y\\)."
+    },
+    {
+      "name": "Turán's theorem",
+      "year": 1941,
+      "statement": "A graph on \\(n\\) vertices that contains no complete subgraph on \\(r+1\\) vertices has at most \\(\\left(1-\\tfrac1r\\right)\\tfrac{n^2}{2}\\) edges."
+    },
+    {
+      "name": "Szemerédi's theorem",
+      "year": 1975,
+      "statement": "Every set of positive integers with positive upper density contains arithmetic progressions of every finite length."
+    },
+    {
+      "name": "Four color theorem",
+      "year": 1976,
+      "statement": "The vertices of every planar graph without loops can be colored with four colors so that adjacent vertices receive different colors. The proof relies on a computer check of a large number of cases."
+    }
+  ],
+  "open": [
+    {
+      "name": "Ramsey number of five",
+      "gloss": "The least number of vertices that forces five vertices with all edges of one color, in every red and blue coloring of a complete graph, is not known exactly."
+    },
+    {
+      "name": "Hadwiger's conjecture",
+      "gloss": "Every graph with no \\(K_t\\) minor can be properly colored with \\(t-1\\) colors; this is open for \\(t\\ge 7\\)."
+    },
+    {
+      "name": "Union-closed sets conjecture",
+      "gloss": "If a finite family of sets is closed under unions and contains a nonempty set, some element lies in at least half of the sets."
+    }
+  ],
+  "uses": [
+    "Design and analysis of algorithms",
+    "Communication and transport networks",
+    "Error-correcting codes",
+    "Design of experiments"
+  ],
+  "links": [
+    "68",
+    "11",
+    "52",
+    "60",
+    "20",
+    "06"
+  ]
+}

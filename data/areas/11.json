@@ -1,0 +1,102 @@
+{
+  "code": "11",
+  "short": "Number theory",
+  "hook": "Which whole numbers are sums of two squares, and why do primes thin out the way they do?",
+  "about": [
+    "Number theory studies the whole numbers and the questions that grow out of them: how the primes are distributed, which equations have solutions in integers or in fractions, and how well irrational numbers can be approximated by fractions. Its problems are often easy to state and hard to solve, and some stood for centuries before a proof was found.",
+    "The methods come from all over mathematics. Analytic number theory uses complex analysis, through the zeta function and its relatives, to count primes. Algebraic number theory enlarges the integers to rings of algebraic numbers. Arithmetic geometry treats equations as curves and higher-dimensional shapes. Modular forms and the Langlands program tie these strands together, and computation with large primes underlies modern cryptography."
+  ],
+  "example": {
+    "title": "Sums of two squares",
+    "text": "Try to write primes as a sum of two squares: \\(5=1+4\\), \\(13=4+9\\), \\(17=1+16\\), \\(29=4+25\\), \\(37=1+36\\). But \\(3\\), \\(7\\), \\(11\\), \\(19\\) and \\(23\\) cannot be written this way. The pattern: an odd prime is a sum of two squares exactly when it leaves remainder 1 on division by 4. One direction is easy, since a square leaves remainder 0 or 1. The other was stated by Fermat and first proved by Euler."
+  },
+  "objects": [
+    {
+      "term": "Prime number",
+      "gloss": "A whole number above 1 divisible only by 1 and itself."
+    },
+    {
+      "term": "Congruence",
+      "gloss": "Two integers are congruent modulo \\(n\\) when their difference is divisible by \\(n\\)."
+    },
+    {
+      "term": "Diophantine equation",
+      "gloss": "A polynomial equation for which integer or rational solutions are sought."
+    },
+    {
+      "term": "Zeta and L-functions",
+      "gloss": "Functions of a complex variable that encode primes and other arithmetic data."
+    },
+    {
+      "term": "Number field",
+      "gloss": "A field obtained from the rationals by adjoining a root of a polynomial with rational coefficients."
+    },
+    {
+      "term": "Elliptic curve",
+      "gloss": "A smooth cubic curve such as \\(y^2=x^3+ax+b\\), whose points form an abelian group."
+    },
+    {
+      "term": "Modular form",
+      "gloss": "A highly symmetric analytic function on the upper half-plane whose coefficients carry arithmetic information."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Lagrange's four-square theorem",
+      "year": 1770,
+      "statement": "Every nonnegative integer is a sum of four squares of integers."
+    },
+    {
+      "name": "Quadratic reciprocity",
+      "year": 1796,
+      "statement": "For distinct odd primes \\(p\\) and \\(q\\), \\(\\left(\\frac{p}{q}\\right)\\left(\\frac{q}{p}\\right)=(-1)^{\\frac{p-1}{2}\\cdot\\frac{q-1}{2}}\\). Here \\(\\left(\\frac{a}{p}\\right)\\), for \\(a\\) not divisible by \\(p\\), is \\(1\\) if \\(a\\) is a square modulo \\(p\\) and \\(-1\\) otherwise."
+    },
+    {
+      "name": "Dirichlet's theorem on primes in progressions",
+      "year": 1837,
+      "statement": "If \\(a\\) and \\(m\\) are positive integers with no common factor above 1, then infinitely many primes are congruent to \\(a\\) modulo \\(m\\)."
+    },
+    {
+      "name": "Prime number theorem",
+      "year": 1896,
+      "statement": "Let \\(\\pi(x)\\) be the number of primes not exceeding \\(x\\). Then \\(\\pi(x)\\log x/x\\) tends to \\(1\\) as \\(x\\) tends to infinity."
+    },
+    {
+      "name": "Mordell's theorem",
+      "year": 1922,
+      "statement": "The rational points of an elliptic curve defined over \\(\\mathbb{Q}\\) form a finitely generated abelian group."
+    },
+    {
+      "name": "Fermat's Last Theorem",
+      "year": 1995,
+      "statement": "For every integer \\(n>2\\) there are no positive integers \\(x\\), \\(y\\), \\(z\\) with \\(x^n+y^n=z^n\\)."
+    }
+  ],
+  "open": [
+    {
+      "name": "Riemann hypothesis",
+      "gloss": "Every zero of the Riemann zeta function with real part strictly between 0 and 1 has real part \\(\\tfrac12\\)."
+    },
+    {
+      "name": "Twin prime conjecture",
+      "gloss": "There are infinitely many primes \\(p\\) such that \\(p+2\\) is also prime."
+    },
+    {
+      "name": "Birch and Swinnerton-Dyer conjecture",
+      "gloss": "The rank of the group of rational points of an elliptic curve over \\(\\mathbb{Q}\\) equals the order of vanishing of its L-function at \\(s=1\\)."
+    }
+  ],
+  "uses": [
+    "Public-key cryptography",
+    "Error-correcting codes",
+    "Pseudorandom number generation"
+  ],
+  "links": [
+    "14",
+    "12",
+    "13",
+    "30",
+    "94",
+    "05"
+  ]
+}

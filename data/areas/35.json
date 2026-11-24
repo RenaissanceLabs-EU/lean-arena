@@ -1,0 +1,99 @@
+{
+  "code": "35",
+  "short": "Partial diff. equations",
+  "hook": "How do heat, sound and water waves evolve, and can the equations that govern them ever break down?",
+  "about": [
+    "A partial differential equation relates an unknown function of several variables to its partial derivatives. The Laplace, heat and wave equations are the classical models, standing for equilibrium, diffusion and vibration. They also represent the three main types: elliptic, parabolic and hyperbolic. The area asks whether solutions exist, whether they are unique, how smooth they are, and how they behave over long times or near singularities.",
+    "Modern work treats solutions as elements of function spaces such as Sobolev spaces and proves a priori estimates: bounds that any solution must satisfy. Tools include energy methods, maximum principles, Fourier analysis, variational methods and weak or distributional solutions. Nonlinear equations from fluid mechanics, geometry and relativity drive much of the research, and the field leans on functional analysis, harmonic analysis and differential geometry."
+  ],
+  "example": {
+    "title": "Heat smooths things out",
+    "text": "The heat equation \\(u_t=u_{xx}\\) on a rod \\(0\\le x\\le\\pi\\) with both ends kept at temperature 0 has the solutions \\(e^{-n^2t}\\sin(nx)\\) for \\(n=1,2,3,\\dots\\). Starting from \\(u(x,0)=\\sin x+\\tfrac12\\sin3x\\), the solution is \\(e^{-t}\\sin x+\\tfrac12e^{-9t}\\sin3x\\). The fine wiggle has decay rate 9 against 1 for the main term, so the profile quickly smooths to a single arch that slowly fades."
+  },
+  "objects": [
+    {
+      "term": "Elliptic, parabolic, hyperbolic",
+      "gloss": "The three main types of equation, modeled on the Laplace, heat and wave equations."
+    },
+    {
+      "term": "Weak solution",
+      "gloss": "A function that satisfies the equation after integration against smooth test functions."
+    },
+    {
+      "term": "Sobolev space",
+      "gloss": "A space of functions whose weak derivatives up to a given order have finite integral norms."
+    },
+    {
+      "term": "Fundamental solution",
+      "gloss": "A solution with a point source, from which other solutions are built by convolution."
+    },
+    {
+      "term": "Well-posed problem",
+      "gloss": "A problem whose solution exists, is unique, and depends continuously on the data."
+    },
+    {
+      "term": "Characteristics",
+      "gloss": "Curves or surfaces along which a hyperbolic equation carries signals and singularities."
+    },
+    {
+      "term": "A priori estimate",
+      "gloss": "A bound that every solution must satisfy, proved before solutions are known to exist."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Cauchy-Kovalevskaya theorem",
+      "year": 1875,
+      "statement": "Consider an equation \\(\\partial_t^k u=F\\), where \\(F\\) is an analytic function of \\(t\\), \\(x\\) and the derivatives of \\(u\\) of order at most \\(k\\) other than \\(\\partial_t^k u\\), with analytic initial data \\(u,\\partial_tu,\\dots,\\partial_t^{k-1}u\\) on \\(t=0\\). Then near each point of the initial surface there is exactly one analytic solution."
+    },
+    {
+      "name": "Maximum principle",
+      "year": null,
+      "statement": "Let \\(\\Omega\\subset\\mathbb{R}^n\\) be bounded and open, and let \\(u\\) be twice continuously differentiable in \\(\\Omega\\) and continuous on its closure. If \\(\\Delta u\\ge0\\) in \\(\\Omega\\), then the maximum of \\(u\\) over the closure of \\(\\Omega\\) is attained on the boundary."
+    },
+    {
+      "name": "Weyl's lemma",
+      "year": 1940,
+      "statement": "If a distribution \\(u\\) on an open subset of \\(\\mathbb{R}^n\\) satisfies \\(\\Delta u=0\\), then \\(u\\) is a smooth harmonic function."
+    },
+    {
+      "name": "Lax-Milgram theorem",
+      "year": 1954,
+      "statement": "Let \\(B\\) be a bounded bilinear form on a real Hilbert space \\(H\\) with \\(B(u,u)\\ge c\\|u\\|^2\\) for some \\(c>0\\). Then for every bounded linear functional \\(f\\) on \\(H\\) there is a unique \\(u\\in H\\) with \\(B(u,v)=f(v)\\) for all \\(v\\in H\\)."
+    },
+    {
+      "name": "De Giorgi-Nash-Moser theorem",
+      "year": 1957,
+      "statement": "Let \\(A(x)\\) be a matrix of bounded measurable coefficients that is uniformly elliptic. Then every weak solution \\(u\\in H^1_{\\mathrm{loc}}\\) of \\(\\mathrm{div}(A\\nabla u)=0\\) is locally Hölder continuous."
+    },
+    {
+      "name": "Leray's theorem on Navier-Stokes",
+      "year": 1934,
+      "statement": "For every divergence-free initial velocity in \\(L^2(\\mathbb{R}^3)\\), the incompressible Navier-Stokes equations have a weak solution defined for all positive times that satisfies the energy inequality."
+    }
+  ],
+  "open": [
+    {
+      "name": "Navier-Stokes existence and smoothness",
+      "gloss": "Do smooth, rapidly decaying initial data for the three-dimensional incompressible Navier-Stokes equations always give a solution that stays smooth for all time?"
+    },
+    {
+      "name": "Hot spots conjecture",
+      "gloss": "For a convex planar domain, does the second Neumann eigenfunction of the Laplacian attain its maximum and minimum only on the boundary?"
+    }
+  ],
+  "uses": [
+    "Fluid dynamics and weather prediction",
+    "Electromagnetism and quantum mechanics",
+    "General relativity",
+    "Image processing and finance"
+  ],
+  "links": [
+    "46",
+    "42",
+    "76",
+    "58",
+    "49",
+    "65"
+  ]
+}

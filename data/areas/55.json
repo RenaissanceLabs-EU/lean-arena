@@ -1,0 +1,98 @@
+{
+  "code": "55",
+  "short": "Algebraic topology",
+  "hook": "How can algebra prove that a doughnut surface can never be deformed into a sphere?",
+  "about": [
+    "Algebraic topology attaches algebraic objects, such as numbers, groups and rings, to topological spaces in such a way that continuous deformations do not change them. If two spaces have different invariants, they cannot be deformed into each other. The main invariants are homotopy groups, which record maps of spheres into a space, and homology and cohomology groups, which detect holes of each dimension.",
+    "The invariants are functors: maps between spaces induce homomorphisms between groups, so topological problems become algebraic ones. Computation relies on exact sequences, spectral sequences, fibrations and cell decompositions. Homotopy theory studies spaces up to deformation and has grown into an abstract framework used across mathematics. The area gave rise to homological algebra and category theory, and it interacts with the geometry of manifolds, algebraic geometry and mathematical physics."
+  ],
+  "example": {
+    "title": "Counting turns around a hole",
+    "text": "For a closed loop in the plane that avoids the origin, count how many times it winds around the origin, with counterclockwise turns positive. The loop \\(t\\mapsto(\\cos2t,\\sin2t)\\), \\(0\\le t\\le2\\pi\\), has winding number 2. Deforming a loop without crossing the origin never changes this integer, and two loops with the same number can be deformed into each other. So loops in the punctured plane are classified by integers: its fundamental group is \\(\\mathbb{Z}\\)."
+  },
+  "objects": [
+    {
+      "term": "Homotopy",
+      "gloss": "A continuous deformation of one map into another."
+    },
+    {
+      "term": "Fundamental group",
+      "gloss": "The group of loops at a base point, taken up to homotopy, under concatenation."
+    },
+    {
+      "term": "Homology group",
+      "gloss": "An abelian group measuring the holes of a given dimension in a space."
+    },
+    {
+      "term": "Cohomology ring",
+      "gloss": "The dual counterpart of homology, which carries a product structure."
+    },
+    {
+      "term": "CW complex",
+      "gloss": "A space built by attaching cells of increasing dimension along their boundaries."
+    },
+    {
+      "term": "Fibration",
+      "gloss": "A map with the homotopy lifting property; over a path-connected base all fibers are homotopy equivalent."
+    },
+    {
+      "term": "Spectral sequence",
+      "gloss": "A computational device that approximates a homology group through successive pages of simpler groups."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Brouwer fixed-point theorem",
+      "year": null,
+      "statement": "Every continuous map from a closed ball in \\(\\mathbb{R}^n\\) to itself has a fixed point."
+    },
+    {
+      "name": "Seifert-van Kampen theorem",
+      "year": null,
+      "statement": "Let \\(X\\) be the union of two open path-connected sets \\(U\\) and \\(V\\) whose intersection is path-connected and contains the base point. Then \\(\\pi_1(X)\\) is the free product of \\(\\pi_1(U)\\) and \\(\\pi_1(V)\\) amalgamated over \\(\\pi_1(U\\cap V)\\)."
+    },
+    {
+      "name": "Poincaré duality",
+      "year": null,
+      "statement": "For a closed orientable manifold \\(M\\) of dimension \\(n\\), \\(H^k(M;\\mathbb{Z})\\cong H_{n-k}(M;\\mathbb{Z})\\) for every \\(k\\)."
+    },
+    {
+      "name": "Lefschetz fixed-point theorem",
+      "year": 1926,
+      "statement": "Let \\(f\\) be a continuous map of a compact triangulable space \\(X\\) to itself. If the Lefschetz number \\(\\sum_k(-1)^k\\,\\mathrm{tr}\\big(f_*\\ \\text{on}\\ H_k(X;\\mathbb{Q})\\big)\\) is not zero, then \\(f\\) has a fixed point."
+    },
+    {
+      "name": "Hurewicz theorem",
+      "year": 1935,
+      "statement": "Let \\(n\\ge2\\) and let \\(X\\) be a path-connected space with \\(\\pi_i(X)=0\\) for \\(0<i<n\\). Then \\(H_i(X;\\mathbb{Z})=0\\) for \\(0<i<n\\), and the Hurewicz map \\(\\pi_n(X)\\to H_n(X;\\mathbb{Z})\\) is an isomorphism."
+    },
+    {
+      "name": "Whitehead's theorem",
+      "year": 1949,
+      "statement": "A map between connected CW complexes that induces isomorphisms on all homotopy groups is a homotopy equivalence."
+    }
+  ],
+  "open": [
+    {
+      "name": "Homotopy groups of spheres",
+      "gloss": "The groups of homotopy classes of maps between spheres are known only in a limited range; finding their general pattern is a long-running program."
+    },
+    {
+      "name": "Whitehead's asphericity question",
+      "gloss": "Is every connected subcomplex of an aspherical two-dimensional CW complex itself aspherical?"
+    }
+  ],
+  "uses": [
+    "Topological data analysis",
+    "Topological phases of matter",
+    "Robot motion planning",
+    "Fixed-point arguments in economics"
+  ],
+  "links": [
+    "57",
+    "18",
+    "54",
+    "19",
+    "14"
+  ]
+}

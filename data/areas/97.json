@@ -1,0 +1,101 @@
+{
+  "code": "97",
+  "short": "Mathematics education",
+  "hook": "Why do so many students add fractions by adding the tops and the bottoms, and what teaching helps?",
+  "about": [
+    "Mathematics education studies how people learn mathematics and how it can be taught well, from early counting to university courses. It examines what students understand and misunderstand, how curricula are designed, how teachers are prepared, how learning is assessed, and how tools such as textbooks, software and calculators affect what is learned. It also covers the history and social role of mathematics teaching.",
+    "Unlike the other areas, its methods are those of the social sciences: classroom experiments, interviews, large-scale assessments and statistical analysis, guided by theories from psychology. Its results are empirical findings and frameworks, not theorems. The work depends on a close knowledge of the mathematics involved, since one must know the many ways an idea can be understood in order to teach it."
+  ],
+  "example": {
+    "title": "A persistent error with fractions",
+    "text": "Asked for \\(\\frac12 + \\frac13\\), many students write \\(\\frac25\\), adding numerators and denominators. A quick check exposes the problem: \\(\\frac25\\) is less than \\(\\frac12\\), yet adding a positive amount should give more. The error comes from treating a fraction as two separate whole numbers. Teaching that presents fractions as single numbers, for example on a number line with common units \\(\\frac36 + \\frac26 = \\frac56\\), addresses the cause."
+  },
+  "objects": [
+    {
+      "term": "Curriculum",
+      "gloss": "The planned sequence of topics and goals for mathematics teaching."
+    },
+    {
+      "term": "Misconception",
+      "gloss": "A systematic, reasoned but incorrect idea that leads students to predictable errors."
+    },
+    {
+      "term": "Conceptual and procedural knowledge",
+      "gloss": "Understanding why methods work, and fluency in carrying them out."
+    },
+    {
+      "term": "Problem solving",
+      "gloss": "Tackling tasks for which the learner has no ready-made method."
+    },
+    {
+      "term": "Representation",
+      "gloss": "A way of showing a mathematical idea, such as a diagram, a graph, a table or symbols."
+    },
+    {
+      "term": "Assessment",
+      "gloss": "Methods for finding out what students know and can do."
+    },
+    {
+      "term": "Pedagogical content knowledge",
+      "gloss": "The knowledge of a subject that is specific to teaching it, such as useful examples and typical difficulties."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Piaget's stages of development",
+      "year": null,
+      "statement": "Piaget's theory holds that children's thinking develops through four stages: sensorimotor, preoperational, concrete operational and formal operational. Abstract and hypothetical reasoning belongs to the last stage. Later research has questioned how sharp and universal the stages are."
+    },
+    {
+      "name": "Zone of proximal development",
+      "year": null,
+      "statement": "Vygotsky's term for the range between what a learner can do alone and what the learner can do with guidance from a more capable person. Instruction is taken to be most effective when it targets this range."
+    },
+    {
+      "name": "Pólya's four phases of problem solving",
+      "year": 1945,
+      "statement": "Pólya's book How to Solve It describes problem solving in four phases: understand the problem, devise a plan, carry out the plan, and look back at the solution."
+    },
+    {
+      "name": "Bloom's taxonomy",
+      "year": 1956,
+      "statement": "A classification of educational objectives in the cognitive domain into six levels of increasing complexity: knowledge, comprehension, application, analysis, synthesis and evaluation."
+    },
+    {
+      "name": "Van Hiele levels",
+      "year": 1957,
+      "statement": "A model of how geometric thinking develops through five levels: visualization, analysis, informal deduction, formal deduction and rigor. According to the model the levels are passed in order, and teaching pitched above a learner's level is not understood."
+    },
+    {
+      "name": "Spacing and testing effects",
+      "year": null,
+      "statement": "Practice that is spread over several sessions, and practice that requires recalling material from memory, lead to better long-term retention than the same time spent in one session or on rereading. These findings have been replicated in many laboratory and classroom studies."
+    }
+  ],
+  "open": [
+    {
+      "name": "Explicit instruction and inquiry",
+      "gloss": "Which mix of direct explanation and student exploration works best, for which learners and which topics?"
+    },
+    {
+      "name": "Teacher knowledge",
+      "gloss": "What mathematical knowledge do teachers need, and how strongly does it affect what their students learn?"
+    },
+    {
+      "name": "Digital and AI tools",
+      "gloss": "How should computer algebra, interactive software and AI tutors change what is taught and how?"
+    }
+  ],
+  "uses": [
+    "Curriculum and textbook design",
+    "Teacher education",
+    "National and international assessments",
+    "Educational software"
+  ],
+  "links": [
+    "00",
+    "01",
+    "62",
+    "68"
+  ]
+}

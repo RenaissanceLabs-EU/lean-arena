@@ -1,0 +1,95 @@
+{
+  "code": "39",
+  "short": "Difference equations",
+  "hook": "Which functions satisfy f(x + y) = f(x) + f(y), and what does a rule linking each term to earlier ones force?",
+  "about": [
+    "A difference equation relates the values of a sequence, or of a function, at shifted arguments, as in the Fibonacci rule \\(a_{n+2}=a_{n+1}+a_n\\). It is the discrete counterpart of a differential equation. A functional equation asks for all functions satisfying a given identity, such as \\(f(x+y)=f(x)+f(y)\\). The area studies the solutions of both kinds of equation, their growth, their stability and their oscillation.",
+    "Linear recurrences are handled with characteristic polynomials, generating functions and discrete analogs of calculus, with summation in place of integration. Functional equations need regularity arguments: a weak assumption such as measurability often forces the solutions to have a simple explicit form. The area borders dynamical systems, since iterating a map is a difference equation, and it touches combinatorics, special functions, numerical analysis and economics."
+  ],
+  "example": {
+    "title": "A formula for Fibonacci numbers",
+    "text": "The Fibonacci numbers \\(1,1,2,3,5,8,13,\\dots\\) obey \\(a_{n+2}=a_{n+1}+a_n\\). Trying \\(a_n=r^n\\) gives \\(r^2=r+1\\), with roots \\(\\varphi=\\tfrac{1+\\sqrt5}{2}\\) and \\(\\psi=\\tfrac{1-\\sqrt5}{2}\\). Matching the first two terms yields \\(a_n=(\\varphi^n-\\psi^n)/\\sqrt5\\). For \\(n=10\\) this gives 55, the tenth Fibonacci number. Since \\(|\\psi|<1\\), the number \\(a_n\\) is the integer nearest to \\(\\varphi^n/\\sqrt5\\)."
+  },
+  "objects": [
+    {
+      "term": "Recurrence relation",
+      "gloss": "A rule expressing each term of a sequence through earlier terms."
+    },
+    {
+      "term": "Characteristic polynomial",
+      "gloss": "The polynomial whose roots give the exponential solutions of a linear recurrence with constant coefficients."
+    },
+    {
+      "term": "Difference operator",
+      "gloss": "The operator \\(\\Delta f(x)=f(x+1)-f(x)\\), a discrete analog of the derivative."
+    },
+    {
+      "term": "Cauchy's functional equation",
+      "gloss": "The equation \\(f(x+y)=f(x)+f(y)\\), whose solutions are the additive functions."
+    },
+    {
+      "term": "Hyers-Ulam stability",
+      "gloss": "The question whether every approximate solution of a functional equation lies near an exact one."
+    },
+    {
+      "term": "Schröder's equation",
+      "gloss": "The equation \\(f(g(x))=s\\,f(x)\\) for unknown \\(f\\), which linearizes iteration of \\(g\\)."
+    },
+    {
+      "term": "Time scale",
+      "gloss": "A closed set of real numbers on which difference and differential equations are treated together."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Linear recurrences with constant coefficients",
+      "year": null,
+      "statement": "Let \\(c_k\\ne0\\). The complex sequences with \\(a_{n+k}=c_1a_{n+k-1}+\\dots+c_ka_n\\) for all \\(n\\ge0\\) are exactly \\(a_n=\\sum_i p_i(n)\\,r_i^n\\), where the \\(r_i\\) are the distinct roots of \\(x^k-c_1x^{k-1}-\\dots-c_k\\) and each \\(p_i\\) is a polynomial of degree less than the multiplicity of \\(r_i\\)."
+    },
+    {
+      "name": "Cauchy's theorem on additive functions",
+      "year": 1821,
+      "statement": "Every continuous \\(f:\\mathbb{R}\\to\\mathbb{R}\\) with \\(f(x+y)=f(x)+f(y)\\) for all \\(x,y\\) has the form \\(f(x)=cx\\). The same conclusion holds if \\(f\\) is only assumed Lebesgue measurable."
+    },
+    {
+      "name": "Poincaré's theorem on recurrences",
+      "year": 1885,
+      "statement": "Let \\(a_{n+k}+p_1(n)a_{n+k-1}+\\dots+p_k(n)a_n=0\\) with \\(p_i(n)\\to c_i\\) as \\(n\\to\\infty\\), and suppose the roots of \\(x^k+c_1x^{k-1}+\\dots+c_k\\) have distinct absolute values. Then for every solution either \\(a_n=0\\) for all large \\(n\\), or \\(a_{n+1}/a_n\\) converges to one of these roots."
+    },
+    {
+      "name": "Bohr-Mollerup theorem",
+      "year": 1922,
+      "statement": "The gamma function is the only function \\(f:(0,\\infty)\\to(0,\\infty)\\) with \\(f(1)=1\\), \\(f(x+1)=x\\,f(x)\\) for all \\(x>0\\), and \\(\\log f\\) convex."
+    },
+    {
+      "name": "Hyers's theorem",
+      "year": 1941,
+      "statement": "Let \\(f:E\\to E'\\) be a map between Banach spaces with \\(\\|f(x+y)-f(x)-f(y)\\|\\le\\varepsilon\\) for all \\(x,y\\). Then there is a unique additive map \\(A:E\\to E'\\) with \\(\\|f(x)-A(x)\\|\\le\\varepsilon\\) for all \\(x\\)."
+    },
+    {
+      "name": "Skolem-Mahler-Lech theorem",
+      "year": 1953,
+      "statement": "For a sequence over a field of characteristic zero that satisfies a linear recurrence with constant coefficients, the set of indices where the sequence vanishes is the union of a finite set and finitely many arithmetic progressions."
+    }
+  ],
+  "open": [
+    {
+      "name": "Skolem problem",
+      "gloss": "Is there an algorithm that decides whether a given integer linear recurrence sequence has a zero term? This is known only for recurrences of low order."
+    }
+  ],
+  "uses": [
+    "Discrete-time models in biology and economics",
+    "Analysis of algorithms",
+    "Numerical schemes for differential equations",
+    "Digital filters"
+  ],
+  "links": [
+    "37",
+    "34",
+    "05",
+    "65",
+    "33",
+    "11"
+  ]
+}

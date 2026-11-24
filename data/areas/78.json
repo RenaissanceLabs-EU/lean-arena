@@ -1,0 +1,98 @@
+{
+  "code": "78",
+  "short": "Optics, electromagnetism",
+  "hook": "Why does a straw look bent in a glass of water, and what is light made of?",
+  "about": [
+    "This area covers the mathematics of electric and magnetic fields and of light. Charges and currents create fields, changing fields create each other, and the resulting waves include radio, visible light and X-rays. Topics include electrostatics and magnetostatics, wave propagation, antennas and waveguides, scattering and diffraction, geometric optics with its rays and lenses, and the behavior of fields in materials.",
+    "Everything rests on Maxwell's equations, a system of linear partial differential equations for the fields, together with laws describing the material. Methods include potential theory, Fourier analysis, integral equations, asymptotic approximations for short wavelengths and numerical simulation. Inverse problems, where one infers an object from the waves it scatters, form a large modern part. The theory led to special relativity and to quantum electrodynamics."
+  ],
+  "example": {
+    "title": "Bending of light at a water surface",
+    "text": "Snell's law says \\(n_1\\sin\\theta_1 = n_2\\sin\\theta_2\\), with angles measured from the perpendicular. For light going from air, \\(n_1 = 1\\), into water, \\(n_2 = 1.33\\), at \\(45^\\circ\\), we get \\(\\sin\\theta_2 = 0.707/1.33 = 0.532\\), so \\(\\theta_2 \\approx 32^\\circ\\). Going from water to air, no refracted ray exists beyond the critical angle \\(\\arcsin(1/1.33) \\approx 48.8^\\circ\\), and all the light is reflected."
+  },
+  "objects": [
+    {
+      "term": "Electric and magnetic fields",
+      "gloss": "Vector fields \\(E\\) and \\(B\\) that determine the force on a moving charge."
+    },
+    {
+      "term": "Electromagnetic wave",
+      "gloss": "A self-sustaining oscillation of electric and magnetic fields that travels through space."
+    },
+    {
+      "term": "Refractive index",
+      "gloss": "The ratio of the speed of light in vacuum to its speed in a material."
+    },
+    {
+      "term": "Polarization",
+      "gloss": "The direction in which the electric field of a wave oscillates."
+    },
+    {
+      "term": "Diffraction",
+      "gloss": "The spreading and interference of waves that pass an obstacle or an opening."
+    },
+    {
+      "term": "Scalar and vector potentials",
+      "gloss": "Auxiliary fields from which the electric and magnetic fields are obtained by differentiation."
+    },
+    {
+      "term": "Waveguide",
+      "gloss": "A structure, such as a metal tube or an optical fiber, that guides waves along its length."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Maxwell's equations",
+      "year": 1865,
+      "statement": "In SI units, \\(\\nabla\\cdot E = \\rho/\\varepsilon_0\\), \\(\\nabla\\cdot B = 0\\), \\(\\nabla\\times E = -\\partial_t B\\) and \\(\\nabla\\times B = \\mu_0 J + \\mu_0\\varepsilon_0\\,\\partial_t E\\), where \\(\\rho\\) is the charge density and \\(J\\) the current density."
+    },
+    {
+      "name": "Lorentz force law",
+      "year": null,
+      "statement": "A particle with charge \\(q\\) and velocity \\(v\\) experiences the force \\(F = q(E + v\\times B)\\)."
+    },
+    {
+      "name": "Electromagnetic wave equation",
+      "year": null,
+      "statement": "In vacuum with no charges or currents, Maxwell's equations imply that every component of \\(E\\) and \\(B\\) satisfies the wave equation with speed \\(c = 1/\\sqrt{\\mu_0\\varepsilon_0}\\)."
+    },
+    {
+      "name": "Poynting's theorem",
+      "year": 1884,
+      "statement": "With energy density \\(u = \\frac12(\\varepsilon_0|E|^2 + |B|^2/\\mu_0)\\) and energy flux \\(S = E\\times B/\\mu_0\\), the fields in vacuum satisfy \\(\\partial_t u + \\nabla\\cdot S = -J\\cdot E\\)."
+    },
+    {
+      "name": "Fermat's principle",
+      "year": null,
+      "statement": "Among nearby paths between two points, a light ray follows one for which the optical length \\(\\int n\\,ds\\) is stationary. The laws of reflection and Snell's law of refraction follow."
+    },
+    {
+      "name": "Rayleigh scattering law",
+      "year": null,
+      "statement": "Light scattered by particles much smaller than its wavelength \\(\\lambda\\) has intensity proportional to \\(\\lambda^{-4}\\), so blue light is scattered more strongly than red."
+    }
+  ],
+  "open": [
+    {
+      "name": "Radiation reaction",
+      "gloss": "Find a fully consistent classical equation of motion for a point charge that includes the force from its own radiation; the standard candidate has unphysical runaway solutions."
+    },
+    {
+      "name": "Inverse scattering with limited data",
+      "gloss": "Under what conditions do measurements of scattered waves from a few directions or frequencies determine the scattering object uniquely?"
+    }
+  ],
+  "uses": [
+    "Antennas and wireless communication",
+    "Fiber optics and lasers",
+    "Lenses, microscopes and cameras",
+    "Radar and medical imaging"
+  ],
+  "links": [
+    "35",
+    "81",
+    "83",
+    "65",
+    "31"
+  ]
+}

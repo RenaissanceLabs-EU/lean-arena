@@ -1,0 +1,98 @@
+{
+  "code": "80",
+  "short": "Thermodynamics and heat",
+  "hook": "Why does heat flow from hot to cold and never the other way on its own?",
+  "about": [
+    "Classical thermodynamics describes matter in bulk through a few quantities such as temperature, pressure, volume, energy and entropy, without reference to atoms. Its laws limit what any engine, refrigerator or chemical process can do. Heat transfer studies how thermal energy moves by conduction, convection and radiation, and includes melting and freezing, combustion and chemically reacting systems.",
+    "Mathematically, thermodynamics is a theory of state functions and inequalities, with convexity and Legendre transforms relating the different potentials. Heat conduction leads to the heat equation, the model parabolic partial differential equation, and phase change leads to free boundary problems in which the interface is part of the unknown. Statistical mechanics explains the laws from microscopic models, and continuum mechanics uses them as constraints."
+  ],
+  "example": {
+    "title": "The best possible engine",
+    "text": "An engine takes heat from a hot source at \\(T_h = 500\\) K and rejects heat to surroundings at \\(T_c = 300\\) K. Carnot's theorem limits its efficiency to \\(1 - T_c/T_h = 1 - 300/500 = 0.4\\). So from every 1000 J of heat taken in, at most 400 J can become work, and at least 600 J must be discarded. No design can do better between these two temperatures."
+  },
+  "objects": [
+    {
+      "term": "Temperature",
+      "gloss": "The quantity that is equal for two bodies in thermal equilibrium with each other."
+    },
+    {
+      "term": "Internal energy",
+      "gloss": "The energy stored in a system, changed by heat flow and by work."
+    },
+    {
+      "term": "Entropy",
+      "gloss": "A state function that never decreases in an isolated system and measures irreversibility."
+    },
+    {
+      "term": "Equation of state",
+      "gloss": "A relation among pressure, volume and temperature, such as the ideal gas law \\(pV = nRT\\)."
+    },
+    {
+      "term": "Free energy",
+      "gloss": "A thermodynamic potential that is minimized at equilibrium under fixed temperature."
+    },
+    {
+      "term": "Heat flux",
+      "gloss": "The rate of flow of thermal energy per unit area."
+    },
+    {
+      "term": "Free boundary",
+      "gloss": "A moving interface, such as a melting front, whose position must be found along with the temperature."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "First law of thermodynamics",
+      "year": null,
+      "statement": "The change in internal energy of a closed system equals the heat supplied to it minus the work it does: \\(dU = \\delta Q - \\delta W\\)."
+    },
+    {
+      "name": "Second law of thermodynamics",
+      "year": null,
+      "statement": "No process has as its sole result the transfer of heat from a colder body to a hotter one. Equivalently, for any cyclic process \\(\\oint \\delta Q/T \\le 0\\), with equality for reversible cycles, and the entropy of an isolated system never decreases."
+    },
+    {
+      "name": "Carnot's theorem",
+      "year": 1824,
+      "statement": "No heat engine operating between reservoirs at absolute temperatures \\(T_h > T_c\\) is more efficient than a reversible one, and every reversible engine between them has efficiency \\(1 - T_c/T_h\\)."
+    },
+    {
+      "name": "Fourier's law and the heat equation",
+      "year": 1822,
+      "statement": "Heat flux is proportional to the temperature gradient, \\(q = -k\\nabla T\\). With constant conductivity \\(k\\), density \\(\\rho\\) and specific heat \\(c\\), and no heat sources, the temperature satisfies \\(\\partial_t T = \\alpha\\Delta T\\) with \\(\\alpha = k/(\\rho c)\\)."
+    },
+    {
+      "name": "Maximum principle for the heat equation",
+      "year": null,
+      "statement": "A solution of \\(\\partial_t T = \\alpha\\Delta T\\) on a bounded domain for \\(0 \\le t \\le t_1\\), continuous up to the boundary, attains its maximum either at time 0 or on the boundary of the domain."
+    },
+    {
+      "name": "Stefan condition",
+      "year": null,
+      "statement": "At a melting or freezing front held at the melting temperature, the front moves with normal speed \\(v\\) such that \\(\\rho L v\\) equals the difference between the conductive heat fluxes on its two sides, where \\(L\\) is the latent heat per unit mass."
+    }
+  ],
+  "open": [
+    {
+      "name": "Derivation of Fourier's law",
+      "gloss": "Prove, starting from the deterministic motion of many interacting particles, that heat flux is proportional to the temperature gradient."
+    },
+    {
+      "name": "Thermodynamics far from equilibrium",
+      "gloss": "Find general principles, comparable to the classical laws, that govern systems driven strongly away from equilibrium."
+    }
+  ],
+  "uses": [
+    "Engines, turbines and power plants",
+    "Cooling of buildings and electronics",
+    "Chemical process engineering",
+    "Casting and metallurgy"
+  ],
+  "links": [
+    "35",
+    "82",
+    "76",
+    "74",
+    "65"
+  ]
+}

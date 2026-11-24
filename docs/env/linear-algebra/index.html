@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proofs about matrices and vector spaces · Lean environment · Renaissance Labs Mathematics</title>
+<meta name="description" content="Prove facts about 2x2 matrices, matrix powers, linear independence of explicit vectors, and kernels, ranges and projections of linear maps.">
+<link rel="canonical" href="https://math.renaissancelabs.eu/env/linear-algebra/">
+<meta property="og:title" content="Proofs about matrices and vector spaces · Lean environment · Renaissance Labs Mathematics"><meta property="og:description" content="Prove facts about 2x2 matrices, matrix powers, linear independence of explicit vectors, and kernels, ranges and projections of linear maps."><meta property="og:url" content="https://math.renaissancelabs.eu/env/linear-algebra/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary"><meta name="theme-color" content="#fdfaf3">
+<link rel="icon" href="/assets/favicon.png">
+<link rel="stylesheet" href="/styles.css?v=a4f0f3bc">
+<link rel="stylesheet" href="/assets/katex.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/"><img src="/assets/mark.png" alt=""><span>Renaissance Labs &middot; Mathematics</span></a>
+  <nav><a href="/">Map</a><a href="/environments/" aria-current="page">Environments</a><a href="/frontier/">Frontier</a><a href="/checking/">How checking works</a><a href="/about/">About</a><a class="ext" href="https://practice.renaissancelabs.eu">Practice</a><a class="ext" href="https://renaissancelabs.eu">Renaissance Labs</a></nav>
+  <button class="theme" id="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<main id="main">
+
+<div class="wrap b02" style="--hue: var(--f02)">
+  <nav class="crumbs"><a href="/environments/">Environments</a><span>/</span><a href="/area/15/">MSC 15 Linear algebra</a></nav>
+  <header class="env-head"><a class="fldchip" href="/area/15/"><i>15</i><span>Linear and multilinear algebra; matrix theory</span></a>
+  <h1>Proofs about matrices and vector spaces</h1><p class="id">linear-algebra</p><p class="lede">Prove facts about 2x2 matrices, matrix powers, linear independence of explicit vectors, and kernels, ranges and projections of linear maps.</p>
+  <div class="actions"><a class="btn" href="#run">How to run it</a><a class="btn ghost" href="/checking/">How checking works</a></div></header>
+  <div class="env">
+    <div>
+      <div class="sec"><h2>What the agent does</h2><p>The agent gets a working directory with a Lean file, <code>Solution.lean</code>, and a problem in words. It edits the file until it compiles and is correct. Tasks are generated from a seed and a difficulty from 1 to 3, so the supply is unlimited and every task is new.</p></div>
+      <div class="sec"><h2>An example task</h2><div class="task"><div class="task-h">Instruction, as the agent sees it</div><div class="task-b prose2"><h4>Linear independence of explicit vectors</h4><p>Prove the following statement.</p><p>In <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="double-struck">Q</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{Q}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9808em;vertical-align:-0.1667em;"></span><span class="mord"><span class="mord mathbb">Q</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> consider the vectors <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">(</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>0</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow><annotation encoding="application/x-tex">\begin{pmatrix} 0 \\ 2 \end{pmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">0</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo fence="true">(</mo><mtable rowspacing="0.16em" columnalign="center" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>3</mn></mstyle></mtd></mtr></mtable><mo fence="true">)</mo></mrow><annotation encoding="application/x-tex">\begin{pmatrix} 2 \\ 3 \end{pmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.4em;vertical-align:-0.95em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">(</span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.45em;"><span style="top:-3.61em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-2.41em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.95em;"><span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">)</span></span></span></span></span></span>. Show that they are linearly independent over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">Q</mi></mrow><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8556em;vertical-align:-0.1667em;"></span><span class="mord mathbb">Q</span></span></span></span>.</p><h5>What to do</h5><p><code>Solution.lean</code> in the working directory states the theorem in Lean 4 with Mathlib, with <code>sorry</code> in place of the proof. Replace every <code>sorry</code> with a proof.</p><ul><li>Do not change the statement of any theorem or any definition the file gives you. You may add your own lemmas and definitions.</li><li>Check your work with <code>lake env lean Solution.lean</code> (run it inside <code>/opt/arena/lean</code>, giving the full path to the file). It must compile without errors.</li><li>A theorem counts only if its proof is complete: no <code>sorry</code>, no new axioms, no <code>native_decide</code>.</li><li>The reward is 1 if the theorem is proved and 0 otherwise.</li></ul></div></div>
+      <div class="step"><div class="step-h"><b>Solution.lean</b><span>the file the agent starts from</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre><span class="kw">import</span> Mathlib
+
+<span class="cm">/-- The given vectors are linearly independent over the rationals. -/</span>
+<span class="kw">theorem</span> vectors_independent : LinearIndependent ℚ ![(![0, 2] : Fin 2 → ℚ), ![2, 3]] := <span class="kw">by</span>
+  <span class="kw">sorry</span>
+</pre></div></div>
+      <details class="ref"><summary>Show a reference solution</summary><div class="codebox"><button class="copy" type="button">Copy</button><pre><span class="kw">import</span> Mathlib
+
+<span class="cm">/-- The given vectors are linearly independent over the rationals. -/</span>
+<span class="kw">theorem</span> vectors_independent : LinearIndependent ℚ ![(![0, 2] : Fin 2 → ℚ), ![2, 3]] := <span class="kw">by</span>
+  <span class="kw">rw</span> [LinearIndependent.pair_iff]
+  <span class="kw">intro</span> s t h
+  <span class="kw">have</span> h0 := congr_fun h 0
+  <span class="kw">have</span> h1 := congr_fun h 1
+  <span class="kw">simp</span> <span class="kw">at</span> h0 h1
+  <span class="kw">constructor</span> &lt;;&gt; <span class="kw">linarith</span>
+</pre></div><p class="note">Reference solutions are never shown to the agent. They are compiled in the environment's self-test, so every task has at least one proof that passes.</p></details></div>
+      <div class="sec"><h2>The families</h2><p>Each task belongs to one family: a different piece of the area's work.</p><table class="t fam"><tr><td><b>det trace</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> char_poly_value (x : ℤ) :
+    Matrix.det (x • (1 : Matrix (Fin 2) (Fin 2) ℤ) - !![2, 1; 3, 3]) = x ^ 2 - 5 * x + 3</pre></div></td></tr><tr><td><b>independence</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> vectors_independent : LinearIndependent ℚ ![(![-4, -4] : Fin 2 → ℚ), ![-6, -2]]</pre></div></td></tr><tr><td><b>linear map</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> ker_smul_eq {V W : Type*} [AddCommGroup V] [Module ℚ V] [AddCommGroup W] [Module ℚ W] (f : V →ₗ[ℚ] W) :
+    LinearMap.ker ((-1 : ℚ) • f) = LinearMap.ker f</pre></div></td></tr><tr><td><b>matrix pow</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> diagonal_power (n : ℕ) :
+    (!![(-3 : ℤ), 0; 0, 6] : Matrix (Fin 2) (Fin 2) ℤ) ^ n = !![(-3 : ℤ) ^ n, 0; 0, 6 ^ n]</pre></div></td></tr></table></div>
+      <div class="sec"><h2>Reward</h2><dl class="reward"><div><dt>Range</dt><dd>0 to 1</dd></div><div><dt>Checked by</dt><dd>Lean kernel</dd></div><div><dt>Deterministic</dt><dd>yes</dd></div></dl><p>Every theorem must be stated exactly as given and proved: no <code>sorry</code>, no new axioms, no <code>native_decide</code>. The reward is the share of theorems that pass. A file that does not compile scores 0. The submission is also re-checked by a second kernel run. Read <a href="/checking/">how checking works</a>.</p></div>
+      <div class="sec" id="run"><h2>How to run it</h2>
+        <div class="step"><div class="step-h"><b>1. Set up the Lean project</b><span>Lean 4.29.1 with Mathlib 5e932f97dd</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre>git clone https://github.com/RenaissanceLabs-EU/lean-arena &amp;&amp; cd lean-arena
+cd lean &amp;&amp; lake exe cache get</pre></div></div>
+        <div class="step"><div class="step-h"><b>2. Generate a task</b><span>seed and difficulty pick the task</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre>python3 tools/make_task.py linear_algebra --seed 7 --difficulty 2 --out /tmp/task</pre></div></div>
+        <div class="step"><div class="step-h"><b>3. Grade a solution</b><span>prints the reward</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre>python3 arena/grade.py --spec /tmp/task/spec.json --solution /tmp/task/Solution.lean</pre></div></div>
+        <p class="note">Tasks are also exported as Harbor task folders (<code>instruction.md</code>, <code>task.toml</code>, <code>tests/</code>), the format used by several RL frameworks, with the image built from the Lean project.</p></div>
+      <div class="sec"><h2>How hard is it?</h2><p>A floor, not a ceiling: how many sampled tasks a single automation call can close with no thought at all. Each theorem was given the tactic <code>first | grind | aesop | simp | omega | norm_num | nlinarith | decide</code>. A task counts as closed only if every theorem in it is. Overall 3 of 24. The rest need a real proof.</p><dl class="reward"><div><dt>Difficulty 1</dt><dd>3 of 8</dd></div><div><dt>Difficulty 2</dt><dd>0 of 8</dd></div><div><dt>Difficulty 3</dt><dd>0 of 8</dd></div></dl><p class="note">Sample: 8 seeds at each difficulty. No model has been run on these tasks yet, so how hard they are for a model is not yet measured.</p></div>
+      <div class="sec"><h2>Good for</h2><ul class="goodfor"><li>Matrix.det_fin_two and trace identities</li><li>induction on matrix powers</li><li>LinearMap.ker and range</li></ul></div>
+    </div>
+    <aside class="side"><dl>
+      <div><dt>Area</dt><dd><a href="/area/15/">MSC 15 &middot; Linear and multilinear algebra; matrix theory</a></dd></div>
+      <div><dt>Skill</dt><dd>Matrix computation and linear map API</dd></div>
+      <div><dt>Kind</dt><dd>Prove theorems</dd></div>
+      <div><dt>Tasks</dt><dd>84 train, 24 held-out eval, per export</dd></div>
+      <div><dt>Families</dt><dd>4</dd></div>
+      <div><dt>Difficulty</dt><dd>1 to 3, set by the generator</dd></div>
+      <div><dt>Toolchain</dt><dd class="mono">Lean 4.29.1<br>Mathlib 5e932f97dd</dd></div>
+    </dl></aside>
+  </div>
+</div>
+</main>
+<footer class="wrap foot">
+  <a class="brand" href="https://renaissancelabs.eu"><img src="/assets/mark.png" alt="">Renaissance Labs</a>
+  <div class="foot-links"><a href="/about/">About</a><a href="/data/areas.json">Data</a><a href="/llms.txt">llms.txt</a><a href="https://practice.renaissancelabs.eu">Practice</a><a href="https://labs.renaissancelabs.eu">Atlas</a><a href="https://huggingface.co/RenaissanceLabsEU">Hugging Face</a></div>
+</footer>
+<script src="/app.js?v=a4f0f3bc" defer></script>
+</body>
+</html>

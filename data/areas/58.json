@@ -1,0 +1,98 @@
+{
+  "code": "58",
+  "short": "Global analysis",
+  "hook": "What can the frequencies at which a drum vibrates tell you about its shape?",
+  "about": [
+    "Global analysis studies calculus and differential equations on curved spaces, called manifolds, instead of on flat Euclidean space. Typical questions ask how the solutions of an equation on a manifold, or the critical points of a function on it, reflect the overall shape of the space. The area also covers infinite-dimensional manifolds, such as spaces of curves or maps, and the singularities of smooth maps.",
+    "The methods combine the analysis of elliptic operators, the calculus of variations and algebraic topology. Many results equate an analytic quantity, such as the number of independent solutions of an equation, with a topological one that can be computed without solving anything. The area is tied to differential geometry and partial differential equations, and to physics through gauge theory and spectral problems."
+  ],
+  "example": {
+    "title": "Critical points on a torus",
+    "text": "Stand a torus upright like a tire and let \\(h\\) be the height of each point. The function \\(h\\) has four critical points: a minimum at the bottom, two saddles at the bottom and top of the hole, and a maximum at the top. The alternating count \\(1 - 2 + 1 = 0\\) is the Euler characteristic of the torus. On a sphere, height has one minimum and one maximum, and \\(1 + 1 = 2\\)."
+  },
+  "objects": [
+    {
+      "term": "Smooth manifold",
+      "gloss": "A space with local coordinates in which functions can be differentiated."
+    },
+    {
+      "term": "Differential form",
+      "gloss": "An object that can be integrated over curves, surfaces or higher-dimensional pieces of a manifold."
+    },
+    {
+      "term": "Elliptic operator",
+      "gloss": "A differential operator, like the Laplacian, whose highest-order part is invertible in every nonzero direction."
+    },
+    {
+      "term": "Laplace-Beltrami operator",
+      "gloss": "The generalization of the Laplacian to functions on a Riemannian manifold."
+    },
+    {
+      "term": "Morse function",
+      "gloss": "A smooth function all of whose critical points are nondegenerate."
+    },
+    {
+      "term": "Fredholm operator",
+      "gloss": "A bounded linear operator with finite-dimensional kernel and cokernel; its index is their difference in dimension."
+    },
+    {
+      "term": "Singularity of a map",
+      "gloss": "A point where the derivative of a smooth map fails to have maximal rank."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Stokes' theorem",
+      "year": null,
+      "statement": "If \\(M\\) is a compact oriented smooth \\(n\\)-manifold with boundary and \\(\\omega\\) is a smooth \\((n-1)\\)-form on \\(M\\), then \\(\\int_M d\\omega = \\int_{\\partial M} \\omega\\)."
+    },
+    {
+      "name": "De Rham's theorem",
+      "year": 1931,
+      "statement": "For a smooth manifold \\(M\\), integration of differential forms over smooth chains induces an isomorphism between the de Rham cohomology of \\(M\\) and its singular cohomology with real coefficients."
+    },
+    {
+      "name": "Sard's theorem",
+      "year": 1942,
+      "statement": "The set of critical values of a \\(C^\\infty\\) map between smooth manifolds has measure zero."
+    },
+    {
+      "name": "Morse inequalities",
+      "year": null,
+      "statement": "Let \\(f\\) be a Morse function on a closed manifold \\(M\\) with \\(c_k\\) critical points of index \\(k\\), and let \\(b_k\\) be the Betti numbers of \\(M\\). Then \\(c_k \\ge b_k\\) for every \\(k\\), and \\(\\sum_k (-1)^k c_k = \\chi(M)\\)."
+    },
+    {
+      "name": "Hodge theorem",
+      "year": null,
+      "statement": "On a compact oriented Riemannian manifold, every de Rham cohomology class contains exactly one harmonic form."
+    },
+    {
+      "name": "Atiyah-Singer index theorem",
+      "year": 1963,
+      "statement": "For an elliptic differential operator on a compact manifold without boundary, the analytic index, which is the dimension of the kernel minus the dimension of the cokernel, equals the topological index, which is computed from the symbol of the operator and characteristic classes of the manifold."
+    }
+  ],
+  "open": [
+    {
+      "name": "Hearing the shape of a convex drum",
+      "gloss": "Is a smooth convex planar domain determined, up to rigid motion, by the Dirichlet eigenvalues of its Laplacian?"
+    },
+    {
+      "name": "Pólya's conjecture",
+      "gloss": "Is the \\(k\\)-th Dirichlet eigenvalue of every bounded Euclidean domain at least the leading term in Weyl's law? It is proved for tiling domains and for balls."
+    }
+  ],
+  "uses": [
+    "Gauge theories in particle physics",
+    "Geometric mechanics",
+    "Shape analysis in computer graphics"
+  ],
+  "links": [
+    "53",
+    "35",
+    "57",
+    "55",
+    "46",
+    "37"
+  ]
+}

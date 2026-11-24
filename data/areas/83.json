@@ -1,0 +1,103 @@
+{
+  "code": "83",
+  "short": "Relativity and gravity",
+  "hook": "Why do clocks on satellites tick at a different rate from clocks on the ground?",
+  "about": [
+    "Relativity is the theory of space, time and gravity. Special relativity describes observers in uniform motion and shows that time and length depend on the observer while the speed of light does not. General relativity describes gravity as the curvature of a four-dimensional spacetime produced by matter and energy. The area includes black holes, gravitational waves, cosmological models and alternative theories of gravity.",
+    "The setting is a manifold with a Lorentzian metric, so the area is a branch of differential geometry in which one direction, time, is distinguished. The Einstein equations are nonlinear partial differential equations of hyperbolic type for the metric. Research combines geometric methods, such as the study of geodesics and causal structure, with the analysis of these equations and with numerical simulation."
+  ],
+  "example": {
+    "title": "Clocks on navigation satellites",
+    "text": "A navigation satellite moves at about 3.9 km/s, and special relativity makes its clock run slow by about 7 microseconds per day. It also sits high in the Earth's gravitational field, and general relativity makes its clock run fast by about 45 microseconds per day. The net gain is about 38 microseconds per day. Light travels 11 km in that time, so positions would drift by kilometers per day without the correction."
+  },
+  "objects": [
+    {
+      "term": "Spacetime",
+      "gloss": "A four-dimensional manifold whose points are events, with time and space combined."
+    },
+    {
+      "term": "Lorentzian metric",
+      "gloss": "A rule for measuring intervals between nearby events, with one time direction and three space directions."
+    },
+    {
+      "term": "Geodesic",
+      "gloss": "The path of a freely falling particle or a light ray; the analog of a straight line."
+    },
+    {
+      "term": "Curvature tensor",
+      "gloss": "The quantity measuring how the geometry of spacetime departs from flatness; it encodes tidal forces."
+    },
+    {
+      "term": "Stress-energy tensor",
+      "gloss": "The density and flow of energy and momentum of matter, the source of gravity."
+    },
+    {
+      "term": "Black hole",
+      "gloss": "A region of spacetime from which no signal can escape to distant observers."
+    },
+    {
+      "term": "Gravitational wave",
+      "gloss": "A ripple in the geometry of spacetime that travels at the speed of light."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Lorentz transformation",
+      "year": 1905,
+      "statement": "Two inertial frames in relative motion with speed \\(v\\) along the \\(x\\)-axis have coordinates related by \\(t' = \\gamma(t - vx/c^2)\\), \\(x' = \\gamma(x - vt)\\), \\(y' = y\\), \\(z' = z\\), where \\(\\gamma = 1/\\sqrt{1 - v^2/c^2}\\)."
+    },
+    {
+      "name": "Einstein field equations",
+      "year": 1915,
+      "statement": "The metric \\(g\\) of spacetime satisfies \\(R_{\\mu\\nu} - \\frac12 R\\,g_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4}T_{\\mu\\nu}\\), where \\(R_{\\mu\\nu}\\) is the Ricci tensor, \\(R\\) the scalar curvature, \\(\\Lambda\\) the cosmological constant and \\(T_{\\mu\\nu}\\) the stress-energy tensor."
+    },
+    {
+      "name": "Birkhoff's theorem",
+      "year": 1923,
+      "statement": "Every spherically symmetric solution of the vacuum Einstein equations with zero cosmological constant is locally isometric to a part of the Schwarzschild solution."
+    },
+    {
+      "name": "Choquet-Bruhat's theorem",
+      "year": 1952,
+      "statement": "Smooth initial data for the vacuum Einstein equations that satisfy the constraint equations have a development into a solution for a short time, and any two such developments agree locally up to a diffeomorphism."
+    },
+    {
+      "name": "Penrose singularity theorem",
+      "year": 1965,
+      "statement": "If a spacetime satisfies the null energy condition, has a non-compact Cauchy hypersurface and contains a closed trapped surface, then it has a future-directed null geodesic that cannot be extended to all values of its affine parameter."
+    },
+    {
+      "name": "Positive mass theorem",
+      "year": 1979,
+      "statement": "A complete asymptotically flat Riemannian 3-manifold with nonnegative scalar curvature has nonnegative total mass, and the mass is zero only if the manifold is flat \\(\\mathbb{R}^3\\)."
+    }
+  ],
+  "open": [
+    {
+      "name": "Cosmic censorship",
+      "gloss": "Do singularities that form from generic, physically reasonable initial data always stay hidden inside black holes, and is the evolution always uniquely determined?"
+    },
+    {
+      "name": "Final state conjecture",
+      "gloss": "Does every generic solution describing gravitational collapse settle down to a member of the Kerr family of rotating black holes?"
+    },
+    {
+      "name": "Penrose inequality",
+      "gloss": "Is the total mass of a spacetime bounded below in terms of the area of its black hole horizons in general, beyond the time-symmetric case that is proved?"
+    }
+  ],
+  "uses": [
+    "Satellite navigation",
+    "Gravitational wave astronomy",
+    "Cosmology",
+    "Particle accelerators"
+  ],
+  "links": [
+    "53",
+    "35",
+    "85",
+    "81",
+    "58",
+    "70"
+  ]
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lean environments · Renaissance Labs Mathematics</title>
+<meta name="description" content="Generated Lean proving environments across areas of mathematics, with a kernel-checked reward.">
+<link rel="canonical" href="https://math.renaissancelabs.eu/environments/">
+<meta property="og:title" content="Lean environments · Renaissance Labs Mathematics"><meta property="og:description" content="Generated Lean proving environments across areas of mathematics, with a kernel-checked reward."><meta property="og:url" content="https://math.renaissancelabs.eu/environments/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary"><meta name="theme-color" content="#fdfaf3">
+<link rel="icon" href="/assets/favicon.png">
+<link rel="stylesheet" href="/styles.css?v=a4f0f3bc">
+
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/"><img src="/assets/mark.png" alt=""><span>Renaissance Labs &middot; Mathematics</span></a>
+  <nav><a href="/">Map</a><a href="/environments/" aria-current="page">Environments</a><a href="/frontier/">Frontier</a><a href="/checking/">How checking works</a><a href="/about/">About</a><a class="ext" href="https://practice.renaissancelabs.eu">Practice</a><a class="ext" href="https://renaissancelabs.eu">Renaissance Labs</a></nav>
+  <button class="theme" id="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<main id="main">
+
+<div class="wrap">
+  <header class="page-head"><p class="eyebrow">Lean environments</p><h1>Environments</h1>
+  <p class="lede">Generators of Lean tasks, one area of mathematics each. An agent edits a Lean file; the Lean kernel decides the reward. 9 environments cover 7 of the 63 areas so far.</p></header>
+  <div class="grid"><a class="card b03" href="/env/combinatorial-identities/" style="--hue: var(--f03)">
+  <div class="top"><span class="fld"><i>05</i>Combinatorics</span><span>Lean 4</span></div>
+  <h3>Combinatorial identities and counting</h3>
+  <p class="sum">Prove binomial sums, Fibonacci identities, closed forms of linear recurrences, and counting arguments with injections and pigeonholes.</p>
+  <div class="facts"><span class="pill">induction on sequences</span><span class="pill">Nat.choose lemmas</span><span class="pill">Nat.fib</span><span class="pill rw">reward 0 to 1</span></div>
+  <div class="meta"><span><b>108</b> tasks</span><span>4 families</span></div>
+</a><a class="card b03" href="/env/definitions/" style="--hue: var(--f03)">
+  <div class="top"><span class="fld"><i>11</i>Number theory</span><span>Lean 4</span></div>
+  <h3>Definitions from words</h3>
+  <p class="sum">Turn a number-theoretic definition written in words into a computable Lean function that agrees with it on hidden inputs.</p>
+  <div class="facts"><span class="pill">autoformalization</span><span class="pill">reading a specification exactly</span><span class="pill">boundary cases</span><span class="pill rw">reward 0 to 1</span></div>
+  <div class="meta"><span><b>108</b> tasks</span><span>6 families</span></div>
+</a><a class="card b04" href="/env/finite-sums/" style="--hue: var(--f04)">
+  <div class="top"><span class="fld"><i>40</i>Sequences and series</span><span>Lean 4</span></div>
+  <h3>Closed forms for finite sums</h3>
+  <p class="sum">Prove a closed form for a finite sum: polynomial, geometric or telescoping, by induction on the number of terms.</p>
+  <div class="facts"><span class="pill">induction</span><span class="pill">Finset.sum lemmas</span><span class="pill">casts and field arithmetic</span><span class="pill rw">reward 0 to 1</span></div>
+  <div class="meta"><span><b>108</b> tasks</span><span>3 families</span></div>
+</a><a class="card b02" href="/env/group-theory/" style="--hue: var(--f02)">
+  <div class="top"><span class="fld"><i>20</i>Group theory</span><span>Lean 4</span></div>
+  <h3>Proofs about groups and subgroups</h3>
+  <p class="sum">Prove facts about abstract groups: commutativity from exponent laws, inverses, subgroup membership and Lagrange, homomorphism kernels.</p>
+  <div class="facts"><span class="pill">calc chains in groups</span><span class="pill">Subgroup and MonoidHom.ker API</span><span class="pill">Nat.card and orderOf</span><span class="pill rw">reward 0 to 1</span></div>
+  <div class="meta"><span><b>108</b> tasks</span><span>4 families</span></div>
+</a><a class="card b04" href="/env/inequalities/" style="--hue: var(--f04)">
+  <div class="top"><span class="fld"><i>26</i>Real functions</span><span>Lean 4</span></div>
+  <h3>Inequalities over the reals</h3>
+  <p class="sum">Prove real inequalities: AM-GM, Cauchy-Schwarz, absolute values and monotone functions, with hints, case splits and lemma reuse.</p>
+  <div class="facts"><span class="pill">nlinarith with hints</span><span class="pill">abs_le and case splits</span><span class="pill">field_simp then positivity</span><span class="pill rw">reward 0 to 1</span></div>
+  <div class="meta"><span><b>108</b> tasks</span><span>4 families</span></div>
+</a><a class="card b02" href="/env/linear-algebra/" style="--hue: var(--f02)">
+  <div class="top"><span class="fld"><i>15</i>Linear algebra</span><span>Lean 4</span></div>
+  <h3>Proofs about matrices and vector spaces</h3>
+  <p class="sum">Prove facts about 2x2 matrices, matrix powers, linear independence of explicit vectors, and kernels, ranges and projections of linear maps.</p>
+  <div class="facts"><span class="pill">Matrix.det_fin_two and trace identities</span><span class="pill">induction on matrix powers</span><span class="pill">LinearMap.ker and range</span><span class="pill rw">reward 0 to 1</span></div>
+  <div class="meta"><span><b>108</b> tasks</span><span>4 families</span></div>
+</a><a class="card b01" href="/env/logic-and-sets/" style="--hue: var(--f01)">
+  <div class="top"><span class="fld"><i>03</i>Logic and foundations</span><span>Lean 4</span></div>
+  <h3>Logic and set algebra</h3>
+  <p class="sum">Prove set identities and image statements, Finset cardinality facts and equivalence relations.</p>
+  <div class="facts"><span class="pill">ext and tauto</span><span class="pill">Finset.card lemmas</span><span class="pill">equivalence relations</span><span class="pill rw">reward 0 to 1</span></div>
+  <div class="meta"><span><b>108</b> tasks</span><span>3 families</span></div>
+</a><a class="card b03" href="/env/modular-arithmetic/" style="--hue: var(--f03)">
+  <div class="top"><span class="fld"><i>11</i>Number theory</span><span>Lean 4</span></div>
+  <h3>Divisibility, congruences and parity</h3>
+  <p class="sum">Prove facts about residues, divisibility, congruences and coprimality for natural numbers and integers, by case analysis on residues.</p>
+  <div class="facts"><span class="pill">case analysis on residues</span><span class="pill">Int.ModEq and Nat.ModEq</span><span class="pill">ZMod and decide</span><span class="pill rw">reward 0 to 1</span></div>
+  <div class="meta"><span><b>108</b> tasks</span><span>4 families</span></div>
+</a><a class="card b04" href="/env/real-analysis/" style="--hue: var(--f04)">
+  <div class="top"><span class="fld"><i>26</i>Real functions</span><span>Lean 4</span></div>
+  <h3>Real analysis with epsilon and delta</h3>
+  <p class="sum">Prove limits of explicit sequences, epsilon-delta continuity, bounds on recursive sequences and uniform bounds, from the definitions.</p>
+  <div class="facts"><span class="pill">choosing N and delta</span><span class="pill">abs and inequality estimates</span><span class="pill">induction on recursive sequences</span><span class="pill rw">reward 0 to 1</span></div>
+  <div class="meta"><span><b>108</b> tasks</span><span>4 families</span></div>
+</a></div>
+  <section class="gap"><div><h3>Areas still waiting</h3><p>No environment here yet. Each is a chance to add one.</p></div>
+  <ul><li><a href="/area/06/"><i>06</i>Order and lattices</a></li><li><a href="/area/08/"><i>08</i>Universal algebra</a></li><li><a href="/area/12/"><i>12</i>Fields and polynomials</a></li><li><a href="/area/13/"><i>13</i>Commutative algebra</a></li><li><a href="/area/14/"><i>14</i>Algebraic geometry</a></li><li><a href="/area/16/"><i>16</i>Associative rings</a></li><li><a href="/area/17/"><i>17</i>Nonassociative algebras</a></li><li><a href="/area/18/"><i>18</i>Category theory</a></li><li><a href="/area/19/"><i>19</i>K-theory</a></li><li><a href="/area/22/"><i>22</i>Lie groups</a></li><li><a href="/area/28/"><i>28</i>Measure and integration</a></li><li><a href="/area/30/"><i>30</i>Complex analysis</a></li><li><a href="/area/31/"><i>31</i>Potential theory</a></li><li><a href="/area/32/"><i>32</i>Sev. complex variables</a></li><li><a href="/area/33/"><i>33</i>Special functions</a></li><li><a href="/area/34/"><i>34</i>Ordinary diff. equations</a></li><li><a href="/area/35/"><i>35</i>Partial diff. equations</a></li><li><a href="/area/37/"><i>37</i>Dynamical systems</a></li><li><a href="/area/39/"><i>39</i>Difference equations</a></li><li><a href="/area/41/"><i>41</i>Approximation theory</a></li><li><a href="/area/42/"><i>42</i>Harmonic analysis</a></li><li><a href="/area/43/"><i>43</i>Analysis on groups</a></li><li><a href="/area/44/"><i>44</i>Integral transforms</a></li><li><a href="/area/45/"><i>45</i>Integral equations</a></li><li><a href="/area/46/"><i>46</i>Functional analysis</a></li><li><a href="/area/47/"><i>47</i>Operator theory</a></li><li><a href="/area/49/"><i>49</i>Calculus of variations</a></li><li><a href="/area/51/"><i>51</i>Geometry</a></li><li><a href="/area/52/"><i>52</i>Convex geometry</a></li><li><a href="/area/53/"><i>53</i>Differential geometry</a></li><li><a href="/area/54/"><i>54</i>General topology</a></li><li><a href="/area/55/"><i>55</i>Algebraic topology</a></li><li><a href="/area/57/"><i>57</i>Topology of manifolds</a></li><li><a href="/area/58/"><i>58</i>Global analysis</a></li><li><a href="/area/60/"><i>60</i>Probability theory</a></li><li><a href="/area/62/"><i>62</i>Statistics</a></li><li><a href="/area/65/"><i>65</i>Numerical analysis</a></li><li><a href="/area/68/"><i>68</i>Computer science</a></li><li><a href="/area/70/"><i>70</i>Classical mechanics</a></li><li><a href="/area/74/"><i>74</i>Solid mechanics</a></li><li><a href="/area/76/"><i>76</i>Fluid mechanics</a></li><li><a href="/area/78/"><i>78</i>Optics, electromagnetism</a></li><li><a href="/area/80/"><i>80</i>Thermodynamics and heat</a></li><li><a href="/area/81/"><i>81</i>Quantum theory</a></li><li><a href="/area/82/"><i>82</i>Statistical mechanics</a></li><li><a href="/area/83/"><i>83</i>Relativity and gravity</a></li><li><a href="/area/85/"><i>85</i>Astronomy, astrophysics</a></li><li><a href="/area/86/"><i>86</i>Geophysics</a></li><li><a href="/area/90/"><i>90</i>Operations research</a></li><li><a href="/area/91/"><i>91</i>Game theory, economics</a></li><li><a href="/area/92/"><i>92</i>Mathematical biology</a></li><li><a href="/area/93/"><i>93</i>Systems and control</a></li><li><a href="/area/94/"><i>94</i>Information and coding</a></li></ul></section>
+</div>
+</main>
+<footer class="wrap foot">
+  <a class="brand" href="https://renaissancelabs.eu"><img src="/assets/mark.png" alt="">Renaissance Labs</a>
+  <div class="foot-links"><a href="/about/">About</a><a href="/data/areas.json">Data</a><a href="/llms.txt">llms.txt</a><a href="https://practice.renaissancelabs.eu">Practice</a><a href="https://labs.renaissancelabs.eu">Atlas</a><a href="https://huggingface.co/RenaissanceLabsEU">Hugging Face</a></div>
+</footer>
+<script src="/app.js?v=a4f0f3bc" defer></script>
+</body>
+</html>

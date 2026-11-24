@@ -1,0 +1,94 @@
+{
+  "code": "17",
+  "short": "Nonassociative algebras",
+  "hook": "What is left of algebra when \\((ab)c\\) need not equal \\(a(bc)\\)?",
+  "about": [
+    "This area studies algebras whose multiplication is not assumed to be associative. The most studied are Lie algebras, in which the product is a bracket \\([x,y]\\) that changes sign when its arguments are swapped and satisfies the Jacobi identity. Other classes are Jordan algebras, alternative algebras such as the octonions, and super and infinite-dimensional versions of all of these.",
+    "Lie algebras arise as the infinitesimal form of continuous symmetry: the tangent space at the identity of a Lie group is a Lie algebra, and much of the group can be recovered from it. Classification proceeds through root systems and Dynkin diagrams, and representation theory through weights and characters. Infinite-dimensional examples such as Kac-Moody and Virasoro algebras, and quantum groups, are standard tools in mathematical physics."
+  ],
+  "example": {
+    "title": "The cross product",
+    "text": "For vectors in space, the cross product satisfies \\(a\\times b=-b\\times a\\), and it is not associative. With the standard unit vectors, \\((i\\times i)\\times j=0\\) while \\(i\\times(i\\times j)=i\\times k=-j\\). In place of associativity it obeys the Jacobi identity \\(a\\times(b\\times c)+b\\times(c\\times a)+c\\times(a\\times b)=0\\). This makes three-dimensional space a Lie algebra, the one that belongs to the group of rotations."
+  },
+  "objects": [
+    {
+      "term": "Lie algebra",
+      "gloss": "A vector space with a bilinear bracket satisfying \\([x,x]=0\\) and the Jacobi identity."
+    },
+    {
+      "term": "Jacobi identity",
+      "gloss": "The rule \\([x,[y,z]]+[y,[z,x]]+[z,[x,y]]=0\\), which replaces associativity."
+    },
+    {
+      "term": "Root system",
+      "gloss": "A finite configuration of vectors, closed under certain reflections, that encodes a semisimple Lie algebra."
+    },
+    {
+      "term": "Universal enveloping algebra",
+      "gloss": "An associative algebra whose modules are the same as the representations of a given Lie algebra."
+    },
+    {
+      "term": "Jordan algebra",
+      "gloss": "A commutative algebra satisfying \\((xy)(xx)=x(y(xx))\\), modeled on symmetric matrices."
+    },
+    {
+      "term": "Octonions",
+      "gloss": "An eight-dimensional real division algebra that is neither commutative nor associative."
+    },
+    {
+      "term": "Kac-Moody algebra",
+      "gloss": "A Lie algebra, usually infinite-dimensional, defined by generators and relations from a generalized Cartan matrix."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Classification of simple Lie algebras",
+      "year": 1894,
+      "statement": "Every finite-dimensional simple Lie algebra over \\(\\mathbb{C}\\) is isomorphic to exactly one of the classical algebras \\(A_n\\ (n\\ge1)\\), \\(B_n\\ (n\\ge2)\\), \\(C_n\\ (n\\ge3)\\), \\(D_n\\ (n\\ge4)\\) or one of the five exceptional algebras \\(E_6,E_7,E_8,F_4,G_2\\). The result is due to Killing, with gaps repaired in Cartan's thesis of 1894."
+    },
+    {
+      "name": "Hurwitz's theorem",
+      "year": 1898,
+      "statement": "Let \\(A\\) be a finite-dimensional real algebra with identity, not assumed associative, with a positive definite quadratic form \\(N\\) such that \\(N(xy)=N(x)N(y)\\). Then \\(A\\) is isomorphic to the real numbers, the complex numbers, the quaternions or the octonions, so its dimension is 1, 2, 4 or 8."
+    },
+    {
+      "name": "Levi decomposition",
+      "year": 1905,
+      "statement": "Every finite-dimensional Lie algebra over a field of characteristic 0 is the semidirect product of its largest solvable ideal and a semisimple subalgebra."
+    },
+    {
+      "name": "Weyl's theorem on complete reducibility",
+      "year": null,
+      "statement": "Every finite-dimensional representation of a finite-dimensional semisimple Lie algebra over a field of characteristic 0 is a direct sum of irreducible representations."
+    },
+    {
+      "name": "Poincaré-Birkhoff-Witt theorem",
+      "year": null,
+      "statement": "Let \\(\\mathfrak g\\) be a Lie algebra over a field with a totally ordered basis \\((x_i)\\). Then the products \\(x_{i_1}x_{i_2}\\cdots x_{i_k}\\) with \\(i_1\\le i_2\\le\\dots\\le i_k\\), including the empty product, form a basis of the universal enveloping algebra of \\(\\mathfrak g\\)."
+    },
+    {
+      "name": "Ado's theorem",
+      "year": 1935,
+      "statement": "Every finite-dimensional Lie algebra over a field of characteristic 0 is isomorphic to a Lie algebra of square matrices with the bracket \\([X,Y]=XY-YX\\)."
+    }
+  ],
+  "open": [
+    {
+      "name": "Simple Lie algebras in small characteristic",
+      "gloss": "The finite-dimensional simple Lie algebras over an algebraically closed field of characteristic \\(p\\) are classified for \\(p>3\\); the cases \\(p=2\\) and \\(p=3\\) are open."
+    }
+  ],
+  "uses": [
+    "Particle physics",
+    "Angular momentum in quantum mechanics",
+    "Robotics and control",
+    "Conformal field theory"
+  ],
+  "links": [
+    "22",
+    "16",
+    "20",
+    "81",
+    "53"
+  ]
+}

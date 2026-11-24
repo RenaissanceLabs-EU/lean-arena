@@ -1,0 +1,99 @@
+{
+  "code": "41",
+  "short": "Approximation theory",
+  "hook": "How well can a complicated function be imitated by a polynomial of degree ten?",
+  "about": [
+    "Approximation theory asks how well complicated functions can be replaced by simpler ones such as polynomials, rational functions, trigonometric sums, splines or wavelets. For a given function and a given family, it studies whether a best approximation exists, whether it is unique, how to recognize it, and how fast the error falls as the family grows. Asymptotic expansions, which approximate functions near a limit point, also belong here.",
+    "A recurring theme is that the speed of approximation mirrors smoothness: the smoother the function, the faster polynomials converge to it, and conversely. Proofs use explicit operators, moduli of continuity, extremal polynomials and duality from functional analysis. The area supplies the theoretical base for numerical analysis and has close ties to Fourier analysis, interpolation, and more recently to learning theory and compressed representations of data."
+  ],
+  "example": {
+    "title": "The best line for a parabola",
+    "text": "Among all lines \\(ax+b\\), which stays closest to \\(x^2\\) on \\([-1,1]\\)? The answer is the constant \\(\\tfrac12\\). The error \\(x^2-\\tfrac12\\) equals \\(\\tfrac12,-\\tfrac12,\\tfrac12\\) at \\(x=-1,0,1\\), so it reaches its largest size three times with alternating signs. Chebyshev's criterion says that this alternation marks the best choice. No line has maximum error below \\(\\tfrac12\\)."
+  },
+  "objects": [
+    {
+      "term": "Best approximation",
+      "gloss": "An element of a given family at the smallest possible distance from the target function."
+    },
+    {
+      "term": "Modulus of continuity",
+      "gloss": "The largest change of a function over any two points at most a given distance apart."
+    },
+    {
+      "term": "Chebyshev polynomial",
+      "gloss": "The polynomial \\(T_n\\) with \\(T_n(\\cos\\theta)=\\cos n\\theta\\); it has extremal properties on \\([-1,1]\\)."
+    },
+    {
+      "term": "Interpolation",
+      "gloss": "Choosing a simple function that matches the target at prescribed points."
+    },
+    {
+      "term": "Spline",
+      "gloss": "A function made of polynomial pieces joined with a prescribed degree of smoothness."
+    },
+    {
+      "term": "Padé approximant",
+      "gloss": "A rational function whose power series agrees with a given series to the highest possible order."
+    },
+    {
+      "term": "Asymptotic expansion",
+      "gloss": "A series, possibly divergent, whose partial sums approximate a function increasingly well near a limit point."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Weierstrass approximation theorem",
+      "year": 1885,
+      "statement": "Every continuous real function on a closed bounded interval \\([a,b]\\) is a uniform limit of polynomials."
+    },
+    {
+      "name": "Chebyshev equioscillation theorem",
+      "year": null,
+      "statement": "Let \\(f\\) be continuous and real on \\([a,b]\\). A polynomial \\(p\\) of degree at most \\(n\\) minimizes \\(\\max|f-p|\\) among such polynomials if and only if there are \\(n+2\\) points \\(x_0<\\dots<x_{n+1}\\) in \\([a,b]\\) where \\(f-p\\) takes the values \\(\\pm\\max|f-p|\\) with alternating signs. The minimizer is unique."
+    },
+    {
+      "name": "Jackson's theorem",
+      "year": 1911,
+      "statement": "There is an absolute constant \\(C\\) such that every continuous \\(2\\pi\\)-periodic function \\(f\\) can be approximated uniformly by a trigonometric polynomial of degree at most \\(n\\) with error at most \\(C\\,\\omega(f,1/n)\\), where \\(\\omega\\) is the modulus of continuity of \\(f\\) and \\(n\\ge1\\)."
+    },
+    {
+      "name": "Bernstein's inverse theorem",
+      "year": null,
+      "statement": "Let \\(0<\\alpha<1\\) and let \\(f\\) be continuous and \\(2\\pi\\)-periodic. If for every \\(n\\) the error of best uniform approximation of \\(f\\) by trigonometric polynomials of degree at most \\(n\\) is at most \\(Cn^{-\\alpha}\\), then \\(f\\) is Hölder continuous of order \\(\\alpha\\)."
+    },
+    {
+      "name": "Müntz-Szász theorem",
+      "year": 1914,
+      "statement": "Let \\(0<\\lambda_1<\\lambda_2<\\cdots\\) be real numbers. The linear span of \\(1,x^{\\lambda_1},x^{\\lambda_2},\\dots\\) is dense in the continuous functions on \\([0,1]\\) with the uniform norm if and only if \\(\\sum_k1/\\lambda_k=\\infty\\)."
+    },
+    {
+      "name": "Stone-Weierstrass theorem",
+      "year": 1937,
+      "statement": "Let \\(X\\) be a compact Hausdorff space. Every subalgebra of the real continuous functions on \\(X\\) that contains the constants and separates the points of \\(X\\) is dense in the uniform norm."
+    }
+  ],
+  "open": [
+    {
+      "name": "Bernstein's constant",
+      "gloss": "Let \\(E_n\\) be the error of best uniform approximation of \\(|x|\\) on \\([-1,1]\\) by polynomials of degree at most \\(n\\). The limit of \\(2nE_{2n}\\) exists and is about 0.2802; no closed form for it is known."
+    },
+    {
+      "name": "Approximation by neural networks",
+      "gloss": "For which classes of functions of many variables do neural networks achieve approximation rates that avoid the curse of dimensionality? This is under active study."
+    }
+  ],
+  "uses": [
+    "Numerical evaluation of functions",
+    "Signal and image compression",
+    "Computer-aided design",
+    "Machine learning theory"
+  ],
+  "links": [
+    "65",
+    "42",
+    "46",
+    "33",
+    "26",
+    "30"
+  ]
+}

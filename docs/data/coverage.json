@@ -1,0 +1,1728 @@
+{
+ "mathlib_commit": "5e932f97dd25535344f80f9dd8da3aab83df0fe6",
+ "mathlib_theorems": 177553,
+ "mathlib_modules": 7468,
+ "areas": {
+  "00": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "01": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "03": {
+   "theorems": 8694,
+   "modules": 209,
+   "dirs": [
+    {
+     "dir": "Data/Set",
+     "theorems": 2873
+    },
+    {
+     "dir": "SetTheory/Cardinal",
+     "theorems": 1165
+    },
+    {
+     "dir": "SetTheory/Ordinal",
+     "theorems": 1079
+    },
+    {
+     "dir": "Logic/Equiv",
+     "theorems": 658
+    }
+   ]
+  },
+  "05": {
+   "theorems": 10440,
+   "modules": 331,
+   "dirs": [
+    {
+     "dir": "Combinatorics/SimpleGraph",
+     "theorems": 2496
+    },
+    {
+     "dir": "Data/Finset",
+     "theorems": 2304
+    },
+    {
+     "dir": "Combinatorics/Matroid",
+     "theorems": 1180
+    },
+    {
+     "dir": "Algebra/BigOperators",
+     "theorems": 1104
+    }
+   ]
+  },
+  "06": {
+   "theorems": 14355,
+   "modules": 450,
+   "dirs": [
+    {
+     "dir": "Algebra/Order",
+     "theorems": 4762
+    },
+    {
+     "dir": "Order/Interval",
+     "theorems": 1887
+    },
+    {
+     "dir": "Order/Hom",
+     "theorems": 446
+    },
+    {
+     "dir": "Order/SuccPred",
+     "theorems": 366
+    }
+   ]
+  },
+  "08": {
+   "theorems": 2867,
+   "modules": 147,
+   "dirs": [
+    {
+     "dir": "Algebra/Quaternion.lean",
+     "theorems": 241
+    },
+    {
+     "dir": "Algebra/GCDMonoid",
+     "theorems": 238
+    },
+    {
+     "dir": "Algebra/DirectSum",
+     "theorems": 225
+    },
+    {
+     "dir": "Algebra/SkewMonoidAlgebra",
+     "theorems": 179
+    }
+   ]
+  },
+  "11": {
+   "theorems": 8235,
+   "modules": 382,
+   "dirs": [
+    {
+     "dir": "Data/Nat",
+     "theorems": 1849
+    },
+    {
+     "dir": "Data/Int",
+     "theorems": 512
+    },
+    {
+     "dir": "NumberTheory/Padics",
+     "theorems": 489
+    },
+    {
+     "dir": "NumberTheory/LSeries",
+     "theorems": 485
+    }
+   ]
+  },
+  "12": {
+   "theorems": 5794,
+   "modules": 208,
+   "dirs": [
+    {
+     "dir": "Algebra/Polynomial",
+     "theorems": 2390
+    },
+    {
+     "dir": "NumberTheory/NumberField",
+     "theorems": 481
+    },
+    {
+     "dir": "FieldTheory/IntermediateField",
+     "theorems": 364
+    },
+    {
+     "dir": "RingTheory/Valuation",
+     "theorems": 298
+    }
+   ]
+  },
+  "13": {
+   "theorems": 11260,
+   "modules": 527,
+   "dirs": [
+    {
+     "dir": "RingTheory/Ideal",
+     "theorems": 1189
+    },
+    {
+     "dir": "RingTheory/Polynomial",
+     "theorems": 902
+    },
+    {
+     "dir": "Algebra/Module",
+     "theorems": 810
+    },
+    {
+     "dir": "Algebra/MvPolynomial",
+     "theorems": 763
+    }
+   ]
+  },
+  "14": {
+   "theorems": 3140,
+   "modules": 135,
+   "dirs": [
+    {
+     "dir": "AlgebraicGeometry/EllipticCurve",
+     "theorems": 1055
+    },
+    {
+     "dir": "AlgebraicGeometry/Morphisms",
+     "theorems": 396
+    },
+    {
+     "dir": "RingTheory/Spectrum",
+     "theorems": 176
+    },
+    {
+     "dir": "AlgebraicGeometry/IdealSheaf",
+     "theorems": 170
+    }
+   ]
+  },
+  "15": {
+   "theorems": 8537,
+   "modules": 358,
+   "dirs": [
+    {
+     "dir": "LinearAlgebra/Matrix",
+     "theorems": 1975
+    },
+    {
+     "dir": "Algebra/Module",
+     "theorems": 810
+    },
+    {
+     "dir": "Data/Matrix",
+     "theorems": 671
+    },
+    {
+     "dir": "LinearAlgebra/TensorProduct",
+     "theorems": 548
+    }
+   ]
+  },
+  "16": {
+   "theorems": 7186,
+   "modules": 360,
+   "dirs": [
+    {
+     "dir": "Algebra/Ring",
+     "theorems": 1595
+    },
+    {
+     "dir": "Algebra/Algebra",
+     "theorems": 1247
+    },
+    {
+     "dir": "Algebra/MonoidAlgebra",
+     "theorems": 356
+    },
+    {
+     "dir": "RingTheory/MvPolynomial",
+     "theorems": 206
+    }
+   ]
+  },
+  "17": {
+   "theorems": 1926,
+   "modules": 79,
+   "dirs": [
+    {
+     "dir": "Algebra/Lie",
+     "theorems": 1330
+    },
+    {
+     "dir": "LinearAlgebra/RootSystem",
+     "theorems": 596
+    }
+   ]
+  },
+  "18": {
+   "theorems": 15754,
+   "modules": 1372,
+   "dirs": [
+    {
+     "dir": "CategoryTheory/Limits",
+     "theorems": 2939
+    },
+    {
+     "dir": "Algebra/Homology",
+     "theorems": 2311
+    },
+    {
+     "dir": "CategoryTheory/Monoidal",
+     "theorems": 1317
+    },
+    {
+     "dir": "CategoryTheory/Sites",
+     "theorems": 1235
+    }
+   ]
+  },
+  "19": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "20": {
+   "theorems": 9310,
+   "modules": 384,
+   "dirs": [
+    {
+     "dir": "Algebra/Group",
+     "theorems": 4124
+    },
+    {
+     "dir": "Algebra/GroupWithZero",
+     "theorems": 860
+    },
+    {
+     "dir": "GroupTheory/Perm",
+     "theorems": 686
+    },
+    {
+     "dir": "GroupTheory/GroupAction",
+     "theorems": 573
+    }
+   ]
+  },
+  "22": {
+   "theorems": 1692,
+   "modules": 79,
+   "dirs": [
+    {
+     "dir": "Topology/Algebra",
+     "theorems": 1692
+    }
+   ]
+  },
+  "26": {
+   "theorems": 6537,
+   "modules": 192,
+   "dirs": [
+    {
+     "dir": "Analysis/SpecialFunctions",
+     "theorems": 1976
+    },
+    {
+     "dir": "Analysis/Calculus",
+     "theorems": 1833
+    },
+    {
+     "dir": "Data/Real",
+     "theorems": 405
+    },
+    {
+     "dir": "Analysis/Asymptotics",
+     "theorems": 386
+    }
+   ]
+  },
+  "28": {
+   "theorems": 10010,
+   "modules": 316,
+   "dirs": [
+    {
+     "dir": "MeasureTheory/Measure",
+     "theorems": 2736
+    },
+    {
+     "dir": "MeasureTheory/Function",
+     "theorems": 2253
+    },
+    {
+     "dir": "MeasureTheory/Integral",
+     "theorems": 1931
+    },
+    {
+     "dir": "Data/ENNReal",
+     "theorems": 649
+    }
+   ]
+  },
+  "30": {
+   "theorems": 2265,
+   "modules": 92,
+   "dirs": [
+    {
+     "dir": "Analysis/Complex",
+     "theorems": 1420
+    },
+    {
+     "dir": "Analysis/Analytic",
+     "theorems": 392
+    },
+    {
+     "dir": "NumberTheory/ModularForms",
+     "theorems": 266
+    },
+    {
+     "dir": "Data/Complex",
+     "theorems": 187
+    }
+   ]
+  },
+  "31": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "32": {
+   "theorems": 392,
+   "modules": 10,
+   "dirs": [
+    {
+     "dir": "Analysis/Analytic",
+     "theorems": 392
+    }
+   ]
+  },
+  "33": {
+   "theorems": 1976,
+   "modules": 50,
+   "dirs": [
+    {
+     "dir": "Analysis/SpecialFunctions",
+     "theorems": 1976
+    }
+   ]
+  },
+  "34": {
+   "theorems": 109,
+   "modules": 4,
+   "dirs": [
+    {
+     "dir": "Analysis/ODE",
+     "theorems": 109
+    }
+   ]
+  },
+  "35": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "37": {
+   "theorems": 668,
+   "modules": 31,
+   "dirs": [
+    {
+     "dir": "Dynamics/TopologicalEntropy",
+     "theorems": 149
+    },
+    {
+     "dir": "Dynamics/Circle",
+     "theorems": 123
+    },
+    {
+     "dir": "Dynamics/Ergodic",
+     "theorems": 123
+    },
+    {
+     "dir": "Dynamics/PeriodicPts",
+     "theorems": 118
+    }
+   ]
+  },
+  "39": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "40": {
+   "theorems": 198,
+   "modules": 6,
+   "dirs": [
+    {
+     "dir": "Analysis/SpecificLimits",
+     "theorems": 198
+    }
+   ]
+  },
+  "41": {
+   "theorems": 386,
+   "modules": 5,
+   "dirs": [
+    {
+     "dir": "Analysis/Asymptotics",
+     "theorems": 386
+    }
+   ]
+  },
+  "42": {
+   "theorems": 291,
+   "modules": 14,
+   "dirs": [
+    {
+     "dir": "Analysis/Fourier",
+     "theorems": 291
+    }
+   ]
+  },
+  "43": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "44": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "45": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "46": {
+   "theorems": 7967,
+   "modules": 338,
+   "dirs": [
+    {
+     "dir": "Analysis/Normed",
+     "theorems": 3558
+    },
+    {
+     "dir": "Analysis/CStarAlgebra",
+     "theorems": 938
+    },
+    {
+     "dir": "Analysis/Convex",
+     "theorems": 870
+    },
+    {
+     "dir": "Analysis/InnerProductSpace",
+     "theorems": 770
+    }
+   ]
+  },
+  "47": {
+   "theorems": 770,
+   "modules": 26,
+   "dirs": [
+    {
+     "dir": "Analysis/InnerProductSpace",
+     "theorems": 770
+    }
+   ]
+  },
+  "49": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "51": {
+   "theorems": 2632,
+   "modules": 71,
+   "dirs": [
+    {
+     "dir": "Geometry/Euclidean",
+     "theorems": 1352
+    },
+    {
+     "dir": "LinearAlgebra/AffineSpace",
+     "theorems": 1012
+    },
+    {
+     "dir": "Geometry/RingedSpace",
+     "theorems": 203
+    },
+    {
+     "dir": "Geometry/Diffeology",
+     "theorems": 56
+    }
+   ]
+  },
+  "52": {
+   "theorems": 1044,
+   "modules": 38,
+   "dirs": [
+    {
+     "dir": "Analysis/Convex",
+     "theorems": 870
+    },
+    {
+     "dir": "Geometry/Convex",
+     "theorems": 173
+    }
+   ]
+  },
+  "53": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "54": {
+   "theorems": 16146,
+   "modules": 567,
+   "dirs": [
+    {
+     "dir": "Order/Filter",
+     "theorems": 2193
+    },
+    {
+     "dir": "Topology/MetricSpace",
+     "theorems": 1878
+    },
+    {
+     "dir": "Topology/Algebra",
+     "theorems": 1692
+    },
+    {
+     "dir": "Topology/Order",
+     "theorems": 1373
+    }
+   ]
+  },
+  "55": {
+   "theorems": 1568,
+   "modules": 156,
+   "dirs": [
+    {
+     "dir": "AlgebraicTopology/SimplicialSet",
+     "theorems": 585
+    },
+    {
+     "dir": "Topology/Homotopy",
+     "theorems": 204
+    },
+    {
+     "dir": "AlgebraicTopology/SimplexCategory",
+     "theorems": 194
+    },
+    {
+     "dir": "AlgebraicTopology/ModelCategory",
+     "theorems": 188
+    }
+   ]
+  },
+  "57": {
+   "theorems": 1231,
+   "modules": 40,
+   "dirs": [
+    {
+     "dir": "Geometry/Manifold",
+     "theorems": 1122
+    },
+    {
+     "dir": "Topology/CWComplex",
+     "theorems": 109
+    }
+   ]
+  },
+  "58": {
+   "theorems": 2955,
+   "modules": 97,
+   "dirs": [
+    {
+     "dir": "Analysis/Calculus",
+     "theorems": 1833
+    },
+    {
+     "dir": "Geometry/Manifold",
+     "theorems": 1122
+    }
+   ]
+  },
+  "60": {
+   "theorems": 3185,
+   "modules": 128,
+   "dirs": [
+    {
+     "dir": "Probability/Kernel",
+     "theorems": 998
+    },
+    {
+     "dir": "Probability/Independence",
+     "theorems": 514
+    },
+    {
+     "dir": "Probability/Moments",
+     "theorems": 403
+    },
+    {
+     "dir": "Probability/Distributions",
+     "theorems": 364
+    }
+   ]
+  },
+  "62": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "65": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "68": {
+   "theorems": 6654,
+   "modules": 237,
+   "dirs": [
+    {
+     "dir": "Data/List",
+     "theorems": 1849
+    },
+    {
+     "dir": "Data/Seq",
+     "theorems": 330
+    },
+    {
+     "dir": "Data/ENat",
+     "theorems": 243
+    },
+    {
+     "dir": "Data/PNat",
+     "theorems": 239
+    }
+   ]
+  },
+  "70": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "74": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "76": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "78": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "80": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "81": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "82": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "83": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "85": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "86": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "90": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "91": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "92": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  },
+  "93": {
+   "theorems": 201,
+   "modules": 25,
+   "dirs": [
+    {
+     "dir": "Control/Traversable",
+     "theorems": 57
+    },
+    {
+     "dir": "Control/Monad",
+     "theorems": 25
+    },
+    {
+     "dir": "Control/Fold.lean",
+     "theorems": 22
+    },
+    {
+     "dir": "Control/LawfulFix.lean",
+     "theorems": 15
+    }
+   ]
+  },
+  "94": {
+   "theorems": 117,
+   "modules": 6,
+   "dirs": [
+    {
+     "dir": "InformationTheory/KullbackLeibler",
+     "theorems": 58
+    },
+    {
+     "dir": "InformationTheory/Hamming.lean",
+     "theorems": 52
+    },
+    {
+     "dir": "InformationTheory/Coding",
+     "theorems": 7
+    }
+   ]
+  },
+  "97": {
+   "theorems": 0,
+   "modules": 0,
+   "dirs": []
+  }
+ },
+ "unmapped": {},
+ "hundred": [
+  {
+   "n": 1,
+   "title": "The Irrationality of the Square Root of 2",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "irrational_sqrt_two",
+   "authors": "mathlib"
+  },
+  {
+   "n": 2,
+   "title": "Fundamental Theorem of Algebra",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Complex.exists_root",
+   "authors": "Chris Hughes"
+  },
+  {
+   "n": 3,
+   "title": "The Denumerability of the Rational Numbers",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Rat.instDenumerable",
+   "authors": "Chris Hughes"
+  },
+  {
+   "n": 4,
+   "title": "Pythagorean Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "EuclideanGeometry.dist_sq_eq_dist_sq_add_dist_sq_iff_angle_eq_pi_div_two",
+   "authors": "Joseph Myers"
+  },
+  {
+   "n": 5,
+   "title": "Prime Number Theorem",
+   "formalized": true,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": "Alex Kontorovich, Terry Tao, and the Prime Number Theorem + Project"
+  },
+  {
+   "n": 6,
+   "title": "Gödel’s Incompleteness Theorem",
+   "formalized": true,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": "Shogo Saito"
+  },
+  {
+   "n": 7,
+   "title": "Law of Quadratic Reciprocity",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "legendreSym.quadratic_reciprocity",
+   "authors": "Chris Hughes (first) and Michael Stoll (second)"
+  },
+  {
+   "n": 8,
+   "title": "The Impossibility of Trisecting the Angle and Doubling the Cube",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 9,
+   "title": "The Area of a Circle",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.area_disc",
+   "authors": "James Arthur and Benjamin Davidson and Andrew Souther"
+  },
+  {
+   "n": 10,
+   "title": "Euler’s Generalization of Fermat’s Little Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat.ModEq.pow_totient",
+   "authors": "Chris Hughes"
+  },
+  {
+   "n": 11,
+   "title": "The Infinitude of Primes",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat.exists_infinite_primes",
+   "authors": "Jeremy Avigad"
+  },
+  {
+   "n": 12,
+   "title": "The Independence of the Parallel Postulate",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 13,
+   "title": "Polyhedron Formula",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 14,
+   "title": "Euler’s Summation of 1 + (1/2)^2 + (1/3)^2 + ….",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "hasSum_zeta_two",
+   "authors": "Marc Masdeu and David Loeffler"
+  },
+  {
+   "n": 15,
+   "title": "Fundamental Theorem of Integral Calculus",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "intervalIntegral.integral_hasStrictDerivAt_of_tendsto_ae_right",
+   "authors": "Yury G. Kudryashov (first) and Benjamin Davidson (second)"
+  },
+  {
+   "n": 16,
+   "title": "Insolvability of General Higher Degree Equations (Abel-Ruffini Theorem)",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "AbelRuffini.exists_not_solvable_by_rad",
+   "authors": "Thomas Browning"
+  },
+  {
+   "n": 17,
+   "title": "De Moivre’s Formula",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Complex.cos_add_sin_mul_I_pow",
+   "authors": "Abhimanyu Pallavi Sudhir"
+  },
+  {
+   "n": 18,
+   "title": "Liouville’s Theorem and the Construction of Transcendental Numbers",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Liouville.transcendental",
+   "authors": "Jujian Zhang"
+  },
+  {
+   "n": 19,
+   "title": "Four Squares Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat.sum_four_squares",
+   "authors": "Chris Hughes"
+  },
+  {
+   "n": 20,
+   "title": "All Primes (1 mod 4) Equal the Sum of Two Squares",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat.Prime.sq_add_sq",
+   "authors": "Chris Hughes"
+  },
+  {
+   "n": 21,
+   "title": "Green’s Theorem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 22,
+   "title": "The Non-Denumerability of the Continuum",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Cardinal.not_countable_real",
+   "authors": "Floris van Doorn"
+  },
+  {
+   "n": 23,
+   "title": "Formula for Pythagorean Triples",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "PythagoreanTriple.classification",
+   "authors": "Paul van Wamelen"
+  },
+  {
+   "n": 24,
+   "title": "The Independence of the Continuum Hypothesis",
+   "formalized": true,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": "Jesse Michael Han and Floris van Doorn"
+  },
+  {
+   "n": 25,
+   "title": "Schroeder-Bernstein Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Function.Embedding.schroeder_bernstein",
+   "authors": "Mario Carneiro"
+  },
+  {
+   "n": 26,
+   "title": "Leibniz’s Series for Pi",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Real.tendsto_sum_pi_div_four",
+   "authors": "Benjamin Davidson"
+  },
+  {
+   "n": 27,
+   "title": "Sum of the Angles of a Triangle",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "EuclideanGeometry.angle_add_angle_add_angle_eq_pi",
+   "authors": "Joseph Myers"
+  },
+  {
+   "n": 28,
+   "title": "Pascal’s Hexagon Theorem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 29,
+   "title": "Feuerbach’s Theorem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 30,
+   "title": "The Ballot Problem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Ballot.ballot_problem",
+   "authors": "Bhavik Mehta and Kexing Ying"
+  },
+  {
+   "n": 31,
+   "title": "Ramsey’s Theorem",
+   "formalized": true,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": "Bhavik Mehta"
+  },
+  {
+   "n": 32,
+   "title": "The Four Color Problem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 33,
+   "title": "Fermat’s Last Theorem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 34,
+   "title": "Divergence of the Harmonic Series",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Real.tendsto_sum_range_one_div_nat_succ_atTop",
+   "authors": "Anatole Dedecker and Yury Kudryashov"
+  },
+  {
+   "n": 35,
+   "title": "Taylor’s Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "taylor_mean_remainder_lagrange",
+   "authors": "Moritz Doll"
+  },
+  {
+   "n": 36,
+   "title": "Brouwer Fixed Point Theorem",
+   "formalized": true,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": "Brendan Seamas Murphy"
+  },
+  {
+   "n": 37,
+   "title": "The Solution of a Cubic",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.cubic_eq_zero_iff",
+   "authors": "Jeoff Lee"
+  },
+  {
+   "n": 38,
+   "title": "Arithmetic Mean/Geometric Mean",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Real.geom_mean_le_arith_mean_weighted",
+   "authors": "Yury G. Kudryashov"
+  },
+  {
+   "n": 39,
+   "title": "Solutions to Pell’s Equation",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Pell.eq_pell",
+   "authors": "Mario Carneiro (first), Michael Stoll (second)"
+  },
+  {
+   "n": 40,
+   "title": "Minkowski’s Fundamental Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "MeasureTheory.exists_ne_zero_mem_lattice_of_measure_mul_two_pow_lt_measure",
+   "authors": "Alex J. Best and Yaël Dillies"
+  },
+  {
+   "n": 41,
+   "title": "Puiseux’s Theorem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 42,
+   "title": "Sum of the Reciprocals of the Triangular Numbers",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.inverse_triangle_sum",
+   "authors": "Jalex Stark and Yury Kudryashov"
+  },
+  {
+   "n": 43,
+   "title": "The Isoperimetric Theorem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 44,
+   "title": "The Binomial Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "add_pow",
+   "authors": "Chris Hughes"
+  },
+  {
+   "n": 45,
+   "title": "The Partition Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat.Partition.card_odds_eq_card_distincts",
+   "authors": "Bhavik Mehta, Aaron Anderson, and Weiyi Wang"
+  },
+  {
+   "n": 46,
+   "title": "The Solution of the General Quartic Equation",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.quartic_eq_zero_iff",
+   "authors": "Thomas Zhu"
+  },
+  {
+   "n": 47,
+   "title": "The Central Limit Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "ProbabilityTheory.tendstoInDistribution_inv_sqrt_mul_sum_sub",
+   "authors": "Thomas Zhu, Rémy Degenne, Etienne Marion"
+  },
+  {
+   "n": 48,
+   "title": "Dirichlet’s Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat.infinite_setOf_prime_and_eq_mod",
+   "authors": "David Loeffler, Michael Stoll"
+  },
+  {
+   "n": 49,
+   "title": "The Cayley-Hamilton Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Matrix.aeval_self_charpoly",
+   "authors": "Kim Morrison"
+  },
+  {
+   "n": 50,
+   "title": "The Number of Platonic Solids",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 51,
+   "title": "Wilson’s Lemma",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "ZMod.wilsons_lemma",
+   "authors": "Chris Hughes"
+  },
+  {
+   "n": 52,
+   "title": "The Number of Subsets of a Set",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Finset.card_powerset",
+   "authors": "mathlib"
+  },
+  {
+   "n": 53,
+   "title": "Pi is Transcendental",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 54,
+   "title": "Königsberg Bridges Problem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Konigsberg.not_isEulerian",
+   "authors": "Kyle Miller"
+  },
+  {
+   "n": 55,
+   "title": "Product of Segments of Chords",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "EuclideanGeometry.mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_pi",
+   "authors": "Manuel Candales"
+  },
+  {
+   "n": 56,
+   "title": "The Hermite-Lindemann Transcendence Theorem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 57,
+   "title": "Heron’s Formula",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.heron",
+   "authors": "Matt Kempster"
+  },
+  {
+   "n": 58,
+   "title": "Formula for the Number of Combinations",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Finset.card_powersetCard",
+   "authors": "mathlib <!--Jeremy Avigad in lean 2-->"
+  },
+  {
+   "n": 59,
+   "title": "The Laws of Large Numbers",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "ProbabilityTheory.strong_law_ae",
+   "authors": "Sébastien Gouëzel"
+  },
+  {
+   "n": 60,
+   "title": "Bezout’s Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat.gcd_eq_gcd_ab",
+   "authors": "mathlib"
+  },
+  {
+   "n": 61,
+   "title": "Theorem of Ceva",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Affine.Triangle.prod_dist_div_dist_eq_one_of_mem_line_of_mem_line",
+   "authors": "Joseph Myers"
+  },
+  {
+   "n": 62,
+   "title": "Fair Games Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "MeasureTheory.submartingale_iff_expected_stoppedValue_mono",
+   "authors": "Kexing Ying"
+  },
+  {
+   "n": 63,
+   "title": "Cantor’s Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Function.cantor_surjective",
+   "authors": "Johannes Hölzl and Mario Carneiro"
+  },
+  {
+   "n": 64,
+   "title": "L’Hopital’s Rule",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "deriv.lhopital_zero_nhds",
+   "authors": "Anatole Dedecker"
+  },
+  {
+   "n": 65,
+   "title": "Isosceles Triangle Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "EuclideanGeometry.angle_eq_angle_of_dist_eq",
+   "authors": "Joseph Myers"
+  },
+  {
+   "n": 66,
+   "title": "Sum of a Geometric Series",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "geom_sum_Ico",
+   "authors": "Sander R. Dahmen (finite) and Johannes Hölzl (infinite)"
+  },
+  {
+   "n": 67,
+   "title": "e is Transcendental",
+   "formalized": true,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": "Jujian Zhang"
+  },
+  {
+   "n": 68,
+   "title": "Sum of an arithmetic series",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Finset.sum_range_id",
+   "authors": "Johannes Hölzl"
+  },
+  {
+   "n": 69,
+   "title": "Greatest Common Divisor Algorithm",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "EuclideanDomain.gcd",
+   "authors": "mathlib"
+  },
+  {
+   "n": 70,
+   "title": "The Perfect Number Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.Nat.eq_two_pow_mul_prime_mersenne_of_even_perfect",
+   "authors": "Aaron Anderson"
+  },
+  {
+   "n": 71,
+   "title": "Order of a Subgroup",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Subgroup.card_subgroup_dvd_card",
+   "authors": "mathlib"
+  },
+  {
+   "n": 72,
+   "title": "Sylow’s Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Sylow.exists_subgroup_card_pow_prime",
+   "authors": "Chris Hughes"
+  },
+  {
+   "n": 73,
+   "title": "Ascending or Descending Sequences (Erdős–Szekeres Theorem)",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.erdos_szekeres",
+   "authors": "Bhavik Mehta"
+  },
+  {
+   "n": 74,
+   "title": "The Principle of Mathematical Induction",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat",
+   "authors": "Leonardo de Moura"
+  },
+  {
+   "n": 75,
+   "title": "The Mean Value Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "exists_deriv_eq_slope",
+   "authors": "Yury G. Kudryashov"
+  },
+  {
+   "n": 76,
+   "title": "Fourier Series",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "fourierCoeff",
+   "authors": "Heather Macbeth"
+  },
+  {
+   "n": 77,
+   "title": "Sum of kth powers",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "sum_range_pow",
+   "authors": "Moritz Firsching and Fabian Kruse and Ashvni Narayanan"
+  },
+  {
+   "n": 78,
+   "title": "The Cauchy-Schwarz Inequality",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "inner_mul_inner_self_le",
+   "authors": "Zhouhang Zhou"
+  },
+  {
+   "n": 79,
+   "title": "The Intermediate Value Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "intermediate_value_Icc",
+   "authors": "Rob Lewis and Chris Hughes"
+  },
+  {
+   "n": 80,
+   "title": "The Fundamental Theorem of Arithmetic",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat.primeFactorsList_unique",
+   "authors": "Chris Hughes"
+  },
+  {
+   "n": 81,
+   "title": "Divergence of the Prime Reciprocal Series",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.Real.tendsto_sum_one_div_prime_atTop",
+   "authors": "Manuel Candales (archive), Michael Stoll (mathlib)"
+  },
+  {
+   "n": 82,
+   "title": "Dissection of Cubes (J.E. Littlewood’s ‘elegant’ proof)",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.«82».cannot_cube_a_cube",
+   "authors": "Floris van Doorn"
+  },
+  {
+   "n": 83,
+   "title": "The Friendship Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.friendship_theorem",
+   "authors": "Aaron Anderson and Jalex Stark and Kyle Miller"
+  },
+  {
+   "n": 84,
+   "title": "Morley’s Theorem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 85,
+   "title": "Divisibility by 3 Rule",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat.three_dvd_iff",
+   "authors": "Kim Morrison"
+  },
+  {
+   "n": 86,
+   "title": "Lebesgue Measure and Integration",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "MeasureTheory.lintegral",
+   "authors": "Johannes Hölzl"
+  },
+  {
+   "n": 87,
+   "title": "Desargues’s Theorem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 88,
+   "title": "Derangements Formula",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "card_derangements_eq_numDerangements",
+   "authors": "Henry Swanson"
+  },
+  {
+   "n": 89,
+   "title": "The Factor and Remainder Theorems",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Polynomial.dvd_iff_isRoot",
+   "authors": "Chris Hughes"
+  },
+  {
+   "n": 90,
+   "title": "Stirling’s Formula",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Stirling.tendsto_stirlingSeq_sqrt_pi",
+   "authors": "Moritz Firsching and Fabian Kruse and Nikolas Kuhn and Heather Macbeth"
+  },
+  {
+   "n": 91,
+   "title": "The Triangle Inequality",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "norm_add_le",
+   "authors": "Zhouhang Zhou"
+  },
+  {
+   "n": 92,
+   "title": "Pick’s Theorem",
+   "formalized": false,
+   "in_mathlib": false,
+   "decl": null,
+   "authors": ""
+  },
+  {
+   "n": 93,
+   "title": "The Birthday Problem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Theorems100.birthday",
+   "authors": "Eric Rodriguez"
+  },
+  {
+   "n": 94,
+   "title": "The Law of Cosines",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "EuclideanGeometry.dist_sq_eq_dist_sq_add_dist_sq_sub_two_mul_dist_mul_dist_mul_cos_angle",
+   "authors": "Joseph Myers"
+  },
+  {
+   "n": 95,
+   "title": "Ptolemy’s Theorem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "EuclideanGeometry.mul_dist_add_mul_dist_eq_mul_dist_of_cospherical",
+   "authors": "Manuel Candales"
+  },
+  {
+   "n": 96,
+   "title": "Principle of Inclusion/Exclusion",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Finset.inclusion_exclusion_sum_biUnion",
+   "authors": "Neil Strickland (outside mathlib), Yaël Dillies (in mathlib)"
+  },
+  {
+   "n": 97,
+   "title": "Cramer’s Rule",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Matrix.mulVec_cramer",
+   "authors": "Anne Baanen"
+  },
+  {
+   "n": 98,
+   "title": "Bertrand’s Postulate",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Nat.bertrand",
+   "authors": "Bolton Bailey and Patrick Stevens"
+  },
+  {
+   "n": 99,
+   "title": "Buffon Needle Problem",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "BuffonsNeedle.buffon_short",
+   "authors": "Enrico Z. Borba"
+  },
+  {
+   "n": 100,
+   "title": "Descartes Rule of Signs",
+   "formalized": true,
+   "in_mathlib": true,
+   "decl": "Polynomial.roots_countP_pos_le_signVariations",
+   "authors": "Alex Meiburg"
+  }
+ ],
+ "thousand": {
+  "listed": 1199,
+  "in_mathlib": 200
+ },
+ "undergrad": [
+  {
+   "topic": "Linear algebra",
+   "items": 60,
+   "in_mathlib": 50
+  },
+  {
+   "topic": "Group Theory",
+   "items": 39,
+   "in_mathlib": 32
+  },
+  {
+   "topic": "Ring Theory",
+   "items": 61,
+   "in_mathlib": 58
+  },
+  {
+   "topic": "Bilinear and Quadratic Forms Over a Vector Space",
+   "items": 39,
+   "in_mathlib": 32
+  },
+  {
+   "topic": "Affine and Euclidean Geometry",
+   "items": 29,
+   "in_mathlib": 14
+  },
+  {
+   "topic": "Single Variable Real Analysis",
+   "items": 73,
+   "in_mathlib": 58
+  },
+  {
+   "topic": "Single Variable Complex Analysis",
+   "items": 25,
+   "in_mathlib": 13
+  },
+  {
+   "topic": "Topology",
+   "items": 44,
+   "in_mathlib": 41
+  },
+  {
+   "topic": "Multivariable calculus",
+   "items": 41,
+   "in_mathlib": 16
+  },
+  {
+   "topic": "Measures and integral calculus",
+   "items": 38,
+   "in_mathlib": 33
+  },
+  {
+   "topic": "Probability Theory",
+   "items": 38,
+   "in_mathlib": 22
+  },
+  {
+   "topic": "Distribution calculus",
+   "items": 39,
+   "in_mathlib": 14
+  },
+  {
+   "topic": "Numerical Analysis",
+   "items": 36,
+   "in_mathlib": 2
+  }
+ ],
+ "overview": [
+  {
+   "topic": "General algebra",
+   "items": 134,
+   "in_mathlib": 134
+  },
+  {
+   "topic": "Linear algebra",
+   "items": 35,
+   "in_mathlib": 35
+  },
+  {
+   "topic": "Topology",
+   "items": 53,
+   "in_mathlib": 53
+  },
+  {
+   "topic": "Analysis",
+   "items": 97,
+   "in_mathlib": 97
+  },
+  {
+   "topic": "Probability Theory",
+   "items": 24,
+   "in_mathlib": 24
+  },
+  {
+   "topic": "Geometry",
+   "items": 52,
+   "in_mathlib": 52
+  },
+  {
+   "topic": "Combinatorics",
+   "items": 43,
+   "in_mathlib": 43
+  },
+  {
+   "topic": "Dynamics",
+   "items": 6,
+   "in_mathlib": 6
+  },
+  {
+   "topic": "Data structures",
+   "items": 20,
+   "in_mathlib": 20
+  },
+  {
+   "topic": "Logic and computation",
+   "items": 28,
+   "in_mathlib": 28
+  }
+ ]
+}

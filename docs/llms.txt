@@ -1,0 +1,73 @@
+# Renaissance Labs Mathematics
+
+> A map of all 63 areas of mathematics (MSC2020) with Lean/Mathlib formalization coverage, and Lean environments for training and evaluating proving.
+
+## Data
+- https://math.renaissancelabs.eu/data/areas.json
+- https://math.renaissancelabs.eu/data/coverage.json
+- https://math.renaissancelabs.eu/data/environments.json
+
+## Pages
+- General and overarching topics; collections: https://math.renaissancelabs.eu/area/00/
+- History and biography: https://math.renaissancelabs.eu/area/01/
+- Mathematical logic and foundations: https://math.renaissancelabs.eu/area/03/
+- Combinatorics: https://math.renaissancelabs.eu/area/05/
+- Order, lattices, ordered algebraic structures: https://math.renaissancelabs.eu/area/06/
+- General algebraic systems: https://math.renaissancelabs.eu/area/08/
+- Number theory: https://math.renaissancelabs.eu/area/11/
+- Field theory and polynomials: https://math.renaissancelabs.eu/area/12/
+- Commutative algebra: https://math.renaissancelabs.eu/area/13/
+- Algebraic geometry: https://math.renaissancelabs.eu/area/14/
+- Linear and multilinear algebra; matrix theory: https://math.renaissancelabs.eu/area/15/
+- Associative rings and algebras: https://math.renaissancelabs.eu/area/16/
+- Nonassociative rings and algebras: https://math.renaissancelabs.eu/area/17/
+- Category theory; homological algebra: https://math.renaissancelabs.eu/area/18/
+- \(K\)-theory: https://math.renaissancelabs.eu/area/19/
+- Group theory and generalizations: https://math.renaissancelabs.eu/area/20/
+- Topological groups, Lie groups: https://math.renaissancelabs.eu/area/22/
+- Real functions: https://math.renaissancelabs.eu/area/26/
+- Measure and integration: https://math.renaissancelabs.eu/area/28/
+- Functions of a complex variable: https://math.renaissancelabs.eu/area/30/
+- Potential theory: https://math.renaissancelabs.eu/area/31/
+- Several complex variables and analytic spaces: https://math.renaissancelabs.eu/area/32/
+- Special functions: https://math.renaissancelabs.eu/area/33/
+- Ordinary differential equations: https://math.renaissancelabs.eu/area/34/
+- Partial differential equations: https://math.renaissancelabs.eu/area/35/
+- Dynamical systems and ergodic theory: https://math.renaissancelabs.eu/area/37/
+- Difference and functional equations: https://math.renaissancelabs.eu/area/39/
+- Sequences, series, summability: https://math.renaissancelabs.eu/area/40/
+- Approximations and expansions: https://math.renaissancelabs.eu/area/41/
+- Harmonic analysis on Euclidean spaces: https://math.renaissancelabs.eu/area/42/
+- Abstract harmonic analysis: https://math.renaissancelabs.eu/area/43/
+- Integral transforms, operational calculus: https://math.renaissancelabs.eu/area/44/
+- Integral equations: https://math.renaissancelabs.eu/area/45/
+- Functional analysis: https://math.renaissancelabs.eu/area/46/
+- Operator theory: https://math.renaissancelabs.eu/area/47/
+- Calculus of variations and optimal control; optimization: https://math.renaissancelabs.eu/area/49/
+- Geometry: https://math.renaissancelabs.eu/area/51/
+- Convex and discrete geometry: https://math.renaissancelabs.eu/area/52/
+- Differential geometry: https://math.renaissancelabs.eu/area/53/
+- General topology: https://math.renaissancelabs.eu/area/54/
+- Algebraic topology: https://math.renaissancelabs.eu/area/55/
+- Manifolds and cell complexes: https://math.renaissancelabs.eu/area/57/
+- Global analysis, analysis on manifolds: https://math.renaissancelabs.eu/area/58/
+- Probability theory and stochastic processes: https://math.renaissancelabs.eu/area/60/
+- Statistics: https://math.renaissancelabs.eu/area/62/
+- Numerical analysis: https://math.renaissancelabs.eu/area/65/
+- Computer science: https://math.renaissancelabs.eu/area/68/
+- Mechanics of particles and systems: https://math.renaissancelabs.eu/area/70/
+- Mechanics of deformable solids: https://math.renaissancelabs.eu/area/74/
+- Fluid mechanics: https://math.renaissancelabs.eu/area/76/
+- Optics, electromagnetic theory: https://math.renaissancelabs.eu/area/78/
+- Classical thermodynamics, heat transfer: https://math.renaissancelabs.eu/area/80/
+- Quantum theory: https://math.renaissancelabs.eu/area/81/
+- Statistical mechanics, structure of matter: https://math.renaissancelabs.eu/area/82/
+- Relativity and gravitational theory: https://math.renaissancelabs.eu/area/83/
+- Astronomy and astrophysics: https://math.renaissancelabs.eu/area/85/
+- Geophysics: https://math.renaissancelabs.eu/area/86/
+- Operations research, mathematical programming: https://math.renaissancelabs.eu/area/90/
+- Game theory, economics, finance, and other social and behavioral sciences: https://math.renaissancelabs.eu/area/91/
+- Biology and other natural sciences: https://math.renaissancelabs.eu/area/92/
+- Systems theory; control: https://math.renaissancelabs.eu/area/93/
+- Information and communication theory, circuits: https://math.renaissancelabs.eu/area/94/
+- Mathematics education: https://math.renaissancelabs.eu/area/97/

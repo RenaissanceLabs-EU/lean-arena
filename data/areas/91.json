@@ -1,0 +1,102 @@
+{
+  "code": "91",
+  "short": "Game theory, economics",
+  "hook": "When everyone acts in their own interest, what outcome should we expect?",
+  "about": [
+    "This area applies mathematics to human decisions and their interaction. Game theory studies situations where the result for each participant depends on the choices of all. Mathematical economics models markets, prices and the allocation of resources. Social choice theory studies voting and collective decisions. Mathematical finance and actuarial science price financial contracts and insurance and measure risk. Models in psychology and sociology also belong here.",
+    "The central notion is equilibrium: a state in which no participant can gain by changing course alone. Existence of equilibria is usually proved with fixed point theorems or convex analysis, and computing them leads to optimization and complexity theory. Finance relies on stochastic processes and partial differential equations. Much of the area consists of proving that a short list of desirable properties can or cannot be satisfied together."
+  ],
+  "example": {
+    "title": "The prisoner's dilemma",
+    "text": "Two suspects are questioned separately. If both stay silent, each gets 1 year. If both confess, each gets 5 years. If only one confesses, that one goes free and the other gets 10 years. Whatever the other does, confessing is better: 0 years instead of 1, or 5 instead of 10. So both confess and serve 5 years, although both staying silent would have cost each only 1 year."
+  },
+  "objects": [
+    {
+      "term": "Game",
+      "gloss": "A set of players, the strategies available to each, and the payoff each receives from every combination."
+    },
+    {
+      "term": "Nash equilibrium",
+      "gloss": "A choice of strategies from which no single player can gain by deviating alone."
+    },
+    {
+      "term": "Utility function",
+      "gloss": "A numerical representation of the preferences of an agent over outcomes."
+    },
+    {
+      "term": "Competitive equilibrium",
+      "gloss": "Prices at which the amounts that agents wish to buy and sell balance in every market."
+    },
+    {
+      "term": "Social choice rule",
+      "gloss": "A procedure that turns individual preferences into a collective decision, such as a voting system."
+    },
+    {
+      "term": "Mechanism",
+      "gloss": "The rules of an interaction, such as an auction, designed so that self-interested behavior gives a desired result."
+    },
+    {
+      "term": "Arbitrage",
+      "gloss": "A trading strategy that yields a riskless profit with no initial investment."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Minimax theorem",
+      "year": 1928,
+      "statement": "For a finite two-player zero-sum game with payoff matrix \\(A\\), \\(\\max_x\\min_y x^{T}Ay = \\min_y\\max_x x^{T}Ay\\), where \\(x\\) and \\(y\\) range over the mixed strategies of the two players."
+    },
+    {
+      "name": "Nash's existence theorem",
+      "year": 1950,
+      "statement": "Every game with finitely many players, each having finitely many pure strategies, has at least one Nash equilibrium in mixed strategies."
+    },
+    {
+      "name": "Arrow's impossibility theorem",
+      "year": 1951,
+      "statement": "With at least three alternatives and finitely many voters, no rule that turns every profile of individual rankings into a collective ranking can satisfy all three of: respecting unanimous preferences, independence of irrelevant alternatives, and the absence of a dictator."
+    },
+    {
+      "name": "Arrow-Debreu theorem",
+      "year": 1954,
+      "statement": "An economy with finitely many goods, consumers and producers has a competitive equilibrium, provided preferences are continuous and convex, production sets are closed and convex, and certain further technical conditions hold."
+    },
+    {
+      "name": "Gale-Shapley theorem",
+      "year": 1962,
+      "statement": "Given two groups of equal size, each of whose members ranks all members of the other group, there is always a stable matching: a pairing in which no two unmatched individuals prefer each other to their assigned partners. The deferred acceptance algorithm finds one."
+    },
+    {
+      "name": "Black-Scholes formula",
+      "year": 1973,
+      "statement": "If a stock paying no dividends follows geometric Brownian motion with constant volatility \\(\\sigma\\) and the interest rate \\(r\\) is constant, then a European call with strike \\(K\\) and time \\(T\\) to expiry has price \\(S\\,N(d_1) - Ke^{-rT}N(d_2)\\), where \\(S\\) is the stock price, \\(N\\) the standard normal distribution function, \\(d_1 = \\frac{\\ln(S/K) + (r + \\sigma^2/2)T}{\\sigma\\sqrt T}\\) and \\(d_2 = d_1 - \\sigma\\sqrt T\\)."
+    }
+  ],
+  "open": [
+    {
+      "name": "Complexity of Nash equilibrium",
+      "gloss": "Finding a Nash equilibrium of a two-player game is complete for the class PPAD; whether a polynomial-time algorithm exists is unknown."
+    },
+    {
+      "name": "Optimal multi-item auctions",
+      "gloss": "Describe the auction that maximizes the expected revenue of a seller with several different items; the answer is known in general only for one item."
+    },
+    {
+      "name": "Envy-freeness up to any good",
+      "gloss": "For four or more agents with additive valuations, can indivisible goods always be divided so that no agent envies another after removing any single good from the other's share?"
+    }
+  ],
+  "uses": [
+    "Auction and market design",
+    "School choice and organ exchange",
+    "Option pricing and risk management",
+    "Design of voting systems"
+  ],
+  "links": [
+    "90",
+    "60",
+    "49",
+    "62",
+    "68"
+  ]
+}

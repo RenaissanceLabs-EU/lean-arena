@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real analysis with epsilon and delta · Lean environment · Renaissance Labs Mathematics</title>
+<meta name="description" content="Prove limits of explicit sequences, epsilon-delta continuity, bounds on recursive sequences and uniform bounds, from the definitions.">
+<link rel="canonical" href="https://math.renaissancelabs.eu/env/real-analysis/">
+<meta property="og:title" content="Real analysis with epsilon and delta · Lean environment · Renaissance Labs Mathematics"><meta property="og:description" content="Prove limits of explicit sequences, epsilon-delta continuity, bounds on recursive sequences and uniform bounds, from the definitions."><meta property="og:url" content="https://math.renaissancelabs.eu/env/real-analysis/"><meta property="og:type" content="website">
+<meta name="twitter:card" content="summary"><meta name="theme-color" content="#fdfaf3">
+<link rel="icon" href="/assets/favicon.png">
+<link rel="stylesheet" href="/styles.css?v=a4f0f3bc">
+<link rel="stylesheet" href="/assets/katex.css">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="/"><img src="/assets/mark.png" alt=""><span>Renaissance Labs &middot; Mathematics</span></a>
+  <nav><a href="/">Map</a><a href="/environments/" aria-current="page">Environments</a><a href="/frontier/">Frontier</a><a href="/checking/">How checking works</a><a href="/about/">About</a><a class="ext" href="https://practice.renaissancelabs.eu">Practice</a><a class="ext" href="https://renaissancelabs.eu">Renaissance Labs</a></nav>
+  <button class="theme" id="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<main id="main">
+
+<div class="wrap b04" style="--hue: var(--f04)">
+  <nav class="crumbs"><a href="/environments/">Environments</a><span>/</span><a href="/area/26/">MSC 26 Real functions</a></nav>
+  <header class="env-head"><a class="fldchip" href="/area/26/"><i>26</i><span>Real functions</span></a>
+  <h1>Real analysis with epsilon and delta</h1><p class="id">real-analysis</p><p class="lede">Prove limits of explicit sequences, epsilon-delta continuity, bounds on recursive sequences and uniform bounds, from the definitions.</p>
+  <div class="actions"><a class="btn" href="#run">How to run it</a><a class="btn ghost" href="/checking/">How checking works</a></div></header>
+  <div class="env">
+    <div>
+      <div class="sec"><h2>What the agent does</h2><p>The agent gets a working directory with a Lean file, <code>Solution.lean</code>, and a problem in words. It edits the file until it compiles and is correct. Tasks are generated from a seed and a difficulty from 1 to 3, so the supply is unlimited and every task is new.</p></div>
+      <div class="sec"><h2>An example task</h2><div class="task"><div class="task-h">Instruction, as the agent sees it</div><div class="task-b prose2"><h4>Prove a limit from the definition</h4><p>Prove, directly from the definition of a limit, that the sequence <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>7</mn><mrow><mi>n</mi><mo>+</mo><mn>8</mn></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">u_n = \dfrac{7}{n + 8}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.0908em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord">8</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">7</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> tends to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span>: for every <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon &gt; 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">ε</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span> there is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><msub><mi>u</mi><mi>n</mi></msub><mo>−</mo><mn>0</mn><mi mathvariant="normal">∣</mi><mo>&lt;</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">|u_n - 0| &lt; \varepsilon</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0∣</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">ε</span></span></span></span> for all <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>≥</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">n \ge N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span>.</p><h5>What to do</h5><p><code>Solution.lean</code> in the working directory states the theorem in Lean 4 with Mathlib, with <code>sorry</code> in place of the proof. Replace every <code>sorry</code> with a proof.</p><ul><li>Do not change the statement of any theorem or any definition the file gives you. You may add your own lemmas and definitions.</li><li>Check your work with <code>lake env lean Solution.lean</code> (run it inside <code>/opt/arena/lean</code>, giving the full path to the file). It must compile without errors.</li><li>A theorem counts only if its proof is complete: no <code>sorry</code>, no new axioms, no <code>native_decide</code>.</li><li>The reward is 1 if the theorem is proved and 0 otherwise.</li></ul></div></div>
+      <div class="step"><div class="step-h"><b>Solution.lean</b><span>the file the agent starts from</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre><span class="kw">import</span> Mathlib
+
+<span class="cm">/-- The sequence tends to 0 (epsilon-N definition). -/</span>
+<span class="kw">theorem</span> seq_limit :
+    ∀ ε &gt; 0, ∃ N : ℕ, ∀ n ≥ N, |(7 : ℝ) / ((n : ℝ) + (8 : ℝ)) - 0| &lt; ε := <span class="kw">by</span>
+  <span class="kw">sorry</span>
+</pre></div></div>
+      <details class="ref"><summary>Show a reference solution</summary><div class="codebox"><button class="copy" type="button">Copy</button><pre><span class="kw">import</span> Mathlib
+
+<span class="cm">/-- The sequence tends to 0 (epsilon-N definition). -/</span>
+<span class="kw">theorem</span> seq_limit :
+    ∀ ε &gt; 0, ∃ N : ℕ, ∀ n ≥ N, |(7 : ℝ) / ((n : ℝ) + (8 : ℝ)) - 0| &lt; ε := <span class="kw">by</span>
+  <span class="kw">intro</span> ε hε
+  <span class="kw">refine</span> ⟨⌈(7 : ℝ) / ε⌉₊, <span class="kw">fun</span> n hn =&gt; ?_⟩
+  <span class="kw">have</span> h1 : (7 : ℝ) / ε ≤ (n : ℝ) := (Nat.le_ceil _).trans (<span class="kw">by</span> exact_mod_cast hn)
+  <span class="kw">have</span> h2 : (7 : ℝ) ≤ (n : ℝ) * ε := (div_le_iff₀ hε).mp h1
+  <span class="kw">have</span> hpos : (0 : ℝ) &lt; (n : ℝ) + (8 : ℝ) := <span class="kw">by</span> <span class="kw">positivity</span>
+  <span class="kw">rw</span> [sub_zero, abs_of_pos (<span class="kw">by</span> <span class="kw">positivity</span>), div_lt_iff₀ hpos]
+  <span class="kw">nlinarith</span> [mul_pos hε (<span class="kw">by</span> <span class="kw">norm_num</span> : (0 : ℝ) &lt; (8 : ℝ))]
+</pre></div><p class="note">Reference solutions are never shown to the agent. They are compiled in the environment's self-test, so every task has at least one proof that passes.</p></details></div>
+      <div class="sec"><h2>The families</h2><p>Each task belongs to one family: a different piece of the area's work.</p><table class="t fam"><tr><td><b>continuity</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> continuous_at :
+    ∀ ε &gt; 0, ∃ δ &gt; 0, ∀ x : ℝ, |x - (-1 : ℝ)| &lt; δ → |((-5 : ℝ) * x ^ 2 + (2 : ℝ)) - ((-5 : ℝ) * (-1 : ℝ) ^ 2 + (2 : ℝ))| &lt; ε</pre></div></td></tr><tr><td><b>limit sequence</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> seq_limit :
+    ∀ ε &gt; 0, ∃ N : ℕ, ∀ n ≥ N, |((-4 : ℝ) * (n : ℝ) + (9 : ℝ)) / ((5 : ℝ) * (n : ℝ) + (2 : ℝ)) - (-4 : ℝ) / (5 : ℝ)| &lt; ε</pre></div></td></tr><tr><td><b>sequence bounds</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> a_bounds :
+    ∀ n : ℕ, 0 ≤ a n ∧ a n ≤ (2 : ℝ)</pre></div></td></tr><tr><td><b>uniform bounds</b></td><td><div class="codebox mini"><pre><span class="kw">theorem</span> uniform_bound :
+    ∀ n : ℕ, ∀ x ∈ Set.Icc (0 : ℝ) (4 / 5 : ℝ), ∑ i ∈ Finset.range n, x ^ i ≤ 1 / (1 - (4 / 5 : ℝ))</pre></div></td></tr></table></div>
+      <div class="sec"><h2>Reward</h2><dl class="reward"><div><dt>Range</dt><dd>0 to 1</dd></div><div><dt>Checked by</dt><dd>Lean kernel</dd></div><div><dt>Deterministic</dt><dd>yes</dd></div></dl><p>Every theorem must be stated exactly as given and proved: no <code>sorry</code>, no new axioms, no <code>native_decide</code>. The reward is the share of theorems that pass. A file that does not compile scores 0. The submission is also re-checked by a second kernel run. Read <a href="/checking/">how checking works</a>.</p></div>
+      <div class="sec" id="run"><h2>How to run it</h2>
+        <div class="step"><div class="step-h"><b>1. Set up the Lean project</b><span>Lean 4.29.1 with Mathlib 5e932f97dd</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre>git clone https://github.com/RenaissanceLabs-EU/lean-arena &amp;&amp; cd lean-arena
+cd lean &amp;&amp; lake exe cache get</pre></div></div>
+        <div class="step"><div class="step-h"><b>2. Generate a task</b><span>seed and difficulty pick the task</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre>python3 tools/make_task.py real_analysis --seed 7 --difficulty 2 --out /tmp/task</pre></div></div>
+        <div class="step"><div class="step-h"><b>3. Grade a solution</b><span>prints the reward</span></div><div class="codebox"><button class="copy" type="button">Copy</button><pre>python3 arena/grade.py --spec /tmp/task/spec.json --solution /tmp/task/Solution.lean</pre></div></div>
+        <p class="note">Tasks are also exported as Harbor task folders (<code>instruction.md</code>, <code>task.toml</code>, <code>tests/</code>), the format used by several RL frameworks, with the image built from the Lean project.</p></div>
+      <div class="sec"><h2>How hard is it?</h2><p>A floor, not a ceiling: how many sampled tasks a single automation call can close with no thought at all. Each theorem was given the tactic <code>first | grind | aesop | simp | omega | norm_num | nlinarith | decide</code>. A task counts as closed only if every theorem in it is. Overall 0 of 24. The rest need a real proof.</p><dl class="reward"><div><dt>Difficulty 1</dt><dd>0 of 8</dd></div><div><dt>Difficulty 2</dt><dd>0 of 8</dd></div><div><dt>Difficulty 3</dt><dd>0 of 8</dd></div></dl><p class="note">Sample: 8 seeds at each difficulty. No model has been run on these tasks yet, so how hard they are for a model is not yet measured.</p></div>
+      <div class="sec"><h2>Good for</h2><ul class="goodfor"><li>choosing N and delta</li><li>abs and inequality estimates</li><li>induction on recursive sequences</li><li>geometric sums</li></ul></div>
+    </div>
+    <aside class="side"><dl>
+      <div><dt>Area</dt><dd><a href="/area/26/">MSC 26 &middot; Real functions</a></dd></div>
+      <div><dt>Skill</dt><dd>Epsilon-delta arguments and induction on real sequences</dd></div>
+      <div><dt>Kind</dt><dd>Prove theorems</dd></div>
+      <div><dt>Tasks</dt><dd>84 train, 24 held-out eval, per export</dd></div>
+      <div><dt>Families</dt><dd>4</dd></div>
+      <div><dt>Difficulty</dt><dd>1 to 3, set by the generator</dd></div>
+      <div><dt>Toolchain</dt><dd class="mono">Lean 4.29.1<br>Mathlib 5e932f97dd</dd></div>
+    </dl></aside>
+  </div>
+</div>
+</main>
+<footer class="wrap foot">
+  <a class="brand" href="https://renaissancelabs.eu"><img src="/assets/mark.png" alt="">Renaissance Labs</a>
+  <div class="foot-links"><a href="/about/">About</a><a href="/data/areas.json">Data</a><a href="/llms.txt">llms.txt</a><a href="https://practice.renaissancelabs.eu">Practice</a><a href="https://labs.renaissancelabs.eu">Atlas</a><a href="https://huggingface.co/RenaissanceLabsEU">Hugging Face</a></div>
+</footer>
+<script src="/app.js?v=a4f0f3bc" defer></script>
+</body>
+</html>

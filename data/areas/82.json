@@ -1,0 +1,103 @@
+{
+  "code": "82",
+  "short": "Statistical mechanics",
+  "hook": "How do countless jostling molecules add up to something as simple as temperature and pressure?",
+  "about": [
+    "Statistical mechanics explains the behavior of matter in bulk from the laws governing its microscopic parts. Because a glass of water contains far too many molecules to follow one by one, the theory works with probability distributions over microscopic states. It derives thermodynamic quantities, explains phase transitions such as boiling and magnetization, and describes how systems approach equilibrium.",
+    "In equilibrium the central object is the partition function, a sum over all states weighted by their energies, and the main questions concern its behavior as the system grows. Lattice models, such as the Ising model of a magnet, serve as test cases. The area uses probability, combinatorics, analysis and operator algebras, and its ideas, notably the renormalization group and Monte Carlo sampling, are now used well outside physics."
+  ],
+  "example": {
+    "title": "A system with two levels",
+    "text": "A particle can sit in a state of energy 0 or a state of energy \\(\\varepsilon\\). At temperature \\(T\\), the two states have weights \\(1\\) and \\(e^{-\\varepsilon/kT}\\), so the upper state has probability \\(e^{-\\varepsilon/kT}/(1 + e^{-\\varepsilon/kT})\\). When \\(kT = \\varepsilon\\) this is \\(0.269\\). As \\(T \\to 0\\) the probability tends to 0, and as \\(T \\to \\infty\\) it tends to \\(\\frac12\\), never beyond."
+  },
+  "objects": [
+    {
+      "term": "Microstate",
+      "gloss": "A complete specification of the state of every particle in the system."
+    },
+    {
+      "term": "Partition function",
+      "gloss": "The sum \\(Z = \\sum e^{-E/kT}\\) over all microstates, from which thermodynamic quantities are computed."
+    },
+    {
+      "term": "Gibbs measure",
+      "gloss": "The probability distribution on microstates describing a system in thermal equilibrium."
+    },
+    {
+      "term": "Free energy",
+      "gloss": "The quantity \\(-kT\\log Z\\), minimized at equilibrium for fixed temperature."
+    },
+    {
+      "term": "Phase transition",
+      "gloss": "An abrupt change in bulk behavior, such as melting, as a parameter like temperature varies."
+    },
+    {
+      "term": "Ising model",
+      "gloss": "A lattice of spins taking values plus or minus one, with neighboring spins favoring agreement."
+    },
+    {
+      "term": "Critical exponent",
+      "gloss": "A number describing how a quantity diverges or vanishes near a continuous phase transition."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Boltzmann-Gibbs distribution",
+      "year": null,
+      "statement": "In equilibrium at temperature \\(T\\), a system in contact with a heat bath is in a microstate of energy \\(E\\) with probability \\(e^{-E/kT}/Z\\), where \\(Z\\) is the sum of \\(e^{-E/kT}\\) over all microstates. The free energy is \\(F = -kT\\log Z\\)."
+    },
+    {
+      "name": "Boltzmann's H-theorem",
+      "year": 1872,
+      "statement": "For a solution \\(f(t,x,v)\\) of the Boltzmann equation for a dilute gas, the quantity \\(H = \\iint f\\log f\\,dx\\,dv\\) never increases in time."
+    },
+    {
+      "name": "Peierls argument",
+      "year": 1936,
+      "statement": "The nearest-neighbor ferromagnetic Ising model on the square lattice with zero external field has spontaneous magnetization at all sufficiently low temperatures."
+    },
+    {
+      "name": "Onsager's solution",
+      "year": 1944,
+      "statement": "The free energy of the Ising model on the square lattice with zero field and coupling \\(J\\) can be computed exactly. It is singular at the critical temperature given by \\(\\sinh(2J/kT_c) = 1\\), that is \\(kT_c/J = 2/\\ln(1+\\sqrt2) \\approx 2.269\\)."
+    },
+    {
+      "name": "Lee-Yang circle theorem",
+      "year": 1952,
+      "statement": "For the ferromagnetic Ising model on any finite graph with external field \\(h\\), the partition function is, up to a nonvanishing factor, a polynomial in \\(z = e^{-2h/kT}\\) all of whose zeros lie on the unit circle \\(|z| = 1\\)."
+    },
+    {
+      "name": "Mermin-Wagner theorem",
+      "year": 1966,
+      "statement": "In one and two dimensions, the quantum Heisenberg model with short-range interactions has no spontaneous magnetization at any positive temperature. More generally, a continuous symmetry cannot be spontaneously broken in such systems."
+    }
+  ],
+  "open": [
+    {
+      "name": "Three-dimensional Ising model",
+      "gloss": "Determine rigorously the critical exponents of the Ising model in three dimensions; no exact solution is known."
+    },
+    {
+      "name": "Spin glasses in finite dimension",
+      "gloss": "Describe the low-temperature phase of the Edwards-Anderson spin glass, including how many equilibrium states it has."
+    },
+    {
+      "name": "Heisenberg ferromagnet",
+      "gloss": "Prove that the quantum Heisenberg ferromagnet in three dimensions has long-range order at low positive temperature."
+    }
+  ],
+  "uses": [
+    "Magnetism and materials science",
+    "Chemistry of gases and liquids",
+    "Monte Carlo sampling in statistics",
+    "Models of neural networks"
+  ],
+  "links": [
+    "60",
+    "81",
+    "80",
+    "35",
+    "76",
+    "05"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "code": "42",
+  "short": "Harmonic analysis",
+  "hook": "Can every signal be split into pure tones, and does adding the tones back always return the signal?",
+  "about": [
+    "Harmonic analysis on Euclidean spaces studies how functions on the circle, the line or \\(\\mathbb{R}^n\\) decompose into waves of pure frequency. Fourier series and the Fourier transform are the basic tools. The area asks in what sense a function equals the sum of its frequency components, how properties of a function such as smoothness and decay are reflected in its transform, and how operators act on these decompositions.",
+    "Much of the modern subject concerns bounds for operators: maximal functions, singular integrals such as the Hilbert transform, multipliers and oscillatory integrals. Standard techniques include interpolation, covering lemmas, decompositions into pieces localized in space and frequency, and wavelet or other time-frequency expansions. The results are basic working tools in partial differential equations, and they connect with number theory, geometric measure theory and signal processing."
+  ],
+  "example": {
+    "title": "The square wave",
+    "text": "The square wave equal to \\(1\\) on \\((0,\\pi)\\) and \\(-1\\) on \\((-\\pi,0)\\) has Fourier series \\(\\frac{4}{\\pi}\\left(\\sin x+\\frac{\\sin3x}{3}+\\frac{\\sin5x}{5}+\\cdots\\right)\\). At \\(x=\\pi/2\\) this gives \\(1=\\frac4\\pi\\left(1-\\frac13+\\frac15-\\cdots\\right)\\), which is Leibniz's series for \\(\\pi/4\\). Near the jump at \\(0\\) the partial sums overshoot by about 9 percent of the jump, however many terms are used. This is the Gibbs phenomenon."
+  },
+  "objects": [
+    {
+      "term": "Fourier series",
+      "gloss": "The expansion of a periodic function in sines and cosines, or complex exponentials, of integer frequencies."
+    },
+    {
+      "term": "Fourier transform",
+      "gloss": "The map sending \\(f\\) to \\(\\hat f(\\xi)=\\int f(x)e^{-2\\pi ix\\cdot\\xi}\\,dx\\), its amplitude at each frequency."
+    },
+    {
+      "term": "Convolution",
+      "gloss": "The product \\((f*g)(x)=\\int f(x-y)g(y)\\,dy\\), which the Fourier transform turns into multiplication."
+    },
+    {
+      "term": "Maximal function",
+      "gloss": "The supremum of the averages of a function over all balls centered at a point."
+    },
+    {
+      "term": "Singular integral",
+      "gloss": "An operator given by convolution with a kernel too singular to be integrable, such as the Hilbert transform."
+    },
+    {
+      "term": "Fourier multiplier",
+      "gloss": "An operator that multiplies the Fourier transform of a function by a fixed function."
+    },
+    {
+      "term": "Wavelet",
+      "gloss": "A function whose translates and dilates form a basis localized in both position and scale."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Riemann-Lebesgue lemma",
+      "year": null,
+      "statement": "If \\(f\\in L^1(\\mathbb{R}^n)\\), then \\(\\hat f\\) is continuous and \\(\\hat f(\\xi)\\to0\\) as \\(|\\xi|\\to\\infty\\)."
+    },
+    {
+      "name": "Plancherel theorem",
+      "year": 1910,
+      "statement": "With \\(\\hat f(\\xi)=\\int f(x)e^{-2\\pi ix\\cdot\\xi}\\,dx\\), one has \\(\\|\\hat f\\|_2=\\|f\\|_2\\) for \\(f\\in L^1\\cap L^2(\\mathbb{R}^n)\\), and the Fourier transform extends to a unitary operator on \\(L^2(\\mathbb{R}^n)\\)."
+    },
+    {
+      "name": "Hardy-Littlewood maximal theorem",
+      "year": null,
+      "statement": "The maximal operator \\(M\\) on \\(\\mathbb{R}^n\\) satisfies \\(|\\{Mf>\\lambda\\}|\\le C_n\\|f\\|_1/\\lambda\\) for all \\(\\lambda>0\\), and it is bounded on \\(L^p(\\mathbb{R}^n)\\) for \\(1<p\\le\\infty\\)."
+    },
+    {
+      "name": "M. Riesz's theorem",
+      "year": null,
+      "statement": "The Hilbert transform is bounded on \\(L^p(\\mathbb{R})\\) for every \\(1<p<\\infty\\). The same holds for the conjugate function on the circle, and it follows that the partial sums of the Fourier series of any \\(f\\in L^p\\) of the circle converge to \\(f\\) in \\(L^p\\) norm for these \\(p\\)."
+    },
+    {
+      "name": "Calderón-Zygmund theorem",
+      "year": 1952,
+      "statement": "Let \\(Tf=K*f\\) be bounded on \\(L^2(\\mathbb{R}^n)\\), where \\(K\\) is differentiable away from the origin with \\(|\\nabla K(x)|\\le C|x|^{-n-1}\\). Then \\(T\\) is of weak type \\((1,1)\\) and extends to a bounded operator on \\(L^p(\\mathbb{R}^n)\\) for \\(1<p<\\infty\\)."
+    },
+    {
+      "name": "Carleson's theorem",
+      "year": 1966,
+      "statement": "The Fourier series of every square-integrable function on the circle converges to the function at almost every point."
+    }
+  ],
+  "open": [
+    {
+      "name": "Kakeya conjecture",
+      "gloss": "Must a compact set in \\(\\mathbb{R}^n\\) that contains a unit segment in every direction have Hausdorff dimension \\(n\\)? This holds in the plane, a proof for \\(n=3\\) was announced in 2025, and higher dimensions are open."
+    },
+    {
+      "name": "Fourier restriction conjecture",
+      "gloss": "For which exponents does the Fourier transform of an \\(L^p\\) function on \\(\\mathbb{R}^n\\) restrict to the unit sphere as an \\(L^q\\) function? The conjectured range is proved in the plane and open for \\(n\\ge3\\)."
+    }
+  ],
+  "uses": [
+    "Signal and image processing",
+    "Partial differential equations",
+    "Quantum mechanics",
+    "Medical imaging"
+  ],
+  "links": [
+    "43",
+    "35",
+    "46",
+    "44",
+    "41",
+    "28"
+  ]
+}

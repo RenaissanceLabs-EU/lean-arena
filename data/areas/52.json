@@ -1,0 +1,102 @@
+{
+  "code": "52",
+  "short": "Convex geometry",
+  "hook": "How densely can equal balls be packed, and what shapes can a polyhedron take?",
+  "about": [
+    "Convex geometry studies convex sets, those containing the whole segment between any two of their points, along with their volumes, surface areas, sections and projections. Discrete geometry studies arrangements of finitely or countably many geometric objects: packings of balls, tilings of space, configurations of points and lines, and polytopes, the higher-dimensional versions of polygons and polyhedra. Typical questions are extremal: which arrangement is densest, smallest or most numerous?",
+    "The subject mixes geometric inequalities, combinatorial counting and linear algebra, with input from analysis, topology and probability, and in recent decades from computer-assisted proof. Convex bodies in high dimensions show behavior that links the field to functional analysis. Polytopes tie it to linear programming and algebraic geometry, lattices tie it to number theory, and its combinatorial side underlies computational geometry."
+  ],
+  "example": {
+    "title": "Counting on a polyhedron",
+    "text": "A cube has \\(V=8\\) vertices, \\(E=12\\) edges and \\(F=6\\) faces, and \\(V-E+F=2\\). An octahedron gives \\(6-12+8=2\\) and a dodecahedron \\(20-30+12=2\\). Euler's formula says this holds for every convex polyhedron. A quick consequence: every face has at least three edges and every edge lies on two faces, so \\(3F\\le2E\\), which gives \\(E\\le3V-6\\). A convex polyhedron with 6 vertices has at most 12 edges."
+  },
+  "objects": [
+    {
+      "term": "Convex set",
+      "gloss": "A set that contains the segment joining any two of its points."
+    },
+    {
+      "term": "Convex hull",
+      "gloss": "The smallest convex set containing a given set."
+    },
+    {
+      "term": "Polytope",
+      "gloss": "The convex hull of finitely many points; in three dimensions, a convex polyhedron."
+    },
+    {
+      "term": "Lattice",
+      "gloss": "The set of all integer combinations of a basis of \\(\\mathbb{R}^n\\)."
+    },
+    {
+      "term": "Packing",
+      "gloss": "An arrangement of copies of a body whose interiors do not overlap."
+    },
+    {
+      "term": "Tiling",
+      "gloss": "A covering of space by bodies whose interiors do not overlap."
+    },
+    {
+      "term": "Mixed volume",
+      "gloss": "The coefficients of the polynomial giving the volume of a weighted sum of convex bodies."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Euler's polyhedron formula",
+      "year": null,
+      "statement": "For every convex polyhedron in three-dimensional space with \\(V\\) vertices, \\(E\\) edges and \\(F\\) faces, \\(V-E+F=2\\)."
+    },
+    {
+      "name": "Minkowski's convex body theorem",
+      "year": null,
+      "statement": "Let \\(\\Lambda\\) be a lattice in \\(\\mathbb{R}^n\\) and \\(K\\) a convex set symmetric about the origin with volume greater than \\(2^n\\det\\Lambda\\). Then \\(K\\) contains a point of \\(\\Lambda\\) other than the origin."
+    },
+    {
+      "name": "Brunn-Minkowski inequality",
+      "year": null,
+      "statement": "For nonempty compact sets \\(A,B\\subset\\mathbb{R}^n\\) with \\(A+B=\\{a+b\\}\\), \\(\\mathrm{vol}(A+B)^{1/n}\\ge\\mathrm{vol}(A)^{1/n}+\\mathrm{vol}(B)^{1/n}\\)."
+    },
+    {
+      "name": "Helly's theorem",
+      "year": null,
+      "statement": "Let a finite family of at least \\(d+1\\) convex sets in \\(\\mathbb{R}^d\\) be given. If every \\(d+1\\) of them have a common point, then all of them have a common point."
+    },
+    {
+      "name": "Upper bound theorem",
+      "year": 1970,
+      "statement": "Among all convex polytopes of dimension \\(d\\) with \\(n\\) vertices, the cyclic polytope has the largest number of faces of every dimension."
+    },
+    {
+      "name": "Kepler conjecture",
+      "year": 2005,
+      "statement": "No packing of equal balls in \\(\\mathbb{R}^3\\) has density greater than \\(\\pi/\\sqrt{18}\\approx0.7405\\), the density of the face-centered cubic packing. The proof was announced in 1998 and published in 2005."
+    }
+  ],
+  "open": [
+    {
+      "name": "Densest sphere packings",
+      "gloss": "The greatest density of a packing of equal balls is known only in dimensions 1, 2, 3, 8 and 24."
+    },
+    {
+      "name": "Mahler's conjecture",
+      "gloss": "Among convex bodies symmetric about the origin, is the product of the volumes of the body and its polar smallest for the cube? This is proved up to dimension 3."
+    },
+    {
+      "name": "Hadwiger's covering conjecture",
+      "gloss": "Can every convex body in \\(\\mathbb{R}^n\\) be covered by \\(2^n\\) smaller homothetic copies of itself? This is open for \\(n\\ge3\\)."
+    }
+  ],
+  "uses": [
+    "Linear programming and optimization",
+    "Error-correcting codes",
+    "Crystallography",
+    "Computational geometry"
+  ],
+  "links": [
+    "51",
+    "05",
+    "90",
+    "11",
+    "46"
+  ]
+}

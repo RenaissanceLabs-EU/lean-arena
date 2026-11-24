@@ -1,0 +1,103 @@
+{
+  "code": "76",
+  "short": "Fluid mechanics",
+  "hook": "Why does smoke rise in a smooth column and then suddenly break up into swirls?",
+  "about": [
+    "Fluid mechanics describes the motion of liquids and gases: water in pipes and oceans, air around wings, blood in arteries, plasma in stars. The fluid is modeled as a continuum with a velocity, pressure and density at every point. The area covers viscous and inviscid flow, compressible gases and shock waves, waves, stability, turbulence, flow in porous media and electrically conducting fluids.",
+    "The basic equations are nonlinear partial differential equations expressing conservation of mass, momentum and energy. Exact solutions are rare, so the area relies on scaling arguments, asymptotic approximations such as boundary layer theory, stability analysis and numerical simulation. Whether the equations always have smooth solutions is itself a major open question in the theory of partial differential equations."
+  ],
+  "example": {
+    "title": "Smooth or turbulent?",
+    "text": "The Reynolds number \\(Re = UL/\\nu\\) compares inertia with viscosity, using a speed \\(U\\), a length \\(L\\) and the kinematic viscosity \\(\\nu\\). Water, with \\(\\nu \\approx 10^{-6}\\ \\mathrm{m^2/s}\\), flowing at 1 m/s through a pipe 2 cm wide has \\(Re = 20000\\), and the flow is turbulent. A syrup ten thousand times more viscous gives \\(Re = 2\\), and the flow is smooth. Pipe flow typically turns turbulent at \\(Re\\) of a few thousand."
+  },
+  "objects": [
+    {
+      "term": "Velocity field",
+      "gloss": "The velocity of the fluid at each point of space and each time."
+    },
+    {
+      "term": "Pressure",
+      "gloss": "The force per unit area that the fluid exerts equally in all directions."
+    },
+    {
+      "term": "Viscosity",
+      "gloss": "A measure of internal friction, the resistance of a fluid to shearing."
+    },
+    {
+      "term": "Vorticity",
+      "gloss": "The curl of the velocity field, measuring local rotation."
+    },
+    {
+      "term": "Reynolds number",
+      "gloss": "A dimensionless ratio of inertial to viscous effects."
+    },
+    {
+      "term": "Boundary layer",
+      "gloss": "A thin region near a solid wall where viscosity matters even when it is negligible elsewhere."
+    },
+    {
+      "term": "Shock wave",
+      "gloss": "A thin surface across which pressure, density and velocity of a gas change abruptly."
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Bernoulli's principle",
+      "year": null,
+      "statement": "In steady flow of an inviscid fluid of constant density \\(\\rho\\) under gravity, \\(p + \\frac12\\rho|u|^2 + \\rho g z\\) is constant along each streamline."
+    },
+    {
+      "name": "Euler equations",
+      "year": null,
+      "statement": "An inviscid incompressible fluid of constant density \\(\\rho\\) satisfies \\(\\partial_t u + (u\\cdot\\nabla)u = -\\nabla p/\\rho\\) and \\(\\nabla\\cdot u = 0\\)."
+    },
+    {
+      "name": "Navier-Stokes equations",
+      "year": null,
+      "statement": "A viscous incompressible fluid of constant density \\(\\rho\\) and kinematic viscosity \\(\\nu\\) satisfies \\(\\partial_t u + (u\\cdot\\nabla)u = -\\nabla p/\\rho + \\nu\\Delta u + f\\) and \\(\\nabla\\cdot u = 0\\), where \\(f\\) is the body force per unit mass."
+    },
+    {
+      "name": "Kelvin's circulation theorem",
+      "year": 1869,
+      "statement": "In an inviscid fluid whose density depends only on pressure, acted on by conservative body forces, the circulation of the velocity around any closed curve that moves with the fluid is constant in time."
+    },
+    {
+      "name": "Leray's theorem",
+      "year": 1934,
+      "statement": "For every divergence-free initial velocity in \\(L^2(\\mathbb{R}^3)\\), the incompressible Navier-Stokes equations have a weak solution defined for all time that satisfies the energy inequality."
+    },
+    {
+      "name": "Kolmogorov's 1941 scaling law",
+      "year": 1941,
+      "statement": "For turbulence at very high Reynolds number, Kolmogorov's similarity hypotheses predict an energy spectrum \\(E(k) = C\\varepsilon^{2/3}k^{-5/3}\\) over the inertial range of wavenumbers \\(k\\), where \\(\\varepsilon\\) is the mean rate of energy dissipation per unit mass. This is a physical prediction, not a theorem derived from the equations."
+    }
+  ],
+  "open": [
+    {
+      "name": "Navier-Stokes regularity",
+      "gloss": "Do smooth, finite-energy initial data in three dimensions always give a solution of the incompressible Navier-Stokes equations that stays smooth for all time?"
+    },
+    {
+      "name": "Blow-up for the Euler equations",
+      "gloss": "Can a smooth, finite-energy solution of the three-dimensional incompressible Euler equations in the whole space become singular in finite time?"
+    },
+    {
+      "name": "Theory of turbulence",
+      "gloss": "Derive the observed statistical laws of turbulent flow, such as Kolmogorov's spectrum and its corrections, from the Navier-Stokes equations."
+    }
+  ],
+  "uses": [
+    "Aircraft, ship and car design",
+    "Weather and ocean forecasting",
+    "Blood flow and respiration",
+    "Pipelines and chemical processing"
+  ],
+  "links": [
+    "35",
+    "65",
+    "86",
+    "80",
+    "74",
+    "82"
+  ]
+}
