@@ -1,0 +1,12 @@
+{
+  "code": "78",
+  "id": "snell",
+  "title": "Light takes the fastest path",
+  "lede": "Light goes from A in air to B in glass, where it travels slower by the factor n. The curve below plots the total travel time for every crossing point on the surface.",
+  "notice": [
+    "The curve has a single lowest point, and it sits directly below the crossing where the path is fastest.",
+    "At that point the ratio sin θ1 / sin θ2 equals n2 / n1. Anywhere else the two numbers differ.",
+    "A higher index bends the fastest path closer to the normal, so the ray spends less distance in the slow glass."
+  ],
+  "hint": "Drag across the picture to move the crossing point, or press Snap to fastest."
+}

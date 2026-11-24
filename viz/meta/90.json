@@ -1,0 +1,12 @@
+{
+  "code": "90",
+  "id": "linear-programming",
+  "title": "A linear objective is best at a corner",
+  "lede": "The solid is every point that satisfies a handful of linear inequalities. The two direction sliders choose what to maximize. The plane perpendicular to that direction is pushed until it touches the solid.",
+  "notice": [
+    "With the plane pushed to 1, it touches the solid at a single corner, shown larger. That corner has the largest value of the objective.",
+    "Turn the direction slowly and the optimal corner stays put, then jumps to a neighboring corner. It never moves to the middle of a face.",
+    "If the direction is exactly perpendicular to a face, a whole edge or face ties, and the readout says so."
+  ],
+  "hint": "Drag to rotate. Move the direction sliders and watch the optimal corner."
+}

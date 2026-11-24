@@ -1,0 +1,12 @@
+{
+  "code": "65",
+  "id": "newton-fractal",
+  "title": "Where Newton's method sends each point",
+  "lede": "Each pixel is a starting guess for Newton's method on a cubic with three roots. It takes the color of the root it reaches; darker means more steps. Drag the roots, or change the number of steps shown.",
+  "notice": [
+    "With few iterations most of the plane is still unsettled. As the count rises, the three basins fill in around the roots.",
+    "The border between basins is never a clean line: near it, tiny changes in the start send the iteration to different roots.",
+    "Points close to a root settle in a step or two. Points near where the derivative is zero get thrown far away first."
+  ],
+  "hint": "Drag a root circle, or slide the iteration count from 1 to 30."
+}

@@ -1,0 +1,12 @@
+{
+  "code": "70",
+  "id": "kepler",
+  "title": "Equal areas in equal times",
+  "lede": "A planet circles a star on an ellipse, its position found by solving Kepler's equation. The two shaded wedges are swept in equal amounts of time. The arrow shows its speed.",
+  "notice": [
+    "The planet races past the star and crawls far away. The arrow is longest at the closest point.",
+    "Wedge A is short and wide at its tip, wedge B long and thin, yet the two areas printed below match to four decimals.",
+    "At eccentricity 0 the orbit is a circle, the speed ratio stays at 1, and both wedges are identical."
+  ],
+  "hint": "Drag to tilt the view. Raise the eccentricity and watch the speed."
+}

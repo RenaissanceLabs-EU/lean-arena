@@ -1,0 +1,12 @@
+{
+  "code": "60",
+  "id": "galton",
+  "title": "Many coin flips make a bell curve",
+  "lede": "Each ball bounces left or right with equal chance at every peg. The bars count where balls land; the dots are the exact binomial odds and the curve is the normal approximation. It starts with 400 simulated balls already landed; Reset clears them.",
+  "notice": [
+    "Each ball's bin is just the number of right bounces, so the middle bins are reached by many more paths than the edges.",
+    "As more balls land, the bar heights settle onto the exact binomial dots. A few balls look ragged; hundreds look smooth.",
+    "Adding rows makes the distribution wider and the normal curve fit the dots more closely."
+  ],
+  "hint": "Press Drop 100, then change the number of rows."
+}

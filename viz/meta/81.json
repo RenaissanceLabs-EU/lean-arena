@@ -1,0 +1,12 @@
+{
+  "code": "81",
+  "id": "orbitals",
+  "title": "Where the electron in hydrogen is found",
+  "lede": "Each dot is one possible position of the electron, drawn at random from the squared wavefunction. Teal and red mark where the wavefunction is positive and negative. Choose an orbital to see its shape.",
+  "notice": [
+    "Turn on the slice to cut through the nucleus: 2s and 3s show empty rings, and the p and d orbitals show empty lines. The wavefunction is zero there, so no dots land.",
+    "Higher shells are larger: the mean distance reads 1.5 Bohr radii for 1s and grows with the shell number.",
+    "The sign changes across each node. The two colors never touch except across an empty gap."
+  ],
+  "hint": "Drag to rotate. Pick an orbital, then try the slice."
+}

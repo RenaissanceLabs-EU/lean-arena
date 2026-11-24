@@ -1,0 +1,12 @@
+{
+  "code": "62",
+  "id": "least-squares",
+  "title": "The line that minimizes squared error",
+  "lede": "Drag the points. The red line minimizes the total area of the squares built on the vertical residuals. Turn on your own line and try to get a smaller total.",
+  "notice": [
+    "Each red square has side equal to one residual, so the sum of squared errors is literally the total shaded area.",
+    "Move your own line anywhere: its total area is never below the least-squares value. It matches only when your line coincides with the red one.",
+    "R squared is 1 minus the error area divided by the spread around the mean height. It is near 1 when the points hug the line."
+  ],
+  "hint": "Drag the dots. Turn on 'Try my own line' and adjust its sliders."
+}
