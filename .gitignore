@@ -5,3 +5,9 @@ __pycache__/
 tasks/
 .pytest_cache/
 *.olean
+viz/*.js
+!viz/runtime.js
+!viz/boot.js
+!viz/linear-map.js
+viz/meta/*.json
+!viz/meta/15.json

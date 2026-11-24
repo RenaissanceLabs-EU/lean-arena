@@ -29,7 +29,7 @@ PREFIXES = {
  "Analysis/LocallyConvex": ["46"], "Analysis/Fourier": ["42"], "Analysis/Real": ["26"], "Analysis/RCLike": ["46"], "Analysis/ODE": ["34"], "Analysis/SpecificLimits": ["40"], "Analysis/PSeries": ["40"], "Analysis/Subadditive": ["40"], "Analysis": ["26"],
  "MeasureTheory": ["28"], "Probability": ["60"], "InformationTheory": ["94"], "Dynamics": ["37"], "Control": ["93"],
  "Topology/Algebra": ["22", "54"], "Topology/MetricSpace": ["54"], "Topology/Category": ["54", "18"], "Topology/Homotopy": ["55"], "Topology/CWComplex": ["57"], "Topology": ["54"],
- "Geometry/Manifold": ["58", "57"], "Geometry/Euclidean": ["51"], "Geometry/Convex": ["52"], "Geometry/Group": ["20"], "Geometry": ["51"],
+ "Geometry/Manifold": ["58", "57", "53"], "Geometry/Euclidean": ["51"], "Geometry/Convex": ["52"], "Geometry/Group": ["20"], "Geometry": ["51"],
  "Mathport": [], "Tactic": [], "Util": [], "Lean": [], "Testing": [], "Deprecated": [], "Init": [],
 }
 pat = re.compile(r"^\s*(?:@\[[^\]]*\]\s*)?(?:protected\s+|private\s+|nonrec\s+)*(?:theorem|lemma)\s", re.M)

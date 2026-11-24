@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "katex": "^0.16.11"
+    "katex": "^0.16.11",
+    "pngjs": "^7.0.0",
+    "puppeteer-core": "^23.11.1",
+    "three": "^0.170.0"
   }
 }

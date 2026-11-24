@@ -7,9 +7,11 @@
 <meta name="description" content="How the mathematics map and the Lean environments are made, and where the numbers come from.">
 <link rel="canonical" href="https://math.renaissancelabs.eu/about/">
 <meta property="og:title" content="About · Renaissance Labs Mathematics"><meta property="og:description" content="How the mathematics map and the Lean environments are made, and where the numbers come from."><meta property="og:url" content="https://math.renaissancelabs.eu/about/"><meta property="og:type" content="website">
-<meta name="twitter:card" content="summary"><meta name="theme-color" content="#fdfaf3">
+<meta property="og:image" content="https://math.renaissancelabs.eu/assets/og/about.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="About · Renaissance Labs Mathematics"><meta property="og:site_name" content="Renaissance Labs Mathematics">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://math.renaissancelabs.eu/assets/og/about.jpg"><meta name="twitter:title" content="About · Renaissance Labs Mathematics"><meta name="twitter:description" content="How the mathematics map and the Lean environments are made, and where the numbers come from."><meta name="theme-color" content="#fdfaf3">
 <link rel="icon" href="/assets/favicon.png">
-<link rel="stylesheet" href="/styles.css?v=a4f0f3bc">
+<link rel="stylesheet" href="/styles.css?v=0473cedc">
+
 
 <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
@@ -35,6 +37,8 @@
       <li><b>Coverage.</b> Counted from the source of Mathlib at commit <span class="mono">5e932f97dd</span>: every <span class="mono">theorem</span> and <span class="mono">lemma</span> declaration, filed under MSC areas by a hand-written mapping of Mathlib directories (<span class="mono">tools/mathlib_coverage.py</span>). A directory that covers several areas is split evenly. This is a measure of size, not of depth, and the mapping is ours: a few areas show almost nothing because Mathlib has no directory for them, even though a result or two may exist elsewhere.</li>
       <li><b>Frontier lists.</b> Read directly from Mathlib's own tracking files.</li>
     </ul>
+    <h2>Interactive figures</h2>
+    <p>Some area pages carry a three.js figure you can drag and change. We add one only when it shows something prose cannot: how a matrix reshapes space, why a Lorenz trajectory cannot be predicted, what a Möbius strip does to an arrow. Most areas have none, on purpose; a figure that decorates is worse than none. Each one is computed from the mathematics, not animated by hand, and each caption states only what the figure shows. Everything runs in your browser and nothing is sent anywhere.</p>
     <h2 id="contribute">Add an environment</h2>
     <p>An environment is a Python generator that returns a Lean task: a statement with <span class="mono">sorry</span>, plus a reference proof. The contract is in <span class="mono">AUTHORING.md</span> in the repository. Good environments are true, varied, need a real idea at higher difficulty, and are not closed by a single automation call. Open a pull request.</p>
     <h2>Related</h2>
@@ -48,6 +52,7 @@
   <a class="brand" href="https://renaissancelabs.eu"><img src="/assets/mark.png" alt="">Renaissance Labs</a>
   <div class="foot-links"><a href="/about/">About</a><a href="/data/areas.json">Data</a><a href="/llms.txt">llms.txt</a><a href="https://practice.renaissancelabs.eu">Practice</a><a href="https://labs.renaissancelabs.eu">Atlas</a><a href="https://huggingface.co/RenaissanceLabsEU">Hugging Face</a></div>
 </footer>
-<script src="/app.js?v=a4f0f3bc" defer></script>
+<script src="/app.js?v=0473cedc" defer></script>
+
 </body>
 </html>

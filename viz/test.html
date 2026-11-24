@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>viz test</title><link rel="icon" href="data:,">
+<script type="importmap">{"imports":{"three":"/assets/three.module.min.js"}}</script>
+<link rel="stylesheet" href="/styles.css">
+<body style="padding:20px"><div class="wrap"><figure class="vz" id="host"><div class="vz-stage"></div><div class="vz-controls"></div></figure></div>
+<script type="module">
+import { mountViz } from '/viz/runtime.js';
+const id = new URLSearchParams(location.search).get('id');
+const dark = new URLSearchParams(location.search).get('dark'); if (dark) document.documentElement.dataset.theme = 'dark';
+mountViz(document.getElementById('host'), id);
+</script>

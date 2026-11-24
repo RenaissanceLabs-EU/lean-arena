@@ -1,0 +1,12 @@
+{
+  "code": "15",
+  "id": "linear-map",
+  "title": "What a matrix does to space",
+  "lede": "A cube and a sphere are carried from the identity to the matrix you choose. The three arrows show where the basis vectors go.",
+  "notice": [
+    "Every straight line stays straight and the origin stays put. That is what linear means.",
+    "The determinant is the factor by which volume changes. It is negative when space is flipped and zero when it is flattened.",
+    "With the projection, the rank drops to 2: a whole dimension of the sphere is lost, and no matrix can bring it back."
+  ],
+  "hint": "Drag to rotate. Press Play to watch the transformation happen."
+}

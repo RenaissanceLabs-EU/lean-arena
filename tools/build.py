@@ -40,6 +40,16 @@ GROUPS = [
 assert sorted(c for _, _, cs in GROUPS for c in cs) == sorted(AREAS), "group list does not match MSC"
 GROUP_OF = {c: (i, g[0], g[1]) for i, g in enumerate(GROUPS) for c in g[2]}
 
+VIZ = {}
+# Only figures listed in viz/approved.json ship: each is reviewed by a person (or by me against the screenshots and the maths) first.
+APPROVED = set(json.load(open(os.path.join(ROOT, "viz", "approved.json"), encoding="utf-8")))
+vdir = os.path.join(ROOT, "viz", "meta")
+if os.path.isdir(vdir):
+    for fn in sorted(os.listdir(vdir)):
+        if fn.endswith(".json"):
+            m_ = json.load(open(os.path.join(vdir, fn), encoding="utf-8"))
+            if m_["id"] in APPROVED and os.path.exists(os.path.join(ROOT, "viz", m_["id"] + ".js")): VIZ[m_["code"]] = m_
+
 def read_toml(path):
     out = {}
     for line in open(path, encoding="utf-8"):
@@ -115,11 +125,15 @@ def codebox(code, lang="lean", copy=True):
 
 # ---------------------------------------------------------------- page shell
 VER = hashlib.md5((open(os.path.join(OUT, "styles.css"), "rb").read() + open(os.path.join(ROOT, "site_app.js"), "rb").read())).hexdigest()[:8]
+IMPORTMAP = '<script type="importmap">{"imports":{"three":"/assets/three.module.min.js"}}</script>'
 PAGES_OUT = {}
 SITEMAP = []
 
-def shell(path, title, desc, body, current="", math=False):
+def shell(path, title, desc, body, current="", math=False, viz=False):
     url = SITE + path
+    seg = [x for x in path.split("/") if x]
+    ogname = "home" if not seg else ("a" + seg[1] if seg[0] == "area" else "e" + seg[1] if seg[0] == "env" else seg[0])
+    og = "%s/assets/og/%s.jpg" % (SITE, ogname)
     nav = [("/", "Map", "map"), ("/environments/", "Environments", "env"), ("/frontier/", "Frontier", "frontier"), ("/checking/", "How checking works", "check"), ("/about/", "About", "about")]
     links = "".join('<a href="%s"%s>%s</a>' % (h, ' aria-current="page"' if k == current else "", t) for h, t, k in nav)
     full = f'''<!doctype html>
@@ -131,10 +145,12 @@ def shell(path, title, desc, body, current="", math=False):
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{url}">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{url}"><meta property="og:type" content="website">
-<meta name="twitter:card" content="summary"><meta name="theme-color" content="#fdfaf3">
+<meta property="og:image" content="{og}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{e(title)}"><meta property="og:site_name" content="Renaissance Labs Mathematics">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{og}"><meta name="twitter:title" content="{e(title)}"><meta name="twitter:description" content="{e(desc)}"><meta name="theme-color" content="#fdfaf3">
 <link rel="icon" href="/assets/favicon.png">
 <link rel="stylesheet" href="/styles.css?v={VER}">
 {'<link rel="stylesheet" href="/assets/katex.css">' if math else ''}
+{IMPORTMAP if viz else ''}
 <script>try{{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 </head>
 <body>
@@ -152,6 +168,7 @@ def shell(path, title, desc, body, current="", math=False):
   <div class="foot-links"><a href="/about/">About</a><a href="/data/areas.json">Data</a><a href="/llms.txt">llms.txt</a><a href="https://practice.renaissancelabs.eu">Practice</a><a href="https://labs.renaissancelabs.eu">Atlas</a><a href="https://huggingface.co/RenaissanceLabsEU">Hugging Face</a></div>
 </footer>
 <script src="/app.js?v={VER}" defer></script>
+{'<script type="module" src="/viz/boot.js"></script>' if viz else ''}
 </body>
 </html>
 '''
@@ -183,6 +200,8 @@ def tile(c):
     search = (AREAS[c]["name"] + " " + page.get("short", "") + " " + page.get("hook", "") + " " + subs + " " + " ".join(o["term"] for o in page.get("objects", []))).lower()
     has_env = c in ENV_BY_AREA
     dot = '<span class="envdot" title="Lean environment available"></span>' if has_env else ""
+    vm = '<svg class="vzmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><title>Interactive figure</title><path d="M12 3 4 7.5v9L12 21l8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>' if c in VIZ else ""
+    dot = '<span class="tm">%s%s</span>' % (vm, dot) if (vm or dot) else ""
     cls = "tile" + (" empty" if n == 0 else "")
     return (f'<a class="{cls}" href="/area/{c}/" data-code="{c}" data-g="{GROUP_OF[c][1]}" data-s="{e(search)}" style="--w:{w}" title="{e(AREAS[c]["name"])}: {fmt(n)} theorems in Mathlib">'
             f'<span class="tc"><b>{c}</b>{dot}</span><span class="tn">{e(area_label(c))}</span>'
@@ -229,6 +248,7 @@ def page_home():
     <div class="stat"><b>{len(AREAS)}</b><span>areas</span></div>
     <div class="stat"><b>{sum(len(a["subareas"]) for a in MSC)}</b><span>subareas</span></div>
     <div class="stat"><b>{fmt(COV["mathlib_theorems"])}</b><span>theorems in Mathlib</span></div>
+    <div class="stat"><b>{len(VIZ)}</b><span>interactive {"figure" if len(VIZ) == 1 else "figures"}</span></div>
     <div class="stat"><b>{n_env}</b><span>Lean environments</span></div>
     <div class="stat"><b>{fmt(n_tasks)}</b><span>checked tasks</span></div>
   </div>
@@ -236,7 +256,7 @@ def page_home():
 <div class="wrap">
   <div class="chart-head" id="map">
     <div><h2>The map</h2><p>The 63 areas of the Mathematics Subject Classification (MSC2020), the system mathematicians use to file their papers. Shading shows how much of each area Mathlib, the main Lean library, already contains. Open a tile to see what the area is about, its landmark theorems and its open problems.</p></div>
-    <div class="scale"><span>less in Lean</span><i style="opacity:.25"></i><i style="opacity:.55"></i><i></i><span>more</span><i class="e"></i><span>almost nothing yet</span><span class="envdot"></span><span>environment</span></div>
+    <div class="scale"><span>less in Lean</span><i style="opacity:.25"></i><i style="opacity:.55"></i><i></i><span>more</span><i class="e"></i><span>almost nothing yet</span><span class="envdot"></span><span>environment</span><svg class="vzmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg><span>interactive figure</span></div>
   </div>
   <div class="mapsearch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search 534 subareas: elliptic curves, homotopy, Markov chains…" autocomplete="off" aria-label="Search areas"><span id="qn"></span></div>
   <div class="chart" id="chart">{"".join(rows)}</div>
@@ -288,6 +308,15 @@ def page_area(c):
         covtxt = '<p class="covbig"><b>almost nothing yet</b></p><p class="note">Mathlib has little or no material filed under this area. That makes it a place where new formalization has the most to add.</p>'
     else:
         covtxt = f'<p class="covbig"><b>{fmt(n)}</b> theorems <span class="faint">&middot; ranked {RANK[c]} of {len(AREAS)}</span></p><div class="bigbar"><i style="width:{weight(c) * 1.6:.0f}%"></i></div><ul class="mods">{mlinks}</ul>'
+    v = VIZ.get(c)
+    viz_html = ""
+    if v:
+        notice = "".join("<li>%s</li>" % tx(x) for x in v["notice"])
+        viz_html = (f'''<section class="sec vizsec" aria-labelledby="viz-h"><p class="eyebrow">Interactive</p><h2 id="viz-h">{tx(v["title"])}</h2>
+<p class="vz-lede">{tx(v["lede"])}</p>
+<figure class="vz" data-viz="{v["id"]}"><div class="vz-stage" role="img" aria-label="{e(v["title"])}"></div><div class="vz-controls"></div><figcaption><span class="vz-hint">{e(v["hint"])}</span></figcaption>
+<noscript><p class="vz-fail">This figure needs JavaScript.</p></noscript></figure>
+<div class="vz-notice"><b>What to notice</b><ul>{notice}</ul></div></section>''')
     envs = ENV_BY_AREA.get(c, [])
     if envs: envhtml = '<div class="grid">%s</div>' % "".join(env_card(m) for m in envs)
     else: envhtml = '<div class="open-env"><p>No environment in this area yet. Each environment is a generator of Lean tasks with a verifier: see how they are built and add one.</p><a class="btn ghost" href="/about/#contribute">Contribute an environment</a></div>'
@@ -298,6 +327,7 @@ def page_area(c):
   <div class="area-main">
     <div class="sec">{about}</div>
     <div class="sec taste"><h2>{e(ex["title"])}</h2><p>{tx(ex["text"])}</p></div>
+    {viz_html}
     <div class="sec"><h2>Central objects</h2><dl class="objects">{objects}</dl></div>
     <div class="sec"><h2>Landmark theorems</h2><ol class="thms">{theorems}</ol></div>
     {('<div class="sec"><h2>Open problems and frontiers</h2><ul class="openp">%s</ul></div>' % openp) if p["open"] else ""}
@@ -321,7 +351,7 @@ def page_area(c):
   {main}
   <nav class="pager">{pager}</nav>
 </div>'''
-    shell("/area/%s/" % c, "%s · Mathematics, mapped" % (area_label(c)), (p["hook"] if p else a["name"]).replace("\\(", "").replace("\\)", "")[:155], body, "map", math=True)
+    shell("/area/%s/" % c, "%s · Mathematics, mapped" % (area_label(c)), (p["hook"] if p else a["name"]).replace("\\(", "").replace("\\)", "")[:155], body, "map", math=True, viz=bool(v))
 
 arrow_l = "&larr;"; arrow_r = "&rarr;"
 
@@ -514,6 +544,8 @@ def page_about():
       <li><b>Coverage.</b> Counted from the source of Mathlib at commit <span class="mono">{COV["mathlib_commit"][:10]}</span>: every <span class="mono">theorem</span> and <span class="mono">lemma</span> declaration, filed under MSC areas by a hand-written mapping of Mathlib directories (<span class="mono">tools/mathlib_coverage.py</span>). A directory that covers several areas is split evenly. This is a measure of size, not of depth, and the mapping is ours: a few areas show almost nothing because Mathlib has no directory for them, even though a result or two may exist elsewhere.</li>
       <li><b>Frontier lists.</b> Read directly from Mathlib's own tracking files.</li>
     </ul>
+    <h2>Interactive figures</h2>
+    <p>Some area pages carry a three.js figure you can drag and change. We add one only when it shows something prose cannot: how a matrix reshapes space, why a Lorenz trajectory cannot be predicted, what a Möbius strip does to an arrow. Most areas have none, on purpose; a figure that decorates is worse than none. Each one is computed from the mathematics, not animated by hand, and each caption states only what the figure shows. Everything runs in your browser and nothing is sent anywhere.</p>
     <h2 id="contribute">Add an environment</h2>
     <p>An environment is a Python generator that returns a Lean task: a statement with <span class="mono">sorry</span>, plus a reference proof. The contract is in <span class="mono">AUTHORING.md</span> in the repository. Good environments are true, varied, need a real idea at higher difficulty, and are not closed by a single automation call. Open a pull request.</p>
     <h2>Related</h2>
@@ -532,13 +564,20 @@ def main():
     for m in ENVS: page_env(m)
     rendered = render_math()
     # clean generated dirs (keep assets, styles.css, app.js)
-    for d in ("area", "env", "environments", "frontier", "checking", "about", "data"):
+    for d in ("area", "env", "environments", "frontier", "checking", "about", "data", "viz"):
         shutil.rmtree(os.path.join(OUT, d), ignore_errors=True)
     for path, text in PAGES_OUT.items():
         text = re.sub(r"@@M(\d+)@@", lambda m: rendered[int(m.group(1))], text)
         fp = os.path.join(OUT, path.strip("/"), "index.html") if path != "/" else os.path.join(OUT, "index.html")
         os.makedirs(os.path.dirname(fp), exist_ok=True); open(fp, "w", encoding="utf-8").write(text)
     shutil.copy(os.path.join(ROOT, "site_app.js"), os.path.join(OUT, "app.js"))
+    nm = os.path.join(ROOT, "tools/node/node_modules/three")
+    shutil.copy(os.path.join(nm, "build/three.module.min.js"), os.path.join(OUT, "assets/three.module.min.js"))
+    shutil.copy(os.path.join(nm, "examples/jsm/controls/OrbitControls.js"), os.path.join(OUT, "assets/OrbitControls.js"))
+    shutil.rmtree(os.path.join(OUT, "viz"), ignore_errors=True)
+    os.makedirs(os.path.join(OUT, "viz"), exist_ok=True)
+    for fn in ["runtime.js", "boot.js"] + [m_["id"] + ".js" for m_ in VIZ.values()]:
+        shutil.copy(os.path.join(ROOT, "viz", fn), os.path.join(OUT, "viz", fn))
     os.makedirs(os.path.join(OUT, "data"), exist_ok=True)
     json.dump([dict(AREAS[c], page=PAGES.get(c), mathlib=COV["areas"][c]) for c in sorted(AREAS)], open(os.path.join(OUT, "data/areas.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     json.dump(COV, open(os.path.join(OUT, "data/coverage.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)

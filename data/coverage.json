@@ -558,9 +558,14 @@
    ]
   },
   "53": {
-   "theorems": 0,
-   "modules": 0,
-   "dirs": []
+   "theorems": 748,
+   "modules": 24,
+   "dirs": [
+    {
+     "dir": "Geometry/Manifold",
+     "theorems": 748
+    }
+   ]
   },
   "54": {
    "theorems": 16146,
@@ -607,12 +612,12 @@
    ]
   },
   "57": {
-   "theorems": 1231,
-   "modules": 40,
+   "theorems": 857,
+   "modules": 28,
    "dirs": [
     {
      "dir": "Geometry/Manifold",
-     "theorems": 1122
+     "theorems": 748
     },
     {
      "dir": "Topology/CWComplex",
@@ -621,8 +626,8 @@
    ]
   },
   "58": {
-   "theorems": 2955,
-   "modules": 97,
+   "theorems": 2581,
+   "modules": 85,
    "dirs": [
     {
      "dir": "Analysis/Calculus",
@@ -630,7 +635,7 @@
     },
     {
      "dir": "Geometry/Manifold",
-     "theorems": 1122
+     "theorems": 748
     }
    ]
   },
