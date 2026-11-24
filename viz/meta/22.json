@@ -1,0 +1,12 @@
+{
+  "code": "22",
+  "id": "rotations-3d",
+  "title": "Rotations in space do not commute",
+  "lede": "Each press turns the object a quarter turn about a fixed axis. The left copy applies your moves in the order pressed, the right copy in reverse order. Arrows are the fixed x, y, z axes.",
+  "notice": [
+    "After x then y, the left copy and the right copy end in different orientations. Check which face points toward you.",
+    "Press x twice, or y twice: the two copies agree, because turns about the same axis do commute.",
+    "The readout is computed from exact integer rotation matrices, not from the animation."
+  ],
+  "hint": "Press the x and y buttons in any order. Drag to look around."
+}

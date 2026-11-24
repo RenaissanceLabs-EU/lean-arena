@@ -1,0 +1,12 @@
+{
+  "code": "42",
+  "id": "fourier-epicycles",
+  "title": "A closed curve from rotating circles",
+  "lede": "The curve (gray) is sampled and its discrete Fourier transform is computed. The N largest terms become circles: each rolls at a whole-number speed, and the tip of the chain traces the teal curve.",
+  "notice": [
+    "With a few circles the tip draws a smooth blob. Each added circle is smaller and faster and adds finer detail.",
+    "The corners of the square wave and the star need many circles, and the approximation overshoots near the corners. The heart is smooth, so a few circles already come close.",
+    "The distance readout is computed from the curve: it falls as N rises and reaches zero when every sample point is matched."
+  ],
+  "hint": "Raise N to add circles. Pause to read the chain, or switch the curve."
+}

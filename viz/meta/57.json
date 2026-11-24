@@ -1,0 +1,12 @@
+{
+  "code": "57",
+  "id": "mobius",
+  "title": "The Möbius strip has only one side",
+  "lede": "A marker with a gold arrow walks along the center line. The blue arrow marks where it started. Walk one lap and compare. Then cut the strip along the middle.",
+  "notice": [
+    "After one lap the marker is back at the start but its arrow points the opposite way. The strip has no consistent side to call up.",
+    "After two laps the arrow agrees with the start again. Going around twice undoes the flip.",
+    "Cutting along the middle gives one band, not two. It is twice as long and half as wide, has two sides again, and carries two full twists."
+  ],
+  "hint": "Slide the walker, or press Walk. Tick the cut box. Drag to rotate."
+}

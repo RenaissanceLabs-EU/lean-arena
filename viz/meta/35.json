@@ -1,0 +1,12 @@
+{
+  "code": "35",
+  "id": "wave-membrane",
+  "title": "A membrane under the wave and heat equations",
+  "lede": "A square sheet with its edges held at zero. Click or drag to poke it, then watch the same poke evolve under two different equations. Red is up, blue is down.",
+  "notice": [
+    "Under the wave equation a poke becomes a ring that spreads at a fixed speed, bounces off the held edges and flips sign. The slight damping slowly lets the motion die out.",
+    "Under the heat equation a poke only spreads out and flattens. Nothing travels, nothing reflects, and the sheet relaxes toward zero.",
+    "Both schemes are explicit, and each time step respects its stability limit. The readout shows how close to the limit it runs."
+  ],
+  "hint": "Click or drag on the sheet to poke it. Switch equation or press Reset."
+}

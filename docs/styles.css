@@ -418,3 +418,5 @@ tr.no td:nth-child(2) { color: var(--ink-soft); }
 .tm .envdot { margin-left: 0; }
 .vzmark { width: 13px; height: 13px; color: var(--ink-soft); flex: none; vertical-align: middle; }
 .scale .vzmark { margin-left: 10px; }
+.area-main .vizsec > p.eyebrow { font: 600 12px var(--sans); color: var(--gold); letter-spacing: .16em; margin-bottom: 6px; }
+.area-main .vizsec .vz-lede { font-size: 16px; color: var(--ink-soft); }

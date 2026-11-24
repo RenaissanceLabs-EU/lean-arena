@@ -1,0 +1,12 @@
+{
+  "code": "92",
+  "id": "reaction-diffusion",
+  "title": "Two chemicals that make animal patterns",
+  "lede": "The Gray-Scott model: chemical U is fed in, chemical V eats U and decays, and both spread out, V more slowly. Pick a pattern, press Reset, or drag on the picture to add V.",
+  "notice": [
+    "Nothing in the rules mentions spots or stripes. They appear because V spreads more slowly than U, which Alan Turing showed can break a uniform state.",
+    "Only the feed rate F and kill rate k differ between the patterns. Small changes give spots, worms, splitting blobs or coral.",
+    "Dragging adds a patch of V. Where it lands, the pattern grows around it."
+  ],
+  "hint": "Drag on the picture to add chemical V. Reset starts again."
+}

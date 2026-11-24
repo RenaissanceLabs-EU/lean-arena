@@ -1,0 +1,12 @@
+{
+  "code": "11",
+  "id": "times-table",
+  "title": "Multiplication modulo N has hidden structure",
+  "lede": "Points 0 to N-1 sit on a circle. Each point i is joined to the point m times i, modulo N. Change m and N, or press Play to sweep m through fractions.",
+  "notice": [
+    "With m = 2 the lines trace a cardioid, and with m = 3 a nephroid. In general the envelope has m-1 cusps.",
+    "The gold dots are the fixed points, where m times i equals i modulo N. For whole m there are exactly gcd(m-1, N) of them.",
+    "Between whole values of m the envelope blurs. The sharp curves belong to integer m."
+  ],
+  "hint": "Drag the sliders, or press Play to sweep m."
+}

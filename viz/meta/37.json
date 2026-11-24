@@ -1,0 +1,12 @@
+{
+  "code": "37",
+  "id": "lorenz",
+  "title": "Two Lorenz trajectories, 0.001 apart",
+  "lede": "The Lorenz system with σ = 10, β = 8/3 and the ρ you choose. Two trajectories start one thousandth apart; the gold one is drawn over the teal one.",
+  "notice": [
+    "At ρ = 28 the gap between the two points grows by roughly a factor of ten every few time units, until it is as large as the attractor itself. That is sensitive dependence on initial conditions.",
+    "Each path alone is orderly: it keeps circling the two lobes. What cannot be predicted is which lobe it visits next, once the gap has grown.",
+    "At small ρ, such as 10, both trajectories settle to the same equilibrium point and the gap shrinks toward zero. The chaos needs ρ large enough."
+  ],
+  "hint": "Drag to rotate. Change ρ, or press Reset to start both trajectories again."
+}

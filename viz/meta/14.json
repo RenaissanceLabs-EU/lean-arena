@@ -1,0 +1,12 @@
+{
+  "code": "14",
+  "id": "quadric-family",
+  "title": "One equation, three shapes, one singular point",
+  "lede": "The surface \\(x^2+y^2-z^2=t\\) changes shape as t moves through zero. Slide t, or press Sweep t, and watch the two sheets join into a cone and open into a single sheet.",
+  "notice": [
+    "For t below 0 there are two separate sheets. At t = 0 they meet in a cone. Above 0 the surface is one connected piece.",
+    "The cone is the only singular case: the gradient of the equation vanishes at the origin, which lies on the surface only when t = 0.",
+    "For t of 0 or more the surface is covered by straight lines. The one-sheeted hyperboloid has two families of them."
+  ],
+  "hint": "Drag to rotate. Slide t through zero."
+}

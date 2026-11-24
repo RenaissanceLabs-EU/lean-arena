@@ -1,0 +1,12 @@
+{
+  "code": "55",
+  "id": "torus-loops",
+  "title": "Loops that can shrink and loops that cannot",
+  "lede": "A loop is drawn on a sphere or a torus. Slide it and watch its length. The readout says whether it can be pulled to a point without leaving the surface.",
+  "notice": [
+    "On the sphere, a circle of latitude slides to the pole and its length goes to zero. Every loop on a sphere can be shrunk this way.",
+    "On the torus, the loop around the tube keeps a fixed length as it slides, and the loop around the hole never gets shorter than the inner circle. Neither can reach a point.",
+    "A small loop on the torus can still shrink. What cannot is a loop that goes around the tube or around the hole."
+  ],
+  "hint": "Drag to rotate. Pick a surface and a loop, then use the slider."
+}

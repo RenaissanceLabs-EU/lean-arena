@@ -1,0 +1,12 @@
+{
+  "code": "26",
+  "id": "taylor",
+  "title": "Taylor polynomials and where they fail",
+  "lede": "A function (teal) and its Taylor polynomial at 0 (gold) of the degree you choose. The red band is the gap between them.",
+  "notice": [
+    "For sin x and eˣ the band narrows everywhere as the degree grows, and the max error falls toward zero.",
+    "For 1/(1 + x²) and ln(1 + x) the polynomials hug the function inside |x| < 1, but beyond |x| = 1 they swing away faster as the degree rises.",
+    "The limit is the radius of convergence. For 1/(1 + x²) it is 1 even though the function is smooth for every real x."
+  ],
+  "hint": "Pick a function, then raise the degree n and watch the band."
+}

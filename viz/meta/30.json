@@ -1,0 +1,12 @@
+{
+  "code": "30",
+  "id": "conformal",
+  "title": "Analytic maps keep right angles",
+  "lede": "A square grid in the complex plane is carried to w = (1 − t)z + t f(z). Teal lines were horizontal, red lines were vertical; the faint grid is where they started.",
+  "notice": [
+    "Wherever the derivative is not zero, a teal line and a red line still cross at 90 degrees, however much the squares are bent and stretched. This is what conformal means.",
+    "Each little square stays nearly a square: it is rotated and scaled, not sheared. Drag the dot and read the angle.",
+    "At a critical point (gold ring) the derivative is zero and the angle doubles, so z² turns the corner at 0 into a straight line. At a pole such as 0 for 1/z, the grid is clipped."
+  ],
+  "hint": "Drag on the stage to move the dot. Slide t to morph from the identity."
+}

@@ -1,0 +1,12 @@
+{
+  "code": "52",
+  "id": "dual-polytopes",
+  "title": "From a cube to an octahedron by cutting corners",
+  "lede": "Slide to cut the corners of a cube deeper and deeper. Halfway you get a cuboctahedron, and at the end an octahedron, the dual of the cube. The counts are recomputed at every position.",
+  "notice": [
+    "Teal faces come from the cube's faces and red faces from the cut corners. The cube's faces shrink to points as the red ones grow to fill the surface.",
+    "Vertices, edges and faces change, but V − E + F is always 2, as for every convex polyhedron.",
+    "The octahedron has a vertex at the center of each face of the cube, and a face for each corner. Cube and octahedron swap their numbers of vertices and faces."
+  ],
+  "hint": "Drag to rotate. Slide the cut, or use the three shape buttons."
+}

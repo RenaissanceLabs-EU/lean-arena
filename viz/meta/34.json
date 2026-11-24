@@ -1,0 +1,12 @@
+{
+  "code": "34",
+  "id": "flow-field",
+  "title": "Linear systems: the trace and determinant decide",
+  "lede": "Particles flow along dx/dt = Ax. You set the trace τ and the determinant Δ of A; the readout names what the origin is.",
+  "notice": [
+    "When Δ < 0 the origin is a saddle: some paths approach it, then veer away.",
+    "When Δ > 0, the sign of τ² − 4Δ separates nodes (real eigenvalues) from spirals (complex ones), and the sign of τ says whether paths go in or out. With τ = 0 you get closed loops.",
+    "The boundaries are the curve τ² = 4Δ, the line Δ = 0 and the line τ = 0. Try Degenerate node: the repeated eigenvalue gives a single direction that paths hug."
+  ],
+  "hint": "Move τ and Δ, or pick a preset. Pause to inspect the trails."
+}

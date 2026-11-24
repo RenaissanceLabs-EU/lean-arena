@@ -1,0 +1,12 @@
+{
+  "code": "20",
+  "id": "cube-symmetries",
+  "title": "Two moves generate all 24 rotations of a cube",
+  "lede": "Turn the numbered cube with A, a quarter turn about the vertical axis, and B, a third of a turn about the body diagonal. The counter tracks every distinct orientation the cube has had.",
+  "notice": [
+    "Starting from just A and B, the number of distinct orientations keeps growing and then stops at 24. No further move can add a new one.",
+    "The count is exact: the cube's orientation is stored as a rotation matrix, and two orientations are the same only when their matrices are equal.",
+    "Four A turns, or three B turns, bring the cube back to where it started."
+  ],
+  "hint": "Press A and B in any order, or try Random 12 moves. Drag to look around."
+}

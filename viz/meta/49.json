@@ -1,0 +1,12 @@
+{
+  "code": "49",
+  "id": "soap-film",
+  "title": "A soap film between two rings breaks",
+  "lede": "A film stretched between two rings of radius R is a catenoid, the surface of least area. Slide the rings apart: past a critical separation no such surface exists.",
+  "notice": [
+    "For small separations the film is \\(r = a\\cosh(z/a)\\), with its neck radius a computed from the ring radius. Two values of a solve the equation; the larger is the stable one.",
+    "Around h/R = 1.06 the two flat discs already have less area than the catenoid. The film still stands for a while, but it is only a local minimum and can jump to the discs.",
+    "Beyond h/R = 1.3255 no catenoid fits between the rings. The film breaks and only two discs remain."
+  ],
+  "hint": "Drag the slider; the colored marks show the thresholds. Drag the figure to rotate."
+}

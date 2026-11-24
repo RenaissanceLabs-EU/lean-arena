@@ -1,0 +1,12 @@
+{
+  "code": "83",
+  "id": "light-clock",
+  "title": "A moving light clock ticks slower",
+  "lede": "A light pulse bounces between two mirrors. Left: the clock at rest. Right: the same clock moving at speed v, seen from the rest frame. Light has the same speed in both.",
+  "notice": [
+    "In the moving clock the pulse travels a diagonal, longer than the straight gap. Light cannot go faster, so each tick lasts longer.",
+    "The path per tick divided by the gap, solved from the geometry, equals gamma = 1/sqrt(1 - v²/c²), and so does the ratio of tick lengths.",
+    "The mirrors are narrower when moving, which is length contraction along the motion. The gap between them does not change."
+  ],
+  "hint": "Drag the speed slider. Press Pause to study a tick."
+}

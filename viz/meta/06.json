@@ -1,0 +1,12 @@
+{
+  "code": "06",
+  "id": "divisor-lattice",
+  "title": "Divisibility is an order, gcd and lcm are meet and join",
+  "lede": "The divisors of n, drawn with one edge for each multiplication by a prime. Click divisors: the last click lights its divisors (teal) and its multiples (gold).",
+  "notice": [
+    "For 30 the divisors form a cube: each of the three directions is a prime that is either in the number or not.",
+    "The gcd of two clicked divisors is the highest vertex below both, and the lcm is the lowest vertex above both. Both are ringed.",
+    "The readout finds them from the order alone and confirms they match the usual gcd and lcm formulas. For 210 the 4D cube is projected into 3D."
+  ],
+  "hint": "Click a divisor. Drag to rotate."
+}

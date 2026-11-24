@@ -1,0 +1,12 @@
+{
+  "code": "53",
+  "id": "curvature",
+  "title": "Curvature, and a triangle on a sphere",
+  "lede": "Surfaces are colored by Gaussian curvature K: red where positive, gray where zero, blue where negative. On the sphere, grow a triangle bounded by great-circle arcs and read its angles.",
+  "notice": [
+    "The sphere is curved the same way everywhere (K > 0), the cylinder has K = 0 and can be unrolled flat, the saddle has K < 0 everywhere. The torus has all three kinds of point.",
+    "On the sphere, the angles of a triangle always add up to more than 180 degrees.",
+    "The excess over 180 degrees, in radians, equals the triangle's area on the unit sphere. The area is computed separately, by a different formula."
+  ],
+  "hint": "Drag to rotate. Choose a surface; on the sphere, slide the triangle size."
+}

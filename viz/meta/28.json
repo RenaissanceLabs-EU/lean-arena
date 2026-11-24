@@ -1,0 +1,12 @@
+{
+  "code": "28",
+  "id": "riemann-3d",
+  "title": "Volume under a surface as a sum of columns",
+  "lede": "Each column has a base of 2/n by 2/n and the height of the surface at one point of its cell. The sum of their volumes is compared with a fine-grid value.",
+  "notice": [
+    "As n grows, the columns fit the surface more closely and the sum approaches the reference volume.",
+    "With the left-corner rule the error shrinks in proportion to 1/n, so error times n levels off. With the midpoint rule it shrinks like 1/n², and error times n² levels off.",
+    "With few columns the sum can sit well above or below the reference. Compare the left-corner and midpoint errors at the same n."
+  ],
+  "hint": "Drag to rotate. Raise n and switch between the two rules."
+}

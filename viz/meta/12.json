@@ -1,0 +1,12 @@
+{
+  "code": "12",
+  "id": "root-dance",
+  "title": "Roots dance when a coefficient moves",
+  "lede": "The colored dots are the roots of a polynomial. The diamond is its constant term c, which you can drag. Press Loop c once to send c around the circle through its current position.",
+  "notice": [
+    "The roots move continuously, but after c travels once around the origin they can land on each other's old places: the loop permutes them.",
+    "For z³ − c a full loop shifts the three roots cyclically. For z⁴ − c, the four. In z⁵ − z − c, a loop of radius above about 0.54 shifts all five roots; a smaller loop permutes nothing.",
+    "Every root is recomputed from the current c, and the readout shows the largest value of |p| at the roots. It stays near 1e-15."
+  ],
+  "hint": "Drag the diamond c around the origin. Colors follow the roots."
+}
